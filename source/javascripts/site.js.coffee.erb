@@ -1,0 +1,25 @@
+#= require jquery-smooth-scroll
+#= require js-cookie
+#= require bootstrap/collapse
+
+origin = window.location.protocol + '//' + window.location.host
+if origin != "<%= host %>"
+  correctUrl = window.location.href.replace(origin, "<%= host %>")
+  window.location.replace correctUrl
+
+$ ->
+  $('.navbar a[href*="#"]').smoothScroll()
+  showCookieBar()
+
+showCookieBar = ->
+  unless Cookies.get('cookie-consent')?
+    cookieBar = $('#cookie-bar')
+    cookieBar
+      .slideDown()
+      .find('a')
+      .click (e) ->
+        e.preventDefault()
+        Cookies.set 'cookie-consent', 'true',
+          expires: 365
+          path:    '/'
+        cookieBar.slideUp()

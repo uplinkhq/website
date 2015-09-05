@@ -1,0 +1,57 @@
+require 'font_awesome/sass/rails/helpers'
+
+helpers FontAwesome::Sass::Rails::ViewHelpers
+
+activate :directory_indexes
+activate :autoprefixer
+activate :bootstrap_navbar
+
+activate :s3_sync do |config|
+  config.aws_access_key_id     = ENV.fetch('AWS_ACCESS_KEY_ID')
+  config.aws_secret_access_key = ENV.fetch('AWS_SECRET_ACCESS_KEY')
+  config.bucket                = 'uplink.tech'
+  config.region                = 'eu-central-1'
+  config.after_build           = true
+end
+
+activate :cdn do |cdn|
+  cdn.filter      = /\.(html|txt|xml)\z/i
+  cdn.cloudflare  = {
+    client_api_key: ENV.fetch('CLOUDFLARE_API_KEY'),
+    email:          'manuel@krautcomputing.com',
+    zone:           'uplink.tech',
+    base_urls: [
+      'https://uplink.tech'
+    ]
+  }
+end
+
+activate :sitemap_ping do |config|
+  config.host = 'https://uplink.tech'
+end
+
+after_s3_sync do |files_by_status|
+  cdn_invalidate(files_by_status[:updated])
+end
+
+page '/sitemap.xml', layout: false
+
+set :css_dir,    'stylesheets'
+set :js_dir,     'javascripts'
+set :images_dir, 'images'
+
+configure :development do
+  activate :livereload
+
+  set :debug_assets, true
+  set :host,         'http://localhost:4567'
+end
+
+configure :build do
+  activate :gzip
+  activate :asset_hash
+  activate :minify_css
+  activate :minify_javascript
+
+  set :host, 'https://uplink.tech'
+end
