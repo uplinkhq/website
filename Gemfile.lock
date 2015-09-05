@@ -249,7 +249,7 @@ GEM
       pmap
       ruby-progressbar
       unf
-    middleman-sitemap-ping (0.1.0)
+    middleman-sitemap-ping (0.2.0)
       middleman-core (~> 3.0)
     middleman-sprockets (3.4.2)
       middleman-core (>= 3.3)
