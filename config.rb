@@ -27,7 +27,8 @@ activate :cdn do |cdn|
 end
 
 activate :sitemap_ping do |config|
-  config.host = 'https://uplink.tech'
+  config.host        = 'https://uplink.tech'
+  config.after_build = false
 end
 
 after_s3_sync do |files_by_status|
