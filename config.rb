@@ -4,6 +4,7 @@ helpers FontAwesome::Sass::Rails::ViewHelpers
 
 activate :directory_indexes
 activate :autoprefixer
+activate :i18n, mount_at_root: :en
 activate :bootstrap_navbar
 
 activate :s3_sync do |config|
@@ -34,6 +35,10 @@ end
 after_s3_sync do |files_by_status|
   cdn_invalidate(files_by_status[:updated])
 end
+
+I18n.exception_handler = ->(exception, locale, key, options) {
+  raise "Missing translation key: #{key}, locale: #{locale}, options: #{options}"
+}
 
 page '/sitemap.xml', layout: false
 
