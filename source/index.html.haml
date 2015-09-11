@@ -28,6 +28,25 @@ priority: 1.0
       %br
       If you're not looking for a project right now but in a few weeks or month, let us know and we will contact you with offers then.
 
+      = form_tag '//formspree.io/hello@uplink.tech' do
+        = hidden_field_tag '_subject', value: 'New developer'
+        .form-group
+          = label_tag 'email', caption: 'Your email'
+          = email_field_tag 'email', id: 'email', class: 'form-control', required: true, placeholder: 'your@email.com'
+        .form-group
+          = label_tag 'techs', caption: 'What technologies would you like to work with?'
+          = text_field_tag 'techs', id: 'techs', class: 'form-control', required: true, placeholder: 'e.g. Ruby, Rails, PHP, node.js...'
+        .form-group
+          = label_tag 'availability', caption: 'When are you available?'
+          = text_field_tag 'availability', id: 'availability', class: 'form-control', required: true, placeholder: 'e.g. immediately, next month, from June on...'
+        = submit_tag 'Submit', class: 'btn btn-lg btn-primary', data: { :'loading-text' => 'Please wait...' }
+
+      .alert.alert-success
+        Thanks! We'll be in touch with you shortly!
+
+      .alert.alert-danger
+        Uh-oh! Something went wrong... please try again!
+
   %section
     %h2
       How much does it cost?

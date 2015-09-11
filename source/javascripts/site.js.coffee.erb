@@ -1,5 +1,6 @@
 #= require jquery-smooth-scroll
 #= require js-cookie
+#= require bootstrap/button
 #= require bootstrap/collapse
 
 origin = window.location.protocol + '//' + window.location.host
@@ -10,6 +11,7 @@ if origin != "<%= host %>"
 $ ->
   $('.navbar a[href*="#"]').smoothScroll()
   showCookieBar()
+  submitFormsViaAjax()
 
 showCookieBar = ->
   unless Cookies.get('cookie-consent')?
@@ -23,3 +25,24 @@ showCookieBar = ->
           expires: 365
           path:    '/'
         cookieBar.slideUp()
+
+submitFormsViaAjax = ->
+  $('form').submit (e) ->
+    e.preventDefault()
+    $submitButton = $(@).find('input[type="submit"]').button('loading')
+    $.ajax @action,
+      type:     'POST'
+      data:     $(@).serialize()
+      dataType: 'json'
+    .always =>
+      $submitButton.button('reset')
+    .done =>
+      $(@)
+        .slideUp()
+        .siblings('.alert-success')
+        .slideDown()
+    .fail (xhr, status) =>
+      Rollbar.error 'Error submitting form.', xhr: xhr, status: status
+      $(@)
+        .siblings('.alert-danger')
+        .slideDown()

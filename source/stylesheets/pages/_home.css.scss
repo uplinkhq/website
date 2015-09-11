@@ -4,10 +4,37 @@ body#home {
   h1,
   h2,
   h3,
-  p {
-    max-width: 650px;
+  p,
+  form,
+  .alert {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  h2,
+  h3,
+  p {
+    max-width: 650px;
+  }
+
+  form,
+  .alert {
+    max-width: 500px;
+  }
+
+  h1 {
+    max-width: 700px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 1.3;
+  }
+
+  form {
+    margin-top: 30px;
+
+    input {
+      text-align: center;
+    }
   }
 
   header {
@@ -18,13 +45,6 @@ body#home {
       image-url("bg.jpg") no-repeat center center fixed;
     background-size: cover;
     color: white;
-
-    h1 {
-      max-width: 700px;
-      margin-top: 0;
-      margin-bottom: 20px;
-      line-height: 1.3;
-    }
 
     p {
       margin: 0 auto;
@@ -39,5 +59,10 @@ body#home {
     > h2 {
       margin-top: 0;
     }
+  }
+
+  .alert {
+    display: none;
+    margin-top: 20px;
   }
 }
