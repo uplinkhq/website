@@ -23,36 +23,43 @@ priority: 1.0
     %h2
       Join us!
     %p
-      Are you a freelance developer looking for new projects in Berlin?
+      %strong
+        Are you a freelance developer looking for new projects in Berlin?
       %br
-      Contact us via the form below and we will be in touch via email shortly.
+      Contact us via the form below and we will get back to you via email shortly.
       %br
       If you're not looking for a project right now but in a few weeks or month, let us know and we will contact you with offers then.
 
-      = form_tag '//formspree.io/hello@uplink.tech' do
-        = hidden_field_tag '_subject', value: 'New developer'
-        .form-group
-          = label_tag 'email', caption: 'Your email'
-          = email_field_tag 'email', id: 'email', class: 'form-control', required: true, placeholder: 'your@email.com'
-        .form-group
-          = label_tag 'techs', caption: 'What technologies would you like to work with?'
-          = text_field_tag 'techs', id: 'techs', class: 'form-control', required: true, placeholder: 'e.g. Ruby, Rails, PHP, node.js...'
-        .form-group
-          = label_tag 'availability', caption: 'When are you available?'
-          = text_field_tag 'availability', id: 'availability', class: 'form-control', required: true, placeholder: 'e.g. immediately, next month, from June on...'
-        = submit_tag 'Submit', class: 'btn btn-lg btn-primary', data: { :'loading-text' => 'Please wait...' }
+    = form_tag t(:form_url) do
+      = hidden_field_tag '_subject', value: 'New developer'
+      .form-group
+        = label_tag 'name', caption: 'Your name'
+        = text_field_tag 'name', id: 'name', class: 'form-control', required: true, placeholder: 'Jane Doe'
+      .form-group
+        = label_tag 'email', caption: 'Your email'
+        = email_field_tag 'email', id: 'email', class: 'form-control', required: true, placeholder: 'your@email.com'
+      .form-group
+        = label_tag 'techs', caption: 'Which technologies would you like to work with?'
+        = text_field_tag 'techs', id: 'techs', class: 'form-control', required: true, placeholder: 'Ruby, Rails, PHP, Node.js, ...'
+      .form-group
+        = label_tag 'availability', caption: 'When are you available?'
+        = text_field_tag 'availability', id: 'availability', class: 'form-control', required: true, placeholder: 'immediately, next month, from June, not sure, ...'
+      = submit_tag 'Submit', class: 'btn btn-lg btn-primary', data: { :'loading-text' => 'Please wait...' }
+      %p.note
+        Please note that this will not create any profile for you on Uplink, and we will never forward your data to any company without your consent.
 
-      .alert.alert-success
-        Thanks! We'll be in touch with you shortly!
+    .alert.alert-success
+      Thanks! We'll be in touch with you shortly!
 
-      .alert.alert-danger
-        Uh-oh! Something went wrong... please try again!
+    .alert.alert-danger
+      Uh-oh! Something went wrong... please try again!
 
   %section
     %h2
       How much does it cost?
     %p
-      Uplink is free for developers!
+      %strong
+        Uplink is free for developers!
       %br
       We take a small success fee from companies if they find a developer with our help.
 
@@ -60,16 +67,62 @@ priority: 1.0
     %h2
       For companies
     %p
-      Are you a company in Berlin looking for freelance developers, either to supplement your existing development team or to quickly build a web or mobile app without the need to hire full-time employees?
+      %strong
+        Are you a company in Berlin looking for freelance developers,
       %br
-      Do you have trouble finding good candidates and does it seem like all the good freelancers are always busy?
+      either to supplement your existing development team or to quickly build a web or mobile app without the need to hire full-time employees? Do you have trouble finding good candidates and does it seem like all the good freelancers are always busy?
       %br
       Get in touch with us!
       %br
       There are a lot of freelance developers out there looking for new challenges! Tell us a bit about your company and project and we will put you in touch with developers that are a good fit!
 
+    = form_tag t(:form_url) do
+      = hidden_field_tag '_subject', value: 'New company'
+      .form-group
+        = label_tag 'name', caption: 'Your name'
+        = text_field_tag 'name', id: 'name', class: 'form-control', required: true, placeholder: 'Jane Doe'
+      .form-group
+        = label_tag 'email', caption: 'Your email'
+        = email_field_tag 'email', id: 'email', class: 'form-control', required: true, placeholder: 'your@email.com'
+      .form-group
+        = label_tag 'website', caption: 'Your website'
+        = text_field_tag 'website', id: 'website', class: 'form-control', required: true, placeholder: 'www.yourcompany.com'
+      .form-group
+        = label_tag 'techs', caption: 'Which technologies do you work with?'
+        = text_field_tag 'techs', id: 'techs', class: 'form-control', required: true, placeholder: 'Ruby, Rails, PHP, Node.js, ...'
+      = submit_tag 'Submit', class: 'btn btn-lg btn-primary', data: { :'loading-text' => 'Please wait...' }
+      %p.note
+        Please note that this will not create any profile for your company on Uplink.
+
+    .alert.alert-success
+      Thanks! We'll be in touch with you shortly!
+
+    .alert.alert-danger
+      Uh-oh! Something went wrong... please try again!
+
   %section
     %h2
       Contact
     %p
-      For all other enquiries please use the form below.
+      For all other enquiries please get in touch via
+      = mail_to 'hello@uplink.tech'
+      or use the form below.
+
+    = form_tag t(:form_url) do
+      = hidden_field_tag '_subject', value: 'New developer'
+      .form-group
+        = label_tag 'name', caption: 'Your name'
+        = text_field_tag 'name', id: 'name', class: 'form-control', required: true, placeholder: 'Jane Doe'
+      .form-group
+        = label_tag 'email', caption: 'Your email'
+        = email_field_tag 'email', id: 'email', class: 'form-control', required: true, placeholder: 'your@email.com'
+      .form-group
+        = label_tag 'message', caption: 'Your message'
+        %textarea#message.form-control{ name: 'message', id: 'message', required: true, placeholder: 'Hi there, I wanted to talk to you about...' }
+      = submit_tag 'Submit', class: 'btn btn-lg btn-primary', data: { :'loading-text' => 'Please wait...' }
+
+    .alert.alert-success
+      Thanks! We'll be in touch with you shortly!
+
+    .alert.alert-danger
+      Uh-oh! Something went wrong... please try again!
