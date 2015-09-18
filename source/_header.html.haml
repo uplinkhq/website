@@ -1,8 +1,6 @@
 = navbar static: :top do
   = navbar_header brand: 'Uplink'
-  -#= navbar_collapse do
-  -#  = navbar_group align: 'right' do
-  -#    = navbar_item 'Join', '#join'
-  -#    = navbar_item 'Details', '#details'
-  -#    = navbar_item 'For companies', '#companies'
-  -#    = navbar_item 'Contact', '#contact'
+  = navbar_collapse do
+    = navbar_group align: 'right' do
+      = navbar_item 'About', '/about'
+      = navbar_item 'Contact', '/contact'

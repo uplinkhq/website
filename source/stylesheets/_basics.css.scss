@@ -2,6 +2,23 @@
   box-sizing: border-box;
 }
 
+img {
+  @include img-responsive;
+}
+
+header {
+  padding: 20px 0;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    image-url("bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+
+  p {
+    margin: 0 auto;
+  }
+}
+
 section {
   margin: 50px 0;
   padding-bottom: 50px;
@@ -15,4 +32,9 @@ section {
   h2:first-child {
     margin-top: 0;
   }
+}
+
+.alert {
+  display: none;
+  margin-top: 20px;
 }

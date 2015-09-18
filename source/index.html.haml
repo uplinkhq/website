@@ -97,30 +97,3 @@ priority: 1.0
 
     .alert.alert-danger
       Uh-oh! Something went wrong... please try again!
-
-  %section
-    %h2
-      Contact
-    %p
-      For all other enquiries please get in touch via
-      = mail_to 'hello@uplink.tech'
-      or use the form below.
-
-    = form_tag t(:form_url) do
-      = hidden_field_tag '_subject', value: 'Contact'
-      .form-group
-        = label_tag 'name', caption: 'Your name'
-        = text_field_tag 'name', id: 'name', class: 'form-control', required: true, placeholder: 'Jane Doe'
-      .form-group
-        = label_tag 'email', caption: 'Your email'
-        = email_field_tag 'email', id: 'email', class: 'form-control', required: true, placeholder: 'your@email.com'
-      .form-group
-        = label_tag 'message', caption: 'Your message'
-        %textarea#message.form-control{ name: 'message', id: 'message', required: true, placeholder: 'Hi there, I wanted to talk to you about...' }
-      = submit_tag 'Submit', class: 'btn btn-lg btn-primary', data: { :'loading-text' => 'Please wait...' }
-
-    .alert.alert-success
-      Thanks! We'll be in touch with you shortly!
-
-    .alert.alert-danger
-      Uh-oh! Something went wrong... please try again!
