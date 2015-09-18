@@ -12,7 +12,7 @@ section {
     border-bottom-width: 0;
   }
 
-  > h2 {
+  h2:first-child {
     margin-top: 0;
   }
 }

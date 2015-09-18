@@ -9,15 +9,13 @@ priority: 1.0
     %h1
       Connecting top freelance developers with great companies in Berlin
     %p.lead
-      Uplink helps Berlin's best freelance developers to find local companies with interesting projects! We handpick the best freelance developers in town and match them with companies looking for their expertise.
+      Join Uplink to get access to 100+ Berlin-based companies that are working with freelance developers.
 
 .container
 
   %section
     %p.lead
-      Forget clueless recruiters who don't even read your profile.
-      %br
-      We personally talk to people from each company and only take on those that offer freelancers great opportunities!
+      Uplink helps Berlin's best freelance developers to find local companies with challenging projects. We are connected to the city's most enchanting startups, agencies and media companies and can find the perfect next gig for you!
 
   %section
     %h2
@@ -46,7 +44,7 @@ priority: 1.0
         = text_field_tag 'availability', id: 'availability', class: 'form-control', required: true, placeholder: 'immediately, next month, from June, not sure, ...'
       = submit_tag 'Submit', class: 'btn btn-lg btn-primary', data: { :'loading-text' => 'Please wait...' }
       %p.note
-        Please note that this will not create any profile for you on Uplink, and we will never forward your data to any company without your consent.
+        We will keep all your data confidential, not create any profile page for you, and never forward your data to anyone without your consent!
 
     .alert.alert-success
       Thanks! We'll be in touch with you shortly!
@@ -68,9 +66,9 @@ priority: 1.0
       For companies
     %p
       %strong
-        Are you a company in Berlin looking for freelance developers,
+        Are you a company in Berlin looking for freelance developers?
       %br
-      either to supplement your existing development team or to quickly build a web or mobile app without the need to hire full-time employees? Do you have trouble finding good candidates and does it seem like all the good freelancers are always busy?
+      Do you have trouble finding good candidates and does it seem like all the good freelancers are always busy?
       %br
       Get in touch with us!
       %br
@@ -92,7 +90,7 @@ priority: 1.0
         = text_field_tag 'techs', id: 'techs', class: 'form-control', required: true, placeholder: 'Ruby, Rails, PHP, Node.js, ...'
       = submit_tag 'Submit', class: 'btn btn-lg btn-primary', data: { :'loading-text' => 'Please wait...' }
       %p.note
-        Please note that this will not create any profile for your company on Uplink.
+        We will keep all your data confidential, not create any profile page for your company, and never forward your data to anyone without your consent!
 
     .alert.alert-success
       Thanks! We'll be in touch with you shortly!
@@ -109,7 +107,7 @@ priority: 1.0
       or use the form below.
 
     = form_tag t(:form_url) do
-      = hidden_field_tag '_subject', value: 'New developer'
+      = hidden_field_tag '_subject', value: 'Contact'
       .form-group
         = label_tag 'name', caption: 'Your name'
         = text_field_tag 'name', id: 'name', class: 'form-control', required: true, placeholder: 'Jane Doe'
