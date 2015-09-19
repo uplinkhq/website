@@ -1,11 +1,25 @@
 footer {
-  height: 60px;
-  line-height: 60px;
-  font-size: $font-size-small;
   text-align: center;
-  margin-top: 50px;
+  padding: 20px 0;
+  background-color: $gray-lightest;
 
-  .container {
-    border-top: 1px solid $gray-lighter;
+  a {
+    color: $gray;
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none;
+      color: $gray-light;
+    }
+  }
+
+  .social {
+    margin-bottom: 10px;
+    font-size: 2em;
+  }
+
+  .menu {
+    font-size: $font-size-small;
   }
 }

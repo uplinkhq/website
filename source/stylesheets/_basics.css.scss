@@ -6,6 +6,24 @@ img {
   @include img-responsive;
 }
 
+h2 {
+  margin-bottom: 25px;
+}
+
+form,
+.alert {
+  max-width: 400px;
+}
+
+form {
+
+  .note {
+    margin: 5px 0 0;
+    font-size: $font-size-small;
+    font-style: italic;
+  }
+}
+
 header {
   padding: 20px 0;
   background:
@@ -20,21 +38,30 @@ header {
 }
 
 section {
-  margin: 50px 0;
-  padding-bottom: 50px;
-  border-bottom: 1px solid $gray-lighter;
+  padding: 50px 0;
+  border-bottom: 1px solid lighten($gray-light, 45%);
 
-  &:last-of-type {
-    padding-bottom: 0;
-    border-bottom-width: 0;
+  &.section-gray {
+    background-color: $gray-lightest;
   }
 
-  h2:first-child {
-    margin-top: 0;
+  .container {
+
+    h2:first-child {
+      margin-top: 0;
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
 .alert {
   display: none;
   margin-top: 20px;
+}
+
+#made-in-berlin-badge {
+  margin: 20px auto 0;
 }

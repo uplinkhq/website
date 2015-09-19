@@ -8,6 +8,7 @@ instance_eval(File.read('common-gems/middleman/Gemfile'))
 gem 'font-awesome-sass', '~> 4.4'
 
 source 'https://rails-assets.org' do
+  gem 'rails-assets-jquery.lazyload',      '~> 1.9'
   gem 'rails-assets-jquery-smooth-scroll', '~> 1.5'
   gem 'rails-assets-js-cookie',            '~> 2.0'
 end

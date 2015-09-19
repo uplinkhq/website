@@ -7,9 +7,8 @@ id: about
     %h1
       About
 
-.container
-
-  %section
+%section
+  .container
     .row
       .col-sm-3
         = image_tag 'manuel_meurer.jpg', alt: "That's my face, sir!"
@@ -37,4 +36,4 @@ id: about
           = mail_to 'hello@uplink.tech', 'email'
           or
           = succeed '.' do
-            = link_to 'Twitter', 'https://twitter.com/UplinkHQ'
+            = link_to 'Twitter', t(:twitter_url)

@@ -46,6 +46,15 @@ set :css_dir,    'stylesheets'
 set :js_dir,     'javascripts'
 set :images_dir, 'images'
 
+helpers do
+  def image_with_lazy_load(image_url, params = {})
+    image_tag('blank.gif', params.reverse_merge(class: 'lazy', data: { original: image_url })) <<
+    content_tag(:noscript) do
+      image_tag image_url, params
+    end
+  end
+end
+
 configure :development do
   activate :livereload
 

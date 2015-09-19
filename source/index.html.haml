@@ -11,13 +11,62 @@ priority: 1.0
     %p.lead
       Join Uplink to get access to 100+ Berlin-based companies that are working with freelance developers.
 
-.container
-
-  %section
+%section#section-intro.section-gray
+  .container
     %p.lead
-      Uplink helps Berlin's best freelance developers to find local companies with challenging projects. We are connected to the city's most enchanting startups, agencies and media companies and can find the perfect next gig for you!
+      Uplink helps Berlin's best freelance developers to find local companies and challenging projects. We are connected to the city's most enchanting startups, agencies and media companies and can find the perfect next gig for you!
 
-  %section
+%section
+  .container
+    %h2
+      How can Uplink help you?
+    .row
+      .col-sm-4.icon-column
+        = image_with_lazy_load image_path('icon-armchair.svg')
+        %h3
+          Armchairs!
+        %p
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      .col-sm-4.icon-column
+        = image_with_lazy_load image_path('icon-armchair.svg')
+        %h3
+          Armchairs!
+        %p
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      .col-sm-4.icon-column
+        = image_with_lazy_load image_path('icon-armchair.svg')
+        %h3
+          Armchairs!
+        %p
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+%section.section-gray
+  .container
+    %h2
+      How much does it cost?
+    %p
+      %strong
+        All Uplink services are free for developers!
+      %br
+      We take a small success fee from companies if they find a developer with our help.
+
+%section
+  .container
     %h2
       Join us!
     %p
@@ -45,52 +94,6 @@ priority: 1.0
       = submit_tag 'Submit', class: 'btn btn-lg btn-primary', data: { :'loading-text' => 'Please wait...' }
       %p.note
         We will keep all your data confidential, not create any profile page for you, and never forward your data to anyone without your consent!
-
-    .alert.alert-success
-      Thanks! We'll be in touch with you shortly!
-
-    .alert.alert-danger
-      Uh-oh! Something went wrong... please try again!
-
-  %section
-    %h2
-      How much does it cost?
-    %p
-      %strong
-        Uplink is free for developers!
-      %br
-      We take a small success fee from companies if they find a developer with our help.
-
-  %section
-    %h2
-      For companies
-    %p
-      %strong
-        Are you a company in Berlin looking for freelance developers?
-      %br
-      Do you have trouble finding good candidates and does it seem like all the good freelancers are always busy?
-      %br
-      Get in touch with us!
-      %br
-      There are a lot of freelance developers out there looking for new challenges! Tell us a bit about your company and project and we will put you in touch with developers that are a good fit!
-
-    = form_tag t(:form_url) do
-      = hidden_field_tag '_subject', value: 'New company'
-      .form-group
-        = label_tag 'name', caption: 'Your name'
-        = text_field_tag 'name', id: 'name', class: 'form-control', required: true, placeholder: 'Jane Doe'
-      .form-group
-        = label_tag 'email', caption: 'Your email'
-        = email_field_tag 'email', id: 'email', class: 'form-control', required: true, placeholder: 'your@email.com'
-      .form-group
-        = label_tag 'website', caption: 'Your website'
-        = text_field_tag 'website', id: 'website', class: 'form-control', required: true, placeholder: 'www.yourcompany.com'
-      .form-group
-        = label_tag 'techs', caption: 'Which technologies do you work with?'
-        = text_field_tag 'techs', id: 'techs', class: 'form-control', required: true, placeholder: 'Ruby, Rails, PHP, Node.js, ...'
-      = submit_tag 'Submit', class: 'btn btn-lg btn-primary', data: { :'loading-text' => 'Please wait...' }
-      %p.note
-        We will keep all your data confidential, not create any profile page for your company, and never forward your data to anyone without your consent!
 
     .alert.alert-success
       Thanks! We'll be in touch with you shortly!

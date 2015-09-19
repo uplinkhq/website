@@ -1,3 +1,7 @@
 %footer
   .container
-    = link_to 'Imprint', '/imprint'
+    .social
+      = link_to tag(:span, class: 'fa fa-twitter'), t(:twitter_url), target: '_blank'
+    .menu
+      = link_to 'Imprint', '/imprint'
+    = image_tag 'made-in-berlin-badge.png', id: 'made-in-berlin-badge'
