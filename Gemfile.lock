@@ -161,8 +161,6 @@ GEM
     fog-xml (0.1.2)
       fog-core
       nokogiri (~> 1.5, >= 1.5.11)
-    font-awesome-sass (4.4.0)
-      sass (>= 3.2)
     formatador (0.2.5)
     gem_config (0.3.1)
     haml (4.0.7)
@@ -330,7 +328,6 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (~> 3.2)
   builder (~> 3.2)
-  font-awesome-sass (~> 4.4)
   middleman (~> 3.3)
   middleman-autoprefixer (~> 2.3)
   middleman-blog (~> 3.5)

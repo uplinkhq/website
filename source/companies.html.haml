@@ -21,7 +21,22 @@ id: companies
 
       .col-sm-6
         %p
-          There are a lot of freelance developers out there looking for new challenges. Tell us a bit about your company and project and we will put you in touch with developers that are a good fit!
+          There are lots of freelance developers out there looking for new challenges. Through us you can find the candidates that perfectly match your requirements!
+        %h3
+          Why let Uplink find your next freelance developer?
+        %ul
+          %li
+            = image_with_lazy_load image_path('icons/clock.svg')
+            %strong
+              Save time
+            \- we know where to find the right candidates and can select those that match your professional requirements and price range.
+          %li
+            = image_with_lazy_load image_path('icons/wheelbarrow.svg')
+            %strong
+              Save money
+            \- stop wasting money on developers that turn out to not be right for the job. We thoroughly vet each candidate and often know whether their previous clients were satisfied with their work.
+        %p
+          Fill out the form to the right to get started!
 
       .col-sm-6
         = form_tag t(:form_url) do

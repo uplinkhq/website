@@ -11,26 +11,26 @@ id: about
   .container
     .row
       .col-sm-3
-        = image_tag 'manuel_meurer.jpg', alt: "That's my face, sir!"
+        = image_with_lazy_load image_path('manuel_meurer.jpg'), alt: "That's my face, sir!"
       .col-sm-9
         %h2
           Hi there!
         %p
-          My name is Manuel Meurer and I am the creator of Uplink. I am a freelance Ruby on Rails developer and I came to Berlin in 2008.
+          My name is Manuel Meurer and I am the creator of Uplink. I work as a freelance Ruby on Rails developer and I came to Berlin in 2008.
         %p
           Over the years I have worked for many of the city's startups, agencies and media companies. Every time one project ended and I found myself looking for the next one,
           %strong
             I noticed that there was no straightforward way to find out which companies were looking for freelance developers at that time.
           There were some job boards of course, but the section for freelancers always seemed like an afterthought and often contained only a few postings.
         %p
-          I always ended up finding a new gig through a recommendation from someone in my personal network. It often felt like I was missing out, though,
+          I always ended up finding a new gig through a recommendation from someone in my personal or professional network. It often felt like I was missing out, though,
           %strong
             because I knew there were lots of interesting companies in Berlin, and many of them working with freelance developers on a regular basis, but there was no easy way to get in touch with them
           (short of emailing and calling each one).
         %p
-          After hearing about the same problem for years from many fellow freelance developers and companies alike, I finally decided to do something about it.
+          After hearing about the same problem for years from many fellow freelance developers and companies alike, I finally decided to do something about it and started Uplink -
           %strong
-            And thus, Uplink was born: a simple platform to connect the best freelance developers from Berlin with the companies that need them!
+            a simple platform to connect the best freelance developers from Berlin with the companies that need them!
         %p
           I hope you find Uplink helpful! If you have any questions or comments, don't hesitate to get in touch via
           = mail_to 'hello@uplink.tech', 'email'

@@ -15,8 +15,15 @@ footer {
   }
 
   .social {
-    margin-bottom: 10px;
-    font-size: 2em;
+    margin-bottom: 40px;
+
+    a + a {
+      margin-left: 20px;
+    }
+
+    img {
+      display: inline-block;
+    }
   }
 
   .menu {

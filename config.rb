@@ -1,7 +1,3 @@
-require 'font_awesome/sass/rails/helpers'
-
-helpers FontAwesome::Sass::Rails::ViewHelpers
-
 activate :directory_indexes
 activate :autoprefixer
 activate :i18n, mount_at_root: :en

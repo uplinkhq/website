@@ -1,0 +1,21 @@
+body#companies {
+
+  section {
+
+    ul {
+      margin: 20px 0 0;
+      padding: 0;
+
+      li {
+        list-style-type: none;
+        overflow: hidden;
+        margin-bottom: 20px;
+
+        img {
+          float: left;
+          margin: 0 20px 10px 0;
+        }
+      }
+    }
+  }
+}

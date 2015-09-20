@@ -1,7 +1,8 @@
 %footer
   .container
     .social
-      = link_to tag(:span, class: 'fa fa-twitter'), t(:twitter_url), target: '_blank'
+      = link_to image_with_lazy_load(image_path('icons/twitter.svg')), t(:twitter_url), target: '_blank'
+      = link_to image_with_lazy_load(image_path('icons/facebook.svg')), t(:facebook_url), target: '_blank'
     .menu
       = link_to 'Imprint', '/imprint'
-    = image_tag 'made-in-berlin-badge.png', id: 'made-in-berlin-badge'
+    = image_with_lazy_load image_path('made-in-berlin-badge.png'), alt: 'Made in Berlin', id: 'made-in-berlin-badge'
