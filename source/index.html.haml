@@ -9,19 +9,17 @@ priority: 1.0
     %h1
       Connecting top freelance developers with great companies in Berlin
     %p.lead
-      Join Uplink to get access to 100+ Berlin-based companies that are working with freelance developers.
+      Your next gig is right around the corner!
 
 %section#section-intro.section-gray
   .container
     %p.lead
-      Uplink helps Berlin's best freelance developers to find local companies and challenging projects. We are connected to the city's most enchanting startups, agencies and media companies and can find the perfect next gig for you!
+      Uplink helps Berlin's best freelance developers to find local companies and challenging projects. We are connected to the city's most enchanting startups, agencies and media companies and can find the perfect next project for you!
 
 %section
   .container
-    %h2
-      How can Uplink help you?
     .row
-      .col-sm-4.icon-column
+      .col-sm-4.column
         = image_with_lazy_load image_path('icons/find.svg')
         %h3
           We find them all
@@ -30,7 +28,7 @@ priority: 1.0
           %strong
             and many of them are regularly looking for freelance developers.
           Is there an industry or kind of company you're most interested in? Let us know and we'll find them for you!
-      .col-sm-4.icon-column
+      .col-sm-4.column
         = image_with_lazy_load image_path('icons/calculator.svg')
         %h3
           Know your worth
@@ -39,7 +37,7 @@ priority: 1.0
           %strong
             only contact you for gigs that pay what you are asking.
           Tell us your price range (and if you're willing to make exceptions) and we'll find clients that value your time and expertise.
-      .col-sm-4.icon-column.small-icon
+      .col-sm-4.column.small-icon
         = image_with_lazy_load image_path('icons/digital-clock.svg')
         %h3
           Timing is everything
@@ -51,45 +49,19 @@ priority: 1.0
 %section.section-gray
   .container
     %h2
-      How much does it cost?
-    %p
-      %strong
-        All Uplink services are free for developers!
-      %br
-      We take a small success fee from companies if they find a developer with our help.
-
-%section
-  .container
-    %h2
-      Join us!
-    %p
-      %strong
-        Are you a freelance developer looking for new projects in Berlin?
-      %br
-      Contact us via the form below and we will get back to you via email shortly.
-      %br
-      If you're not looking for a project right now but in a few weeks or month, let us know and we will contact you with offers then.
-
-    = form_tag t(:form_url) do
-      = hidden_field_tag '_subject', value: 'New developer'
-      .form-group
-        = label_tag 'name', caption: 'Your name'
-        = text_field_tag 'name', id: 'name', class: 'form-control', required: true, placeholder: 'Jane Doe'
-      .form-group
-        = label_tag 'email', caption: 'Your email'
-        = email_field_tag 'email', id: 'email', class: 'form-control', required: true, placeholder: 'your@email.com'
-      .form-group
-        = label_tag 'techs', caption: 'Which technologies would you like to work with?'
-        = text_field_tag 'techs', id: 'techs', class: 'form-control', required: true, placeholder: 'Ruby, Rails, PHP, Node.js, ...'
-      .form-group
-        = label_tag 'availability', caption: 'When are you available?'
-        = text_field_tag 'availability', id: 'availability', class: 'form-control', required: true, placeholder: 'immediately, next month, from June, not sure, ...'
-      = submit_tag 'Submit', class: 'btn btn-lg btn-primary', data: { :'loading-text' => 'Please wait...' }
-      %p.note
-        We will keep all your data confidential, not create any profile page for you, and never forward your data to anyone without your consent!
-
-    .alert.alert-success
-      Thanks! We'll be in touch with you shortly!
-
-    .alert.alert-danger
-      Uh-oh! Something went wrong... please try again!
+      FAQ
+    .row
+      .col-sm-6.column
+        %h3
+          How much does it cost?
+        %p
+          %strong
+            Uplink is completely free for developers.
+          We only take a small success fee from companies when they find a developer with our help.
+      .col-sm-6.column
+        %h3
+          How can I join?
+        %p
+          %strong
+            Currently you need to be invited by another Uplink member to join.
+          We chose this approach to make sure the Uplink community grows organically and as many members as possible have some kind of connection to each other.
