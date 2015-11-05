@@ -1,7 +1,7 @@
 footer {
   text-align: center;
-  padding: 20px 0;
-  background-color: $gray-lightest;
+  padding: 30px 0;
+  background-color: $gray-lighter;
 
   a {
     color: $gray;
@@ -23,6 +23,7 @@ footer {
 
     img {
       display: inline-block;
+      width: 50px;
     }
   }
 

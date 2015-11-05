@@ -1,5 +1,11 @@
 en:
+
   tagline: Connecting top freelance developers with great companies in Berlin
   form_url: //formspree.io/hello@uplink.tech
-  twitter_url: https://twitter.com/UplinkHQ
-  facebook_url: https://www.facebook.com/UplinkHQ
+
+  profiles:
+    twitter: https://twitter.com/UplinkHQ
+    facebook: https://www.facebook.com/UplinkHQ
+    xing: https://www.xing.com/companies/uplinkfreelancedevelopernetwork
+    linkedin: https://www.linkedin.com/company/uplink-freelance-developer-network
+    google-plus: https://plus.google.com/b/111320416082547005278/+UplinkTechHQ
