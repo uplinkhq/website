@@ -13,7 +13,7 @@ id: contact
       For all questions and comments, please get in touch via
       = succeed ',' do
         = mail_to 'hello@uplink.tech', 'email'
-      = link_to 'Twitter', t(:twitter_url)
+      = link_to 'Twitter', t(:twitter, scope: :profiles)
       or the form below.
 
     = form_tag t(:form_url) do
