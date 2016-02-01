@@ -63,6 +63,7 @@ configure :build do
   activate :asset_hash
   activate :minify_css
   activate :minify_javascript
+  activate :imageoptim
 
   set :host, 'https://uplink.tech'
 end
