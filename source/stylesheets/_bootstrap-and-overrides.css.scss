@@ -8,6 +8,12 @@ $gray-lightest: lighten($gray-lighter, 4%);
   margin-bottom: 0;
 }
 
+.navbar-brand {
+  font-family: "NowBold";
+  font-weight: bold;
+  font-style: normal;
+}
+
 .container {
 
   @media (min-width: $screen-lg-min) {
