@@ -29,7 +29,7 @@ activate :sitemap_ping do |config|
 end
 
 after_s3_sync do |files_by_status|
-  cdn_invalidate(files_by_status[:updated])
+  cdn_invalidate(files_by_status[:updated] + files_by_status[:deleted])
 end
 
 I18n.exception_handler = ->(exception, locale, key, options) {
