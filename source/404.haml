@@ -1,0 +1,17 @@
+---
+id: error_404
+title: Error 404
+---
+
+- content_for :header do
+  %h1
+    = current_page.data.title
+
+%section
+  .container
+    %h2
+      Oops, we couldn't find that URL.
+    %p
+      Here's some polka for you instead:
+
+    %iframe{ width: 560, height: 315, src: 'https://www.youtube.com/embed/MRJILK3NxSM?rel=0&autoplay=1', frameborder: 0, allowfullscreen: true }

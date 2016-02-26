@@ -1,8 +1,17 @@
-$font-size-base: 16px;
+$font-family-base:                  "GothamRnd-Book";
+$font-size-base:                    16px;
+$navbar-default-bg:                 transparent;
+$navbar-default-brand-color:        white;
+$navbar-default-link-color:         white;
+$navbar-default-link-hover-color:   white;
+$navbar-default-link-active-color:  white;
+$navbar-height:                     100px;
+
+@import "bootstrap/variables";
+
+$gray-lighter: lighten($gray-light, 45%);
 
 @import "bootstrap-custom";
-
-$gray-lightest: lighten($gray-lighter, 4%);
 
 .navbar {
   margin-bottom: 0;
@@ -12,6 +21,44 @@ $gray-lightest: lighten($gray-lighter, 4%);
   font-family: "NowBold";
   font-weight: bold;
   font-style: normal;
+  font-size: 25px;
+  line-height: 1;
+}
+
+.navbar-static-top {
+  border-bottom-width: 0;
+}
+
+.navbar-nav {
+  font-family: "GothamRnd-Medium";
+
+  > .active {
+
+    > a {
+      border-bottom-color: white;
+    }
+  }
+
+  @media (min-width: $grid-float-breakpoint) {
+
+    > li {
+
+      > a {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: $navbar-padding-vertical - 2px;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        border-bottom: 2px solid transparent;
+
+        &:hover,
+        &:focus {
+          border-bottom-color: white;
+        }
+      }
+    }
+  }
 }
 
 .container {

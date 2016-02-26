@@ -1,8 +1,9 @@
 #= require jquery.lazyload
-#= require jquery-smooth-scroll
+#= require jquery-smooth-scroll/jquery.smooth-scroll
 #= require js-cookie
-#= require bootstrap/button
+#= require autosize
 #= require bootstrap/collapse
+#= require bootstrap/tooltip
 
 origin = window.location.protocol + '//' + window.location.host
 if origin != "<%= host %>"
@@ -10,8 +11,10 @@ if origin != "<%= host %>"
   window.location.replace correctUrl
 
 $ ->
-  $('.navbar a[href*="#"]').smoothScroll()
+  $('a[href^="#"]').smoothScroll()
   $('img.lazy').show().lazyload(effect: 'fadeIn')
+  $('[data-toggle="tooltip"]').tooltip()
+  autosize(document.querySelectorAll('.autosize'))
   showCookieBar()
   submitFormsViaAjax()
 
@@ -31,20 +34,27 @@ showCookieBar = ->
 submitFormsViaAjax = ->
   $('form').submit (e) ->
     e.preventDefault()
-    $submitButton = $(@).find('input[type="submit"]').button('loading')
+
+    $submit = $(@).find(':submit')
+    $submit.data('original-text', $submit.text())
+    $submit.text($submit.data('loading'))
+    $submit.addClass('disabled')
+
     $.ajax @action,
       type:     'POST'
       data:     $(@).serialize()
       dataType: 'json'
     .always =>
-      $submitButton.button('reset')
+      $submit.removeClass('disabled')
+      $submit.text($submit.data('original-text'))
     .done =>
       $(@)
         .slideUp()
-        .siblings('.alert-success')
+        .siblings('.note.note-confirm')
         .slideDown()
     .fail (xhr, status) =>
-      Rollbar.error 'Error submitting form.', xhr: xhr, status: status
+      if Rollbar?
+        Rollbar.error 'Error submitting form.', xhr: xhr, status: status
       $(@)
-        .siblings('.alert-danger')
+        .siblings('.note.note-error')
         .slideDown()

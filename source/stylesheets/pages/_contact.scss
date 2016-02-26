@@ -1,6 +1,14 @@
 body#contact {
+  @include header_bg_image("contact.jpg", $vertical_position: 20%);
 
-  form {
-    margin-top: 40px;
+  main {
+
+    form {
+      text-align: center;
+
+      input[type="submit"] {
+        margin-top: 20px;
+      }
+    }
   }
 }

@@ -1,0 +1,36 @@
+$dusty-orange:   #e9664c;
+$turquoise-blue: #00b6dd;
+$grayish:        #f4f4f4;
+$charcoal-gray:  #37333a;
+
+@mixin header_bg_image($img, $opacity: 0.6, $horizontal_position: center, $vertical_position: center) {
+
+  header {
+    background:
+      linear-gradient(rgba(0, 0, 0, $opacity), rgba(0, 0, 0, $opacity)),
+      image-url("bg/#{$img}") $horizontal_position $vertical_position;
+    background-size: cover;
+  }
+}
+
+@mixin link_color_with_dark_hover($color, $darken: 15%) {
+
+  a {
+    color: $color;
+
+    &:hover {
+      color: darken($color, $darken);
+    }
+  }
+}
+
+@mixin white_bg_textarea {
+
+  textarea {
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 3px;
+    border-bottom-width: 0;
+    height: 250px;
+  }
+}

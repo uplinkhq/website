@@ -1,8 +1,0 @@
-%footer
-  .container
-    .social
-      - %w(linkedin xing twitter facebook google-plus).each do |service|
-        = link_to image_with_lazy_load(image_path("icons/#{service}.svg")), t(service, scope: :profiles), target: '_blank'
-    .menu
-      = link_to 'Imprint', '/imprint'
-    = image_with_lazy_load image_path('made-in-berlin-badge.png'), alt: 'Made in Berlin', id: 'made-in-berlin-badge'

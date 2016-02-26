@@ -1,0 +1,88 @@
+main {
+
+  section#about {
+    background-color: $charcoal-gray;
+    padding: 0;
+
+    @media (min-width: $screen-sm-min) {
+
+      .row {
+        display: table;
+      }
+
+      [class*="col-"] {
+        float: none;
+        display: table-cell;
+      }
+    }
+
+    .photo {
+      background: image-url("manuel-meurer.jpg") center;
+      background-size: cover;
+
+      @media (max-width: $screen-xs-max) {
+        height: 400px;
+      }
+    }
+
+    .text {
+      text-align: left;
+      padding: 80px 70px;
+
+      @media (max-width: $screen-xs-max) {
+        padding: 0 20px 40px;
+        text-align: center;
+      }
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        padding: 60px 50px;
+      }
+
+      h2,
+      p {
+        color: white;
+      }
+
+      h2 {
+        margin: 0 0 30px;
+      }
+
+      h3 {
+        color: $dusty-orange;
+      }
+
+      p {
+
+        &:last-of-type {
+          margin-bottom: 40px;
+        }
+      }
+
+      a {
+        display: inline-block;
+        text-align: center;
+        background-color: $dusty-orange;
+        color: white;
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        border-radius: 22px;
+        font-size: 20px;
+
+        @media (max-width: $screen-xs-max) {
+
+        }
+
+        &:active,
+        &:focus,
+        &:hover {
+          background-color: darken($dusty-orange, 5%);
+        }
+
+        + a {
+          margin-left: 20px
+        }
+      }
+    }
+  }
+}

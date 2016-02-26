@@ -1,0 +1,41 @@
+body#freelancers {
+  @include header_bg_image("freelancers.jpg");
+
+  header {
+
+    h1 {
+      max-width: 550px;
+    }
+
+    p {
+      max-width: 660px;
+    }
+  }
+
+  main {
+
+    h3 {
+      color: $dusty-orange;
+    }
+
+    section {
+
+      &#benefits {
+        background-color: $dusty-orange;
+        color: white;
+
+        h3 {
+          color: white;
+        }
+      }
+
+      &#testimonial {
+        @include link_color_with_dark_hover($dusty-orange);
+      }
+
+      &#apply {
+        @include white_bg_textarea;
+      }
+    }
+  }
+}

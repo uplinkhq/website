@@ -1,0 +1,184 @@
+---
+id: companies
+title: Find the perfect freelance developer for your next project
+---
+
+- content_for :header do
+  %h1
+    = current_page.data.title
+  = link_to 'Get in touch', '#contact', class: 'btn btn-info'
+  %p
+    Uplink is an exclusive network of professional freelance developers. We help companies find a great developer in days (sometimes hours) instead of weeks. Simply tell us what you’re looking for and we will match you up with an expert with the right skills and availability.
+
+= partial 'partials/section-cities', locals: { heading: 'Find freelancers based in:' }
+
+%section#how-it-works
+  .container
+    %h2
+      How does it work?
+    .row.columns
+      .col-sm-4
+        %h3
+          %span.fa-stack
+            = icon 'circle', class: 'fa-stack-2x'
+            %span.fa-inverse.fa-stack-1x
+              1
+          Contact us
+        %p
+          Get in touch by email or via the form below and tell us who you are looking for. We will get back to you within 24 hours.
+      .col-sm-4
+        %h3
+          %span.fa-stack
+            = icon 'circle', class: 'fa-stack-2x'
+            %span.fa-inverse.fa-stack-1x
+              2
+          Review our candidates
+        %p
+          Once we know what you need, we contact our experts who will be the best fit. If they are interested, we introduce them to you.
+      .col-sm-4
+        %h3
+          %span.fa-stack
+            = icon 'circle', class: 'fa-stack-2x'
+            %span.fa-inverse.fa-stack-1x
+              3
+          Hire the best
+        %p
+          When you decide who you want to work with, you hire them directly. When the freelancer invoices you, you pay a one-time commission.
+
+%section#benefits
+  .container
+    %h2
+      What makes it great?
+    .row.columns
+      .col-sm-6
+        %h3
+          = icon 'link'
+          %br
+          Let us be your network
+        %p
+          Uplink offers instant access to hundreds of mobile, frontend, backend, and full-stack developers. If your perfect match is not yet among them, we make our network work for you and find them. Whether you need someone next week or six months from now, remotely or on-site, for just a few days or on an ongoing basis, we can help you find the right candidate!
+      .col-sm-6
+        %h3
+          = icon 'comments'
+          %br
+          Personal introductions
+        %p
+          We won’t send you a dozen barely relevant profiles and leave you to figure out who can really do the job. Instead, we take our time to understand your requirements and introduce you to the one or two candidates who are the best fit for you. We strongly believe this process should not be automated by simply matching up client requirements and developer skills.
+    .row.columns
+      .col-sm-6
+        %h3
+          = icon 'briefcase'
+          %br
+          Vetted professionals
+        %p
+          We work exclusively with senior developers who have years of freelancing experience, and we vet each freelancer personally so you don’t have to. Fluent English, professional communication, and timely delivery are just a few of the qualities each of our freelancers has. You can trust that every candidate recommended by us will live up to your highest standards.
+      .col-sm-6
+        %h3
+          = icon 'code'
+          %br
+          We are developers, not recruiters
+        %p
+          Being developers ourselves, we can take our time to really understand your tech stack and help you figure out what skills a developer needs to work out for you. Non-technical recruiters have to make do with a list of requirements they don’t understand, and try to find candidates by simply comparing this list to the candidate’s profile, which is inefficient and error-prone.
+    .row.columns
+      .col-sm-6
+        %h3
+          = icon 'building-o'
+          %br
+          On-site in Berlin, remotely worldwide
+        %p
+          We are currently focussing our efforts on building a tight-knit network of freelancers based in Berlin. This enables us to offer on-site freelancers to the startups and media companies in Berlin, and remote work to clients anywhere in the world. We will soon roll out our service in Hamburg, Munich, Frankfurt and more cities across Germany and internationally.
+      .col-sm-6
+        %h3
+          = icon 'paw'
+          %br
+          Be one step ahead
+        %p
+          A big project coming up a few months from now? Let us know now! While our freelancers are often flexible and available on short notice, they value stability and like to plan ahead as much as possible. A longer time frame will also give you the possibility to talk to a well-suited candidate early and get feedback on the project plan and requirements.
+
+%section#testimonial.testimonials.gray-bg
+  .container
+    .row
+      .col-sm-6
+        %p
+          Uplink has been a reliable partner in finding Senior freelance developers who are available right away! We were able to finish a few customer projects much quicker thanks to promptly finding an expert for a specific topic through Uplink.
+        .author
+          = link_to 'http://www.code-b.com', target: '_blank' do
+            = image_tag 'testimonials/marcel-tuch.jpg', alt: 'Marcel Tuch', lazy: true
+            Marcel Tuch
+            %br
+            CTO @ code-b agile websolutions GmbH
+      .col-sm-6
+        %p
+          Compared to other ways I have tried to find freelancers, the team from Uplink really helped me save time. Their personal approach and responsiveness was really pleasant and effective, which is quite rare nowadays.
+        .author
+          = link_to 'http://www.geschenkidee.de', target: '_blank' do
+            = image_tag 'testimonials/colin-kippenberg.jpg', alt: 'Colin Kippenberg', lazy: true
+            Colin Kippenberg
+            %br
+            Co-Founder & CMO @ Geschenkidee D&A GmbH
+
+%section#pricing
+  .container
+    %h2
+      Our Pricing
+    %p
+      Our aim is to charge a fair and transparent price for our service. Once you start working with a freelancer you found through Uplink, we charge a
+      %strong
+        monthly fee of 10% of the freelancer's earnings, capped at 1,500€ total.
+      This means you can work with a freelancer for a long time without having to keep paying for the initial introduction. Moveover, you won’t be billed before the freelancer actually started working for you and you are happy with the achieved results.
+
+= partial 'partials/section-about'
+
+%section#contact.gray-bg
+  .container
+    %h2
+      Contact us
+    %p
+      Get in touch if you’re looking for a freelancer or have any questions about Uplink at all! We will get back to you within 24 hours.
+    = form_tag t(:form_url) do
+      = hidden_field_tag '_subject', value: 'Company contact'
+      .row
+        .col-sm-6
+          .form-group
+            = text_field_tag 'name', class: 'form-control', required: true, placeholder: 'Your name'
+          .form-group
+            = email_field_tag 'email', class: 'form-control', required: true, placeholder: 'Your email'
+          .form-group
+            = text_field_tag 'company', class: 'form-control', placeholder: 'Your company (optional)'
+        .col-sm-6
+          .form-group
+            %textarea#message.form-control.white-large{ name: 'message', required: true, placeholder: "Tell us about who you are looking for!\nWhat programming languages and frameworks do you want the freelancer to have experience with? Do you want him to work remotely or on-site?\nAre you looking for help with a specific project or do you need someone on an ongoing basis?\nWhat is your preferred start date?" }
+          = submit_tag 'Submit', class: 'btn btn-info', data: { loading: 'Please wait...' }
+    = partial 'partials/form-messages'
+
+/ %section#faq
+/   .container
+/     %h2
+/       FAQ
+/     .row.columns
+/       .col-sm-6
+/         %h3
+/           Yadda yadda yadda?
+/         %p
+/           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+/           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+/           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+/         %h3
+/           Yadda yadda yadda?
+/         %p
+/           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+/           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+/           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+/       .col-sm-6
+/         %h3
+/           Yadda yadda yadda?
+/         %p
+/           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+/           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+/           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+/         %h3
+/           Yadda yadda yadda?
+/         %p
+/           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+/           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+/           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.

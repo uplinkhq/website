@@ -1,3 +1,5 @@
+// Now
+
 @font-face {
   font-family: "NowBlack";
   src: font-url("Now-Black.otf") format("opentype");
@@ -15,7 +17,7 @@
 @font-face {
   font-family: "NowLight";
   src: font-url("Now-Light.otf") format("opentype");
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -38,4 +40,63 @@
   src: font-url("Now-Thin.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
+}
+
+
+// Gotham Rounded
+
+@font-face {
+  font-family: "GothamRnd-Light";
+  src: font-url("GothamRnd-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GothamRnd-LightIta";
+  src: font-url("GothamRnd-LightIta.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GothamRnd-Book";
+  src: font-url("GothamRnd-Book.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GothamRnd-BookIta";
+  src: font-url("GothamRnd-BookIta.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GothamRnd-Medium";
+  src: font-url("GothamRnd-Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GothamRnd-MedIta";
+  src: font-url("GothamRnd-MedIta.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GothamRnd-Bold";
+  src: font-url("GothamRnd-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GothamRnd-BoldIta";
+  src: font-url("GothamRnd-BoldIta.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
 }

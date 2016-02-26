@@ -1,0 +1,138 @@
+---
+id: home
+changefreq: always
+priority: 1.0
+---
+
+- content_for :header do
+  %h1
+    = t :tagline
+  = link_to 'For Freelancers', '/freelancers', class: 'btn btn-primary'
+  = link_to 'For Companies', '/companies', class: 'btn btn-info'
+  %p
+    = t :description
+
+= partial 'partials/section-cities', locals: { heading: 'For freelancers based in:' }
+
+%section#freelancer-benefits.benefits
+  .container
+    %h2
+      Our service for freelancers
+    .row.columns
+      .col-sm-6
+        %h3.fa-users
+          Find new clients you love
+        %p
+          Join Uplink to find new challenging projects and get in touch with companies from Berlin, the rest of Germany, Switzerland, the UK, and the US. Let us handle the job sourcing, so you can focus on what you do best - writing great code!
+      .col-sm-6
+        %h3.fa-repeat
+          Skip clueless recruiters
+        %p
+          We are freelance developers ourselves, so we know that dealing with non-technical recruiters can be frustrating. Since we understand your priorities, we can make them ours, and treat your time with respect.
+    .row.columns
+      .col-sm-6
+        %h3.fa-envelope
+          No public profile, no listings
+        %p
+          You don’t need another public profile that must be kept up-to-date, or a list of irrelevant job descriptions you have to scroll through. We keep it simple, pre-select the jobs for you, and present them to you in a personal, non-automated email.
+      .col-sm-6
+        %h3.fa-heart
+          Made in and for Berlin
+        %p
+          In order to build a tight-knit network of like-minded developers, we currently focus on freelancers from Berlin. Soon we will roll out our service in Hamburg, Munich, Frankfurt and more cities across Germany and internationally. Stay tuned!
+    = link_to 'Learn more', '/freelancers', class: 'btn btn-primary'
+
+%section#freelancer-testimonial.testimonials.gray-bg
+  .container
+    %p
+      Less than two weeks after joining Uplink I started my first project for a Swiss company. Loved the simplicity and straightforwardness of the whole process - a few emails, one phone call and that was it!
+    .author
+      = link_to 'http://www.plue.me', target: '_blank' do
+        = image_tag 'testimonials/benjamin-scherer.jpg', alt: 'Benjamin Scherer', lazy: true
+        Benjamin Scherer
+        %br
+        Full-stack developer
+
+%section#company-benefits.benefits
+  .container
+    %h2
+      Our service for companies
+    .row.columns
+      .col-sm-6
+        %h3.fa-link
+          Let us be your network
+        %p
+          Uplink offers instant access to hundreds of mobile, frontend, backend, and full-stack developers. Whether you need someone next week or six months from now, for just a few days or ongoing, we can help you find the right candidate!
+      .col-sm-6
+        %h3.fa-comments
+          Personal introductions
+        %p
+          We won’t send you a dozen barely relevant profiles and leave you to figure out who can really do the job. Instead, we take our time to understand your requirements and introduce you to the one or two candidates who are the best fit for you.
+    .row.columns
+      .col-sm-6
+        %h3.fa-briefcase
+          Vetted professionals
+        %p
+          We work exclusively with senior developers who have years of freelancing experience, and we vet each freelancer personally so you don’t have to. You can trust that every candidate recommended by us will live up to your highest standards.
+      .col-sm-6
+        %h3.fa-code
+          We are developers, not recruiters
+        %p
+          Being developers ourselves, we understand your tech stack and development needs. Non-technical recruiters have to try to find candidates with a list of requirements they don’t understand, which is inefficient and error-prone.
+    = link_to 'Learn more', '/companies', class: 'btn btn-info'
+
+%section#company-testimonial.testimonials.gray-bg
+  .container
+    %p
+      Through Uplink we found three freelancers exactly when we needed them. Each one was a great fit and was available immediately. After trying out several other options in the past, this was the most hassle-free and cost-effective way for us to find qualified freelancers!
+    .author
+      = link_to 'http://www.inware.ch', target: '_blank' do
+        = image_tag 'testimonials/urs-baumann-inware.jpg', alt: 'Urs Baumann - Inware', lazy: true
+        Urs Baumann
+        %br
+        CEO @ Inware AG
+
+= partial 'partials/section-about'
+
+%section#articles
+  .container
+    %h2
+      Some interesting articles
+    .row
+      .col-sm-4
+        .article
+          .header-image{ style: 'background-image: url("http://lorempixel.com/500/200/transport/")' }
+          %h3
+            Everything you need to know about finances as a freelancer
+          %p
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+          = link_to 'Read on', '#', class: 'btn btn-primary'
+      .col-sm-4
+        .article
+          .header-image{ style: 'background-image: url("http://lorempixel.com/500/200/technics/")' }
+          %h3
+            Everything you need to know about finances as a freelancer
+          %p
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+          = link_to 'Read on', '#', class: 'btn btn-primary'
+      .col-sm-4
+        .article
+          .header-image{ style: 'background-image: url("http://lorempixel.com/500/200/people/")' }
+          %h3
+            Everything you need to know about finances as a freelancer
+          %p
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+          = link_to 'Read on', '#', class: 'btn btn-primary'
+
+%section#cta
+  .container
+    %h2
+      Ready to take the work out of finding work?
+    = link_to 'More info for Freelancers', '/freelancers', class: 'btn btn-primary'
+    = link_to 'More info for Companies', '/companies', class: 'btn btn-info'

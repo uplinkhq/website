@@ -1,0 +1,203 @@
+---
+id: freelancers
+title: Spend more time coding than looking for work.
+---
+
+- content_for :header do
+  %h1
+    = current_page.data.title
+  = link_to 'Join us', '#apply', class: 'btn btn-primary'
+  %p
+    Uplink helps you to connect with local and remote companies to find challenging new projects! We let you focus on what you do best - writing great code - and leave the busywork to us.
+
+= partial 'partials/section-cities', locals: { heading: "Join now if you're based in:" }
+
+%section#how-it-works
+  .container
+    %h2
+      How does it work?
+    .row.columns
+      .col-sm-4
+        %h3
+          %span.fa-stack
+            = icon 'circle', class: 'fa-stack-2x'
+            %span.fa-inverse.fa-stack-1x
+              1
+          Apply to join
+        %p
+          Simply
+          = link_to 'contact us via the form below', '#apply'
+          and tell us a bit about yourself, your experience as a developer and your motivations.
+      .col-sm-4
+        %h3
+          %span.fa-stack
+            = icon 'circle', class: 'fa-stack-2x'
+            %span.fa-inverse.fa-stack-1x
+              2
+          Get set up
+        %p
+          Once you’re in, tell us about the tech stack and the kind of projects you’d like to work with and set your current and future availability.
+      .col-sm-4
+        %h3
+          %span.fa-stack
+            = icon 'circle', class: 'fa-stack-2x'
+            %span.fa-inverse.fa-stack-1x
+              3
+          Get hired
+        %p
+          When we know you’re available, we will contact you via email when a new project comes in that we think you’ll love. Simple as that!
+
+%section#benefits
+  .container
+    %h2
+      What makes it great?
+    .row.columns
+      .col-sm-6
+        %h3
+          = icon 'users'
+          %br
+          Find new clients you love
+        %p
+          Join Uplink to find new challenging projects and get in touch with companies from Berlin, the rest of Germany, Switzerland, the UK, and the US. Whether you’re looking for the intimate, dynamic feel of a startup or the hustle and bustle of an agency or large company, you can find it through Uplink. Let us handle the job sourcing, so you can focus on what you do best - writing great code!
+      .col-sm-6
+        %h3
+          = icon 'repeat'
+          %br
+          Skip clueless recruiters
+        %p
+          We are freelance developers ourselves, so we know that dealing with non-technical recruiters can be frustrating. Since Uplink is first and foremost a service for you - the freelancers - we understand your priorities and make them ours. This means we can honestly tell you about trickier customers or a project’s potential pitfalls. We are on your side and treat your time and attention with respect.
+    .row.columns
+      .col-sm-6
+        %h3
+          = icon 'envelope'
+          %br
+          No public profile, no listings
+        %p
+          You don’t need another public profile that must be kept up-to-date, or a list of irrelevant job descriptions you have to scroll through. With a little work done by us personally, not by an algorithm, we can save all our members a lot of time and frustration. We keep it simple, pre-select the jobs for you, and present them to you in a personal, non-automated email.
+      .col-sm-6
+        %h3
+          = icon 'heart'
+          %br
+          Focus on Berlin
+        %p
+          In order to build a tight-knit network of like-minded developers, we currently focus on freelancers from Berlin. This lets us offer on-site developers to the startups and media companies of Berlin and grow organically through personal recommendations of our members. Soon we will roll out our service in Hamburg, Munich, Frankfurt and more cities across Germany and internationally. Stay tuned!
+    .row.columns
+      .col-sm-6
+        %h3
+          = icon 'clock-o'
+          %br
+          Timing is everything
+        %p
+          Are you busy in a project right now but already want to line up the next one? We know what a hassle it is to try to find a new project exactly when you need it. No worries, just tell us when you are available again and we can negotiate with interested companies on your behalf and let them know they might want to postpone (or advance) their projects to have you on their team.
+      .col-sm-6
+        %h3
+          = icon 'euro'
+          %br
+          We know what you’re worth
+        %p
+          Negotiating a rate with a potential client can be the most stressful part of the whole project. This is why we make sure our clients know that 50€ is the minimum hourly rate of any freelancer in the Uplink network, and of course we will honour your personal hourly rate as well. Let us make sure you and the client are playing in the same ballpark before you even talk to them.
+
+%section#testimonial.testimonials.gray-bg
+  .container
+    .row
+      .col-sm-6
+        %p
+          Manuel found a fantastic project at a Berlin startup for me. He already knew the CTO and some of the developers, so it felt as if he had referred me to some friends, which was a great way to start a project!
+        .author
+          = link_to 'https://www.linkedin.com/in/mirkostrugar', target: '_blank' do
+            = image_tag 'testimonials/mirko-strugar.jpg', alt: 'Mirko Strugar', lazy: true
+            Mirko Strugar
+            %br
+            Frontent developer
+      .col-sm-6
+        %p
+          Through Uplink I got in touch with a media company in Berlin. I was introduced directly to the Head of IT, and I had lots of information about the company before meeting with them, e.g. what rate I could charge.
+        .author
+          = link_to 'http://www.fincha.com', target: '_blank' do
+            = image_tag 'testimonials/alexander-frischbutter.jpg', alt: 'Alexander Frischbutter', lazy: true
+            Alexander Frischbutter
+            %br
+            Full-stack developer
+
+%section#financials
+  .container
+    %h2
+      Who pays?
+    %p
+      There are two kinds of projects available to Uplink members:
+    %h3
+      Commission paid by the client
+    %p
+      For many projects, we are able to negotiate a commission directly with the client. Only after the freelancer has begun the project and both parties are satisfied with it’s progress is the company billed for our service. For freelancers, this means the commission is handled entirely between the client and Uplink.
+    %h3
+      Commission paid by the freelancer
+    %p
+      Some clients have a policy to not work with services that charge a commission. Still, these clients might offer very attractive projects - a good hourly rate, remote work, technologically interesting etc. - and of course we’d like to make these projects available to you.
+    %p
+      This is why for such projects we ask the freelancer to pay a
+      %strong
+        monthly fee of 10% of their earnings, capped at 1,500€ total.
+      Many of our members simply incorporate this fee into their hourly rate, so they don't even notice it.
+    %p
+      By being flexible and not insisting on charging a commission to each client, Uplink becomes a very attractive option to them: it costs them the same as posting the project on a online job board, but they get a much better service.
+      %strong
+        That way we can maximise the number of projects available to our members.
+
+= partial 'partials/section-about'
+
+%section#apply.gray-bg
+  .container
+    %h2
+      Apply to join Uplink
+    %p
+      If you are a senior developer
+      %strong
+        based in Berlin, Germany,
+      with at least a couple of years experience in freelancing, please apply below!
+    = form_tag t(:form_url) do
+      = hidden_field_tag '_subject', value: 'Freelancer application'
+      .row
+        .col-sm-5.col-md-4.col-md-offset-1
+          .form-group
+            = text_field_tag 'name', class: 'form-control', required: true, placeholder: 'Your name'
+          .form-group
+            = email_field_tag 'email', class: 'form-control', required: true, placeholder: 'Your email'
+          .form-group
+            = text_field_tag 'location', class: 'form-control', required: true, placeholder: 'Your location'
+        .col-sm-7.col-md-6
+          .form-group
+            %textarea#message.form-control.white-large{ name: 'message', required: true, placeholder: "Tell us a bit about yourself!\nAre you a frontend, backend, full-stack or mobile developer? What programming languages and frameworks do you like to work with?\nDo you enjoy working for small startups, agencies, or big companies? Remote or on-site?\nPlease include links to your profiles on GitHub, Linkedin, and any other service you deem relevant!" }
+          = submit_tag 'Submit', class: 'btn btn-primary', data: { loading: 'Please wait...' }
+    = partial 'partials/form-messages'
+
+-#%section#faq
+-#  .container
+-#    %h2
+-#      FAQ
+-#    .row.columns
+-#      .col-sm-6
+-#        %h3
+-#          Yadda yadda yadda?
+-#        %p
+-#          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+-#          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+-#          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+-#        %h3
+-#          Yadda yadda yadda?
+-#        %p
+-#          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+-#          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+-#          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+-#      .col-sm-6
+-#        %h3
+-#          Yadda yadda yadda?
+-#        %p
+-#          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+-#          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+-#          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+-#        %h3
+-#          Yadda yadda yadda?
+-#        %p
+-#          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+-#          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+-#          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.

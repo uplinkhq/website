@@ -1,0 +1,10 @@
+%header
+  = navbar static: :top do
+    = navbar_header brand: 'Uplink'
+    = navbar_collapse do
+      = navbar_group align: 'right' do
+        = navbar_item 'For Freelancers', '/freelancers'
+        = navbar_item 'For Companies',   '/companies'
+        = navbar_item 'Contact',         '/contact'
+  .container
+    = yield_content :header

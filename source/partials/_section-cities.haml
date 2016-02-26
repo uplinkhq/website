@@ -1,0 +1,11 @@
+%section#cities.gray-bg
+  .container
+    %h2
+      = heading
+    %span
+      = image_tag 'cities/berlin.svg'
+      Berlin
+    - %w(hamburg munich frankfurt).each do |city|
+      %span.coming-soon
+        = image_tag "cities/#{city}.svg", title: 'Coming soon!', data: { toggle: 'tooltip', placement: 'top' }
+        = city.capitalize

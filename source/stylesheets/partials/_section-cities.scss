@@ -1,0 +1,36 @@
+main {
+
+  section {
+
+    &#cities {
+      padding: 15px 0;
+
+      h2 {
+        font-size: 22px;
+        line-height: 1;
+        margin-bottom: 15px;
+      }
+
+      span {
+        display: inline-block;
+
+        + span {
+          margin-left: 15px;
+        }
+
+        img {
+          width: 100px;
+          margin-bottom: 2px;
+        }
+
+        &.coming-soon {
+          color: lighten($text-color, 25%);
+
+          img {
+            opacity: 0.3;
+          }
+        }
+      }
+    }
+  }
+}

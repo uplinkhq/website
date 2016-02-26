@@ -2,66 +2,283 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
 img {
   @include img-responsive;
 }
 
-h2 {
-  margin-bottom: 35px;
+b, strong {
+  font-family: "GothamRnd-Medium";
+  font-weight: normal;
 }
 
-form,
-.alert {
-  max-width: 400px;
+.btn {
+  font-family: "GothamRnd-Medium";
+  border-width: 0;
+  border-radius: ($padding-base-vertical * 4 + $font-size-base) / 2;
+  padding: $padding-base-vertical * 2 $padding-base-horizontal * 2;
+  line-height: 1;
+
+  &:active,
+  &:active:hover,
+  &:active:focus,
+  &:focus,
+  &:hover {
+    box-shadow: none;
+  }
 }
 
-form {
+.btn-lg {
+  padding: $padding-large-vertical * 2 $padding-large-horizontal * 2;
+  border-radius: ($padding-large-vertical * 4 + $font-size-large) / 2;
+}
+
+.btn-sm {
+  padding: $padding-small-vertical * 2 $padding-small-horizontal * 2;
+  border-radius: ($padding-small-vertical * 4 + $font-size-small) / 2;
+}
+
+.btn-xs {
+  padding: $padding-xs-vertical * 4 $padding-xs-horizontal * 2;
+  border-radius: ($padding-xs-vertical * 8 + $font-size-small) / 2;
+}
+
+.btn-primary {
+  background-color: $dusty-orange;
+
+  &:active,
+  &:active:hover,
+  &:active:focus,
+  &:focus,
+  &:hover {
+    background-color: darken($dusty-orange, 5%);
+  }
+}
+
+.btn-info {
+  background-color: $turquoise-blue;
+
+  &:active,
+  &:active:hover,
+  &:active:focus,
+  &:focus,
+  &:hover {
+    background-color: darken($turquoise-blue, 5%);
+  }
+}
+
+[class^="col-sm-"],
+[class*=" col-sm-"] {
+
+  @media (max-width: $screen-xs-max) {
+
+    & + & {
+      margin-top: 40px;
+    }
+  }
+}
+
+main {
+  text-align: center;
+
+  h2,
+  h3,
+  h4,
+  p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 650px;
+  }
+
+  h2 {
+    margin-bottom: 60px;
+    line-height: 1.3;
+
+    + p {
+      margin-top: -40px;
+      margin-bottom: 60px;
+    }
+  }
+
+  h3 {
+    font-family: "GothamRnd-Medium";
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  p {
+    line-height: 1.6;
+
+    + h3 {
+      margin-top: 60px;
+    }
+  }
+
+  form {
+    text-align: left;
+
+    .form-group {
+      margin-bottom: 30px;
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        box-shadow: none;
+        height: $input-height-base * 1.2;
+        line-height: $line-height-base * 1.2;
+        border-width: 0 0 1px;
+        border-radius: 0;
+        padding-left: 1px;
+        padding-right: 1px;
+        background-color: transparent;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+
+    .note {
+      margin: 5px 0 0;
+      font-size: $font-size-small;
+      font-style: italic;
+    }
+  }
+
+  section {
+    padding: 100px 0;
+    border-bottom: 1px solid $gray-lighter;
+
+    &:last-of-type {
+      border-bottom-width: 0;
+    }
+
+    .container {
+
+      h2:first-child {
+        margin-top: 0;
+      }
+
+      > :last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &.gray-bg {
+      background-color: $grayish;
+    }
+
+    &.testimonials {
+
+      p {
+        font-family: "GothamRnd-LightIta";
+        font-size: 1.4em;
+        line-height: 1.6;
+        margin: 0 auto 30px;
+      }
+
+      .author {
+        font-size: 0.9em;
+        font-family: "GothamRnd-Medium";
+
+        img {
+          margin: 0 auto 10px;
+          border-radius: 50%;
+        }
+
+        a {
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  table {
+    text-align: left;
+  }
+
+  .columns {
+    text-align: left;
+
+    @media (max-width: $screen-xs-max) {
+      text-align: center;
+    }
+
+    h3,
+    p {
+      max-width: 420px;
+    }
+
+    h3 {
+
+      > i.fa {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+      }
+
+      &[class^="fa-"],
+      &[class*=" fa-"] {
+
+        &:before {
+          @extend .fa;
+
+          font-size: 1.4em;
+        }
+
+        @media (min-width: $screen-sm-min) {
+          position: relative;
+          padding-left: 40px;
+
+          &:before {
+            position: absolute;
+            left: 0;
+            width: 28px;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+      text-align: justify;
+
+      + h3 {
+        margin-top: 40px;
+      }
+    }
+
+    + * {
+      margin-top: 60px;
+    }
+  }
 
   .note {
-    margin: 5px 0 0;
-    font-size: $font-size-small;
-    font-style: italic;
-  }
-}
+    display: none;
+    font-family: "GothamRnd-Medium";
+    font-size: 1.2em;
 
-header {
-  padding: 20px 0;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    image-url("bg.jpg") no-repeat center -250px fixed;
-  background-size: cover;
-  color: white;
-
-  .lead {
-    margin: 0 auto;
-  }
-}
-
-section {
-  padding: 50px 0;
-  border-bottom: 1px solid lighten($gray-light, 45%);
-
-  &.section-gray {
-    background-color: $gray-lightest;
-  }
-
-  .container {
-
-    h2:first-child {
-      margin-top: 0;
+    &.note-confirm {
+      color: $alert-success-text;
     }
 
-    > :last-child {
-      margin-bottom: 0;
+    &.note-error {
+      color: $alert-danger-text;
+      margin-top: 20px;
     }
   }
-}
-
-.alert {
-  display: none;
-  margin-top: 20px;
-}
-
-#made-in-berlin-badge {
-  margin: 20px auto 0;
 }

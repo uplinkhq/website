@@ -1,0 +1,25 @@
+---
+id: contact
+title: We'd love to hear from you!
+---
+
+- content_for :header do
+  %h1
+    = current_page.data.title
+  %p
+    Whatever question or comment you have, don't hesitate to get in touch!
+
+%section
+  .container
+    = form_tag t(:form_url) do
+      = hidden_field_tag '_subject', value: 'Contact'
+      .row
+        .col-lg-6.col-lg-offset-3
+          .form-group
+            = text_field_tag 'name', class: 'form-control', required: true, placeholder: 'Your name'
+          .form-group
+            = email_field_tag 'email', class: 'form-control', required: true, placeholder: 'Your email'
+          .form-group
+            %textarea#message.form-control.autosize{ name: 'message', rows: 1, required: true, placeholder: 'Your message' }
+          = submit_tag 'Submit', class: 'btn btn-primary', data: { loading: 'Please wait...' }
+    = partial 'partials/form-messages'

@@ -1,78 +1,111 @@
 body#home {
-  text-align: center;
-
-  h2,
-  h3,
-  p,
-  form,
-  .alert {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  h2,
-  h3,
-  p {
-    max-width: 650px;
-  }
+  @include header_bg_image("home.jpg");
 
   header {
 
     h1 {
       max-width: 700px;
-      margin: 0 auto 20px;
-      line-height: 1.3;
     }
+
 
     p {
-      font-size: 1.4em;
-      margin: 70px auto 0;
+      max-width: 700px;
     }
   }
 
-  form {
-    margin-top: 30px;
+  main {
 
-    input,
-    textarea {
-      text-align: center;
-    }
-  }
+    section {
 
-  header {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
+      &#benefits {
 
-  .column {
-
-    img {
-      margin: 20px auto 30px;
-    }
-
-    h3, p {
-      max-width: 90%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    h3 {
-      margin-top: 30px;
-      margin-bottom: 20px;
-
-      &:first-child {
-        margin-top: 0;
+        a.btn {
+          margin-top: 40px;
+        }
       }
-    }
 
-    p {
-      text-align: justify;
-    }
+      &#freelancer-benefits {
+        background: image-url("dotted-lines.png") no-repeat top center;
 
-    &.small-icon {
+        h3 {
+          color: $dusty-orange;
+        }
+      }
 
-      img {
-        padding: 10px 0;
+      &#company-benefits {
+
+        h3 {
+          color: $turquoise-blue;
+        }
+      }
+
+      &#freelancer-testimonial {
+        @include link_color_with_dark_hover($dusty-orange);
+      }
+
+      &#company-testimonial {
+        @include link_color_with_dark_hover($turquoise-blue);
+      }
+
+      &#articles {
+        display: none;
+
+        .article {
+          overflow: hidden;
+          border: 1px solid $gray-lighter;
+          border-radius: 10px;
+          padding-bottom: 20px;
+
+          .header-image {
+            background-position: center;
+            background-size: cover;
+            height: 200px;
+          }
+
+          h3,
+          p {
+            text-align: left;
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+
+          h3 {
+            margin-top: 20px;
+          }
+
+          p {
+            margin-bottom: 30px;
+          }
+        }
+      }
+
+      &#cta {
+        // TODO: Uncomment this when the "articles" section is live.
+        // background-color: $charcoal-gray;
+        // color: white;
+
+        h2 {
+          max-width: none;
+        }
+
+        a.btn {
+
+          &:first-of-type {
+
+            @media (max-width: $screen-xs-max) {
+              margin-bottom: 20px;
+
+              &:after {
+                content: "\a";
+                white-space: pre;
+              }
+            }
+
+            @media (min-width: $screen-sm-min) {
+              margin-right: 40px;
+            }
+          }
+        }
       }
     }
   }

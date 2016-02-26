@@ -1,0 +1,41 @@
+body#companies {
+  @include header_bg_image("companies.jpg");
+
+  header {
+
+    h1 {
+      max-width: 760px;
+    }
+
+    p {
+      max-width: 670px;
+    }
+  }
+
+  main {
+
+    h3 {
+      color: $turquoise-blue;
+    }
+
+    section {
+
+      &#benefits {
+        background-color: $turquoise-blue;
+        color: white;
+
+        h3 {
+          color: white;
+        }
+      }
+
+      &#testimonial {
+        @include link_color_with_dark_hover($turquoise-blue);
+      }
+
+      &#contact {
+        @include white_bg_textarea;
+      }
+    }
+  }
+}

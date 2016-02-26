@@ -1,3 +1,7 @@
+require 'font_awesome/sass/rails/helpers'
+
+helpers FontAwesome::Sass::Rails::ViewHelpers
+
 activate :directory_indexes
 activate :autoprefixer
 activate :i18n, mount_at_root: :en
@@ -43,11 +47,23 @@ set :js_dir,     'javascripts'
 set :images_dir, 'images'
 
 helpers do
-  def image_with_lazy_load(image_url, params = {})
-    image_tag('blank.gif', params.reverse_merge(class: 'lazy', data: { original: image_url })) <<
-    content_tag(:noscript) do
-      image_tag image_url, params
+  def image_tag(path, params = {})
+    if params.delete(:lazy)
+      super('blank.gif', params.reverse_merge(class: 'lazy', data: { original: image_path(path) })) <<
+      content_tag(:noscript) do
+        super path, params
+      end
+    else
+      super
     end
+  end
+
+  def page_title
+    [current_page.data.title || t(:tagline), 'Uplink'].join(' | ')
+  end
+
+  def page_description
+    t :description
   end
 end
 
