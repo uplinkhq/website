@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 ruby '2.3.0'
 
+gem 'middleman', '~> 3.4'
+
 # Load common gems
 instance_eval(File.read('common-gems/middleman/Gemfile'))
 
