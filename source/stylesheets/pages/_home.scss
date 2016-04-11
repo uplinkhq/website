@@ -48,7 +48,6 @@ body#home {
       }
 
       &#articles {
-        display: none;
 
         .article {
           overflow: hidden;
@@ -80,9 +79,6 @@ body#home {
       }
 
       &#cta {
-        // TODO: Uncomment this when the "articles" section is live.
-        // background-color: $charcoal-gray;
-        // color: white;
 
         h2 {
           max-width: none;
