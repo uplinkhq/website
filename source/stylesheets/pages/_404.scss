@@ -1,5 +1,5 @@
 body#error_404 {
-  @include header_bg_image("404.jpg");
+  @include header_bg_image("error_404.jpg");
 
   iframe {
     margin-top: 40px;
