@@ -56,6 +56,20 @@ $gray-lighter: lighten($gray-light, 45%);
         &:focus {
           border-bottom-color: white;
         }
+
+        &.login {
+          border: 1px solid white;
+          border-radius: 20px;
+          padding: 8px 15px;
+          margin-top: $navbar-padding-vertical - 9px;
+          margin-bottom: $navbar-padding-vertical - 9px;
+
+          &:hover,
+          &:focus {
+            color: $gray-lighter;
+            border-color: $gray-lighter;
+          }
+        }
       }
     }
   }
