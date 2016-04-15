@@ -34,3 +34,31 @@ $charcoal-gray:  #37333a;
     height: 250px;
   }
 }
+
+@mixin horizontal_buttons($button_width, $breakpoint) {
+
+  a {
+    width: $button_width;
+
+    @media (max-width: $breakpoint - 1px) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    + a {
+
+      @media (max-width: $breakpoint - 1px) {
+        margin-top: 20px;
+      }
+
+      @media (min-width: $breakpoint) {
+        margin-left: 20px;
+      }
+
+      @media (min-width: $screen-sm-min) {
+        margin-left: 40px;
+      }
+    }
+  }
+}

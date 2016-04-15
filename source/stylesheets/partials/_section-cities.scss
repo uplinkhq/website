@@ -11,11 +11,38 @@ main {
         margin-bottom: 15px;
       }
 
+      .row {
+
+        > div {
+
+          &:first-of-type {
+
+            @media (min-width: $screen-sm-min) {
+              padding-right: 10px;
+              text-align: right;
+            }
+          }
+
+          &:last-of-type {
+
+            @media (max-width: $screen-xs-max) {
+              margin-top: 20px;
+            }
+
+            @media (min-width: $screen-sm-min) {
+              padding-left: 10px;
+              text-align: left;
+            }
+          }
+        }
+      }
+
       span {
         display: inline-block;
+        text-align: center;
 
         + span {
-          margin-left: 15px;
+          margin-left: 20px;
         }
 
         img {

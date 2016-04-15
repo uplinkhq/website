@@ -2,10 +2,11 @@
   .container
     %h2
       = heading
-    %span
-      = image_tag 'cities/berlin.svg'
-      Berlin
-    - %w(hamburg munich frankfurt).each do |city|
-      %span.coming-soon
-        = image_tag "cities/#{city}.svg", title: 'Coming soon!', data: { toggle: 'tooltip', placement: 'top' }
-        = city.capitalize
+    .row
+      - [['berlin', 'hamburg'], ['munich', 'frankfurt']].each_with_index do |city_group, city_group_index|
+        .col-sm-6
+          - city_group.each_with_index do |city, city_index|
+            - coming_soon =  city_group_index > 0 || city_index > 0
+            %span{ class: coming_soon ? 'coming-soon' : nil }
+              = image_tag "cities/#{city}.svg", coming_soon ? { title: 'Coming soon!', data: { toggle: 'tooltip', placement: 'top' } } : {}
+              = city.capitalize

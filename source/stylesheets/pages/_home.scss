@@ -17,13 +17,6 @@ body#home {
 
     section {
 
-      &#benefits {
-
-        a.btn {
-          margin-top: 40px;
-        }
-      }
-
       &#freelancer-benefits {
         background: image-url("dotted-lines.png") no-repeat top center;
 
@@ -79,28 +72,10 @@ body#home {
       }
 
       &#cta {
+        @include horizontal_buttons(250px, 560px);
 
         h2 {
           max-width: none;
-        }
-
-        a.btn {
-
-          &:first-of-type {
-
-            @media (max-width: $screen-xs-max) {
-              margin-bottom: 20px;
-
-              &:after {
-                content: "\a";
-                white-space: pre;
-              }
-            }
-
-            @media (min-width: $screen-sm-min) {
-              margin-right: 40px;
-            }
-          }
         }
       }
     }
