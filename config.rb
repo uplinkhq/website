@@ -25,6 +25,11 @@ activate :cdn do |cdn|
       'https://uplink.tech'
     ]
   }
+  cdn.cloudfront = {
+    access_key_id:     ENV.fetch('CLOUDFRONT_ACCESS_KEY_ID'),
+    secret_access_key: ENV.fetch('CLOUDFRONT_SECRET_ACCESS_KEY'),
+    distribution_id:   ENV.fetch('CLOUDFRONT_DISTRIBUTION_ID')
+  }
 end
 
 activate :sitemap_ping do |config|
