@@ -6,6 +6,10 @@
         = navbar_item 'For Freelancers',  '/freelancers'
         = navbar_item 'For Companies',    '/companies'
         = navbar_item 'Contact',          '/contact'
-        = navbar_item 'Freelancer Login', 'https://freelancers.uplink.tech/login', {}, class: 'login'
+        = navbar_dropdown 'Login', { class: 'hidden-lg hidden-xs' }, class: 'login' do
+          = navbar_item 'Freelancer', 'https://freelancers.uplink.tech/login'
+          = navbar_item 'Company',    'https://clients.uplink.tech/login'
+        = navbar_item 'Freelancer Login', 'https://freelancers.uplink.tech/login', {}, class: 'login hidden-sm hidden-md'
+        = navbar_item 'Company Login',    'https://clients.uplink.tech/login', {}, class: 'login hidden-sm hidden-md'
   .container
     = yield_content :header
