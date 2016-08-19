@@ -47,9 +47,10 @@ I18n.exception_handler = ->(exception, locale, key, options) {
 
 page '/sitemap.xml', layout: false
 
-set :css_dir,    'stylesheets'
-set :js_dir,     'javascripts'
-set :images_dir, 'images'
+set :css_dir,                          'stylesheets'
+set :js_dir,                           'javascripts'
+set :images_dir,                       'images'
+set :press_kit_google_drive_folder_id, '0B4gIb1U545pcYUZ4NUd6TGpfd0U'
 
 helpers do
   def image_tag(path, params = {})

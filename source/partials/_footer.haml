@@ -7,7 +7,7 @@
         = link_to 'For Companies',   '/companies'
         = link_to 'Contact',         '/contact'
         = link_to 'Imprint',         '/imprint'
-        = link_to 'Press Kit',       'https://drive.google.com/drive/folders/0B4gIb1U545pcYUZ4NUd6TGpfd0U', rel: 'nofollow', target: '_blank'
+        = link_to 'Press Kit',       '/press-kit'
       .col-sm-6.social
         - %w(linkedin xing twitter facebook google-plus).each do |service|
           = link_to image_tag("social/#{service}.svg", lazy: true), t(service, scope: :profiles), target: '_blank'

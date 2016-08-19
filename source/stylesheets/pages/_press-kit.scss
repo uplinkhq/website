@@ -1,0 +1,9 @@
+body#press-kit {
+  @include header_bg_image("imprint.jpg", $vertical_position: 30%);
+
+  iframe {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 20px;
+  }
+}
