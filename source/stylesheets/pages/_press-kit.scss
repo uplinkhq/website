@@ -1,5 +1,5 @@
 body#press-kit {
-  @include header_bg_image("imprint.jpg", $vertical_position: 30%);
+  @include header_bg_image("press-kit.jpg");
 
   iframe {
     width: 100%;
