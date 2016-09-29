@@ -105,15 +105,16 @@ main {
 
     + p {
       margin-top: -40px;
-      margin-bottom: 60px;
+      margin-bottom: 40px;
     }
 
     @media (max-width: $screen-xs-max) {
+      font-size: 28px;
       margin-bottom: 40px;
 
       + p {
         margin-top: -25px;
-        margin-bottom: 40px;
+        margin-bottom: 25px;
       }
     }
   }

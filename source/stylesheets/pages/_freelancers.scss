@@ -33,6 +33,30 @@ body#freelancers {
         @include link_color_with_dark_hover($dusty-orange);
       }
 
+      &#pricing {
+
+        #pricing-badge {
+          text-align: center;
+          border-radius: 5px;
+          border: 2px solid $dusty-orange;
+          margin: 0 auto 40px;
+          max-width: 300px;
+
+          .percentage {
+            padding: 20px 0 10px;
+            line-height: 1;
+            color: $dusty-orange;
+            font-size: 90px;
+          }
+
+          .max {
+            padding: 5px 0;
+            color: white;
+            background-color: $dusty-orange;
+          }
+        }
+      }
+
       &#apply {
         @include white_bg_textarea;
       }
