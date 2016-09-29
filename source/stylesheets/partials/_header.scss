@@ -11,6 +11,11 @@ header {
       margin: 100px auto 0;
       padding-bottom: 40px;
       line-height: 1.3;
+
+      @media (max-width: $screen-xs-max) {
+        margin-top: 50px;
+        font-size: 32px;
+      }
     }
 
     p {

@@ -107,6 +107,15 @@ main {
       margin-top: -40px;
       margin-bottom: 60px;
     }
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 40px;
+
+      + p {
+        margin-top: -25px;
+        margin-bottom: 40px;
+      }
+    }
   }
 
   h3 {
@@ -160,6 +169,11 @@ main {
     padding: 100px 0;
     border-bottom: 1px solid $gray-lighter;
 
+    @media (max-width: $screen-xs-max) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
     &:last-of-type {
       border-bottom-width: 0;
     }
@@ -186,6 +200,10 @@ main {
         font-size: 1.4em;
         line-height: 1.6;
         margin: 0 auto 30px;
+
+        @media (max-width: $screen-xs-max) {
+          font-size: 1.2em;
+        }
       }
 
       .author {
