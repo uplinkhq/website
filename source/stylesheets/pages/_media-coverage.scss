@@ -1,0 +1,11 @@
+body#media-coverage {
+  @include header_bg_image("media-coverage.jpg");
+
+  a.item {
+    display: inline-block;
+
+    img {
+      margin-bottom: 5px;
+    }
+  }
+}

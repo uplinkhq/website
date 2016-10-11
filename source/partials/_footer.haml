@@ -8,6 +8,7 @@
         = link_to 'Contact',         '/contact'
         = link_to 'Imprint',         '/imprint'
         = link_to 'Press Kit',       '/press-kit'
+        = link_to 'Media Coverage',  '/media-coverage'
       .col-sm-6.social
         - %w(linkedin xing twitter facebook google-plus).each do |service|
           = link_to image_tag("social/#{service}.svg", lazy: true), t(service, scope: :profiles), target: '_blank'
