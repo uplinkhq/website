@@ -130,7 +130,15 @@ priority: 1.0
 -#             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
 -#           = link_to 'Read on', '#', class: 'btn btn-primary'
 
-%section#cta
+%section#featured-on
+  .container
+    %h2
+      Featured on...
+    = link_to t(:'berlin-valley', scope: :'media-coverage'), rel: 'nofollow', target: '_blank' do
+      = image_tag 'featured-on/berlin-valley.png'
+      Issue October/November 2016
+
+%section#cta.gray-bg
   .container
     %h2
       Ready to take the work out of finding work?

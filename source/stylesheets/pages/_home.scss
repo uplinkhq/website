@@ -79,6 +79,22 @@ body#home {
         }
       }
 
+      &#featured-on {
+        @include link_color_with_dark_hover($turquoise-blue);
+
+        a {
+          display: inline-block;
+
+          &:hover {
+            text-decoration: none;
+          }
+
+          img {
+            margin-bottom: 20px;
+          }
+        }
+      }
+
       &#cta {
         @include horizontal_buttons(250px, 560px);
 
