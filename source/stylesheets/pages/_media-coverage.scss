@@ -1,11 +1,24 @@
 body#media-coverage {
   @include header_bg_image("media-coverage.jpg");
 
-  a.item {
-    display: inline-block;
+  .item {
+    @include link_color_with_dark_hover($turquoise-blue);
 
     img {
-      margin-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-family: "GothamRnd-LightIta";
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+
+    a {
+
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 }

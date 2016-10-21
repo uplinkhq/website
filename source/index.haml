@@ -133,10 +133,12 @@ priority: 1.0
 %section#featured-on
   .container
     %h2
-      Featured on...
-    = link_to t(:'berlin-valley', scope: :'media-coverage'), rel: 'nofollow', target: '_blank' do
-      = image_tag 'featured-on/berlin-valley.png'
-      Issue October/November 2016
+      As featured on
+    .row
+      .col-sm-4
+      .col-sm-4
+        = link_to image_tag('media-coverage/berlin-valley.png'), t(:'berlin-valley', scope: :'media-coverage'), rel: 'nofollow', target: '_blank'
+      .col-sm-4
 
 %section#cta.gray-bg
   .container

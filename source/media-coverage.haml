@@ -9,6 +9,12 @@ title: Media Coverage
 
 %section
   .container
-    = link_to t(:'berlin-valley', scope: :'media-coverage'), rel: 'nofollow', target: '_blank', class: 'item' do
-      = image_tag 'media-coverage/berlin-valley.png'
-      Issue October/November 2016
+    .row
+      .col-sm-4
+      .col-sm-4
+        .item
+          = image_tag 'media-coverage/berlin-valley.png'
+          %p
+            "Uplink ist ein Netzwerk für professionelle Freelance-Entwickler und hilft Berliner Unternehmen, die besten Entwickler der Stadt zu finden."
+          = link_to 'Link', t(:'berlin-valley', scope: :'media-coverage'), rel: 'nofollow', target: '_blank'
+      .col-sm-4
