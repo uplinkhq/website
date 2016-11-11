@@ -79,6 +79,38 @@ body#home {
         }
       }
 
+      &#featured-on {
+
+        .logos {
+
+          a {
+
+            @media (max-width: $screen-xs-max) {
+
+              img {
+                margin: 0 auto;
+              }
+
+              + a img {
+                margin-top: 40px;
+              }
+            }
+
+            @media (min-width: $screen-sm-min) {
+
+              img {
+                display: inline-block;
+                vertical-align: middle;
+              }
+
+              + a img {
+                margin-left: 60px;
+              }
+            }
+          }
+        }
+      }
+
       &#cta {
         @include horizontal_buttons(250px, 560px);
 

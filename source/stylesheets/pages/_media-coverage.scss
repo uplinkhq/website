@@ -1,23 +1,30 @@
 body#media-coverage {
   @include header_bg_image("media-coverage.jpg");
 
-  .item {
-    @include link_color_with_dark_hover($turquoise-blue);
+  .row {
 
-    img {
-      margin-bottom: 20px;
+    + .row {
+      margin-top: 80px;
     }
 
-    p {
-      font-family: "GothamRnd-LightIta";
-      font-size: 1.2em;
-      line-height: 1.6;
-    }
+    .item {
+      @include link_color_with_dark_hover($turquoise-blue);
 
-    a {
+      img {
+        margin: 0 auto 20px;
+      }
 
-      &:hover {
-        text-decoration: none;
+      p {
+        font-family: "GothamRnd-LightIta";
+        font-size: 1.2em;
+        line-height: 1.6;
+      }
+
+      a {
+
+        &:hover {
+          text-decoration: none;
+        }
       }
     }
   }

@@ -10,11 +10,16 @@ title: Media Coverage
 %section
   .container
     .row
-      .col-sm-4
-      .col-sm-4
+      .col-sm-8.col-sm-offset-2
+        .item
+          = image_tag 'media-coverage/deutsche-startups.png'
+          %p
+            "So arbeiten Startups erfolgreich mit Freelancern zusammen"
+          = link_to 'Link', t(:'deutsche-startups', scope: :'media-coverage'), rel: 'nofollow', target: '_blank'
+    .row
+      .col-sm-8.col-sm-offset-2
         .item
           = image_tag 'media-coverage/berlin-valley.png'
           %p
             "Uplink ist ein Netzwerk für professionelle Freelance-Entwickler und hilft Berliner Unternehmen, die besten Entwickler der Stadt zu finden."
           = link_to 'Link', t(:'berlin-valley', scope: :'media-coverage'), rel: 'nofollow', target: '_blank'
-      .col-sm-4

@@ -134,11 +134,9 @@ priority: 1.0
   .container
     %h2
       As featured on
-    .row
-      .col-sm-4
-      .col-sm-4
-        = link_to image_tag('media-coverage/berlin-valley.png'), t(:'berlin-valley', scope: :'media-coverage'), rel: 'nofollow', target: '_blank'
-      .col-sm-4
+    .logos
+      = link_to image_tag('media-coverage/deutsche-startups.png'), t(:'deutsche-startups', scope: :'media-coverage'), rel: 'nofollow', target: '_blank'
+      = link_to image_tag('media-coverage/berlin-valley.png'), t(:'berlin-valley', scope: :'media-coverage'), rel: 'nofollow', target: '_blank'
 
 %section#cta.gray-bg
   .container
