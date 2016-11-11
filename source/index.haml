@@ -7,10 +7,10 @@ priority: 1.0
 - content_for :header do
   %h1
     = t :tagline
-  = link_to 'For Freelancers', '/freelancers', class: 'btn btn-primary'
-  = link_to 'For Companies', '/companies', class: 'btn btn-info'
   %p
     = t :description
+  = link_to 'For Freelancers', '/freelancers', class: 'btn btn-primary'
+  = link_to 'For Companies', '/companies', class: 'btn btn-info'
 
 = partial 'partials/section-cities', locals: { heading: 'For freelancers based in:' }
 
