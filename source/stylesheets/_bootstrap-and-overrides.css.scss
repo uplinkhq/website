@@ -52,6 +52,11 @@ $gray-lighter: lighten($gray-light, 45%);
         padding-right: 0;
         border-bottom: 2px solid transparent;
 
+        @media (max-width: $screen-sm-max) {
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+
         &:hover,
         &:focus {
           border-bottom-color: white;
