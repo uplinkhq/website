@@ -15,7 +15,6 @@ body#home {
       max-width: 700px;
     }
 
-
     p {
       max-width: 700px;
     }
@@ -31,12 +30,36 @@ body#home {
         h3 {
           color: $dusty-orange;
         }
+
+        .btn-link {
+          color: $dusty-orange;
+
+          &:active,
+          &:active:hover,
+          &:active:focus,
+          &:focus,
+          &:hover {
+            color: darken($dusty-orange, 10%);
+          }
+        }
       }
 
       &#company-benefits {
 
         h3 {
           color: $turquoise-blue;
+        }
+
+        .btn-link {
+          color: $turquoise-blue;
+
+          &:active,
+          &:active:hover,
+          &:active:focus,
+          &:focus,
+          &:hover {
+            color: darken($turquoise-blue, 10%);
+          }
         }
       }
 
@@ -112,7 +135,6 @@ body#home {
       }
 
       &#cta {
-        @include horizontal_buttons(250px, 560px);
 
         h2 {
           max-width: none;

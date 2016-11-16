@@ -8,7 +8,10 @@ title: Spend more time coding than looking for work.
     = current_page.data.title
   %p
     Uplink helps you to connect with local and remote companies to find challenging new projects! We let you focus on what you do best - writing great code - and leave the busywork to us.
-  = link_to 'Join us', '#apply', class: 'btn btn-primary'
+  .vertical-button-group
+    = link_to '#apply', class: 'btn btn-primary' do
+      = icon 'user-circle'
+      Apply now
 
 = partial 'partials/section-cities', locals: { heading: "Join now if you're based in:" }
 

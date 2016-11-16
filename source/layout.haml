@@ -45,6 +45,7 @@
 
   %body{ id: current_page.data.id }
     = partial 'partials/header'
+    = yield_content :before_content
     %main
       = yield
     = partial 'partials/footer'

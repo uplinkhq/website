@@ -8,7 +8,24 @@ title: Find the perfect freelance developer for your next project
     = current_page.data.title
   %p
     Uplink is an exclusive network of professional freelance developers. We help companies find a great developer in days (sometimes hours) instead of weeks. Simply tell us what you’re looking for and we will match you up with an expert with the right skills and availability.
-  = link_to 'Get in touch', '#contact', class: 'btn btn-info'
+  .vertical-button-group
+    = link_to '#', class: 'btn btn-info', data: { toggle: 'modal', target: '#freelancer-request-modal' } do
+      = icon 'search'
+      Find a Freelancer
+    = link_to 'Contact us', '#contact', class: 'btn btn-link'
+
+- content_for :before_content do
+  #freelancer-request-modal.modal.fade
+    .modal-dialog.modal-lg
+      .modal-content
+        .modal-header
+          = link_to '#', class: 'close', data: { dismiss: 'modal' } do
+            %span
+              &times;
+          %h4.modal-title
+            Freelancer Request
+        .modal-body
+          .typeform-widget{ data: { url: 'https://uplinkhq.typeform.com/to/usav18', text: 'Freelancer Request' } }
 
 = partial 'partials/section-cities', locals: { heading: 'Find freelancers based in:' }
 
@@ -171,7 +188,10 @@ title: Find the perfect freelance developer for your next project
     %h2
       Contact us
     %p
-      Get in touch if you’re looking for a freelancer or have any questions about Uplink at all! We will get back to you within 24 hours.
+      If you're currently looking for a freelancer, you can
+      = link_to 'open a request right now!', '#', data: { toggle: 'modal', target: '#freelancer-request-modal' }
+      If you have any questions or you'd like to talk to us before opening a request, please fill out this form or
+      = mail_to 'hello@uplink.tech', 'send us a mail.'
     = form_tag t(:form_url) do
       = hidden_field_tag '_subject', value: 'Company contact'
       .row
@@ -184,7 +204,7 @@ title: Find the perfect freelance developer for your next project
             = text_field_tag 'company', class: 'form-control', placeholder: 'Your company (optional)'
         .col-sm-6
           .form-group
-            %textarea#message.form-control.white-large{ name: 'message', required: true, placeholder: "Tell us about who you are looking for!\nWhat programming languages and frameworks do you want the freelancer to have experience with? Do you want him to work remotely or on-site?\nAre you looking for help with a specific project or do you need someone on an ongoing basis?\nWhat is your preferred start date?" }
+            %textarea#message.form-control.white-large{ name: 'message', required: true, placeholder: 'How can we help?' }
           = submit_tag 'Submit', class: 'btn btn-info', data: { loading: 'Please wait...' }
     = partial 'partials/form-messages'
 

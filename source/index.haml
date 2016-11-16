@@ -9,8 +9,16 @@ priority: 1.0
     = t :tagline
   %p
     = t :description
-  = link_to 'For Freelancers', '/freelancers', class: 'btn btn-primary'
-  = link_to 'For Companies', '/companies', class: 'btn btn-info'
+  .vertical-button-group
+    = link_to '/freelancers#apply', class: 'btn btn-primary' do
+      = icon 'user-circle'
+      Apply as Freelancer
+    = link_to 'More Info for Freelancers &raquo;', '/freelancers', class: 'btn btn-link'
+  .vertical-button-group
+    = link_to '/companies#freelancer-request', class: 'btn btn-info' do
+      = icon 'search'
+      Find a Freelancer
+    = link_to 'More Info for Companies &raquo;', '/companies', class: 'btn btn-link'
 
 = partial 'partials/section-cities', locals: { heading: 'For freelancers based in:' }
 
@@ -40,7 +48,11 @@ priority: 1.0
           Made in and for Berlin
         %p
           In order to build a tight-knit network of like-minded developers, we currently focus on freelancers from Berlin. Soon we will roll out our service in Hamburg, Munich, Frankfurt and more cities across Germany and internationally. Stay tuned!
-    = link_to 'More Info for Freelancers', '/freelancers', class: 'btn btn-primary'
+    .vertical-button-group
+      = link_to '/freelancers#apply', class: 'btn btn-primary' do
+        = icon 'user-circle'
+        Apply as Freelancer
+      = link_to 'More Info for Freelancers &raquo;', '/freelancers', class: 'btn btn-link'
 
 %section#freelancer-testimonial.testimonials.gray-bg
   .container
@@ -79,7 +91,11 @@ priority: 1.0
           We are developers, not recruiters
         %p
           Being developers ourselves, we understand your tech stack and development needs. Non-technical recruiters have to try to find candidates with a list of requirements they don’t understand, which is inefficient and error-prone.
-    = link_to 'More Info for Companies', '/companies', class: 'btn btn-info'
+    .vertical-button-group
+      = link_to '/companies#freelancer-request', class: 'btn btn-info' do
+        = icon 'search'
+        Find a Freelancer
+      = link_to 'More Info for Companies &raquo;', '/companies', class: 'btn btn-link'
 
 %section#company-testimonial.testimonials.gray-bg
   .container
@@ -142,5 +158,7 @@ priority: 1.0
   .container
     %h2
       Ready to take the work out of finding work?
-    = link_to 'More Info for Freelancers', '/freelancers', class: 'btn btn-primary'
-    = link_to 'More Info for Companies', '/companies', class: 'btn btn-info'
+    .vertical-button-group
+      = link_to 'More Info for Freelancers', '/freelancers', class: 'btn btn-primary'
+    .vertical-button-group
+      = link_to 'More Info for Companies', '/companies', class: 'btn btn-info'

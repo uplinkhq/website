@@ -1,8 +1,6 @@
 header {
 
   > .container {
-    @include horizontal_buttons(200px, 460px);
-
     color: white;
     text-align: center;
     padding-bottom: 80px;
@@ -23,6 +21,19 @@ header {
       font-size: 1.2em;
       padding-bottom: 60px;
       margin: 0 auto;
+    }
+
+    .btn-link {
+      font-family: "GothamRnd-Book";
+      color: white;
+
+      &:active,
+      &:active:hover,
+      &:active:focus,
+      &:focus,
+      &:hover {
+        color: darken(white, 10%);
+      }
     }
   }
 }
