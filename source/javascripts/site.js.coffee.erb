@@ -7,11 +7,6 @@
 #= require bootstrap/dropdown
 #= require bootstrap/modal
 
-origin = window.location.protocol + '//' + window.location.host
-if origin != "<%= host %>"
-  correctUrl = window.location.href.replace(origin, "<%= host %>")
-  window.location.replace correctUrl
-
 $(document).on 'shown.bs.modal', '#freelancer-request-modal', ->
   id = 'typeform-script'
   unless document.getElementById(id)
