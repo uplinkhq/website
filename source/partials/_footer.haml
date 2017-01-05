@@ -10,7 +10,7 @@
         = link_to 'Press Kit',       '/press-kit'
         = link_to 'Media Coverage',  '/media-coverage'
       .col-sm-6.social
-        - %w(linkedin xing twitter facebook google-plus).each do |service|
-          = link_to image_tag("social/#{service}.svg", lazy: true), t(service, scope: :profiles), target: '_blank'
+        - %w(linkedin.svg xing.svg twitter.svg facebook.svg google-plus.svg angellist.png).each do |service|
+          = link_to image_tag("social/#{service}", lazy: true), t(service.split('.').first, scope: :profiles), target: '_blank'
       .col-sm-3.made-in-berlin
         = image_tag 'made-in-berlin.png', lazy: true, alt: 'Made in Berlin'
