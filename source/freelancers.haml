@@ -164,7 +164,7 @@ title: Spend more time coding than looking for work.
             = text_field_tag 'location', class: 'form-control', required: true, placeholder: 'Your location'
         .col-sm-7.col-md-6
           .form-group
-            %textarea#message.form-control.white-large{ name: 'message', required: true, placeholder: "Tell us a bit about yourself!\nAre you a frontend, backend, full-stack or mobile developer? What programming languages and frameworks do you like to work with?\nDo you enjoy working for small startups, agencies, or big companies? Remote or on-site?\nPlease include links to your profiles on GitHub, Linkedin, and any other service you deem relevant!" }
+            %textarea#message.form-control.white-large{ name: 'message', required: true, placeholder: "Tell us a bit about yourself! Are you a frontend, backend, full-stack or mobile developer? What programming languages and frameworks do you like to work with? Do you enjoy working for small startups, agencies, or big companies? Remote or on-site? Please include links to your profiles on GitHub, Linkedin, and any other service you deem relevant!" }
           = submit_tag 'Submit', class: 'btn btn-primary', data: { loading: 'Please wait...' }
     = partial 'partials/form-messages'
 
