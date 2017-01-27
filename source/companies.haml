@@ -70,33 +70,11 @@ title: Find the perfect freelance developer for your next project
       No matter what programming language or framework you use, through Uplink you can find an experienced developer who can hit the ground running!
       %br
       Our members are proficient in:
-    .row.columns
-      .col-sm-3
-        = image_tag 'techs/ruby.png'
-      .col-sm-3
-        = image_tag 'techs/python.png'
-      .col-sm-3
-        = image_tag 'techs/javascript.png'
-      .col-sm-3
-        = image_tag 'techs/php.svg'
-    .row.columns
-      .col-sm-3
-        = image_tag 'techs/rails.svg'
-      .col-sm-3
-        = image_tag 'techs/django.png'
-      .col-sm-3
-        = image_tag 'techs/nodejs.svg'
-      .col-sm-3
-        = image_tag 'techs/java.png'
-    .row.columns
-      .col-sm-3
-        = image_tag 'techs/android.png'
-      .col-sm-3
-        = image_tag 'techs/ios.png'
-      .col-sm-3
-        = image_tag 'techs/laravel.png'
-      .col-sm-3
-        = image_tag 'techs/wordpress.png'
+    - t(:tech_images).each_slice(4) do |tech_image_group|
+      .row.columns
+        - tech_image_group.each do |label, image|
+          .col-sm-3
+            = image_tag "techs/#{image}", alt: label
     %p
       \...and many more technologies!
 
