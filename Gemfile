@@ -2,10 +2,14 @@ source 'https://rubygems.org'
 
 ruby '2.2.3'
 
+# Return early if this file is parsed by the Bundler plugin DSL.
+# This won't let us access dependencies in common-gems.
+return if self.is_a?(Bundler::Plugin::DSL)
+
 gem 'middleman', '~> 3.4'
 
 # Load common gems
-instance_eval(File.read('common-gems/middleman/Gemfile'))
+eval_gemfile 'common-gems/middleman/Gemfile'
 
 gem 'font-awesome-sass', '~> 4.5'
 
