@@ -19,8 +19,20 @@
       n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
     });
   }();
-  drift.SNIPPET_VERSION = '0.2.0'
-  drift.load('2rf6z47k6nxt')
+  drift.SNIPPET_VERSION = '0.2.0';
+
+  <% # Display the welcome message only once per week with a delay of 3 seconds. %>
+  drift.on('ready', function(api) {
+    var cookieName = 'dift-welcome-message-displayed';
+    setTimeout(function() {
+      if (typeof Cookies.get(cookieName) === 'undefined') {
+        api.showWelcomeMessage();
+        Cookies.set(cookieName, '', { expires: 7 });
+      }
+    }, 3000);
+  });
+
+  drift.load('2rf6z47k6nxt');
 
 - if build?
 
