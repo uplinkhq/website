@@ -15,13 +15,13 @@
 
     %meta{ property: 'fb:app_id',               content: '976087102476399' }
     %meta{ property: 'og:type',                 content: 'website' }
-    %meta{ property: 'og:url',                  content: host + current_page.url }
+    %meta{ property: 'og:url',                  content: config[:host] + current_page.url }
     %meta{ property: 'og:title',                content: page_title }
     %meta{ property: 'og:description',          content: page_description }
-    %meta{ property: 'og:image',                content: host + image_path("bg/#{current_page.data.id}.jpg") }
+    %meta{ property: 'og:image',                content: config[:host] + image_path("bg/#{current_page.data.id}.jpg") }
 
     %link{ rel: 'publisher',        href: 'https://plus.google.com/+ManuelMeurer' }
-    %link{ rel: 'canonical',        href: host + current_page.url }
+    %link{ rel: 'canonical',        href: config[:host] + current_page.url }
     %link{ rel: 'apple-touch-icon', href: image_path('icons/apple-icon-57x57.png'),     sizes: '57x57'   }
     %link{ rel: 'apple-touch-icon', href: image_path('icons/apple-icon-60x60.png'),     sizes: '60x60'   }
     %link{ rel: 'apple-touch-icon', href: image_path('icons/apple-icon-72x72.png'),     sizes: '72x72'   }

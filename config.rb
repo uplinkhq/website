@@ -6,6 +6,13 @@ activate :directory_indexes
 activate :autoprefixer
 activate :i18n, mount_at_root: :en
 activate :bootstrap_navbar
+activate :sprockets
+
+if defined?(RailsAssets)
+  RailsAssets.load_paths.each do |path|
+    sprockets.append_path path
+  end
+end
 
 activate :s3_sync do |config|
   config.aws_access_key_id     = ENV.fetch('AWS_ACCESS_KEY_ID')
@@ -37,9 +44,9 @@ activate :sitemap_ping do |config|
   config.after_build = false
 end
 
-after_s3_sync do |files_by_status|
-  cdn_invalidate(files_by_status[:updated] + files_by_status[:deleted])
-end
+# after_s3_sync do |files_by_status|
+#   cdn_invalidate(files_by_status[:updated] + files_by_status[:deleted])
+# end
 
 I18n.exception_handler = ->(exception, locale, key, options) {
   raise "Missing translation key: #{key}, locale: #{locale}, options: #{options}"
@@ -80,7 +87,7 @@ configure :development do
   set :host,         'http://localhost:4567'
 end
 
-configure :build do
+configure :production do
   activate :gzip
   activate :asset_hash
   activate :minify_css

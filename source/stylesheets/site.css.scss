@@ -1,0 +1,25 @@
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+@import "base";
+@import "fonts";
+@import "bootstrap-and-overrides";
+@import "basics";
+
+// TODO: This should be possible with globbing: @import "partials/*";
+@import "partials/cookie-bar";
+@import "partials/footer";
+@import "partials/header";
+@import "partials/section-about";
+@import "partials/section-cities";
+
+
+// TODO: This should be possible with globbing: @import "pages/*";
+@import "pages/404";
+@import "pages/companies";
+@import "pages/contact";
+@import "pages/freelancers";
+@import "pages/home";
+@import "pages/imprint";
+@import "pages/media-coverage";
+@import "pages/press-kit";

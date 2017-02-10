@@ -28,8 +28,8 @@
 
     // Redirect to canonical URL
     var origin = window.location.protocol + '//' + window.location.host;
-    if (origin != "<%= host %>") {
-      var correctUrl = window.location.href.replace(origin, "<%= host %>");
+    if (origin != "<%= config[:host] %>") {
+      var correctUrl = window.location.href.replace(origin, "<%= config[:host] %>");
       window.location.replace(correctUrl);
     }
 

@@ -6,7 +6,7 @@ ruby '2.2.3'
 # This won't let us access dependencies in common-gems.
 return if self.is_a?(Bundler::Plugin::DSL)
 
-gem 'middleman', '~> 3.4'
+gem 'middleman', '~> 4.2'
 
 # Load common gems
 eval_gemfile 'common-gems/middleman/Gemfile'
