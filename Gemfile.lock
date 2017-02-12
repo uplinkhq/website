@@ -1,4 +1,19 @@
 GIT
+  remote: https://github.com/fredjean/middleman-s3_sync.git
+  revision: 8c4e57a67048a3bafa4529c8f46184d33996e52b
+  specs:
+    middleman-s3_sync (4.0.3)
+      ansi (~> 1.5.0)
+      fog-aws (>= 0.1.1)
+      map
+      middleman-cli
+      middleman-core (>= 4.0.0)
+      mime-types (~> 3.1)
+      parallel
+      ruby-progressbar
+      unf
+
+GIT
   remote: https://github.com/krautcomputing/middleman-cdn.git
   revision: c162c10738d7094e179d30fd88e2086b0d4f6e05
   branch: middleman4
@@ -286,20 +301,14 @@ GEM
       em-websocket (~> 0.5.1)
       middleman-core (>= 3.3)
       rack-livereload (~> 0.3.15)
-    middleman-s3_sync (4.0.3)
-      ansi (~> 1.5.0)
-      fog-aws (>= 0.1.1)
-      map
-      middleman-cli
-      middleman-core (>= 4.0.0)
-      parallel
-      ruby-progressbar
-      unf
     middleman-sitemap-ping (1.0.0)
       middleman (>= 3.1)
     middleman-sprockets (4.1.0)
       middleman-core (~> 4.0)
       sprockets (>= 3.0)
+    mime-types (3.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2016.0521)
     mini_portile2 (2.1.0)
     minitest (5.10.1)
     multi_json (1.12.1)
@@ -373,7 +382,7 @@ DEPENDENCIES
   middleman-cdn!
   middleman-imageoptim!
   middleman-livereload (~> 3.4)
-  middleman-s3_sync (~> 4.0)
+  middleman-s3_sync!
   middleman-sitemap-ping (~> 1.0)
   middleman-sprockets (~> 4.1)
   rails-assets-autosize (~> 3.0)!
