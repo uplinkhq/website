@@ -15,7 +15,7 @@ GIT
 
 GIT
   remote: https://github.com/krautcomputing/middleman-cdn.git
-  revision: c162c10738d7094e179d30fd88e2086b0d4f6e05
+  revision: 076fe923228bba4ce9e76a2e9649e7023c4bdb59
   branch: middleman4
   specs:
     middleman-cdn (0.1.16)
