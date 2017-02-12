@@ -19,7 +19,6 @@ activate :s3_sync do |config|
   config.aws_secret_access_key = ENV.fetch('AWS_SECRET_ACCESS_KEY')
   config.bucket                = 'uplink.tech'
   config.region                = 'eu-central-1'
-  config.after_build           = false
 end
 
 activate :cdn do |cdn|
