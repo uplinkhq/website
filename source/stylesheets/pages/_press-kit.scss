@@ -1,6 +1,26 @@
 body#press-kit {
   @include header_bg_image("press-kit.jpg");
 
+  &[data-locale="de"] {
+
+    header {
+
+      p {
+        max-width: 580px;
+      }
+    }
+  }
+
+  &[data-locale="en"] {
+
+    header {
+
+      p {
+        max-width: 600px;
+      }
+    }
+  }
+
   iframe {
     width: 100%;
     height: 500px;

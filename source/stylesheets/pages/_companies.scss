@@ -1,14 +1,31 @@
 body#companies {
   @include header_bg_image("companies.jpg");
 
-  header {
+  &[data-locale="de"] {
 
-    h1 {
-      max-width: 760px;
+    header {
+
+      h1 {
+        max-width: 700px;
+      }
+
+      p {
+        max-width: 580px;
+      }
     }
+  }
 
-    p {
-      max-width: 670px;
+  &[data-locale="en"] {
+
+    header {
+
+      h1 {
+        max-width: 530px;
+      }
+
+      p {
+        max-width: 670px;
+      }
     }
   }
 

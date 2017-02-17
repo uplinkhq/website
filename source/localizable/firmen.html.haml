@@ -1,17 +1,16 @@
 ---
 id: companies
-title: Find the perfect freelance developer
 ---
 
 - content_for :header do
   %h1
-    = current_page.data.title
+    = page_title
   %p
-    Uplink is an exclusive network of professional freelance developers. We help companies find a great developer in days (sometimes hours) instead of weeks. Simply tell us what you’re looking for and we will match you up with an expert with the right skills and availability.
+    = page_intro
   .vertical-button-group
     = link_to '#', class: 'btn btn-info', data: { toggle: 'modal', target: '#freelancer-request-modal' } do
       = icon 'search'
-      Find a Freelancer
+      = t :find_a_freelancer, scope: %i(pages companies)
     = link_to 'Contact us', '#contact', class: 'btn btn-link'
 
 - content_for :before_content do
@@ -23,11 +22,11 @@ title: Find the perfect freelance developer
             %span
               &times;
           %h4.modal-title
-            Freelancer Request
+            = t :text, scope: :freelancer_request_form
         .modal-body
-          .typeform-widget{ data: { url: 'https://uplinkhq.typeform.com/to/usav18', text: 'Freelancer Request' } }
+          .typeform-widget{ data: { url: t(:url, scope: :freelancer_request_form), text: t(:text, scope: :freelancer_request_form) } }
 
-= partial 'partials/section-cities', locals: { heading: 'Find freelancers based in:' }
+= partial 'partials/section-cities'
 
 %section#how-it-works
   .container
@@ -70,7 +69,7 @@ title: Find the perfect freelance developer
       No matter what programming language or framework you use, through Uplink you can find an experienced developer who can hit the ground running!
       %br
       Our members are proficient in:
-    - t(:tech_images).each_slice(4) do |tech_image_group|
+    - config[:tech_images].each_slice(4) do |tech_image_group|
       .row.columns
         - tech_image_group.each do |label, image|
           .col-sm-3
@@ -170,7 +169,7 @@ title: Find the perfect freelance developer
       = link_to 'open a request right now!', '#', data: { toggle: 'modal', target: '#freelancer-request-modal' }
       If you have any questions or you'd like to talk to us before opening a request, please fill out this form or
       = mail_to 'hello@uplink.tech', 'send us a mail.'
-    = form_tag t(:form_url) do
+    = form_tag config[:form_url] do
       = hidden_field_tag '_subject', value: 'Company contact'
       .row
         .col-sm-6

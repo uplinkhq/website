@@ -1,6 +1,26 @@
 body#contact {
   @include header_bg_image("contact.jpg", $vertical_position: 20%);
 
+  &[data-locale="de"] {
+
+    header {
+
+      p {
+        max-width: 770px;
+      }
+    }
+  }
+
+  &[data-locale="en"] {
+
+    header {
+
+      p {
+        max-width: 660px;
+      }
+    }
+  }
+
   main {
 
     form {

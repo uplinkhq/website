@@ -2,15 +2,15 @@
   .container
     .row
       .col-sm-3.internal
-        = link_to 'Uplink',          '/', class: 'brand'
-        = link_to 'For Freelancers', '/freelancers'
-        = link_to 'For Companies',   '/companies'
-        = link_to 'Contact',         '/contact'
-        = link_to 'Imprint',         '/imprint'
-        = link_to 'Press Kit',       '/press-kit'
-        = link_to 'Media Coverage',  '/media-coverage'
+        = link_to 'Uplink',                         localized_path(''), class: 'brand'
+        = link_to t(:freelancers, scope: :menu),    localized_path('freelancer')
+        = link_to t(:companies, scope: :menu),      localized_path('firmen')
+        = link_to t(:contact, scope: :menu),        localized_path('kontakt')
+        = link_to t(:imprint, scope: :menu),        localized_path('impressum')
+        = link_to t(:press_kit, scope: :menu),      localized_path('press-kit')
+        = link_to t(:media_coverage, scope: :menu), localized_path('medien')
       .col-sm-6.social
         - %w(linkedin.svg xing.svg twitter.svg facebook.svg google-plus.svg angellist.png).each do |service|
-          = link_to image_tag("social/#{service}", lazy: true), t(service.split('.').first, scope: :profiles), target: '_blank'
+          = link_to image_tag("social/#{service}", lazy: true), config[:profiles].fetch(service.split('.').first.underscore.to_sym), target: '_blank'
       .col-sm-3.made-in-berlin
         = image_tag 'made-in-berlin.png', lazy: true, alt: 'Made in Berlin'

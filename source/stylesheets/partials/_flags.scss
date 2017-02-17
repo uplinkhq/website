@@ -1,0 +1,23 @@
+// Generated from https://github.com/lipis/flag-icon-css
+
+.flag-icon {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  width: 1.33333333em;
+  line-height: 1em;
+
+  &:before {
+    content: "\00a0";
+  }
+}
+
+.flag-icon-de {
+  background-image: image-url("flags/de.svg");
+}
+
+.flag-icon-gb {
+  background-image: image-url("flags/gb.svg");
+}

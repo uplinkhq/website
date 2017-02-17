@@ -7,7 +7,7 @@ $navbar-default-brand-color:        white;
 $navbar-default-link-color:         white;
 $navbar-default-link-hover-color:   white;
 $navbar-default-link-active-color:  white;
-$navbar-height:                     100px;
+$navbar-height:                     140px;
 
 @import "bootstrap/variables";
 
@@ -33,6 +33,34 @@ $gray-lighter: lighten($gray-light, 45%);
 
 .navbar-nav {
   font-family: "GothamRnd-Book";
+
+  @media (min-width: $grid-float-breakpoint) {
+
+    &.super {
+      position: absolute;
+      top: 0;
+      right: 15px;
+
+      > li {
+
+        > a {
+          font-size: 0.8em;
+          line-height: 16px;
+          border-bottom-width: 1px;
+          border-bottom-style: dotted;
+          margin-bottom: 0;
+          margin-right: 0;
+          margin-left: 20px;
+          padding-top: 15px;
+
+          .flag-icon {
+            vertical-align: top;
+            margin-right: 2px;
+          }
+        }
+      }
+    }
+  }
 
   > .active {
 
@@ -63,26 +91,13 @@ $gray-lighter: lighten($gray-light, 45%);
         &:focus {
           border-bottom-color: white;
         }
-
-        &.login {
-          border: 1px solid white;
-          border-radius: 20px;
-          padding: 8px 15px;
-          margin-top: $navbar-padding-vertical - 9px;
-          margin-bottom: $navbar-padding-vertical - 9px;
-
-          &:hover,
-          &:focus {
-            color: $gray-lighter;
-            border-color: $gray-lighter;
-          }
-        }
       }
     }
   }
 }
 
 .container {
+  position: relative;
 
   @media (min-width: $screen-lg-min) {
     width: $container-md;

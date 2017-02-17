@@ -1,13 +1,12 @@
 ---
 id: press-kit
-title: Press Kit
 ---
 
 - content_for :header do
   %h1
-    = current_page.data.title
+    = page_title
   %p
-    If you'd like to have more information or media resources than those currently included in the press kit, please contact us!
+    = page_intro
 
 %section
   .container

@@ -4,7 +4,7 @@
   !function() {
     var t;
     if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
-    t.methods = [ "identify", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+    t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
     t.factory = function(e) {
       return function() {
         var n;
@@ -13,23 +13,33 @@
     }, t.methods.forEach(function(e) {
       t[e] = t.factory(e);
     }), t.load = function(t) {
-      var e, n, o, r;
-      e = 3e5, r = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
-      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + r + "/" + t + ".js",
+      var e, n, o, i;
+      e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
       n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
     });
   }();
-  drift.SNIPPET_VERSION = '0.2.0';
+  drift.SNIPPET_VERSION = '0.3.1';
 
   <% # Display the welcome message only once per week with a delay of 3 seconds. %>
   drift.on('ready', function(api) {
     var cookieName = 'dift-welcome-message-displayed';
     setTimeout(function() {
       if (typeof Cookies.get(cookieName) === 'undefined') {
-        api.showWelcomeMessage();
+        api.showWelcomeOrAwayMessage();
         Cookies.set(cookieName, '', { expires: 7 });
       }
     }, 3000);
+  });
+
+  drift.config({
+    locale: '<%= locale == :en ? 'en-GB' : 'de-DE' %>',
+    messages: {
+      welcomeMessage:      "<%= t :welcome_message,       scope: :drift %>",
+      awayMessage:         "<%= t :away_message,          scope: :drift %>",
+      emailCaptureMessage: "<%= t :email_capture_message, scope: :drift %>",
+      thankYouMessage:     "<%= t :thank_you_message,     scope: :drift %>"
+    }
   });
 
   drift.load('2rf6z47k6nxt');

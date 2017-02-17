@@ -1,30 +1,103 @@
 en:
-  tagline: The Network for Professional Freelance Developers
-  description: Uplink connects experienced freelance developers with the companies that need them. We simplify the hiring process by making personal introductions between people we know and trust.
-  form_url: //formspree.io/hello@uplink.tech
 
-  profiles:
-    twitter: https://twitter.com/UplinkHQ
-    facebook: https://www.facebook.com/UplinkHQ
-    xing: https://www.xing.com/companies/uplinkfreelancedevelopernetwork
-    linkedin: https://www.linkedin.com/company/uplink-freelance-developer-network
-    google-plus: https://plus.google.com/+UplinkTechNetwork
-    angellist: https://angel.co/uplinkhq
+  freelancer_request_form:
+    url: https://uplinkhq.typeform.com/to/usav18
+    text: Freelancer Request
 
-  tech_images:
-    Ruby: ruby.png
-    Python: python.png
-    JavaScript: javascript.png
-    PHP: php.svg
-    Rails: rails.svg
-    Djanngo: django.png
-    Node.js: nodejs.svg
-    Java: java.png
-    Android: android.png
-    iOS: ios.png
-    Drupal: drupal.svg
-    Wordpress: wordpress.png
+  cookies:
+    text: We use cookies to ensure you get the best possible experience on our website.
+    confirm: Got it.
 
-  media-coverage:
-    berlin-valley: https://drive.google.com/file/d/0B4gIb1U545pcZzRwT3FqemhRYVU/view
-    deutsche-startups: https://www.deutsche-startups.de/2016/10/26/arbeiten-startups-erfolgreich-mit-freelancer-zusammen/
+  menu:
+    home: Home
+    freelancers: For Freelancers
+    companies: For Companies
+    contact: Contact
+    imprint: Imprint
+    press_kit: Press Kit
+    media_coverage: Media Coverage
+    freelancer_login: Freelancer Login
+    change_language: Deutsch
+
+  page_titles:
+    home: The Network for Professional Freelance Developers
+    freelancers: Spend your time coding, not looking for work.
+    companies: Find the perfect freelance developer faster
+    imprint: Imprint
+    contact: Get in touch!
+    media_coverage: Media Coverage
+    press_kit: Press Kit
+    404: Error 404
+
+  page_descriptions:
+    home: Uplink connects experienced freelance developers with the companies that need them.
+    freelancers: Uplink helps you find challenging projects from local and remote companies.
+    companies: We help companies find a great developer in days (sometimes hours) instead of weeks.
+    imprint: The fine print
+    contact: We'd love to hear from you!
+    media_coverage: Uplink in the media
+    press_kit: Photos and texts for easy reporting about Uplink
+    404: Page not found
+
+  page_intros:
+    home: Uplink connects experienced freelance developers with the companies that need them. We simplify the freelancer search by making personal introductions between people we know and trust.
+    freelancers: Uplink helps you find challenging projects from local and remote companies. We let you focus on what you do best - writing great code - and leave the busywork to us.
+    companies: We help companies find a great developer in days (sometimes hours) instead of weeks. Simply tell us what you’re looking for and we will match you up with an expert with the right skills and availability.
+    contact: Whether you have questions or comments, are looking for a freelance developer or are one yourself, we'd love to hear from you!
+    press_kit: If you'd like to have more information or media resources than those currently included in the press kit, please contact us!
+
+  pages:
+
+    home:
+      apply_as_freelancer: Apply as Freelancer
+      find_a_freelancer: Find a Freelancer
+      more_info_for_freelancers: More Info for Freelancers
+      more_info_for_companies: More Info for Companies
+
+      freelancer_benefits:
+        headline:
+          Our service for freelancers
+
+        section_1:
+          headline: Find new clients you love
+          text: Join Uplink to find new challenging projects and get in touch with companies from Berlin, Hamburg, Munich, Frankfurt, and many other cities of Germany. Let us handle the job sourcing, so you can focus on what you do best - writing great code!
+
+        section_2:
+          headline: Skip clueless recruiters
+          text: We are freelance developers ourselves, so we know that dealing with non-technical recruiters can be frustrating. Since we understand your priorities, we can make them ours, and treat your time with respect.
+
+        section_3:
+          headline: No public profile, no listings
+          text: You don’t need another public profile that must be kept up-to-date, or a list of irrelevant job descriptions you have to scroll through. We keep it simple, pre-select the jobs for you, and present them to you in a personal, non-automated email.
+
+        section_4:
+          headline: Made in and for Berlin
+          text: In order to build a tight-knit network of like-minded developers, we currently focus on freelancers from Berlin. Soon we will roll out our service in Hamburg, Munich, Frankfurt and more cities across Germany and internationally. Stay tuned!
+
+    companies:
+      find_a_freelancer: Find a Freelancer
+
+  sections:
+
+    cities:
+      headline: "We are active in:"
+      coming_soon: Coming soon
+
+  cities:
+    berlin: Berlin
+    hamburg: Hamburg
+    munich: Munich
+    frankfurt: Frankfurt a.M.
+
+  drift:
+    welcome_message: Hi there, I'm Manuel, the founder of Uplink! Ask me anything! :)
+    away_message: Hi there, I'm Manuel, the founder of Uplink! I'm not online right now, but if you leave me a message, I'll get back to you soon!
+    email_capture_message: Hi there! I've received your message. Let me know your email address so that I can follow up in case we get disconnected.
+    thank_you_message: Thanks for your message! I'll follow up with you soon!
+
+  paths:
+    firmen: companies
+    kontakt: contact
+    freelancer: freelancers
+    impressum: imprint
+    medien: media_coverage

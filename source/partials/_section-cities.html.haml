@@ -1,12 +1,12 @@
 %section#cities.gray-bg
   .container
     %h2
-      = heading
+      = t :headline, scope: %i(sections cities)
     .row
-      - [['berlin', 'hamburg'], ['munich', 'frankfurt']].each_with_index do |city_group, city_group_index|
+      - [t(:cities).keys[0, 2], t(:cities).keys[2, 2]].each_with_index do |city_group, city_group_index|
         .col-sm-6
           - city_group.each_with_index do |city, city_index|
             - coming_soon =  city_group_index > 0 || city_index > 0
             %span{ class: coming_soon ? 'coming-soon' : nil }
-              = image_tag "cities/#{city}.svg", coming_soon ? { title: 'Coming soon!', data: { toggle: 'tooltip', placement: 'top' } } : {}
-              = city.capitalize
+              = image_tag "cities/#{city}.svg", coming_soon ? { title: "#{t :coming_soon, scope: %i(sections cities)}!", data: { toggle: 'tooltip', placement: 'top' } } : {}
+              = t city, scope: :cities

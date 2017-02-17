@@ -1,11 +1,10 @@
 ---
 id: media-coverage
-title: Media Coverage
 ---
 
 - content_for :header do
   %h1
-    = current_page.data.title
+    = page_title
 
 %section
   .container
@@ -15,11 +14,11 @@ title: Media Coverage
           = image_tag 'media-coverage/deutsche-startups.png'
           %p
             "So arbeiten Startups erfolgreich mit Freelancern zusammen"
-          = link_to 'Link', t(:'deutsche-startups', scope: :'media-coverage'), rel: 'nofollow', target: '_blank'
+          = link_to 'Link', config[:media_coverage].fetch(:deutsche_startups), rel: 'nofollow', target: '_blank'
     .row
       .col-sm-8.col-sm-offset-2
         .item
           = image_tag 'media-coverage/berlin-valley.png'
           %p
             "Uplink ist ein Netzwerk für professionelle Freelance-Entwickler und hilft Berliner Unternehmen, die besten Entwickler der Stadt zu finden."
-          = link_to 'Link', t(:'berlin-valley', scope: :'media-coverage'), rel: 'nofollow', target: '_blank'
+          = link_to 'Link', config[:media_coverage].fetch(:berlin_valley), rel: 'nofollow', target: '_blank'

@@ -1,0 +1,106 @@
+de:
+
+  freelancer_request_form:
+    url: https://uplinkhq.typeform.com/to/nIX7An
+    text: Freelancer-Anfrage
+
+  cookies:
+    text: We use cookies to ensure you get the best possible experience on our website.
+    confirm: Got it.
+
+  menu:
+    home: Start
+    freelancers: Für Freelancer
+    companies: Für Firmen
+    contact: Kontakt
+    imprint: Impressum
+    press_kit: Press Kit
+    media_coverage: Medien
+    freelancer_login: Freelancer-Login
+    change_language: English
+
+  page_titles:
+    home: Das Netzwerk für professionelle Freelance-Entwickler
+    freelancers: Verbring deine Zeit mit Coden statt mit Akquise.
+    companies: Finden Sie schneller den perfekten Freelance-Entwickler.
+    imprint: Impressum
+    contact: Kontaktieren Sie uns!
+    media_coverage: Medien
+    press_kit: Press Kit
+    404: Fehler 404
+
+  page_descriptions:
+    home: Uplink verknüpft erfahrene Freelance-Entwickler mit den Firmen, die sie suchen.
+    freelancers: Uplink liefert dir spannende Projekte von Firmen aus deiner Stadt und deutschlandweit!
+    companies: Wir helfen Firmen, den richtigen Freelance-Entwickler in Tagen (manchmal Stunden) anstatt Wochen zu finden.
+    imprint: Das Kleingedruckte
+    contact: Wir würden uns freuen, von Ihnen zu hören!
+    media_coverage: Berichterstattung über Uplink
+    press_kit: Fotos und Texte zur einfachen Berichterstattung über Uplink
+    404: Seite nicht gefunden
+
+  page_intros:
+    home: Uplink verknüpft erfahrene Freelance-Entwickler mit den Firmen, die sie suchen. Wir vereinfachen die Freelancer-Suche durch persönliche Empfehlungen von Entwicklern, die wir kennen und denen wir vertrauen.
+    freelancers: Uplink liefert dir spannende Projekte von Firmen aus deiner Stadt und deutschlandweit! Tu das, was du am besten kannst - großartigen Code schreiben - und überlass die Projektsuche uns.
+    companies: Wir helfen Firmen, den richtigen Freelance-Entwickler in Tagen (manchmal Stunden) anstatt Wochen zu finden. Sagen Sie uns einfach, wen Sie suchen, und wir verknüpfen Sie mit einem passenden Experten aus unserem Pool.
+    contact: Egal ob Sie Fragen oder Kommentare haben, einen Freelance-Entwickler suchen oder selbst einer sind, wir würden uns freuen, von Ihnen zu hören!
+    press_kit: Sollten Sie weitere Informationen oder Medien benötigen, um über Uplink zu berichten, kontaktieren Sie uns!
+
+  pages:
+
+    home:
+      apply_as_freelancer: Als Freelancer bewerben
+      find_a_freelancer: Freelancer finden
+      more_info_for_freelancers: Mehr Infos für Freelancer
+      more_info_for_companies: Mehr Infos für Firmen
+
+      freelancer_benefits:
+        headline:
+          Unser Service für Freelancer
+
+        section_1:
+          headline: Find new clients you love
+          text: Join Uplink to find new challenging projects and get in touch with companies from Berlin, Hamburg, Munich, Frankfurt, and many other cities of Germany. Let us handle the job sourcing, so you can focus on what you do best - writing great code!
+
+        section_2:
+          headline: Skip clueless recruiters
+          text: We are freelance developers ourselves, so we know that dealing with non-technical recruiters can be frustrating. Since we understand your priorities, we can make them ours, and treat your time with respect.
+
+        section_3:
+          headline: No public profile, no listings
+          text: You don’t need another public profile that must be kept up-to-date, or a list of irrelevant job descriptions you have to scroll through. We keep it simple, pre-select the jobs for you, and present them to you in a personal, non-automated email.
+
+        section_4:
+          headline: Made in and for Berlin
+          text: In order to build a tight-knit network of like-minded developers, we currently focus on freelancers from Berlin. Soon we will roll out our service in Hamburg, Munich, Frankfurt and more cities across Germany and internationally. Stay tuned!
+
+      freelancer_testimonial:
+
+      company_benefits:
+
+      company_testimonial:
+
+      featured_on:
+
+      cta:
+
+    companies:
+      find_a_freelancer: Freelancer finden
+
+  sections:
+
+    cities:
+      headline: "Wir sind aktiv in:"
+      coming_soon: Bald
+
+  cities:
+    berlin: Berlin
+    hamburg: Hamburg
+    munich: München
+    frankfurt: Frankfurt a.M.
+
+  drift:
+    welcome_message: Hi, Manuel hier, der Gründer von Uplink! Schreiben Sie mir, wenn Sie eine Frage haben! :)
+    away_message: Hi, Manuel hier, der Gründer von Uplink! Leider bin ich zur Zeit nicht online, aber wenn Sie mir eine Nachricht hinterlassen, melde ich mich so bald wie möglich!
+    email_capture_message: Hi, ich habe Ihre Nachricht erhalten! Wenn Sie mir ihre Email-Adresse nennen, kann ich mich bei Ihnen melden, auch wenn die Verbindung abbrechen sollte.
+    thank_you_message: Danke für Ihre Nachricht! Ich melde mich so bald wie möglich bei Ihnen!

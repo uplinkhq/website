@@ -6,53 +6,53 @@ priority: 1.0
 
 - content_for :header do
   %h1
-    = t :tagline
+    = page_title
   %p
-    = t :description
+    = page_intro
   .vertical-button-group
-    = link_to '/freelancers#apply', class: 'btn btn-primary' do
+    = link_to localized_path('freelancer', fragment: 'apply'), class: 'btn btn-primary' do
       = icon 'user-circle'
-      Apply as Freelancer
-    = link_to 'More Info for Freelancers &raquo;', '/freelancers', class: 'btn btn-link'
+      = t :apply_as_freelancer, scope: %i(pages home)
+    = link_to "#{t :more_info_for_freelancers, scope: %i(pages home)} &raquo;", localized_path('freelancer'), class: 'btn btn-link'
   .vertical-button-group
-    = link_to '/companies#freelancer-request', class: 'btn btn-info' do
+    = link_to localized_path('firmen', fragment: 'freelancer-request'), class: 'btn btn-info' do
       = icon 'search'
-      Find a Freelancer
-    = link_to 'More Info for Companies &raquo;', '/companies', class: 'btn btn-link'
+      = t :find_a_freelancer, scope: %i(pages home)
+    = link_to "#{t :more_info_for_companies, scope: %i(pages home)} &raquo;", localized_path('firmen'), class: 'btn btn-link'
 
-= partial 'partials/section-cities', locals: { heading: 'For freelancers based in:' }
+= partial 'partials/section-cities'
 
 %section#freelancer-benefits
   .container
     %h2
-      Our service for freelancers
+      = t :headline, scope: %i(pages home freelancer_benefits)
     .row.columns
       .col-sm-6
         %h3.fa-users
-          Find new clients you love
+          = t :headline, scope: %i(pages home freelancer_benefits section_1)
         %p
-          Join Uplink to find new challenging projects and get in touch with companies from Berlin, Hamburg, Munich, Frankfurt, and many other cities of Germany. Let us handle the job sourcing, so you can focus on what you do best - writing great code!
+          = t :text, scope: %i(pages home freelancer_benefits section_1)
       .col-sm-6
         %h3.fa-repeat
-          Skip clueless recruiters
+          = t :headline, scope: %i(pages home freelancer_benefits section_2)
         %p
-          We are freelance developers ourselves, so we know that dealing with non-technical recruiters can be frustrating. Since we understand your priorities, we can make them ours, and treat your time with respect.
+          = t :text, scope: %i(pages home freelancer_benefits section_2)
     .row.columns
       .col-sm-6
         %h3.fa-envelope
-          No public profile, no listings
+          = t :headline, scope: %i(pages home freelancer_benefits section_3)
         %p
-          You don’t need another public profile that must be kept up-to-date, or a list of irrelevant job descriptions you have to scroll through. We keep it simple, pre-select the jobs for you, and present them to you in a personal, non-automated email.
+          = t :text, scope: %i(pages home freelancer_benefits section_3)
       .col-sm-6
         %h3.fa-heart
-          Made in and for Berlin
+          = t :headline, scope: %i(pages home freelancer_benefits section_4)
         %p
-          In order to build a tight-knit network of like-minded developers, we currently focus on freelancers from Berlin. Soon we will roll out our service in Hamburg, Munich, Frankfurt and more cities across Germany and internationally. Stay tuned!
+          = t :text, scope: %i(pages home freelancer_benefits section_4)
     .vertical-button-group
-      = link_to '/freelancers#apply', class: 'btn btn-primary' do
+      = link_to localized_path('freelancer', fragment: 'apply'), class: 'btn btn-primary' do
         = icon 'user-circle'
-        Apply as Freelancer
-      = link_to 'More Info for Freelancers &raquo;', '/freelancers', class: 'btn btn-link'
+        = t :apply_as_freelancer, scope: %i(pages home)
+      = link_to "#{t :more_info_for_freelancers, scope: %i(pages home)} &raquo;", localized_path('freelancer'), class: 'btn btn-link'
 
 %section#freelancer-testimonial.testimonials.gray-bg
   .container
@@ -92,10 +92,10 @@ priority: 1.0
         %p
           Being developers ourselves, we understand your tech stack and development needs. Non-technical recruiters have to try to find candidates with a list of requirements they don’t understand, which is inefficient and error-prone.
     .vertical-button-group
-      = link_to '/companies#freelancer-request', class: 'btn btn-info' do
+      = link_to localized_path('firmen', fragment: 'freelancer-request'), class: 'btn btn-info' do
         = icon 'search'
-        Find a Freelancer
-      = link_to 'More Info for Companies &raquo;', '/companies', class: 'btn btn-link'
+        = t :find_a_freelancer, scope: %i(pages home)
+      = link_to "#{t :more_info_for_companies, scope: %i(pages home)} &raquo;", localized_path('firmen'), class: 'btn btn-link'
 
 %section#company-testimonial.testimonials.gray-bg
   .container
@@ -151,14 +151,14 @@ priority: 1.0
     %h2
       As featured on
     .logos
-      = link_to image_tag('media-coverage/deutsche-startups.png'), t(:'deutsche-startups', scope: :'media-coverage'), rel: 'nofollow', target: '_blank'
-      = link_to image_tag('media-coverage/berlin-valley.png'), t(:'berlin-valley', scope: :'media-coverage'), rel: 'nofollow', target: '_blank'
+      = link_to image_tag('media-coverage/deutsche-startups.png'), config[:media_coverage].fetch(:deutsche_startups), rel: 'nofollow', target: '_blank'
+      = link_to image_tag('media-coverage/berlin-valley.png'), config[:media_coverage].fetch(:berlin_valley), rel: 'nofollow', target: '_blank'
 
 %section#cta.gray-bg
   .container
     %h2
       Ready to take the work out of finding work?
     .vertical-button-group
-      = link_to 'More Info for Freelancers', '/freelancers', class: 'btn btn-primary'
+      = link_to t(:more_info_for_freelancers, scope: %i(pages home)), localized_path('freelancer'), class: 'btn btn-primary'
     .vertical-button-group
-      = link_to 'More Info for Companies', '/companies', class: 'btn btn-info'
+      = link_to t(:more_info_for_companies, scope: %i(pages home)), localized_path('firmen'), class: 'btn btn-info'

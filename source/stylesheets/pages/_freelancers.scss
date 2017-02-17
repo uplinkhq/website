@@ -1,14 +1,27 @@
 body#freelancers {
   @include header_bg_image("freelancers.jpg");
 
-  header {
+  &[data-locale="de"] {
 
-    h1 {
-      max-width: 550px;
+    header {
+
+      h1 {
+        max-width: 620px;
+      }
+
+      p {
+        max-width: 660px;
+      }
     }
+  }
 
-    p {
-      max-width: 660px;
+  &[data-locale="en"] {
+
+    header {
+
+      h1, p {
+        max-width: 545px;
+      }
     }
   }
 

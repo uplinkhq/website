@@ -1,19 +1,18 @@
 ---
 id: freelancers
-title: Spend more time coding than looking for work.
 ---
 
 - content_for :header do
   %h1
-    = current_page.data.title
+    = page_title
   %p
-    Uplink helps you to connect with local and remote companies to find challenging new projects! We let you focus on what you do best - writing great code - and leave the busywork to us.
+    = page_intro
   .vertical-button-group
     = link_to '#apply', class: 'btn btn-primary' do
       = icon 'user-circle'
       Apply now
 
-= partial 'partials/section-cities', locals: { heading: "Join now if you're based in:" }
+= partial 'partials/section-cities'
 
 %section#how-it-works
   .container
@@ -152,7 +151,7 @@ title: Spend more time coding than looking for work.
       %strong
         based in Berlin, Germany,
       with at least a couple of years experience in freelancing, please apply below!
-    = form_tag t(:form_url) do
+    = form_tag config[:form_url] do
       = hidden_field_tag '_subject', value: 'Freelancer application'
       .row
         .col-sm-5.col-md-4.col-md-offset-1

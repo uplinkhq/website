@@ -1,17 +1,16 @@
 ---
 id: contact
-title: We'd love to hear from you!
 ---
 
 - content_for :header do
   %h1
-    = current_page.data.title
+    = page_title
   %p
-    Whatever question or comment you have, don't hesitate to get in touch!
+    = page_intro
 
 %section
   .container
-    = form_tag t(:form_url) do
+    = form_tag config[:form_url] do
       = hidden_field_tag '_subject', value: 'Contact'
       .row
         .col-lg-6.col-lg-offset-3
