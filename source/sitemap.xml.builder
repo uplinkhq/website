@@ -1,6 +1,6 @@
 xml.instruct!
 xml.urlset 'xmlns' => 'http://www.sitemaps.org/schemas/sitemap/0.9' do
-  sitemap.resources.select { |resource| resource.path =~ /\.html/ }.each do |resource|
+  sitemap.resources.select { |resource| resource.path != '404.html' && resource.path =~ /\.html/ }.each do |resource|
     xml.url do
       xml.loc config[:host] + resource.url
       xml.lastmod Date.today.to_time.iso8601
