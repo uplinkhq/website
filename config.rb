@@ -54,7 +54,7 @@ I18n.exception_handler = ->(exception, locale, key, options) {
 page '/sitemap.xml', layout: false
 
 %i(media-coverage companies freelancers imprint contact press-kit).each do |path|
-  redirect "/#{path}/", to: "/en/#{path}/"
+  redirect "#{path}/index.html", to: "/en/#{path}/"
 end
 
 set :css_dir,                          'stylesheets'
