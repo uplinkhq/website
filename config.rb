@@ -53,6 +53,8 @@ I18n.exception_handler = ->(exception, locale, key, options) {
 
 page '/sitemap.xml', layout: false
 
+# TODO: These were deployed on March 9, 2017.
+# They can probably be removed after a few months.
 %i(media-coverage companies freelancers imprint contact press-kit).each do |path|
   redirect "#{path}/index.html", to: "/en/#{path}/"
 end
