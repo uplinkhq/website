@@ -27,7 +27,7 @@ de:
     contact: Kontaktieren Sie uns!
     media_coverage: Medien
     press_kit: Press Kit
-    404: Fehler 404
+    error_404: Error 404
 
   page_descriptions:
     home: Uplink verknüpft erfahrene Freelance-Entwickler mit den Firmen, die sie suchen.
@@ -37,7 +37,7 @@ de:
     contact: Wir würden uns freuen, von Ihnen zu hören!
     media_coverage: Berichterstattung über Uplink
     press_kit: Fotos und Texte zur einfachen Berichterstattung über Uplink
-    404: Seite nicht gefunden
+    error_404: Page not found
 
   page_intros:
     home: Uplink verknüpft erfahrene Freelance-Entwickler mit den Firmen, die sie suchen. Wir vereinfachen die Freelancer-Suche durch persönliche Empfehlungen von Entwicklern, die wir kennen und denen wir vertrauen.
