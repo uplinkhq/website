@@ -59,22 +59,24 @@ de:
           Unser Service für Freelancer
 
         section_1:
-          headline: Find new clients you love
-          text: Join Uplink to find new challenging projects and get in touch with companies from Berlin, Hamburg, Munich, Frankfurt, and many other cities of Germany. Let us handle the job sourcing, so you can focus on what you do best - writing great code!
+          headline: Finde neue Kunden, die du liebst
+          text: Durch Uplink findest du spannende Projekt und neue Kunden aus Berlin, Hamburg, München, Frankfurt a.M. und vielen anderen deutschen Städten. Überlass die Jobsuche uns und fokussier dich auf das, was du am besten kannst - großartigen Code schreiben!
 
         section_2:
-          headline: Skip clueless recruiters
-          text: We are freelance developers ourselves, so we know that dealing with non-technical recruiters can be frustrating. Since we understand your priorities, we can make them ours, and treat your time with respect.
+          headline: Lass "IT-Recruiter" links liegen
+          text: Wir sind selbst Freelance-Entwickler und wissen, wie frustrierend es sein kann, mit "IT-Recruitern" zu tun zu haben. Weil Deine Prioritäten kennen, können wir sie zu unseren machen und deine Zeit und Aufmerksamkeit mit Respekt behandeln.
 
         section_3:
-          headline: No public profile, no listings
-          text: You don’t need another public profile that must be kept up-to-date, or a list of irrelevant job descriptions you have to scroll through. We keep it simple, pre-select the jobs for you, and present them to you in a personal, non-automated email.
+          headline: Kein öffentliches Profil
+          text: Niemand braucht noch ein öffentliches Profil, das regelmäßig aktualisiert werden muss, oder eine Liste von irrelevanten Jobs, durch die man sich scrollen muss. Wir selektieren die Jobs für dich und kontaktieren dich persönlich, wenn einer passt.
 
         section_4:
-          headline: Made in and for Berlin
-          text: In order to build a tight-knit network of like-minded developers, we currently focus on freelancers from Berlin. Soon we will roll out our service in Hamburg, Munich, Frankfurt and more cities across Germany and internationally. Stay tuned!
+          headline: Ein Netzwerk voller Möglichkeiten
+          text: Zur Zeit steht die Projektvermittlung noch im Vordergrund, aber weitere Services für Freelancer sind schon in der Mache - wie z.B. ein super-simpler Steuerservice, Kooperationen mit Coworking-Spaces, und vieles mehr!
 
       freelancer_testimonial:
+        text: Weniger als eine Woche, nachdem ich mich bei Uplink angemeldet habe, hatte ich mein erstes Projekt! Der ganze Ablauf war einfach und stressfrei - ein paar Emails, ein Telefonat, und das wars!
+        subtitle: Fullstack-Entwickler
 
       company_benefits:
 

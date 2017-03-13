@@ -58,7 +58,7 @@ en:
 
         section_1:
           headline: Find new clients you love
-          text: Join Uplink to find new challenging projects and get in touch with companies from Berlin, Hamburg, Munich, Frankfurt, and many other cities of Germany. Let us handle the job sourcing, so you can focus on what you do best - writing great code!
+          text: Join Uplink to find new challenging projects and get in touch with companies from Berlin, Hamburg, Munich, Frankfurt a.M., and many other cities of Germany. Let us handle the job sourcing, so you can focus on what you do best - writing great code!
 
         section_2:
           headline: Skip clueless recruiters
@@ -69,8 +69,12 @@ en:
           text: You don’t need another public profile that must be kept up-to-date, or a list of irrelevant job descriptions you have to scroll through. We keep it simple, pre-select the jobs for you, and present them to you in a personal, non-automated email.
 
         section_4:
-          headline: Made in and for Berlin
-          text: In order to build a tight-knit network of like-minded developers, we currently focus on freelancers from Berlin. Soon we will roll out our service in Hamburg, Munich, Frankfurt and more cities across Germany and internationally. Stay tuned!
+          headline: A network full of possibilities
+          text: Currently project aquisition is our main focus but we have many more services for freelancers in the pipeline - for example a super-simple tax service, cooperations with coworking spaces and much more!
+
+      freelancer_testimonial:
+        text: Less than one week after joining Uplink I started my first project. Loved the simplicity and straightforwardness of the whole process - a few mails, one phone call, that was it!
+        subtitle: Fullstack developer
 
     companies:
       find_a_freelancer: Find a Freelancer

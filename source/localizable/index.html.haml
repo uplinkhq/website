@@ -44,7 +44,7 @@ priority: 1.0
         %p
           = t :text, scope: %i(pages home freelancer_benefits section_3)
       .col-sm-6
-        %h3.fa-heart
+        %h3.fa-link
           = t :headline, scope: %i(pages home freelancer_benefits section_4)
         %p
           = t :text, scope: %i(pages home freelancer_benefits section_4)
@@ -57,13 +57,13 @@ priority: 1.0
 %section#freelancer-testimonial.testimonials.gray-bg
   .container
     %p
-      Less than two weeks after joining Uplink I started my first project. Loved the simplicity and straightforwardness of the whole process - a few emails, one phone call and that was it!
+      = t :text, scope: %i(pages home freelancer_testimonial)
     .author
       = link_to 'http://www.plue.me', target: '_blank' do
         = image_tag 'testimonials/benjamin-scherer.jpg', alt: 'Benjamin Scherer', lazy: true
         Benjamin Scherer
         %br
-        Full-stack developer
+        = t :subtitle, scope: %i(pages home freelancer_testimonial)
 
 %section#company-benefits
   .container
