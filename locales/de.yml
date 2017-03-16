@@ -102,7 +102,7 @@ de:
     frankfurt: Frankfurt a.M.
 
   drift:
-    welcome_message: Hi, Manuel hier, der Gründer von Uplink! Schreiben Sie mir, wenn Sie eine Frage haben! :)
-    away_message: Hi, Manuel hier, der Gründer von Uplink! Leider bin ich zur Zeit nicht online, aber wenn Sie mir eine Nachricht hinterlassen, melde ich mich so bald wie möglich!
-    email_capture_message: Hi, ich habe Ihre Nachricht erhalten! Wenn Sie mir ihre Email-Adresse nennen, kann ich mich bei Ihnen melden, auch wenn die Verbindung abbrechen sollte.
-    thank_you_message: Danke für Ihre Nachricht! Ich melde mich so bald wie möglich bei Ihnen!
+    welcome_message: Hi, Manuel hier, der Gründer von Uplink! Schreib mir, wenn du eine Frage hast! :)
+    away_message: Hi, Manuel hier, der Gründer von Uplink! Leider bin ich zur Zeit nicht online, aber wenn du mir eine Nachricht hinterlässt, melde ich mich so bald wie möglich!
+    email_capture_message: Hi, ich habe deine Nachricht erhalten! Wenn du mir deine Email-Adresse nennst, kann ich mich bei dir melden, auch falls die Verbindung abbrechen sollte.
+    thank_you_message: Danke für deine Nachricht! Ich melde mich so bald wie möglich bei dir!
