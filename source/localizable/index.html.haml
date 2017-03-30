@@ -68,29 +68,29 @@ priority: 1.0
 %section#company-benefits
   .container
     %h2
-      Our service for companies
+      = t :headline, scope: %i(pages home company_benefits)
     .row.columns
       .col-sm-6
         %h3.fa-link
-          Let us be your network
+          = t :headline, scope: %i(pages home company_benefits section_1)
         %p
-          Uplink offers instant access to hundreds of mobile, frontend, backend, and full-stack developers. Whether you need someone next week or six months from now, for just a few days or ongoing, we can help you find the right candidate!
+          = t :text, scope: %i(pages home company_benefits section_1)
       .col-sm-6
         %h3.fa-comments
-          Personal introductions
+          = t :headline, scope: %i(pages home company_benefits section_2)
         %p
-          We won’t send you a dozen barely relevant profiles and leave you to figure out who can really do the job. Instead, we take our time to understand your requirements and introduce you to the one or two candidates who are the best fit for you.
+          = t :text, scope: %i(pages home company_benefits section_2)
     .row.columns
       .col-sm-6
         %h3.fa-briefcase
-          Vetted professionals
+          = t :headline, scope: %i(pages home company_benefits section_3)
         %p
-          We work exclusively with senior developers who have years of freelancing experience, and we vet each freelancer personally so you don’t have to. You can trust that every candidate recommended by us will live up to your highest standards.
+          = t :text, scope: %i(pages home company_benefits section_3)
       .col-sm-6
         %h3.fa-code
-          We are developers, not recruiters
+          = t :headline, scope: %i(pages home company_benefits section_4)
         %p
-          Being developers ourselves, we understand your tech stack and development needs. Non-technical recruiters have to try to find candidates with a list of requirements they don’t understand, which is inefficient and error-prone.
+          = t :text, scope: %i(pages home company_benefits section_4)
     .vertical-button-group
       = link_to localized_path('firmen', fragment: 'freelancer-request'), class: 'btn btn-info' do
         = icon 'search'
@@ -100,13 +100,13 @@ priority: 1.0
 %section#company-testimonial.testimonials.gray-bg
   .container
     %p
-      Through Uplink we found three freelancers exactly when we needed them. Each one was a great fit and was available immediately. After trying out several other options in the past, this was the most hassle-free and cost-effective way for us to find qualified freelancers!
+      = t :text, scope: %i(pages home company_testimonial)
     .author
       = link_to 'http://www.inware.ch', target: '_blank' do
         = image_tag 'testimonials/urs-baumann-inware.jpg', alt: 'Urs Baumann - Inware', lazy: true
         Urs Baumann
         %br
-        CEO @ Inware AG
+        = t :subtitle, scope: %i(pages home company_testimonial)
 
 = partial 'partials/section-about'
 
@@ -149,15 +149,15 @@ priority: 1.0
 %section#featured-on
   .container
     %h2
-      As featured on
+      = t :headline, scope: %i(pages home featured_on)
     .logos
       = link_to image_tag('media-coverage/deutsche-startups.png'), config[:media_coverage].fetch(:deutsche_startups), rel: 'nofollow', target: '_blank'
-      = link_to image_tag('media-coverage/berlin-valley.png'), config[:media_coverage].fetch(:berlin_valley), rel: 'nofollow', target: '_blank'
+      = link_to image_tag('media-coverage/berlin-valley.png'),     config[:media_coverage].fetch(:berlin_valley),     rel: 'nofollow', target: '_blank'
 
 %section#cta.gray-bg
   .container
     %h2
-      Ready to take the work out of finding work?
+      = t :headline, scope: %i(pages home cta)
     .vertical-button-group
       = link_to t(:more_info_for_freelancers, scope: %i(pages home)), localized_path('freelancer'), class: 'btn btn-primary'
     .vertical-button-group

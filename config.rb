@@ -135,6 +135,10 @@ helpers do
   def page_intro
     t current_page.data.id.gsub('-', '_'), scope: :page_intros
   end
+
+  def markdown(text)
+    Kramdown::Document.new(text).to_html
+  end
 end
 
 configure :development do

@@ -4,18 +4,10 @@
       .col-sm-5.photo
       .col-sm-7.text
         %h2
-          Who is behind this?
+          = t :headline_1, scope: %i(sections about)
         %h3
-          Hi, I’m Manuel, the founder of Uplink.
-        %p
-          I have been working as a freelance developer in Berlin since 2008. Every time I found myself looking for a new project, it struck me as odd that there was no efficient and straightforward way to find out which companies were presently looking for freelance developers.
-        %p
-          Outside of my personal network of friends and colleagues, the only other options were recruiters, who often had no background as developers, or job boards, which mostly focus on permanent positions.
-        %p
-          %strong
-            This was my inspiration for Uplink - a simpler and more personal way for freelance developers to connect with the companies that need them.
-        %p
-          Get in touch if you have any questions or feedback!
+          = t :headline_2, scope: %i(sections about)
+        = markdown t(:text, scope: %i(sections about))
         = mail_to 'manuel@uplink.tech', icon('envelope')
         = link_to icon('github-alt'),   'https://github.com/manuelmeurer',            target: '_blank'
         = link_to icon('twitter'),      'https://twitter.com/manume',                 target: '_blank'

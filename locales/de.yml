@@ -55,20 +55,19 @@ de:
       more_info_for_companies: Mehr Infos für Firmen
 
       freelancer_benefits:
-        headline:
-          Unser Service für Freelancer
+        headline: Unser Service für Freelancer
 
         section_1:
-          headline: Finde neue Kunden, die du liebst
+          headline: Finde neue Kunden
           text: Durch Uplink findest du spannende Projekt und neue Kunden aus Berlin, Hamburg, München, Frankfurt a.M. und vielen anderen deutschen Städten. Überlass die Jobsuche uns und fokussier dich auf das, was du am besten kannst - großartigen Code schreiben!
 
         section_2:
           headline: Lass "IT-Recruiter" links liegen
-          text: Wir sind selbst Freelance-Entwickler und wissen, wie frustrierend es sein kann, mit "IT-Recruitern" zu tun zu haben. Weil Deine Prioritäten kennen, können wir sie zu unseren machen und deine Zeit und Aufmerksamkeit mit Respekt behandeln.
+          text: Wir sind selbst Freelance-Entwickler und wissen daher, wie frustrierend es ist, sich mit unwissenden Recruitern herumzuschlagen. Da Uplink primär ein Service für dich - den Freelancer - ist, sind deine Prioritäten auch unsere!
 
         section_3:
           headline: Kein öffentliches Profil
-          text: Niemand braucht noch ein öffentliches Profil, das regelmäßig aktualisiert werden muss, oder eine Liste von irrelevanten Jobs, durch die man sich scrollen muss. Wir selektieren die Jobs für dich und kontaktieren dich persönlich, wenn einer passt.
+          text: Niemand braucht ein weiteres öffentliches Profil, das regelmäßig aktualisiert werden muss, oder eine Liste von irrelevanten Jobs, durch die man sich scrollen muss. Wir selektieren die Jobs für dich und kontaktieren dich persönlich, wenn einer passt.
 
         section_4:
           headline: Ein Netzwerk voller Möglichkeiten
@@ -79,21 +78,100 @@ de:
         subtitle: Fullstack-Entwickler
 
       company_benefits:
+        headline: Unser Service für Firmen
+
+        section_1:
+          headline: Wir sind euer Netzwerk
+          text: Uplink ist ein Netzwerk von Hunderten von Entwicklern aus allen Bereichen. Egal, ob du jemanden nächste Woche oder in sechs Monaten brauchst, für nur ein paar Tage oder längerfristig - wir helfen dir, den richtigen Kandidaten zu finden!
+
+        section_2:
+          headline: Persönliche Empfehlungen
+          text: Wir schicken dir nicht Dutzende von Profilen, die du selbst bewerten und die Kandidaten kontaktieren musst. Stattdessen nehmen wir uns die Zeit, deine Anforderugen genau zu verstehen, und stellen dir dann den für dich besten Kandidaten vor.
+
+        section_3:
+          headline: Geprüfte Experten
+          text: Wir arbeiten ausschließlich mit Senior-Entwicklern, die jahrelange Erfahrung als Freelancer haben, und wir prüfen jeden Kandidaten persönlich. Du kannst bei jeder Empfehlung davon ausgehen, dass der Freelancer deine höchsten Ansprüche erfüllt.
+
+        section_4:
+          headline: Wir sind Entwickler, keine Recruiter
+          text: Als Entwickler verstehen wir deinen Tech Stack und Entwicklungsanforderungen. Recruiter ohne Tech-Erfahrung müssen sich auf eine Liste von Anforderungen verlassen, die sie nicht verstehen, und arbeiten dadurch ineffizient und fehleranfällig.
 
       company_testimonial:
+        text: Durch Uplink haben wir drei Freelancer gefunden, genau dann, als wir sie am meisten brauchten! Jeder von ihnen passte super zu unseren Vorgaben und war sofort verfügbar. Nachdem ich schon mehrere ähnliche Plattformen ausprobiert habe, bleibe ich jetzt bei Uplink!
+        subtitle: Geschäftsführer @ Inware AG
 
       featured_on:
+        headline: Bekannt aus
 
       cta:
+        headline: Bereit für dein nächstes Projekt?
+
+    freelancer:
+      cta: Jetzt bewerben
+
+      how_it_works:
+        headline: Wie funktionierts?
+
+        step_1:
+          headline: Bewirb dich
+          text: "%{link} und erzähl uns ein wenig über dich, deine Erfahrung als Entwickler und deine Motivation."
+          link_text: Kontaktier uns über dieses Formular
+
+        step_2:
+          headline: Füll dein Profil aus
+          text: Sobald du aufgenommen bist, sag uns, mit welchen Technologien du arbeitest, was für Projekte du suchst, und wann du verfügbar bist.
+
+        step_3:
+          headline: Warte auf Anfragen
+          text: Wenn wir von einem Projekt hören, dass dir gefallen könnte, melden wir uns via Email bei dir. So einfach ist das!
+
+      benefits:
+        headline: Was bringts dir?
+
+        section_1:
+          headline: Finde neue Kunden
+          text: Durch Uplink findest du spannende Projekt und neue Kunden aus Berlin, Hamburg, München, Frankfurt a.M. und vielen anderen deutschen Städten. Egal, ob du die Dynamik eines Startups oder die Herausforderungen einer Agentur oder größeren Firma suchst, du findest entsprechende Projekte durch Uplink! Überlass die Jobsuche uns, so dass du dich auf deine Arbeit fokussieren kannst!
+
+        section_2:
+          headline: Lass "IT-Recruiter" links liegen
+          text: Wir sind selbst Freelance-Entwickler und wissen daher, wie frustrierend es ist, sich mit unwissenden Recruitern herumzuschlagen. Da Uplink primär ein Service für dich - den Freelancer - ist, sind deine Prioritäten auch unsere! Das heisst, wir warnen dich ehrlich vor "beratungsintensiven" Kunden und verschweigen auch nicht mögliche Stolpersteine eines Projekts.
+
+        section_3:
+          headline: Kein öffentliches Profil
+          text: Niemand braucht ein weiteres öffentliches Profil, das regelmäßig aktualisiert werden muss, oder eine Liste von irrelevanten Jobs, durch die man sich scrollen muss. Durch ein wenig Arbeit, die wir selbst erledigen, nicht ein Algorithmus, können wir unseren Mitgliedern einem Menge Arbeit und Frustration ersparen. Wir selektieren die Jobs für dich und kontaktieren dich persönlich, wenn einer passt.
+
+        section_4:
+          headline: Öfter lokal als global
+          text: Einige Firmen arbeiten schon mit Freelancern aus der ganzen Welt, doch die meisten suchen "lokale" Entwickler - sie müssen nicht zwangsläufig in der gleichen Stadt wohnen und können oft flexibel und "remote" arbeiten, sollten aber für Meetings und Workshops zum Kunden kommen können. Sag uns einfach, in welchen Städten du vor Ort zum Arbeiten bzw. für Treffen mit dem Kunden verfügbar bist!
+
+        section_5:
+          headline: Das Timing zählt
+          text: Bist du aktuell in einem Projekt, hättest aber am liebsten schon das nächste in Aussicht? Wir wissen, wie schwer es ist, etwas genau dann zu finden, wenn du es brauchst. Sag uns daher einfach, ab wann du wieder verfügbar bist, und wir versuchen, dir einen nahtlosen Übergang zu bieten! Falls nötig überzeugen wir Kunden, ein Projekt entsprechend zu verschieben, damit du dabei sein kannst.
+
+        section_6:
+          headline: Wir wissen, was du wert bist
+          text: Mit einem Kunden den eigenen Tagessatz zu verhandeln, kann der anstrengendste Teil des ganzen Projekts sein. Wir klären daher frühzeitig, welches Budget der Kunde zur Verfügung hat, und schlagen dir selbstverständlich nur Projekte vor, die deinem Tagessatz entsprechen. So kommt es, wenn das Thema später zur Sprache kommt, nicht zu bösen Überraschungen.
 
     companies:
-      find_a_freelancer: Freelancer finden
+      cta: Freelancer finden
 
   sections:
 
     cities:
       headline: "Wir sind aktiv in:"
       coming_soon: Bald
+
+    about:
+      headline_1: Wer steckt dahinter?
+      headline_2: Hi, ich bin Manuel, der Gründer von Uplink.
+      text: |
+        Ich arbeite seit 2008 als Freelance-Entwickler in Berlin. Jedes Mal, wenn ich nach einem neuen Projekt gesucht habe, habe ich mich gewundert, warum es keinen effizienten und unkomplizierten Weg gab, um herauszufinden, welche Firmen aktuell auf der Suche nach einem Freelance-Entwickler mit meinen Qualifikationen sind.
+
+        Abgesehen von meinem privaten Netzwerk an Freunden und Kollegen waren die einzigen Optionen Recruiter, die aber oft selbst keine Tech-Kenntnisse haben, oder Job-Boards, die sich aber meist auf Festanstellungen fokussieren.
+
+        **Genau das war meine Inspiration für Uplink - Freelance-Entwicklern eine einfachere und persönlichere Möglichkeit zu bieten, mit den Firmen in Kontakt zu kommen, die sie suchen.**
+
+        Kontaktiere mich gern mit Fragen oder Feedback!
 
   cities:
     berlin: Berlin

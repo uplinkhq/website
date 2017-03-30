@@ -10,14 +10,14 @@ id: freelancers
   .vertical-button-group
     = link_to '#apply', class: 'btn btn-primary' do
       = icon 'user-circle'
-      Apply now
+      = t :cta, scope: %i(pages freelancer)
 
 = partial 'partials/section-cities'
 
 %section#how-it-works
   .container
     %h2
-      How does it work?
+      = t :headline, scope: %i(pages freelancer how_it_works)
     .row.columns
       .col-sm-4
         %h3
@@ -25,79 +25,77 @@ id: freelancers
             = icon 'circle', class: 'fa-stack-2x'
             %span.fa-inverse.fa-stack-1x
               1
-          Apply to join
+          = t :headline, scope: %i(pages freelancer how_it_works step_1)
         %p
-          Simply
-          = link_to 'contact us via the form below', '#apply'
-          and tell us a bit about yourself, your experience as a developer and your motivations.
+          = t :text, scope: %i(pages freelancer how_it_works step_1), link: link_to(t(:link_text, scope: %i(pages freelancer how_it_works step_1)), '#apply')
       .col-sm-4
         %h3
           %span.fa-stack
             = icon 'circle', class: 'fa-stack-2x'
             %span.fa-inverse.fa-stack-1x
               2
-          Get set up
+          = t :headline, scope: %i(pages freelancer how_it_works step_2)
         %p
-          Once you’re in, tell us about the tech stack and the kind of projects you’d like to work with and set your current and future availability.
+          = t :text, scope: %i(pages freelancer how_it_works step_2)
       .col-sm-4
         %h3
           %span.fa-stack
             = icon 'circle', class: 'fa-stack-2x'
             %span.fa-inverse.fa-stack-1x
               3
-          Get hired
+          = t :headline, scope: %i(pages freelancer how_it_works step_3)
         %p
-          When we know you’re available, we will contact you via email when a new project comes in that we think you’ll love. Simple as that!
+          = t :text, scope: %i(pages freelancer how_it_works step_3)
 
 %section#benefits
   .container
     %h2
-      What makes us great?
+      = t :headline, scope: %i(pages freelancer benefits)
     .row.columns
       .col-sm-6
         %h3
           = icon 'users'
           %br
-          Find new clients you love
+          = t :headline, scope: %i(pages freelancer benefits section_1)
         %p
-          Join Uplink to find new challenging projects and get in touch with companies from Berlin, Hamburg, Munich, Frankfurt a.M., and many other cities of Germany. Whether you’re looking for the intimate, dynamic feel of a startup or the hustle and bustle of an agency or large company, you can find it through Uplink. Let us handle the job sourcing, so you can focus on what you do best - writing great code!
+          = t :text, scope: %i(pages freelancer benefits section_1)
       .col-sm-6
         %h3
           = icon 'repeat'
           %br
-          Skip clueless recruiters
+          = t :headline, scope: %i(pages freelancer benefits section_2)
         %p
-          We are freelance developers ourselves, so we know that dealing with non-technical recruiters can be frustrating. Since Uplink is first and foremost a service for you - the freelancers - we understand your priorities and make them ours. This means we can honestly tell you about trickier customers or a project’s potential pitfalls. We are on your side and treat your time and attention with respect.
+          = t :text, scope: %i(pages freelancer benefits section_2)
     .row.columns
       .col-sm-6
         %h3
           = icon 'envelope'
           %br
-          No public profile, no listings
+          = t :headline, scope: %i(pages freelancer benefits section_3)
         %p
-          You don’t need another public profile that must be kept up-to-date, or a list of irrelevant job descriptions you have to scroll through. With a little work done by us personally, not by an algorithm, we can save all our members a lot of time and frustration. We keep it simple, pre-select the jobs for you, and present them to you in a personal, non-automated email.
+          = t :text, scope: %i(pages freelancer benefits section_3)
       .col-sm-6
         %h3
-          = icon 'heart'
+          = icon 'map-marker'
           %br
-          Focus on Berlin
+          = t :headline, scope: %i(pages freelancer benefits section_4)
         %p
-          In order to build a tight-knit network of like-minded developers, we currently focus on freelancers from Berlin. This lets us offer on-site developers to the startups and media companies of Berlin and grow organically through personal recommendations of our members. Soon we will roll out our service in Hamburg, Munich, Frankfurt a.M. and more cities across Germany and internationally. Stay tuned!
+          = t :text, scope: %i(pages freelancer benefits section_4)
     .row.columns
       .col-sm-6
         %h3
           = icon 'clock-o'
           %br
-          Timing is everything
+          = t :headline, scope: %i(pages freelancer benefits section_5)
         %p
-          Are you busy in a project right now but already want to line up the next one? We know what a hassle it is to try to find a new project exactly when you need it. No worries, just tell us when you are available again and we can negotiate with interested companies on your behalf and let them know they might want to postpone (or advance) their projects to have you on their team.
+          = t :text, scope: %i(pages freelancer benefits section_5)
       .col-sm-6
         %h3
           = icon 'euro'
           %br
-          We know what you’re worth
+          = t :headline, scope: %i(pages freelancer benefits section_6)
         %p
-          Negotiating a rate with a potential client can be the most stressful part of the whole project. This is why we make sure our clients know that 50€ is the minimum hourly rate of any freelancer in the Uplink network, and of course we will honour your personal hourly rate as well. Let us make sure you and the client are playing in the same ballpark before you even talk to them.
+          = t :text, scope: %i(pages freelancer benefits section_6)
 
 %section#testimonial.testimonials.gray-bg
   .container
@@ -119,7 +117,7 @@ id: freelancers
             = image_tag 'testimonials/alexander-frischbutter.jpg', alt: 'Alexander Frischbutter', lazy: true
             Alexander Frischbutter
             %br
-            Full-stack developer
+            Fullstack developer
 
 %section#pricing
   .container
@@ -163,7 +161,7 @@ id: freelancers
             = text_field_tag 'location', class: 'form-control', required: true, placeholder: 'Your location'
         .col-sm-7.col-md-6
           .form-group
-            %textarea#message.form-control.white-large{ name: 'message', required: true, placeholder: "Tell us a bit about yourself! Are you a frontend, backend, full-stack or mobile developer? What programming languages and frameworks do you like to work with? Do you enjoy working for small startups, agencies, or big companies? Remote or on-site? Please include links to your profiles on GitHub, Linkedin, and any other service you deem relevant!" }
+            %textarea#message.form-control.white-large{ name: 'message', required: true, placeholder: "Tell us a bit about yourself! Are you a frontend, backend, fullstack or mobile developer? What programming languages and frameworks do you like to work with? Do you enjoy working for small startups, agencies, or big companies? Remote or on-site? Please include links to your profiles on GitHub, Linkedin, and any other service you deem relevant!" }
           = submit_tag 'Submit', class: 'btn btn-primary', data: { loading: 'Please wait...' }
     = partial 'partials/form-messages'
 

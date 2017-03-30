@@ -10,7 +10,7 @@ id: companies
   .vertical-button-group
     = link_to '#', class: 'btn btn-info', data: { toggle: 'modal', target: '#freelancer-request-modal' } do
       = icon 'search'
-      = t :find_a_freelancer, scope: %i(pages companies)
+      = t :cta, scope: %i(pages companies)
     = link_to 'Contact us', '#contact', class: 'btn btn-link'
 
 - content_for :before_content do
@@ -88,7 +88,7 @@ id: companies
           %br
           Let us be your network
         %p
-          Uplink offers instant access to hundreds of mobile, frontend, backend, and full-stack developers. If your perfect match is not yet among them, we make our network work for you and find them. Whether you need someone next week or six months from now, remotely or on-site, for just a few days or on an ongoing basis, we can help you find the right candidate!
+          Uplink offers instant access to hundreds of mobile, frontend, backend, and fullstack developers. If your perfect match is not yet among them, we make our network work for you and find them. Whether you need someone next week or six months from now, remotely or on-site, for just a few days or on an ongoing basis, we can help you find the right candidate!
       .col-sm-6
         %h3
           = icon 'comments'

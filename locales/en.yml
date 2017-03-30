@@ -53,8 +53,7 @@ en:
       more_info_for_companies: More Info for Companies
 
       freelancer_benefits:
-        headline:
-          Our service for freelancers
+        headline: Our service for freelancers
 
         section_1:
           headline: Find new clients you love
@@ -76,14 +75,101 @@ en:
         text: Less than one week after joining Uplink I started my first project. Loved the simplicity and straightforwardness of the whole process - a few mails, one phone call, that was it!
         subtitle: Fullstack developer
 
+      company_benefits:
+        headline: Our service for companies
+
+        section_1:
+          headline: Let us be your network
+          text: Uplink offers instant access to hundreds of mobile, frontend, backend, and fullstack developers. Whether you need someone next week or six months from now, for just a few days or ongoing, we can help you find the right candidate!
+
+        section_2:
+          headline: Personal introductions
+          text: We won’t send you a dozen barely relevant profiles and leave you to figure out who can really do the job. Instead, we take our time to understand your requirements and introduce you to the one or two candidates who are the best fit for you.
+
+        section_3:
+          headline: Vetted professionals
+          text: We work exclusively with senior developers who have years of freelancing experience, and we vet each freelancer personally so you don’t have to. You can trust that every candidate recommended by us will live up to your highest standards.
+
+        section_4:
+          headline: We are developers, not recruiters
+          text: Being developers ourselves, we understand your tech stack and development needs. Non-technical recruiters have to try to find candidates with a list of requirements they don’t understand, which is inefficient and error-prone.
+
+      company_testimonial:
+        text: Through Uplink we found three freelancers exactly when we needed them. Each one was a great fit and was available immediately. After trying out several other options in the past, this was the most hassle-free and cost-effective way for us to find qualified freelancers!
+        subtitle: CEO @ Inware AG
+
+      featured_on:
+        headline: As featured on
+
+      cta:
+        headline: Ready to take the work out of finding work?
+
+    freelancer:
+      cta: Apply now
+
+      how_it_works:
+        headline: How does it work?
+
+        step_1:
+          headline: Apply to join
+          text: Simply %{link} and tell us a bit about yourself, your experience as a developer and your motivations.
+          link_text: contact us via the form below
+
+        step_2:
+          headline: Get set up
+          text: Once you’re in, tell us about the tech stack and the kind of projects you’d like to work with and set your current and future availability.
+
+        step_3:
+          headline: Get hired
+          text: When we know you’re available, we will contact you via email when a new project comes in that we think you’ll love. Simple as that!
+
+      benefits:
+        headline: What makes us great?
+
+        section_1:
+          headline: Find new clients you love
+          text: Join Uplink to find new challenging projects and get in touch with companies from Berlin, Hamburg, Munich, Frankfurt a.M., and many other cities of Germany. Whether you’re looking for the intimate, dynamic feel of a startup or the hustle and bustle of an agency or large company, you can find it through Uplink. Let us handle the job sourcing, so you can focus on what you do best - writing great code!
+
+        section_2:
+          headline: Skip clueless recruiters
+          text: We are freelance developers ourselves, so we know that dealing with non-technical recruiters can be frustrating. Since Uplink is first and foremost a service for you - the freelancers - we understand your priorities and make them ours. This means we can honestly tell you about trickier customers or a project’s potential pitfalls. We are on your side and treat your time and attention with respect.
+
+        section_3:
+          headline: No public profile, no listings
+          text: You don’t need another public profile that must be kept up-to-date, or a list of irrelevant job descriptions you have to scroll through. With a little work done by us personally, not by an algorithm, we can save all our members a lot of time and frustration. We keep it simple, pre-select the jobs for you, and present them to you in a personal, non-automated email.
+
+        section_4:
+          headline: Local beats global
+          text: While some companies already work with freelancers from all over the world, most of them are looking for "local" developers - they don't necessarily have to live in the same city, and can often work flexibly and remotely, but they should be available for meetings and workshops at the client's office. Just tell us in which cities you are available to work or meet with clients!
+
+        section_5:
+          headline: Timing is everything
+          text: Are you busy in a project right now but already want to line up the next one? We know what a hassle it is to try to find a new project exactly when you need it. Just tell us when you are available again and we can negotiate with interested companies on your behalf and let them know they might want to postpone (or advance) their projects to have you on their team.
+
+        section_6:
+          headline: We know what you’re worth
+          text: Negotiating a rate with a potential client can be the most stressful part of the whole project. This is why we ask the client about their budget early on in the process, and of course only offer you projects that match your personal rate as well. This way you know that you and the client are playing in the same ballpark before you even talk to them.
+
     companies:
-      find_a_freelancer: Find a Freelancer
+      cta: Find a Freelancer
 
   sections:
 
     cities:
       headline: "We are active in:"
       coming_soon: Coming soon
+
+    about:
+      headline_1: Who is behind this?
+      headline_2: Hi, I’m Manuel, the founder of Uplink.
+      text: |
+        I have been working as a freelance developer in Berlin since 2008. Every time I found myself looking for a new project, it struck me as odd that there was no efficient and straightforward way to find out which companies were presently looking for a freelance developer with my qualifications.
+
+        Outside of my personal network of friends and colleagues, the only other options were recruiters, who often had no background as developers, or job boards, which mostly focus on permanent positions.
+
+        **This was my inspiration for Uplink - a simpler and more personal way for freelance developers to connect with the companies that need them.**
+
+        Get in touch if you have any questions or feedback!
 
   cities:
     berlin: Berlin
