@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.4.0'
+ruby '2.4.1'
 
 # Return early if this file is parsed by the Bundler plugin DSL.
 # This won't let us access dependencies in common-gems.
