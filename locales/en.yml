@@ -110,7 +110,7 @@ en:
       cta:
         headline: Ready to take the work out of finding work?
 
-    freelancer:
+    freelancers:
       cta: Apply now
 
       how_it_works:
@@ -191,6 +191,86 @@ en:
 
     companies:
       cta: Find a Freelancer
+      contact_us: Contact us
+
+      how_it_works:
+        headline: How does it work?
+
+        step_1:
+          headline: Contact us
+          text: "%{freelancer_request_form_link} or get in touch %{contact_form_link} or %{email_link}, if you have questions. We will get back to you within 24 hours!"
+          freelancer_request_form_link_text: Open a freelancer request
+          contact_form_link_text: using the contact form
+          email_link_text: via email
+
+        step_2:
+          headline: Review our candidates
+          text: Once we know who you are looking for, we contact matching experts from our pool. If they are interested, we introduce them to you.
+
+        step_3:
+          headline: Let's go!
+          text: Everything else happens directly between you and the candidate, we don't interfere. The invoices are issued by the freelancer as well.
+
+      techs:
+        headline: Find an expert for any technology
+        text: |
+          No matter what programming language or framework you use, through Uplink you can find an experienced developer who can hit the ground running!
+
+          Our members include experts in:
+        suffix: ...and many more technologies!
+
+      benefits:
+        headline: What makes us great?
+
+        section_1:
+          headline: Let us be your network
+          text: Uplink offers instant access to hundreds of mobile, frontend, backend, and fullstack developers. If your perfect match is not yet among them, we make our network work for you and find them. Whether you need someone next week or six months from now, remotely or on-site, for just a few days or on an ongoing basis, we can help you find the right candidate!
+
+        section_2:
+          headline: Personal introductions
+          text: We won’t send you a dozen barely relevant profiles and leave you to figure out who can really do the job. Instead, we take our time to understand your requirements and introduce you to the one or two candidates who are the best fit for you. We strongly believe this process should not be automated by simply matching up client requirements and developer skills.
+
+        section_3:
+          headline: Vetted professionals
+          text: We work exclusively with senior developers who have years of freelancing experience, and we vet each freelancer personally so you don’t have to. Fluent English, professional communication, and timely delivery are just a few of the qualities each of our freelancers has. You can trust that every candidate recommended by us will live up to your highest standards.
+
+        section_4:
+          headline: We are developers, not recruiters
+          text: Being developers ourselves, we can take our time to really understand your tech stack and help you figure out what skills a developer needs to work out for you. Non-technical recruiters have to make do with a list of requirements they don’t understand, and try to find candidates by simply comparing this list to the candidate’s profile, which is inefficient and error-prone.
+
+        section_5:
+          headline: On-site in Berlin, remotely worldwide
+          text: We are currently focussing our efforts on building a tight-knit network of freelancers based in Berlin. This enables us to offer on-site freelancers to the startups and media companies in Berlin, and remote work to clients anywhere in the world. We will soon roll out our service in Hamburg, Munich, Frankfurt a.M. and more cities across Germany and internationally.
+
+        section_6:
+          headline: Get one step ahead
+          text: A big project coming up a few months from now? Let us know now! While our freelancers are often flexible and available on short notice, they value stability and like to plan ahead as much as possible. A longer time frame will also give you the possibility to talk to a well-suited candidate early and get feedback on the project plan and requirements.
+
+      pricing:
+        headline: Pricing
+        text: |
+          **Our service is free for companies.** We want to make it as easy as possible for you to find a great freelance developer through Uplink. This is why we don't charge a fee to the companies.
+
+          For freelancers there is a small fee if they find a new client through Uplink. We settle this separate with the freelancer though, so that the companies don't have to deal with it.
+
+      contact:
+        headline: Contact us
+        text: If you're currently looking for a freelancer, please %{freelancer_request_form_link}! If you have any questions or you'd like to talk to us, please use the form belog or %{email_link}.
+        freelancer_request_form_link_text: open a freelancer request
+        email_link_text: send us an email
+
+        form_placeholders:
+          name: Your name
+          email: Your email
+          company: Your company (optional)
+          message: How can we help?
+
+    contact:
+
+      form_placeholders:
+        name: Your name
+        email: Your email
+        message: How can we help?
 
   sections:
 

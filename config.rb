@@ -73,18 +73,25 @@ set :profiles, {
   angellist:   'https://angel.co/uplinkhq'
 }
 set :tech_images, {
-  'Ruby'       => 'ruby.png',
-  'Python'     => 'python.png',
   'JavaScript' => 'javascript.png',
-  'PHP'        => 'php.svg',
-  'Rails'      => 'rails.svg',
-  'Djanngo'    => 'django.png',
   'Node.js'    => 'nodejs.svg',
-  'Java'       => 'java.png',
+  'React.js'   => 'react.png',
+  'Angular.js' => 'angular.svg',
+
+  'Ruby'       => 'ruby.png',
+  'Rails'      => 'rails.svg',
+  'Python'     => 'python.png',
+  'Django'     => 'django.png',
+
+  'Wordpress'  => 'wordpress.png',
+  'TYPO3'      => 'typo3.png',
+  'Drupal'     => 'drupal.svg',
+  'Symfony'    => 'symfony.png',
+
   'Android'    => 'android.png',
   'iOS'        => 'ios.png',
-  'Drupal'     => 'drupal.svg',
-  'Wordpress'  => 'wordpress.png'
+  'Java'       => 'java.png',
+  'Spring'     => 'spring.png'
 }
 set :media_coverage, {
   berlin_valley:     'https://drive.google.com/file/d/0B4gIb1U545pcZzRwT3FqemhRYVU/view',

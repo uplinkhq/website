@@ -28,7 +28,7 @@ de:
   page_titles:
     home: Das Netzwerk für professionelle Freelance-Entwickler
     freelancers: Verbring deine Zeit mit Coden statt mit Akquise.
-    companies: Finden Sie schneller den perfekten Freelance-Entwickler.
+    companies: Finden Sie schneller den passenden Freelance-Entwickler.
     imprint: Impressum
     contact: Kontaktieren Sie uns!
     media_coverage: Medien
@@ -112,7 +112,7 @@ de:
       cta:
         headline: Bereit für dein nächstes Projekt?
 
-    freelancer:
+    freelancers:
       cta: Jetzt bewerben
 
       how_it_works:
@@ -193,6 +193,86 @@ de:
 
     companies:
       cta: Freelancer finden
+      contact_us: Kontaktier uns
+
+      how_it_works:
+        headline: Wie funktionierts?
+
+        step_1:
+          headline: Kontaktier uns
+          text: "%{freelancer_request_form_link} oder schreib uns %{contact_form_link} oder %{email_link}, wenn du noch Fragen hast. Wir melden uns innerhalb von 24 Stunden!"
+          freelancer_request_form_link_text: Starte eine Freelancer-Anfrage
+          contact_form_link_text: über das Kontakt- formular
+          email_link_text: per Email
+
+        step_2:
+          headline: Warte auf Kandidaten
+          text: Sobald wir wissen, wen du suchst, kontaktieren wir passende Kandidaten aus unserem Pool. Wenn einer von ihnen interessiert ist, stellen wir ihn dir vor.
+
+        step_3:
+          headline: Los gehts!
+          text: Alles weitere läuft direkt zwischen dir und dem Kandidaten, da mischen wir uns nicht mehr ein! Auch die Rechnungen kommen direkt vom Freelancer.
+
+      techs:
+        headline: Finde einen Experten für jede Technologie
+        text: |
+          Egal welche Programmiersprache oder welches Framework ihr benutzt, bei Uplink findest du einen erfahrenen Entwicker, der sofort loslegen kann!
+
+          Unsere Mitglieder sind Experten in:
+        suffix: ...und vielen anderen Technologien!
+
+      benefits:
+        headline: What makes us great?
+
+        section_1:
+          headline: Let us be your network
+          text: Uplink offers instant access to hundreds of mobile, frontend, backend, and fullstack developers. If your perfect match is not yet among them, we make our network work for you and find them. Whether you need someone next week or six months from now, remotely or on-site, for just a few days or on an ongoing basis, we can help you find the right candidate!
+
+        section_2:
+          headline: Personal introductions
+          text: We won’t send you a dozen barely relevant profiles and leave you to figure out who can really do the job. Instead, we take our time to understand your requirements and introduce you to the one or two candidates who are the best fit for you. We strongly believe this process should not be automated by simply matching up client requirements and developer skills.
+
+        section_3:
+          headline: Vetted professionals
+          text: We work exclusively with senior developers who have years of freelancing experience, and we vet each freelancer personally so you don’t have to. Fluent English, professional communication, and timely delivery are just a few of the qualities each of our freelancers has. You can trust that every candidate recommended by us will live up to your highest standards.
+
+        section_4:
+          headline: We are developers, not recruiters
+          text: Being developers ourselves, we can take our time to really understand your tech stack and help you figure out what skills a developer needs to work out for you. Non-technical recruiters have to make do with a list of requirements they don’t understand, and try to find candidates by simply comparing this list to the candidate’s profile, which is inefficient and error-prone.
+
+        section_5:
+          headline: On-site in Berlin, remotely worldwide
+          text: We are currently focussing our efforts on building a tight-knit network of freelancers based in Berlin. This enables us to offer on-site freelancers to the startups and media companies in Berlin, and remote work to clients anywhere in the world. We will soon roll out our service in Hamburg, Munich, Frankfurt a.M. and more cities across Germany and internationally.
+
+        section_6:
+          headline: Get one step ahead
+          text: A big project coming up a few months from now? Let us know now! While our freelancers are often flexible and available on short notice, they value stability and like to plan ahead as much as possible. A longer time frame will also give you the possibility to talk to a well-suited candidate early and get feedback on the project plan and requirements.
+
+      pricing:
+        headline: Pricing
+        text: |
+          **Unser Service ist für Firmen kostenlos.** Wir möchten es dir so einfach wie möglich machen, über Uplink einen Freelance-Entwickler zu finden. Daher verzichten wir auf eine Vermittlungsgebühr von den Firmen.
+
+          Für Freelancer fällt eine geringe Gebühr an, wenn sie über Uplink einen neuen Kunden finden. Diese rechnen wir aber separat mit den Freelancern ab, so dass sich die Firmen dabei um nichts kümmern müssen.
+
+      contact:
+        headline: Kontaktier uns
+        text: Wenn du aktuell auf der Suche nach einem Freelancer bist, %{freelancer_request_form_link}! Wenn du Fragen hast oder vorher mit uns sprechen möchtest, benutz einfach dieses Formular oder %{email_link}.
+        freelancer_request_form_link_text: starte eine Freelancer-Anfrage
+        email_link_text: schick uns eine Email
+
+        form_placeholders:
+          name: Dein Name
+          email: Deine Email-Adresse
+          company: Deine Firma (optional)
+          message: Womit können wir helfen?
+
+    contact:
+
+      form_placeholders:
+        name: Dein Name
+        email: Deine Email-Adresse
+        message: Womit können wir helfen?
 
   sections:
 

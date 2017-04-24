@@ -10,14 +10,14 @@ id: freelancers
   .vertical-button-group
     = link_to '#apply', class: 'btn btn-primary' do
       = icon 'user-circle'
-      = t :cta, scope: %i(pages freelancer)
+      = t :cta, scope: %i(pages freelancers)
 
 = partial 'partials/section-cities'
 
 %section#how-it-works
   .container
     %h2
-      = t :headline, scope: %i(pages freelancer how_it_works)
+      = t :headline, scope: %i(pages freelancers how_it_works)
     .row.columns
       .col-sm-4
         %h3
@@ -25,82 +25,82 @@ id: freelancers
             = icon 'circle', class: 'fa-stack-2x'
             %span.fa-inverse.fa-stack-1x
               1
-          = t :headline, scope: %i(pages freelancer how_it_works step_1)
+          = t :headline, scope: %i(pages freelancers how_it_works step_1)
         %p
-          = t :text, scope: %i(pages freelancer how_it_works step_1), link: link_to(t(:link_text, scope: %i(pages freelancer how_it_works step_1)), '#apply')
+          = t :text, scope: %i(pages freelancers how_it_works step_1), link: link_to(t(:link_text, scope: %i(pages freelancers how_it_works step_1)), '#apply')
       .col-sm-4
         %h3
           %span.fa-stack
             = icon 'circle', class: 'fa-stack-2x'
             %span.fa-inverse.fa-stack-1x
               2
-          = t :headline, scope: %i(pages freelancer how_it_works step_2)
+          = t :headline, scope: %i(pages freelancers how_it_works step_2)
         %p
-          = t :text, scope: %i(pages freelancer how_it_works step_2)
+          = t :text, scope: %i(pages freelancers how_it_works step_2)
       .col-sm-4
         %h3
           %span.fa-stack
             = icon 'circle', class: 'fa-stack-2x'
             %span.fa-inverse.fa-stack-1x
               3
-          = t :headline, scope: %i(pages freelancer how_it_works step_3)
+          = t :headline, scope: %i(pages freelancers how_it_works step_3)
         %p
-          = t :text, scope: %i(pages freelancer how_it_works step_3)
+          = t :text, scope: %i(pages freelancers how_it_works step_3)
 
 %section#benefits
   .container
     %h2
-      = t :headline, scope: %i(pages freelancer benefits)
+      = t :headline, scope: %i(pages freelancers benefits)
     .row.columns
       .col-sm-6
         %h3
           = icon 'users'
           %br
-          = t :headline, scope: %i(pages freelancer benefits section_1)
+          = t :headline, scope: %i(pages freelancers benefits section_1)
         %p
-          = t :text, scope: %i(pages freelancer benefits section_1)
+          = t :text, scope: %i(pages freelancers benefits section_1)
       .col-sm-6
         %h3
           = icon 'repeat'
           %br
-          = t :headline, scope: %i(pages freelancer benefits section_2)
+          = t :headline, scope: %i(pages freelancers benefits section_2)
         %p
-          = t :text, scope: %i(pages freelancer benefits section_2)
+          = t :text, scope: %i(pages freelancers benefits section_2)
     .row.columns
       .col-sm-6
         %h3
           = icon 'envelope'
           %br
-          = t :headline, scope: %i(pages freelancer benefits section_3)
+          = t :headline, scope: %i(pages freelancers benefits section_3)
         %p
-          = t :text, scope: %i(pages freelancer benefits section_3)
+          = t :text, scope: %i(pages freelancers benefits section_3)
       .col-sm-6
         %h3
           = icon 'map-marker'
           %br
-          = t :headline, scope: %i(pages freelancer benefits section_4)
+          = t :headline, scope: %i(pages freelancers benefits section_4)
         %p
-          = t :text, scope: %i(pages freelancer benefits section_4)
+          = t :text, scope: %i(pages freelancers benefits section_4)
     .row.columns
       .col-sm-6
         %h3
           = icon 'clock-o'
           %br
-          = t :headline, scope: %i(pages freelancer benefits section_5)
+          = t :headline, scope: %i(pages freelancers benefits section_5)
         %p
-          = t :text, scope: %i(pages freelancer benefits section_5)
+          = t :text, scope: %i(pages freelancers benefits section_5)
       .col-sm-6
         %h3
           = icon 'euro'
           %br
-          = t :headline, scope: %i(pages freelancer benefits section_6)
+          = t :headline, scope: %i(pages freelancers benefits section_6)
         %p
-          = t :text, scope: %i(pages freelancer benefits section_6)
+          = t :text, scope: %i(pages freelancers benefits section_6)
 
 %section#testimonial.testimonials.gray-bg
   .container
     .row
-      - t(:testimonials, scope: %i(pages freelancer)).each do |testimonial|
+      - t(:testimonials, scope: %i(pages freelancers)).each do |testimonial|
         .col-sm-6
           %p
             = testimonial[:text]
@@ -114,43 +114,43 @@ id: freelancers
 %section#pricing
   .container
     %h2
-      = t :headline, scope: %i(pages freelancer pricing)
+      = t :headline, scope: %i(pages freelancers pricing)
     %p
-      = t :text_1, scope: %i(pages freelancer pricing)
+      = t :text_1, scope: %i(pages freelancers pricing)
     #pricing-badge
       .percentage
         .number
           10%
-        = t :monthly, scope: %i(pages freelancer pricing)
+        = t :monthly, scope: %i(pages freelancers pricing)
       .max
         max.
         .number
-          = t :max_amount, scope: %i(pages freelancer pricing)
-        = t :total_per_client, scope: %i(pages freelancer pricing)
+          = t :max_amount, scope: %i(pages freelancers pricing)
+        = t :total_per_client, scope: %i(pages freelancers pricing)
     %p
-      = markdown t(:text_2, scope: %i(pages freelancer pricing))
+      = markdown t(:text_2, scope: %i(pages freelancers pricing))
 
 = partial 'partials/section-about'
 
 %section#apply.gray-bg
   .container
     %h2
-      = t :headline, scope: %i(pages freelancer apply)
+      = t :headline, scope: %i(pages freelancers apply)
     %p
-      = t :text, scope: %i(pages freelancer apply)
+      = t :text, scope: %i(pages freelancers apply)
     = form_tag config[:form_url] do
       = hidden_field_tag '_subject', value: 'Freelancer application'
       .row
         .col-sm-5.col-md-4.col-md-offset-1
           .form-group
-            = text_field_tag 'name', class: 'form-control', required: true, placeholder: t(:name, scope: %i(pages freelancer apply form_placeholders))
+            = text_field_tag 'name', class: 'form-control', required: true, placeholder: t(:name, scope: %i(pages freelancers apply form_placeholders))
           .form-group
-            = email_field_tag 'email', class: 'form-control', required: true, placeholder: t(:email, scope: %i(pages freelancer apply form_placeholders))
+            = email_field_tag 'email', class: 'form-control', required: true, placeholder: t(:email, scope: %i(pages freelancers apply form_placeholders))
           .form-group
-            = text_field_tag 'location', class: 'form-control', required: true, placeholder: t(:location, scope: %i(pages freelancer apply form_placeholders))
+            = text_field_tag 'location', class: 'form-control', required: true, placeholder: t(:location, scope: %i(pages freelancers apply form_placeholders))
         .col-sm-7.col-md-6
           .form-group
-            %textarea#message.form-control.white-large{ name: 'message', required: true, placeholder: t(:message, scope: %i(pages freelancer apply form_placeholders)) }
+            %textarea#message.form-control.white-large{ name: 'message', required: true, placeholder: t(:message, scope: %i(pages freelancers apply form_placeholders)) }
           = submit_tag t(:submit), class: 'btn btn-primary', data: { loading: t(:please_wait) }
     = partial 'partials/form-messages'
 

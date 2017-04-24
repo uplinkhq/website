@@ -15,10 +15,10 @@ id: contact
       .row
         .col-lg-6.col-lg-offset-3
           .form-group
-            = text_field_tag 'name', class: 'form-control', required: true, placeholder: 'Your name'
+            = text_field_tag 'name', class: 'form-control', required: true, placeholder: t(:name, scope: %i(pages contact form_placeholders))
           .form-group
-            = email_field_tag 'email', class: 'form-control', required: true, placeholder: 'Your email'
+            = email_field_tag 'email', class: 'form-control', required: true, placeholder: t(:email, scope: %i(pages contact form_placeholders))
           .form-group
-            %textarea#message.form-control.autosize{ name: 'message', rows: 1, required: true, placeholder: 'Your message' }
+            %textarea#message.form-control.autosize{ name: 'message', rows: 1, required: true, placeholder: t(:message, scope: %i(pages contact form_placeholders)) }
           = submit_tag t(:submit), class: 'btn btn-primary', data: { loading: t(:please_wait) }
     = partial 'partials/form-messages'

@@ -11,7 +11,7 @@ id: companies
     = link_to '#', class: 'btn btn-info', data: { toggle: 'modal', target: '#freelancer-request-modal' } do
       = icon 'search'
       = t :cta, scope: %i(pages companies)
-    = link_to 'Contact us', '#contact', class: 'btn btn-link'
+    = link_to t(:contact_us, scope: %i(pages companies)), '#contact', class: 'btn btn-link'
 
 - content_for :before_content do
   #freelancer-request-modal.modal.fade
@@ -31,7 +31,7 @@ id: companies
 %section#how-it-works
   .container
     %h2
-      How does it work?
+      = t :headline, scope: %i(pages companies how_it_works)
     .row.columns
       .col-sm-4
         %h3
@@ -39,93 +39,91 @@ id: companies
             = icon 'circle', class: 'fa-stack-2x'
             %span.fa-inverse.fa-stack-1x
               1
-          Contact us
+          = t :headline, scope: %i(pages companies how_it_works step_1)
         %p
-          Get in touch by email or via the form below and tell us who you are looking for. We will get back to you within 24 hours.
+          = t :text, scope: %i(pages companies how_it_works step_1), freelancer_request_form_link: link_to(t(:freelancer_request_form_link_text, scope: %i(pages companies how_it_works step_1)), '#', data: { toggle: 'modal', target: '#freelancer-request-modal' }), contact_form_link: link_to(t(:contact_form_link_text, scope: %i(pages companies how_it_works step_1)), '#contact'), email_link: mail_to('hello@uplink.tech', t(:email_link_text, scope: %i(pages companies how_it_works step_1)))
       .col-sm-4
         %h3
           %span.fa-stack
             = icon 'circle', class: 'fa-stack-2x'
             %span.fa-inverse.fa-stack-1x
               2
-          Review our candidates
+          = t :headline, scope: %i(pages companies how_it_works step_2)
         %p
-          Once we know what you need, we contact our experts who will be the best fit. If they are interested, we introduce them to you.
+          = t :text, scope: %i(pages companies how_it_works step_2)
       .col-sm-4
         %h3
           %span.fa-stack
             = icon 'circle', class: 'fa-stack-2x'
             %span.fa-inverse.fa-stack-1x
               3
-          Hire the best
+          = t :headline, scope: %i(pages companies how_it_works step_3)
         %p
-          When you decide who you want to work with, you hire them directly. When the freelancer invoices you, you pay a one-time commission.
+          = t :text, scope: %i(pages companies how_it_works step_3)
 
 %section#techs.gray-bg
   .container
     %h2
-      Find an expert for any technology
+      = t :headline, scope: %i(pages companies techs)
     %p
-      No matter what programming language or framework you use, through Uplink you can find an experienced developer who can hit the ground running!
-      %br
-      Our members are proficient in:
+      = markdown t(:text, scope: %i(pages companies techs))
     - config[:tech_images].each_slice(4) do |tech_image_group|
       .row.columns
         - tech_image_group.each do |label, image|
           .col-sm-3
             = image_tag "techs/#{image}", alt: label
     %p
-      \...and many more technologies!
+      = t :suffix, scope: %i(pages companies techs)
 
 %section#benefits
   .container
     %h2
-      What makes us great?
+      = t :headline, scope: %i(pages companies benefits)
     .row.columns
       .col-sm-6
         %h3
           = icon 'link'
           %br
-          Let us be your network
+          = t :headline, scope: %i(pages companies benefits section_1)
         %p
-          Uplink offers instant access to hundreds of mobile, frontend, backend, and fullstack developers. If your perfect match is not yet among them, we make our network work for you and find them. Whether you need someone next week or six months from now, remotely or on-site, for just a few days or on an ongoing basis, we can help you find the right candidate!
+          = t :text, scope: %i(pages companies benefits section_1)
       .col-sm-6
         %h3
           = icon 'comments'
           %br
-          Personal introductions
+          = t :headline, scope: %i(pages companies benefits section_2)
         %p
-          We won’t send you a dozen barely relevant profiles and leave you to figure out who can really do the job. Instead, we take our time to understand your requirements and introduce you to the one or two candidates who are the best fit for you. We strongly believe this process should not be automated by simply matching up client requirements and developer skills.
+          = t :text, scope: %i(pages companies benefits section_2)
     .row.columns
       .col-sm-6
         %h3
           = icon 'briefcase'
           %br
-          Vetted professionals
+          = t :headline, scope: %i(pages companies benefits section_3)
         %p
-          We work exclusively with senior developers who have years of freelancing experience, and we vet each freelancer personally so you don’t have to. Fluent English, professional communication, and timely delivery are just a few of the qualities each of our freelancers has. You can trust that every candidate recommended by us will live up to your highest standards.
+          = t :text, scope: %i(pages companies benefits section_3)
       .col-sm-6
         %h3
           = icon 'code'
           %br
-          We are developers, not recruiters
+          = t :headline, scope: %i(pages companies benefits section_4)
         %p
-          Being developers ourselves, we can take our time to really understand your tech stack and help you figure out what skills a developer needs to work out for you. Non-technical recruiters have to make do with a list of requirements they don’t understand, and try to find candidates by simply comparing this list to the candidate’s profile, which is inefficient and error-prone.
+          = t :text, scope: %i(pages companies benefits section_4)
     .row.columns
       .col-sm-6
         %h3
           = icon 'building-o'
           %br
-          On-site in Berlin, remotely worldwide
+          = t :headline, scope: %i(pages companies benefits section_5)
         %p
-          We are currently focussing our efforts on building a tight-knit network of freelancers based in Berlin. This enables us to offer on-site freelancers to the startups and media companies in Berlin, and remote work to clients anywhere in the world. We will soon roll out our service in Hamburg, Munich, Frankfurt a.M. and more cities across Germany and internationally.
+          = t :text, scope: %i(pages companies benefits section_5)
       .col-sm-6
         %h3
           = icon 'paw'
           %br
-          Get one step ahead
+          = t :headline, scope: %i(pages companies benefits section_5)
         %p
-          A big project coming up a few months from now? Let us know now! While our freelancers are often flexible and available on short notice, they value stability and like to plan ahead as much as possible. A longer time frame will also give you the possibility to talk to a well-suited candidate early and get feedback on the project plan and requirements.
+          = t :text, scope: %i(pages companies benefits section_6)
 
 %section#testimonial.testimonials.gray-bg
   .container
@@ -152,36 +150,31 @@ id: companies
 %section#pricing
   .container
     %h2
-      Pricing
+      = t :headline, scope: %i(pages companies pricing)
     %p
-      %strong
-        Our service is free for companies.
-      We want to make it as simple as possible for you to go through Uplink to find a great freelance developer!
+      = markdown t(:text, scope: %i(pages companies pricing))
 
 = partial 'partials/section-about'
 
 %section#contact.gray-bg
   .container
     %h2
-      Contact us
+      = t :headline, scope: %i(pages companies contact)
     %p
-      If you're currently looking for a freelancer, you can
-      = link_to 'open a request right now!', '#', data: { toggle: 'modal', target: '#freelancer-request-modal' }
-      If you have any questions or you'd like to talk to us before opening a request, please fill out this form or
-      = mail_to 'hello@uplink.tech', 'send us a mail.'
+      = t :text, scope: %i(pages companies contact), freelancer_request_form_link: link_to(t(:freelancer_request_form_link_text, scope: %i(pages companies contact)), '#', data: { toggle: 'modal', target: '#freelancer-request-modal' }), email_link: mail_to('hello@uplink.tech', t(:email_link_text, scope: %i(pages companies contact)))
     = form_tag config[:form_url] do
       = hidden_field_tag '_subject', value: 'Company contact'
       .row
         .col-sm-6
           .form-group
-            = text_field_tag 'name', class: 'form-control', required: true, placeholder: 'Your name'
+            = text_field_tag 'name', class: 'form-control', required: true, placeholder: t(:name, scope: %i(pages companies contact form_placeholders))
           .form-group
-            = email_field_tag 'email', class: 'form-control', required: true, placeholder: 'Your email'
+            = email_field_tag 'email', class: 'form-control', required: true, placeholder: t(:email, scope: %i(pages companies contact form_placeholders))
           .form-group
-            = text_field_tag 'company', class: 'form-control', placeholder: 'Your company (optional)'
+            = text_field_tag 'company', class: 'form-control', placeholder: t(:company, scope: %i(pages companies contact form_placeholders))
         .col-sm-6
           .form-group
-            %textarea#message.form-control.white-large{ name: 'message', required: true, placeholder: 'How can we help?' }
+            %textarea#message.form-control.white-large{ name: 'message', required: true, placeholder: t(:message, scope: %i(pages companies contact form_placeholders)) }
           = submit_tag t(:submit), class: 'btn btn-info', data: { loading: t(:please_wait) }
     = partial 'partials/form-messages'
 
