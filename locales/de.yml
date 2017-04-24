@@ -1,4 +1,10 @@
 de:
+  submit: Absenden
+  please_wait: Bitte warten...
+
+  form_messages:
+    confirm: Vielen Dank! Wir melden uns so bald wie möglich bei dir!
+    error: Oh oh! Da ist was schiefgelaufen... bitte versuch es nochmal!
 
   freelancer_request_form:
     url: https://uplinkhq.typeform.com/to/nIX7An
@@ -151,6 +157,39 @@ de:
         section_6:
           headline: Wir wissen, was du wert bist
           text: Mit einem Kunden den eigenen Tagessatz zu verhandeln, kann der anstrengendste Teil des ganzen Projekts sein. Wir klären daher frühzeitig, welches Budget der Kunde zur Verfügung hat, und schlagen dir selbstverständlich nur Projekte vor, die deinem Tagessatz entsprechen. So kommt es, wenn das Thema später zur Sprache kommt, nicht zu bösen Überraschungen.
+
+      testimonials:
+
+        - text: Kurz nachdem ich bei Uplink aufgenommen wurde, wurde mir ein Projekt bei einem Startup in Berlin angeboten. Ich wurde direkt mit dem CTO verknüpft und war wenige Tage später mit an Bord. Einfacher gehts nicht!
+          name: Mirko Strugar
+          url: https://www.linkedin.com/in/mirkostrugar/
+          subtitle: Frontent-Entwickler
+
+        - text: Durch Uplink habe ich Kontakt zu einer Medienfirma in Hamburg bekommen. Ich wurde dem Head of IT vorgestellt und bekam schon vor dem ersten Treffen viele Informationen über die Firma, z.B. welchen Tagessatz ich berechnen kann.
+          name: Alexander Frischbutter
+          url: http://fribu.de/
+          subtitle: Fullstack-Entwickler
+
+      pricing:
+        headline: Erfolgsgebühr
+        text_1: Unser Ziel ist es, eine faire und transparente Erfolgsgebühr zu berechnen, wenn unsere Mitglieder neue Kunden über Uplink finden.
+        text_2: |
+          Wir bitten den Freelancer, eine Gebühr von 10% des monatlichen Verdienstes zu bezahlen, für max. 12 Monate, **gedeckelt bei 1.500€ pro Kunde insgesamt (nicht monatlich)**. Wenn ein Freelancer also einen neuen Kunden findet und mit diesem für eine lange Zeit und an mehreren Projekten zusammen arbeitet, braucht er keine Gebühr mehr zahlen, sobald die Deckelung erreicht ist.
+
+          Die meisten unserer Mitglieder schlagen diese Gebühr einfach auf ihren Stundensatz auf, so dass sie sie im Endeffekt überhaupt nicht bemerken.
+        monthly: monatlich
+        max_amount: 1.500€
+        total_per_client: insgesamt pro Kunde
+
+      apply:
+        headline: Bei Uplink bewerben
+        text: Wenn du ein Senior-Entwickler mit mindestens zwei Jahren Erfahrung als Freelancer bist, bewirb dich jetzt!
+
+        form_placeholders:
+          name: Dein Name
+          email: Deine Email-Adresse
+          location: Dein Wohnort
+          message: Erzähl uns ein wenig über dich! Bist du ein Frontend-, Backend-, Fullstack- oder Mobile-Entwickler? Welche Programmiersprachen und Frameworks benutzt du gerne? Arbeitest du gerne für Startups, Agenturen oder größere Firmen? Remote oder vor Ort? Bitte vergiss auch nicht Links zu deinen Online-Profilen bei XING, Linkedin und GitHub, und zu anderen relevanten Webseiten von dir.
 
     companies:
       cta: Freelancer finden

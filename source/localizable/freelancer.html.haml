@@ -100,69 +100,58 @@ id: freelancers
 %section#testimonial.testimonials.gray-bg
   .container
     .row
-      .col-sm-6
-        %p
-          Manuel found a fantastic project at a Berlin startup for me. He already knew the CTO and some of the developers, so it felt as if he had referred me to some friends, which was a great way to start a project!
-        .author
-          = link_to 'https://www.linkedin.com/in/mirkostrugar', target: '_blank' do
-            = image_tag 'testimonials/mirko-strugar.jpg', alt: 'Mirko Strugar', lazy: true
-            Mirko Strugar
-            %br
-            Frontent developer
-      .col-sm-6
-        %p
-          Through Uplink I got in touch with a media company in Berlin. I was introduced directly to the Head of IT, and I had lots of information about the company before meeting with them, e.g. what rate I could charge.
-        .author
-          = link_to 'http://www.fincha.com', target: '_blank' do
-            = image_tag 'testimonials/alexander-frischbutter.jpg', alt: 'Alexander Frischbutter', lazy: true
-            Alexander Frischbutter
-            %br
-            Fullstack developer
+      - t(:testimonials, scope: %i(pages freelancer)).each do |testimonial|
+        .col-sm-6
+          %p
+            = testimonial[:text]
+          .author
+            = link_to testimonial[:url], target: '_blank' do
+              = image_tag "testimonials/#{testimonial[:name].downcase.gsub(/\s+/, '-')}.jpg", alt: testimonial[:name], lazy: true
+              = testimonial[:name]
+              %br
+              = testimonial[:subtitle]
 
 %section#pricing
   .container
     %h2
-      Pricing
+      = t :headline, scope: %i(pages freelancer pricing)
     %p
-      Our aim is to charge a fair and transparent success when our members find a new client through Uplink.
+      = t :text_1, scope: %i(pages freelancer pricing)
     #pricing-badge
       .percentage
-        10%
+        .number
+          10%
+        = t :monthly, scope: %i(pages freelancer pricing)
       .max
-        max. 12 months
-        %br
-        max. 1,500€ per client total
+        max.
+        .number
+          = t :max_amount, scope: %i(pages freelancer pricing)
+        = t :total_per_client, scope: %i(pages freelancer pricing)
     %p
-      We ask the freelancer to pay a fee of 10% of their monthly earnings, for max. 12 months, capped at
-      %strong
-        1,500€ per client in total (not monthly).
-      This means that if a freelancer finds a client and works with them for a long time and over many projects, he will not have to pay any more fees once the cap is reached. Most of our members simply add the fee to their hourly rate, so in the end they don't even notice it.
+      = markdown t(:text_2, scope: %i(pages freelancer pricing))
 
 = partial 'partials/section-about'
 
 %section#apply.gray-bg
   .container
     %h2
-      Apply to join Uplink
+      = t :headline, scope: %i(pages freelancer apply)
     %p
-      If you are a senior developer
-      %strong
-        based in Berlin, Germany,
-      with at least a couple of years experience in freelancing, please apply below!
+      = t :text, scope: %i(pages freelancer apply)
     = form_tag config[:form_url] do
       = hidden_field_tag '_subject', value: 'Freelancer application'
       .row
         .col-sm-5.col-md-4.col-md-offset-1
           .form-group
-            = text_field_tag 'name', class: 'form-control', required: true, placeholder: 'Your name'
+            = text_field_tag 'name', class: 'form-control', required: true, placeholder: t(:name, scope: %i(pages freelancer apply form_placeholders))
           .form-group
-            = email_field_tag 'email', class: 'form-control', required: true, placeholder: 'Your email'
+            = email_field_tag 'email', class: 'form-control', required: true, placeholder: t(:email, scope: %i(pages freelancer apply form_placeholders))
           .form-group
-            = text_field_tag 'location', class: 'form-control', required: true, placeholder: 'Your location'
+            = text_field_tag 'location', class: 'form-control', required: true, placeholder: t(:location, scope: %i(pages freelancer apply form_placeholders))
         .col-sm-7.col-md-6
           .form-group
-            %textarea#message.form-control.white-large{ name: 'message', required: true, placeholder: "Tell us a bit about yourself! Are you a frontend, backend, fullstack or mobile developer? What programming languages and frameworks do you like to work with? Do you enjoy working for small startups, agencies, or big companies? Remote or on-site? Please include links to your profiles on GitHub, Linkedin, and any other service you deem relevant!" }
-          = submit_tag 'Submit', class: 'btn btn-primary', data: { loading: 'Please wait...' }
+            %textarea#message.form-control.white-large{ name: 'message', required: true, placeholder: t(:message, scope: %i(pages freelancer apply form_placeholders)) }
+          = submit_tag t(:submit), class: 'btn btn-primary', data: { loading: t(:please_wait) }
     = partial 'partials/form-messages'
 
 -#%section#faq

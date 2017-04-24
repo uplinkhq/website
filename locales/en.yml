@@ -1,4 +1,10 @@
 en:
+  submit: Submit
+  please_wait: Please wait...
+
+  form_messages:
+    confirm: Thanks! We'll be in touch with you shortly!
+    error: Uh-oh! Something went wrong... please try again!
 
   freelancer_request_form:
     url: https://uplinkhq.typeform.com/to/usav18
@@ -149,6 +155,39 @@ en:
         section_6:
           headline: We know what you’re worth
           text: Negotiating a rate with a potential client can be the most stressful part of the whole project. This is why we ask the client about their budget early on in the process, and of course only offer you projects that match your personal rate as well. This way you know that you and the client are playing in the same ballpark before you even talk to them.
+
+      testimonials:
+
+        - text: Shortly after joining Uplink, I was offered a project at a startup in Berlin. I was connected directly with the CTO and got on board there a few days later. I don't know how this could have gone any smoother...
+          name: Mirko Strugar
+          url: https://www.linkedin.com/in/mirkostrugar/
+          subtitle: Frontent developer
+
+        - text: Through Uplink I got in touch with a media company in Hamburg. I was introduced directly to the Head of IT, and I had lots of information about the company before meeting with them, e.g. what rate I could charge.
+          name: Alexander Frischbutter
+          url: http://www.fincha.com
+          subtitle: Fullstack developer
+
+      pricing:
+        headline: Pricing
+        text_1: Our aim is to charge a fair and transparent success fee when our members find a new client through Uplink.
+        text_2: |
+          We ask the freelancer to pay a fee of 10% of their monthly earnings, for max. 12 months, **capped at 1,500€ per client in total (not monthly)**. This means that if a freelancer finds a new client and works with them for a long time and over many projects, he will not have to pay any more fees once the cap is reached.
+
+          Most of our members simply add the fee to their hourly rate, so in the end they don't even notice it.
+        monthly: monthly
+        max_amount: 1,500€
+        total_per_client: per client in total
+
+      apply:
+        headline: Apply to join Uplink
+        text: If you are a senior developer with at least a couple of years experience in freelancing, please apply below!
+
+        form_placeholders:
+          name: Your name
+          email: Your email
+          location: Your location
+          message: Tell us a bit about yourself! Are you a frontend, backend, fullstack or mobile developer? What programming languages and frameworks do you like to work with? Do you enjoy working for startups, agencies, or big companies? Remote or on-site? Please include links to your profiles on XING, Linkedin, GitHub, and any other service you deem relevant!
 
     companies:
       cta: Find a Freelancer

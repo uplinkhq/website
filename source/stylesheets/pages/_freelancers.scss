@@ -55,17 +55,28 @@ body#freelancers {
           margin: 0 auto 40px;
           max-width: 300px;
 
-          .percentage {
-            padding: 20px 0 10px;
+          .number {
             line-height: 1;
+          }
+
+          .percentage {
             color: $dusty-orange;
-            font-size: 90px;
+            padding: 15px 5px 10px;
+
+            .number {
+              font-size: 90px;
+            }
           }
 
           .max {
-            padding: 5px 0;
             color: white;
             background-color: $dusty-orange;
+            padding: 10px 5px 15px;
+
+            .number {
+              font-size: 70px;
+              margin: 2px 0;
+            }
           }
         }
       }

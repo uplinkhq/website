@@ -182,7 +182,7 @@ id: companies
         .col-sm-6
           .form-group
             %textarea#message.form-control.white-large{ name: 'message', required: true, placeholder: 'How can we help?' }
-          = submit_tag 'Submit', class: 'btn btn-info', data: { loading: 'Please wait...' }
+          = submit_tag t(:submit), class: 'btn btn-info', data: { loading: t(:please_wait) }
     = partial 'partials/form-messages'
 
 / %section#faq

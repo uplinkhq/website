@@ -20,5 +20,5 @@ id: contact
             = email_field_tag 'email', class: 'form-control', required: true, placeholder: 'Your email'
           .form-group
             %textarea#message.form-control.autosize{ name: 'message', rows: 1, required: true, placeholder: 'Your message' }
-          = submit_tag 'Submit', class: 'btn btn-primary', data: { loading: 'Please wait...' }
+          = submit_tag t(:submit), class: 'btn btn-primary', data: { loading: t(:please_wait) }
     = partial 'partials/form-messages'
