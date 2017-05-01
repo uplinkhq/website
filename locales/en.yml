@@ -239,12 +239,24 @@ en:
           text: Being developers ourselves, we can take our time to really understand your tech stack and help you figure out what skills a developer needs to work out for you. Non-technical recruiters have to make do with a list of requirements they don’t understand, and try to find candidates by simply comparing this list to the candidate’s profile, which is inefficient and error-prone.
 
         section_5:
-          headline: On-site in Berlin, remotely worldwide
-          text: We are currently focussing our efforts on building a tight-knit network of freelancers based in Berlin. This enables us to offer on-site freelancers to the startups and media companies in Berlin, and remote work to clients anywhere in the world. We will soon roll out our service in Hamburg, Munich, Frankfurt a.M. and more cities across Germany and internationally.
+          headline: On-site or remote
+          text: Our members understand that it's often easier for clients to work with them on-site at their office. Nevertheless you can increase your chances for a good match if you allow the developer to work remotely partly or completely. This gives the freelancer the freedom to do their best work for you and also increases the likelihood for a long-term cooperation.
 
         section_6:
-          headline: Get one step ahead
-          text: A big project coming up a few months from now? Let us know now! While our freelancers are often flexible and available on short notice, they value stability and like to plan ahead as much as possible. A longer time frame will also give you the possibility to talk to a well-suited candidate early and get feedback on the project plan and requirements.
+          headline: Transparency wins
+          text: One of the biggest requests of IT freelancers for recruiters is more transparency - if it's missing between the freelancer and recruiter, the client relationship starts off on shaky ground as well. We therefore try to be as transparent as possible to the clients as well as the freelancers, starting with our pricing and extending to all other parts of our business.
+
+      testimonials:
+
+        - text: Uplink has been a reliable partner in finding Senior freelance developers who are available right away! We were able to finish a few customer projects much quicker thanks to promptly finding an expert for a specific topic through Uplink.
+          name: Marcel Tuch
+          url: http://www.code-b.com/
+          subtitle: CTO @ code-b agile websolutions GmbH
+
+        - text: Compared to other ways I have tried to find freelancers, the team from Uplink really helped me save time. Their personal approach and responsiveness was really pleasant and effective, which is quite rare nowadays.
+          name: Colin Kippenberg
+          url: http://www.geschenkidee.de/
+          subtitle: Co-Founder & CMO @ Geschenkidee D&A GmbH
 
       pricing:
         headline: Pricing

@@ -119,33 +119,25 @@ id: companies
           = t :text, scope: %i(pages companies benefits section_5)
       .col-sm-6
         %h3
-          = icon 'paw'
+          = icon 'smile-o'
           %br
-          = t :headline, scope: %i(pages companies benefits section_5)
+          = t :headline, scope: %i(pages companies benefits section_6)
         %p
           = t :text, scope: %i(pages companies benefits section_6)
 
 %section#testimonial.testimonials.gray-bg
   .container
     .row
-      .col-sm-6
-        %p
-          Uplink has been a reliable partner in finding Senior freelance developers who are available right away! We were able to finish a few customer projects much quicker thanks to promptly finding an expert for a specific topic through Uplink.
-        .author
-          = link_to 'http://www.code-b.com', target: '_blank' do
-            = image_tag 'testimonials/marcel-tuch.jpg', alt: 'Marcel Tuch', lazy: true
-            Marcel Tuch
-            %br
-            CTO @ code-b agile websolutions GmbH
-      .col-sm-6
-        %p
-          Compared to other ways I have tried to find freelancers, the team from Uplink really helped me save time. Their personal approach and responsiveness was really pleasant and effective, which is quite rare nowadays.
-        .author
-          = link_to 'http://www.geschenkidee.de', target: '_blank' do
-            = image_tag 'testimonials/colin-kippenberg.jpg', alt: 'Colin Kippenberg', lazy: true
-            Colin Kippenberg
-            %br
-            Co-Founder & CMO @ Geschenkidee D&A GmbH
+      - t(:testimonials, scope: %i(pages companies)).each do |testimonial|
+        .col-sm-6
+          %p
+            = testimonial[:text]
+          .author
+            = link_to testimonial[:url], target: '_blank' do
+              = image_tag "testimonials/#{testimonial[:name].downcase.gsub(/\s+/, '-')}.jpg", alt: testimonial[:name], lazy: true
+              = testimonial[:name]
+              %br
+              = testimonial[:subtitle]
 
 %section#pricing
   .container

@@ -87,7 +87,7 @@ de:
         headline: Unser Service für Firmen
 
         section_1:
-          headline: Wir sind euer Netzwerk
+          headline: Wir sind dein Netzwerk
           text: Uplink ist ein Netzwerk von Hunderten von Entwicklern aus allen Bereichen. Egal, ob du jemanden nächste Woche oder in sechs Monaten brauchst, für nur ein paar Tage oder längerfristig - wir helfen dir, den richtigen Kandidaten zu finden!
 
         section_2:
@@ -222,34 +222,46 @@ de:
         suffix: ...und vielen anderen Technologien!
 
       benefits:
-        headline: What makes us great?
+        headline: Was macht uns einzigartig?
 
         section_1:
-          headline: Let us be your network
-          text: Uplink offers instant access to hundreds of mobile, frontend, backend, and fullstack developers. If your perfect match is not yet among them, we make our network work for you and find them. Whether you need someone next week or six months from now, remotely or on-site, for just a few days or on an ongoing basis, we can help you find the right candidate!
+          headline: Wir sind dein Netzwerk
+          text: Uplink ist ein Netzwerk von Hunderten von Entwicklern aus allen Bereichen. Falls ein guter Match für deine Anforderungen trotzdem nicht dabei ist, finden wir ihn über unsere Mitglieder. Egal, ob du jemanden nächste Woche oder in sechs Monaten brauchst, für nur ein paar Tage oder längerfristig - wir helfen dir, den richtigen Kandidaten zu finden!
 
         section_2:
-          headline: Personal introductions
-          text: We won’t send you a dozen barely relevant profiles and leave you to figure out who can really do the job. Instead, we take our time to understand your requirements and introduce you to the one or two candidates who are the best fit for you. We strongly believe this process should not be automated by simply matching up client requirements and developer skills.
+          headline: Persönliche Empfehlungen
+          text: Wir schicken dir nicht Dutzende von Profilen, die du selbst bewerten und die Kandidaten kontaktieren musst. Stattdessen nehmen wir uns die Zeit, deine Anforderugen genau zu verstehen, und stellen dir dann den für dich besten Kandidaten vor. Der Versuch, diesen Prozess zu automatisieren, würde sowohl für dich als auch für die Kandidaten zu Frustration führen.
 
         section_3:
-          headline: Vetted professionals
-          text: We work exclusively with senior developers who have years of freelancing experience, and we vet each freelancer personally so you don’t have to. Fluent English, professional communication, and timely delivery are just a few of the qualities each of our freelancers has. You can trust that every candidate recommended by us will live up to your highest standards.
+          headline: Geprüfte Experten
+          text: Wir arbeiten ausschließlich mit Senior-Entwicklern, die jahrelange Erfahrung als Freelancer haben, und wir prüfen jeden Kandidaten persönlich. Dabei achten wir auf gute Englischkenntnisse, professionelle Kommunikation und eine ausgeprägte Fähigkeit zum Zeitmanagement. Du kannst bei jeder Empfehlung davon ausgehen, dass der Freelancer deine höchsten Ansprüche erfüllt.
 
         section_4:
-          headline: We are developers, not recruiters
-          text: Being developers ourselves, we can take our time to really understand your tech stack and help you figure out what skills a developer needs to work out for you. Non-technical recruiters have to make do with a list of requirements they don’t understand, and try to find candidates by simply comparing this list to the candidate’s profile, which is inefficient and error-prone.
+          headline: Wir sind Entwickler, keine Recruiter
+          text: Als Entwickler verstehen wir deinen Tech Stack und Entwicklungsanforderungen. Recruiter ohne Tech-Erfahrung müssen sich auf eine Liste von Anforderungen verlassen, die sie nicht verstehen, und arbeiten dadurch ineffizient und fehleranfällig. Sie nehmen dir keine Arbeit ab, sondern sind nur darauf fokussiert, Profile zu liefern, in der Hoffnung, dass dir eins davon gefällt.
 
         section_5:
-          headline: On-site in Berlin, remotely worldwide
-          text: We are currently focussing our efforts on building a tight-knit network of freelancers based in Berlin. This enables us to offer on-site freelancers to the startups and media companies in Berlin, and remote work to clients anywhere in the world. We will soon roll out our service in Hamburg, Munich, Frankfurt a.M. and more cities across Germany and internationally.
+          headline: Vor Ort oder Remote
+          text: Unsere Mitglieder verstehen, dass es für Kunden oft einfacher ist, mit Entwicklern vor Ort zusammenzuarbeiten. Trotzdem kannst du, wenn du auch Remote-Kandidaten nicht ausschließt, die Chancen auf einen guten Match erhöhen und dem Freelancer die Freiheit geben, am effektivsten für dich zu arbeiten - das erhöht die Wahrscheinlich auf eine langfristige Zusammenarbeit.
 
         section_6:
-          headline: Get one step ahead
-          text: A big project coming up a few months from now? Let us know now! While our freelancers are often flexible and available on short notice, they value stability and like to plan ahead as much as possible. A longer time frame will also give you the possibility to talk to a well-suited candidate early and get feedback on the project plan and requirements.
+          headline: Transparenz belebt das Geschäft
+          text: Einer der Hauptwünsche von IT-Freiberuflern an Vermittler ist mehr Transparenz - fehlt diese, steht auch das Verhältnis zum Kuden auf wackeligen Beinen. Wir bemühen uns daher, sowohl den Kunden als auch den Freelancern gegenüber so transparent wie möglich zu sein. Das fängt bei unseren Konditionen an und zieht sich als roter Faden durch jeden Bereich unseres Geschäfts.
+
+      testimonials:
+
+        - text: Uplink hat sich als zuverlässiger Partner für das Rekrutieren von freien Software-Entwicklern erwiesen! Wir haben dank Uplink einige Kundenprojekte viel schneller fertigstellen können und werden uns auch in Zukunft auf ihre Expertise verlassen.
+          name: Marcel Tuch
+          url: http://www.code-b.com/
+          subtitle: CTO @ code-b agile websolutions GmbH
+
+        - text: Verglichen mit anderen Services, die ich ausprobiert habe, um Freelance-Entwickler zu finden, war Uplink der einzige, der mir wirklich Zeit und Geld gespart hat. Der persönliche Ansatz und die Schnelligkeit haben mir am besten gefallen!
+          name: Colin Kippenberg
+          url: http://www.geschenkidee.de/
+          subtitle: Co-Founder & CMO @ Geschenkidee D&A GmbH
 
       pricing:
-        headline: Pricing
+        headline: Konditionen
         text: |
           **Unser Service ist für Firmen kostenlos.** Wir möchten es dir so einfach wie möglich machen, über Uplink einen Freelance-Entwickler zu finden. Daher verzichten wir auf eine Vermittlungsgebühr von den Firmen.
 
