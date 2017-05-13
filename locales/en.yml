@@ -107,6 +107,10 @@ en:
       featured_on:
         headline: As featured on
 
+      blog:
+        headline: The latest from our blog
+        read_on: Read on
+
       cta:
         headline: Ready to take the work out of finding work?
 

@@ -110,42 +110,6 @@ priority: 1.0
 
 = partial 'partials/section-about'
 
--# %section#articles
--#   .container
--#     %h2
--#       Some interesting articles
--#     .row
--#       .col-sm-4
--#         .article
--#           .header-image{ style: 'background-image: url("http://lorempixel.com/500/200/transport/")' }
--#           %h3
--#             Everything you need to know about finances as a freelancer
--#           %p
--#             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
--#             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
--#             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
--#           = link_to 'Read on', '#', class: 'btn btn-primary'
--#       .col-sm-4
--#         .article
--#           .header-image{ style: 'background-image: url("http://lorempixel.com/500/200/technics/")' }
--#           %h3
--#             Everything you need to know about finances as a freelancer
--#           %p
--#             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
--#             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
--#             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
--#           = link_to 'Read on', '#', class: 'btn btn-primary'
--#       .col-sm-4
--#         .article
--#           .header-image{ style: 'background-image: url("http://lorempixel.com/500/200/people/")' }
--#           %h3
--#             Everything you need to know about finances as a freelancer
--#           %p
--#             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
--#             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
--#             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
--#           = link_to 'Read on', '#', class: 'btn btn-primary'
-
 %section#featured-on
   .container
     %h2
@@ -154,7 +118,23 @@ priority: 1.0
       = link_to image_tag('media-coverage/deutsche-startups.png'), config[:media_coverage].fetch(:deutsche_startups), rel: 'nofollow', target: '_blank'
       = link_to image_tag('media-coverage/berlin-valley.png'),     config[:media_coverage].fetch(:berlin_valley),     rel: 'nofollow', target: '_blank'
 
-%section#cta.gray-bg
+%section#blog.gray-bg
+  .container
+    %h2
+      = t :headline, scope: %i(pages home blog)
+    .row
+      .col-sm-3
+      .col-sm-6
+        = link_to 'https://blog.uplink.tech/why-are-many-it-recruiters-technically-completely-incompetent-e924f559ed0e', class: 'post incompetent-recruiters' do
+          .header-image
+          %h3
+            Why are so many IT recruiters technically completely incompetent?
+          %p
+            There are many problems with IT recruiting nowadays, but one of the most annoying for candidates must be that many recruiters have zero technical knowledge, apart from being able to use a browser, email, Linkedin, and MS Word...
+          .btn.btn-primary
+            = t :read_on, scope: %i(pages home blog)
+
+%section#cta
   .container
     %h2
       = t :headline, scope: %i(pages home cta)

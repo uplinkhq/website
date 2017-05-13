@@ -67,18 +67,29 @@ body#home {
         @include link_color_with_dark_hover($turquoise-blue);
       }
 
-      &#articles {
+      &#blog {
 
-        .article {
+        .post {
+          display: block;
           overflow: hidden;
           border: 1px solid $gray-lighter;
+          background-color: white;
           border-radius: 10px;
           padding-bottom: 20px;
+          color: inherit;
+
+          &:hover, &:focus {
+            text-decoration: none;
+          }
 
           .header-image {
             background-position: center;
             background-size: cover;
             height: 200px;
+          }
+
+          &.incompetent-recruiters .header-image {
+            background-image: image-url("blog/incompetent-recruiters.png");
           }
 
           h3,
