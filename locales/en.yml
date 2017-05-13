@@ -191,7 +191,7 @@ en:
           name: Your name
           email: Your email
           location: Your location
-          message: Tell us a bit about yourself! Are you a frontend, backend, fullstack or mobile developer? What programming languages and frameworks do you like to work with? Do you enjoy working for startups, agencies, or big companies? Remote or on-site? Please include links to your profiles on XING, Linkedin, GitHub, and any other service you deem relevant!
+          message: Tell us a bit about yourself! Are you a frontend, backend, fullstack or mobile developer? What programming languages and frameworks do you like to work with? Do you enjoy working for startups, agencies, or big companies? Remote or on-site? Please include links to your profiles on XING, LinkedIn, GitHub, and any other service you deem relevant!
 
     companies:
       cta: Find a Freelancer
