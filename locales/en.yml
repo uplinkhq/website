@@ -63,7 +63,7 @@ en:
 
         section_1:
           headline: Find new clients you love
-          text: Join Uplink to find new challenging projects and get in touch with companies from Berlin, Hamburg, Munich, Frankfurt a.M., and many other cities of Germany. Let us handle the job sourcing, so you can focus on what you do best - writing great code!
+          text: Join Uplink to find new challenging projects and get in touch with companies from Berlin, Hamburg, Munich, Frankfurt, and many other cities of Germany. Let us handle the job sourcing, so you can focus on what you do best - writing great code!
 
         section_2:
           headline: Skip clueless recruiters
@@ -138,7 +138,7 @@ en:
 
         section_1:
           headline: Find new clients you love
-          text: Join Uplink to find new challenging projects and get in touch with companies from Berlin, Hamburg, Munich, Frankfurt a.M., and many other cities of Germany. Whether you’re looking for the intimate, dynamic feel of a startup or the hustle and bustle of an agency or large company, you can find it through Uplink. Let us handle the job sourcing, so you can focus on what you do best - writing great code!
+          text: Join Uplink to find new challenging projects and get in touch with companies from Berlin, Hamburg, Munich, Frankfurt, and many other cities of Germany. Whether you’re looking for the intimate, dynamic feel of a startup or the hustle and bustle of an agency or large company, you can find it through Uplink. Let us handle the job sourcing, so you can focus on what you do best - writing great code!
 
         section_2:
           headline: Skip clueless recruiters
@@ -310,7 +310,7 @@ en:
     berlin: Berlin
     hamburg: Hamburg
     munich: Munich
-    frankfurt: Frankfurt a.M.
+    frankfurt: Frankfurt
 
   drift:
     welcome_message: Hi there, I'm Manuel, the founder of Uplink! Ask me anything! :)

@@ -65,7 +65,7 @@ de:
 
         section_1:
           headline: Finde neue Kunden
-          text: Durch Uplink findest du spannende Projekt und neue Kunden aus Berlin, Hamburg, München, Frankfurt a.M. und vielen anderen deutschen Städten. Überlass die Jobsuche uns und fokussier dich auf das, was du am besten kannst - großartigen Code schreiben!
+          text: Durch Uplink findest du spannende Projekt und neue Kunden aus Berlin, Hamburg, München, Frankfurt und vielen anderen deutschen Städten. Überlass die Jobsuche uns und fokussier dich auf das, was du am besten kannst - großartigen Code schreiben!
 
         section_2:
           headline: Lass "IT-Recruiter" links liegen
@@ -140,7 +140,7 @@ de:
 
         section_1:
           headline: Finde neue Kunden
-          text: Durch Uplink findest du spannende Projekt und neue Kunden aus Berlin, Hamburg, München, Frankfurt a.M. und vielen anderen deutschen Städten. Egal, ob du die Dynamik eines Startups oder die Herausforderungen einer Agentur oder größeren Firma suchst, du findest entsprechende Projekte durch Uplink! Überlass die Jobsuche uns, so dass du dich auf deine Arbeit fokussieren kannst!
+          text: Durch Uplink findest du spannende Projekt und neue Kunden aus Berlin, Hamburg, München, Frankfurt und vielen anderen deutschen Städten. Egal, ob du die Dynamik eines Startups oder die Herausforderungen einer Agentur oder größeren Firma suchst, du findest entsprechende Projekte durch Uplink! Überlass die Jobsuche uns, so dass du dich auf deine Arbeit fokussieren kannst!
 
         section_2:
           headline: Lass "IT-Recruiter" links liegen
@@ -312,7 +312,7 @@ de:
     berlin: Berlin
     hamburg: Hamburg
     munich: München
-    frankfurt: Frankfurt a.M.
+    frankfurt: Frankfurt
 
   drift:
     welcome_message: Hi, Manuel hier, der Gründer von Uplink! Schreib mir, wenn du eine Frage hast! :)
