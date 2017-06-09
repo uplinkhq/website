@@ -88,12 +88,17 @@ body#home {
             height: 200px;
           }
 
+          &.pitch .header-image {
+            background-image: image-url("blog/pitch.jpg");
+          }
+
           &.incompetent-recruiters .header-image {
             background-image: image-url("blog/incompetent-recruiters.png");
           }
 
           h3,
-          p {
+          p,
+          .date {
             text-align: left;
             padding-left: 20px;
             padding-right: 20px;
@@ -101,11 +106,23 @@ body#home {
 
           h3 {
             margin-top: 20px;
+            margin-bottom: 5px;
+          }
+
+          .date {
+            font-size: 0.8em;
+            color: $gray-light;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
           }
 
           p {
             margin-bottom: 30px;
           }
+        }
+
+        a.btn-link {
+          margin-top: 60px;
         }
       }
 

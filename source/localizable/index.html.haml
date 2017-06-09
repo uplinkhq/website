@@ -123,16 +123,29 @@ priority: 1.0
     %h2
       = t :headline, scope: %i(pages home blog)
     .row
-      .col-sm-3
+      .col-sm-6
+        = link_to 'https://blog.uplink.tech/whats-in-a-pitch-cc80cefb7cb8', class: 'post pitch' do
+          .header-image
+          %h3
+            What’s in a pitch?
+          .date
+            JUNE 9, 2017
+          %p
+            I’m not a big fan of “pitching” your startup — too often it leads to relatively simple and straightforward ideas being described as “disruptive” and “world-changing”, because people look at the pitches of Facebook, AirBnB, Uber...
+          .btn.btn-primary
+            = t :read_on, scope: %i(pages home blog)
       .col-sm-6
         = link_to 'https://blog.uplink.tech/why-are-many-it-recruiters-technically-completely-incompetent-e924f559ed0e', class: 'post incompetent-recruiters' do
           .header-image
           %h3
             Why are so many IT recruiters technically completely incompetent?
+          .date
+            MAY 13, 2017
           %p
             There are many problems with IT recruiting nowadays, but one of the most annoying for candidates must be that many recruiters have zero technical knowledge, apart from being able to use a browser, email, LinkedIn, and MS Word...
           .btn.btn-primary
             = t :read_on, scope: %i(pages home blog)
+    = link_to "All stories from our blog &raquo;", 'https://blog.uplink.tech/', class: 'btn btn-link'
 
 %section#cta
   .container
