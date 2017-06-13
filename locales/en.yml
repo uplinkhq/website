@@ -107,6 +107,14 @@ en:
       featured_on:
         headline: As featured on
 
+      partners:
+        headline: Partners
+        text_1: We have teamed up with some great companies that offer special deals exclusively to our members.
+        text_2: More partners coming soon!
+
+        kontist:
+          text: Kontist is a startup from Berlin that offers a bank account specifically tailored for freelancers. Uplink members receive a 50€ starting balance!
+
       blog:
         headline: The latest from our blog
         read_on: Read on

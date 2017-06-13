@@ -118,7 +118,22 @@ priority: 1.0
       = link_to image_tag('media-coverage/deutsche-startups.png'), config[:media_coverage].fetch(:deutsche_startups), rel: 'nofollow', target: '_blank'
       = link_to image_tag('media-coverage/berlin-valley.png'),     config[:media_coverage].fetch(:berlin_valley),     rel: 'nofollow', target: '_blank'
 
-%section#blog.gray-bg
+%section#partners.gray-bg
+  .container
+    %h2
+      = t :headline, scope: %i(pages home partners)
+    %p
+      = t :text_1, scope: %i(pages home partners)
+    .row.columns.list
+      .col-sm-4.col-sm-offset-4
+        = image_tag 'partners/kontist.png'
+        = link_to 'kontist.com', 'https://kontist.com/', rel: 'nofollow', target: '_blank', class: 'small'
+        %p
+          = t :text, scope: %i(pages home partners kontist)
+    %p
+      = t :text_2, scope: %i(pages home partners)
+
+%section#blog
   .container
     %h2
       = t :headline, scope: %i(pages home blog)
@@ -147,7 +162,7 @@ priority: 1.0
             = t :read_on, scope: %i(pages home blog)
     = link_to "All stories from our blog &raquo;", 'https://blog.uplink.tech/', class: 'btn btn-link'
 
-%section#cta
+%section#cta.gray-bg
   .container
     %h2
       = t :headline, scope: %i(pages home cta)

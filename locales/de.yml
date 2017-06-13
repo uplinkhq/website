@@ -109,6 +109,14 @@ de:
       featured_on:
         headline: Bekannt aus
 
+      partners:
+        headline: Partner
+        text_1: Wir haben mit einigen großartigen Firmen Partnerschaften abgeschlossen, die unseren Mitgliedern exklusive Vorteile anbieten.
+        text_2: Weitere Partnerschaften kommen bald!
+
+        kontist:
+          text: Kontist ist ein Startup aus Berlin, das ein Bankkonto speziell für Freelancer anbietet! Mitglieder von Uplink erhalten ein Startguthaben von 50€!
+
       blog:
         headline: Das Neueste aus unserem Blog
         read_on: Weiterlesen
