@@ -10,7 +10,7 @@
         = link_to t(:press_kit, scope: :menu),      localized_path('press-kit')
         = link_to t(:media_coverage, scope: :menu), localized_path('medien')
       .col-sm-6.social
-        - %w(linkedin.svg xing.svg twitter.svg facebook.svg google-plus.svg angellist.png).each do |service|
+        - %w(linkedin.svg xing.svg twitter.svg facebook.svg google-plus.svg angellist.png github.png).each do |service|
           = link_to image_tag("social/#{service}", lazy: true), config[:profiles].fetch(service.split('.').first.underscore.to_sym), target: '_blank'
       .col-sm-3.made-in-berlin
         = image_tag 'made-in-berlin.png', lazy: true, alt: 'Made in Berlin'

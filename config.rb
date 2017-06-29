@@ -70,7 +70,8 @@ set :profiles, {
   xing:        'https://www.xing.com/companies/uplinkfreelancedevelopernetwork',
   linkedin:    'https://www.linkedin.com/company/uplink-freelance-developer-network',
   google_plus: 'https://plus.google.com/+UplinkTechNetwork',
-  angellist:   'https://angel.co/uplinkhq'
+  angellist:   'https://angel.co/uplinkhq',
+  github:      'https://github.com/uplinkhq'
 }
 set :tech_images, {
   'JavaScript' => 'javascript.png',
