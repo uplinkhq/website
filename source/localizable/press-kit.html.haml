@@ -11,4 +11,4 @@ id: press-kit
 %section
   .container
     %iframe{ src: "https://drive.google.com/embeddedfolderview?id=#{config[:press_kit_google_drive_folder_id]}#grid" }
-    = link_to 'Open Google Drive folder', "https://drive.google.com/drive/folders/#{config[:press_kit_google_drive_folder_id]}", class: 'btn lg btn-primary', rel: 'nofollow', target: '_blank'
+    = link_to t(:open_google_drive_folder, scope: %i(pages press_kit)), "https://drive.google.com/drive/folders/#{config[:press_kit_google_drive_folder_id]}", class: 'btn lg btn-primary', rel: 'nofollow', target: '_blank'

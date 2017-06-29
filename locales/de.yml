@@ -298,6 +298,9 @@ de:
         email: Deine Email-Adresse
         message: Womit können wir helfen?
 
+    press_kit:
+      open_google_drive_folder: Google Drive Ordner öffnen
+
   sections:
 
     cities:
