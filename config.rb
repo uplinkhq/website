@@ -89,8 +89,18 @@ set :tech_images, {
   'Spring'     => 'spring.png'
 }
 set :media_coverage, {
-  berlin_valley:     'https://drive.google.com/file/d/0B4gIb1U545pcZzRwT3FqemhRYVU/view',
-  deutsche_startups: 'https://www.deutsche-startups.de/2016/10/26/arbeiten-startups-erfolgreich-mit-freelancer-zusammen/'
+  berlin_valley: {
+    link: 'https://drive.google.com/file/d/0B4gIb1U545pcZzRwT3FqemhRYVU/view',
+    text: 'Uplink ist ein Netzwerk für professionelle Freelance-Entwickler und hilft Berliner Unternehmen, die besten Entwickler der Stadt zu finden.'
+  },
+  deutsche_startups: {
+    link: 'https://www.deutsche-startups.de/2016/10/26/arbeiten-startups-erfolgreich-mit-freelancer-zusammen/',
+    text: 'So arbeiten Startups erfolgreich mit Freelancern zusammen'
+  },
+  debitoor: {
+    link: 'https://debitoor.de/blog/debitoor-community-manuel-meurer',
+    text: '2015 hast du mit Uplink eine Plattform für Freelance-Entwickler gegründet – und damit eine echte Nische besetzt.'
+  }
 }
 
 helpers do

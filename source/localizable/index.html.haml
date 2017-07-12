@@ -115,8 +115,8 @@ priority: 1.0
     %h2
       = t :headline, scope: %i(pages home featured_on)
     .logos
-      = link_to image_tag('media-coverage/deutsche-startups.png'), config[:media_coverage].fetch(:deutsche_startups), rel: 'nofollow', target: '_blank'
-      = link_to image_tag('media-coverage/berlin-valley.png'),     config[:media_coverage].fetch(:berlin_valley),     rel: 'nofollow', target: '_blank'
+      - config[:media_coverage].each do |identifier, details|
+        = link_to image_tag("media-coverage/#{identifier}.png"), details.fetch(:link), rel: 'nofollow', target: '_blank'
 
 %section#partners.gray-bg
   .container
