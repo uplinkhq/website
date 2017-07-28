@@ -88,6 +88,10 @@ body#home {
             height: 200px;
           }
 
+          &.kontist .header-image {
+            background-image: image-url("blog/kontist.jpg");
+          }
+
           &.pitch .header-image {
             background-image: image-url("blog/pitch.jpg");
           }

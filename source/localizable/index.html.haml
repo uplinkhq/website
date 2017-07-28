@@ -138,7 +138,18 @@ priority: 1.0
     %h2
       = t :headline, scope: %i(pages home blog)
     .row
-      .col-sm-6
+      .col-sm-4
+        = link_to 'https://blog.uplink.tech/announcing-uplinks-first-partner-kontist-2484d587528e', class: 'post kontist' do
+          .header-image
+          %h3
+            Announcing Uplink’s first partner: Kontist
+          .date
+            JULY 28, 2017
+          %p
+            I’m happy to announce that Kontist, a startup based in Berlin that offers banking accounts specifically tailored for freelancers, is the first official partner of Uplink!
+          .btn.btn-primary
+            = t :read_on, scope: %i(pages home blog)
+      .col-sm-4
         = link_to 'https://blog.uplink.tech/whats-in-a-pitch-cc80cefb7cb8', class: 'post pitch' do
           .header-image
           %h3
@@ -149,7 +160,7 @@ priority: 1.0
             I’m not a big fan of “pitching” your startup — too often it leads to relatively simple and straightforward ideas being described as “disruptive” and “world-changing”, because people look at the pitches of Facebook, AirBnB, Uber...
           .btn.btn-primary
             = t :read_on, scope: %i(pages home blog)
-      .col-sm-6
+      .col-sm-4
         = link_to 'https://blog.uplink.tech/why-are-many-it-recruiters-technically-completely-incompetent-e924f559ed0e', class: 'post incompetent-recruiters' do
           .header-image
           %h3
