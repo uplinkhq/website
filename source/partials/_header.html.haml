@@ -12,7 +12,7 @@
         - template_name = current_resource.source_file.split('/').last.split('.').first
         = navbar_item localized_path(template_name == 'index' ? '' : template_name, locale: other_locale) do
           %span.flag-icon{ class: "flag-icon-#{other_locale == :en ? :gb : other_locale}" }
-          = t(:change_language, scope: :menu)
+          = t :change_language, scope: :menu
         = navbar_item t(:freelancer_login, scope: :menu), 'https://freelancers.uplink.tech/login'
   .container
     = yield_content :header

@@ -134,6 +134,10 @@ body#home {
 
         .logos {
 
+          .row + .row {
+            margin-top: 40px;
+          }
+
           a {
 
             @media (max-width: $screen-xs-max) {
@@ -155,7 +159,7 @@ body#home {
               }
 
               + a img {
-                margin-left: 60px;
+                margin-left: 100px;
               }
             }
           }

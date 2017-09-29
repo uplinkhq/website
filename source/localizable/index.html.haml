@@ -115,8 +115,10 @@ priority: 1.0
     %h2
       = t :headline, scope: %i(pages home featured_on)
     .logos
-      - config[:media_coverage].each do |identifier, details|
-        = link_to image_tag("media-coverage/#{identifier}.png"), details.fetch(:link), rel: 'nofollow', target: '_blank'
+      - [config[:media_coverage].keys[0..1], config[:media_coverage].keys[2..-1]].each do |media_coverage_key_group|
+        .row
+          - media_coverage_key_group.each do |identifier|
+            = link_to image_tag("media-coverage/#{identifier}.png"), config[:media_coverage][identifier].fetch(:link), rel: 'nofollow', target: '_blank'
 
 %section#partners.gray-bg
   .container

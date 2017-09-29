@@ -100,6 +100,10 @@ set :media_coverage, {
   debitoor: {
     link: 'https://debitoor.de/blog/debitoor-community-manuel-meurer',
     text: '2015 hast du mit Uplink eine Plattform für Freelance-Entwickler gegründet – und damit eine echte Nische besetzt.'
+  },
+  startup_valley_news: {
+    link: 'https://www.startupvalley.news/de/uplink-netzwerk-freelancer-it-recruitern/',
+    text: 'Macht eine Liste eurer Mitbewerber und schreibt sie alle nacheinander an!'
   }
 }
 
