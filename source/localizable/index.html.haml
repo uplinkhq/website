@@ -127,11 +127,16 @@ priority: 1.0
     %p
       = t :text_1, scope: %i(pages home partners)
     .row.columns.list
-      .col-sm-4.col-sm-offset-4
+      #kontist.col-sm-4.col-sm-offset-2
         = image_tag 'partners/kontist.png'
         = link_to 'kontist.com', 'https://kontist.com/', rel: 'nofollow', target: '_blank', class: 'small'
         %p
           = t :text, scope: %i(pages home partners kontist)
+      #exali.col-sm-4
+        = image_tag 'partners/exali.png'
+        = link_to 'exali.de', 'https://www.exali.de/', rel: 'nofollow', target: '_blank', class: 'small'
+        %p
+          = t :text, scope: %i(pages home partners exali)
     %p
       = t :text_2, scope: %i(pages home partners)
 

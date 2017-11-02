@@ -113,7 +113,10 @@ en:
         text_2: More partners coming soon!
 
         kontist:
-          text: Kontist is a startup from Berlin that offers a bank account specifically tailored for freelancers. Uplink members receive a 50€ starting balance!
+          text: Kontist is a startup from Berlin that offers banking specifically tailored for freelancers. Uplink members receive a 50€ starting balance!
+
+        exali:
+          text: Exali is an insurance broker that offers custom-made insurance plans for IT freelancers. Uplink members save 10% in the first year!
 
       blog:
         headline: The latest from our blog

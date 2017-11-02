@@ -172,11 +172,31 @@ body#home {
 
           img {
             margin-bottom: 10px;
+
+            @media (max-width: $screen-xs-max) {
+              display: inline-block;
+              max-width: 400px;
+            }
           }
 
           a {
             display: block;
             margin-bottom: 15px;
+          }
+
+
+          #kontist {
+
+            img {
+
+              @media (min-width: $screen-sm-min) {
+                margin: 27px 0;
+              }
+
+              @media (min-width: $screen-md-min) {
+                margin: 35px 0;
+              }
+            }
           }
         }
       }

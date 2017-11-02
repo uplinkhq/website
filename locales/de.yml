@@ -117,6 +117,9 @@ de:
         kontist:
           text: Kontist ist ein Startup aus Berlin, das ein Bankkonto speziell für Freelancer anbietet! Mitglieder von Uplink erhalten ein Startguthaben von 50€!
 
+        exali:
+          text: Exali ist ein Versicherungsmakler mit Versicherungen speziell für IT-Freelancer! Mitglieder von Uplink erhalten im ersten Jahr 10% Rabatt.
+
       blog:
         headline: Das Neueste aus unserem Blog
         read_on: Weiterlesen
