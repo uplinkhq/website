@@ -69,6 +69,10 @@ body#home {
 
       &#blog {
 
+        .row + .row {
+          margin-top: 40px;
+        }
+
         .post {
           display: block;
           overflow: hidden;
@@ -86,6 +90,10 @@ body#home {
             background-position: center;
             background-size: cover;
             height: 200px;
+          }
+
+          &.exali .header-image {
+            background-image: image-url("blog/exali.png");
           }
 
           &.kontist .header-image {
