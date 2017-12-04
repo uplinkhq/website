@@ -92,6 +92,10 @@ body#home {
             height: 200px;
           }
 
+          &.slack .header-image {
+            background-image: image-url("blog/slack.png");
+          }
+
           &.exali .header-image {
             background-image: image-url("blog/exali.png");
           }
@@ -102,10 +106,6 @@ body#home {
 
           &.pitch .header-image {
             background-image: image-url("blog/pitch.jpg");
-          }
-
-          &.incompetent-recruiters .header-image {
-            background-image: image-url("blog/incompetent-recruiters.png");
           }
 
           h3,
