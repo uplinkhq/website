@@ -125,7 +125,7 @@ priority: 1.0
     %h2
       = t :headline, scope: %i(pages home partners)
     %p
-      = t :text_1, scope: %i(pages home partners)
+      = t :text, scope: %i(pages home partners)
     .row.columns.list
       #debitoor.col-sm-4
         = image_tag 'partners/debitoor.svg'
@@ -142,8 +142,6 @@ priority: 1.0
         = link_to 'exali.de', 'https://www.exali.de/', rel: 'nofollow', target: '_blank', class: 'small'
         %p
           = t :text, scope: %i(pages home partners exali)
-    %p
-      = t :text_2, scope: %i(pages home partners)
 
 %section#blog
   .container
