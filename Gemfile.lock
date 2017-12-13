@@ -14,6 +14,13 @@ GIT
       unf
 
 GIT
+  remote: https://github.com/guilleiguaran/fakeredis.git
+  revision: b4317f93e93a9e80e6badc78dfe6ec85e6256cdc
+  specs:
+    fakeredis (0.5.0)
+      redis (>= 3.2, < 5.0)
+
+GIT
   remote: https://github.com/plasticine/middleman-imageoptim.git
   revision: a539caef0d2f9a23704ed36cf36c7945d2282c62
   specs:
@@ -27,6 +34,12 @@ GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
   specs:
+    actionview (4.2.10)
+      activesupport (= 4.2.10)
+      builder (~> 3.1)
+      erubis (~> 2.7.0)
+      rails-dom-testing (~> 1.0, >= 1.0.5)
+      rails-html-sanitizer (~> 1.0, >= 1.0.3)
     activesupport (4.2.10)
       i18n (~> 0.7)
       minitest (~> 5.1)
@@ -35,7 +48,7 @@ GEM
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
     ansi (1.5.0)
-    autoprefixer-rails (7.2.1)
+    autoprefixer-rails (7.2.2)
       execjs
     backports (3.10.3)
     bootstrap-navbar (2.5.0)
@@ -54,6 +67,9 @@ GEM
       sass (>= 3.2, < 3.5)
     concurrent-ruby (1.0.5)
     contracts (0.13.0)
+    crass (1.0.3)
+    domain_name (0.5.20170404)
+      unf (>= 0.0.5, < 1.0.0)
     dotenv (2.2.1)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
@@ -68,6 +84,11 @@ GEM
     fast_blank (1.0.0)
     fastimage (2.1.0)
     fastly (1.13.1)
+    fetchy (0.3.1)
+      gem_config (~> 0.3)
+      redis (>= 3.2, < 5)
+      rest-client (~> 2.0)
+      tries (~> 0.3)
     ffi (1.9.18)
     fog-aws (1.4.1)
       fog-core (~> 1.38)
@@ -95,6 +116,8 @@ GEM
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
     hashie (3.5.6)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
     http_parser.rb (0.6.0)
     httparty (0.15.6)
       multi_xml (>= 0.5.2)
@@ -117,6 +140,9 @@ GEM
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+    loofah (2.1.1)
+      crass (~> 1.0.2)
+      nokogiri (>= 1.5.9)
     map (6.6.0)
     maxcdn (0.3.2)
       addressable (~> 2.4)
@@ -194,6 +220,7 @@ GEM
     multi_xml (0.6.0)
     multipart-post (2.0.0)
     net-http-persistent (2.9.4)
+    netrc (0.11.0)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
     padrino-helpers (0.13.3.4)
@@ -214,10 +241,23 @@ GEM
       rails-assets-jquery (>= 1.4.2)
     rails-assets-jquery.lazyload (1.9.7)
     rails-assets-js-cookie (2.2.0)
+    rails-deprecated_sanitizer (1.0.3)
+      activesupport (>= 4.2.0.alpha)
+    rails-dom-testing (1.0.8)
+      activesupport (>= 4.2.0.beta, < 5.0)
+      nokogiri (~> 1.6)
+      rails-deprecated_sanitizer (>= 1.0.1)
+    rails-html-sanitizer (1.0.3)
+      loofah (~> 2.0)
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     redcarpet (3.4.0)
+    redis (4.0.1)
+    rest-client (2.0.2)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 4.0)
+      netrc (~> 0.8)
     ruby-progressbar (1.9.0)
     sass (3.4.25)
     sass-globbing (1.1.5)
@@ -235,6 +275,8 @@ GEM
     thor (0.20.0)
     thread_safe (0.3.6)
     tilt (2.0.8)
+    tries (0.3.2)
+      gem_config (~> 0.2)
     tzinfo (1.2.4)
       thread_safe (~> 0.1)
     uglifier (3.2.0)
@@ -247,8 +289,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  actionview (~> 4.2)
   bootstrap-sass (~> 3.3)
   builder (~> 3.2)
+  fakeredis!
+  fetchy (~> 0.3)
   font-awesome-sass (~> 4.5)
   kramdown (~> 1.13)
   middleman (~> 4.2)
