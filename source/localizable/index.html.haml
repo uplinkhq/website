@@ -127,7 +127,12 @@ priority: 1.0
     %p
       = t :text_1, scope: %i(pages home partners)
     .row.columns.list
-      #kontist.col-sm-4.col-sm-offset-2
+      #debitoor.col-sm-4
+        = image_tag 'partners/debitoor.svg'
+        = link_to 'debitoor.de', 'https://debitoor.de/', rel: 'nofollow', target: '_blank', class: 'small'
+        %p
+          = t :text, scope: %i(pages home partners debitoor)
+      #kontist.col-sm-4
         = image_tag 'partners/kontist.png'
         = link_to 'kontist.com', 'https://kontist.com/', rel: 'nofollow', target: '_blank', class: 'small'
         %p

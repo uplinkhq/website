@@ -164,6 +164,7 @@ body#home {
 
           img {
             margin-bottom: 10px;
+            max-width: 230px;
 
             @media (max-width: $screen-xs-max) {
               display: inline-block;
