@@ -124,6 +124,7 @@ en:
       blog:
         headline: The latest from our blog
         read_on: Read on
+        all_posts: All posts on our blog
 
       cta:
         headline: Ready to take the work out of finding work?

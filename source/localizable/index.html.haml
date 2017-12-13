@@ -161,7 +161,7 @@ priority: 1.0
                 = blog_post.content
               .btn.btn-primary
                 = t :read_on, scope: %i(pages home blog)
-    = link_to "All stories from our blog &raquo;", 'https://blog.uplink.tech/', class: 'btn btn-link'
+    = link_to "#{t :all_posts, scope: %i(pages home blog)} &raquo;", 'https://blog.uplink.tech/', class: 'btn btn-link'
 
 %section#cta.gray-bg
   .container
