@@ -8,11 +8,13 @@ id: media-coverage
 
 %section
   .container
-    - config[:media_coverage].each do |identifier, details|
+    - config[:media_coverage].sort_by { |media_coverage| media_coverage.fetch(:date) }.reverse.each do |media_coverage|
       .row
         .col-sm-8.col-sm-offset-2
           .item
-            = image_tag "media-coverage/#{identifier}.png"
+            = image_tag "media-coverage/#{media_coverage.fetch(:outlet)}.png"
             %p
-              == "#{details.fetch(:text)}"
-            = link_to 'Link', details.fetch(:link), rel: 'nofollow', target: '_blank'
+              == "#{media_coverage.fetch(:text)}"
+            = I18n.l media_coverage.fetch(:date), format: :long
+            &middot;
+            = link_to 'Link', media_coverage.fetch(:link), rel: 'nofollow', target: '_blank'
