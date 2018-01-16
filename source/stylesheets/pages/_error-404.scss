@@ -1,0 +1,7 @@
+body#error-404 {
+  @include header_bg_image("error-404.jpg");
+
+  iframe {
+    margin-top: 40px;
+  }
+}
