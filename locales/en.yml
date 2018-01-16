@@ -20,6 +20,7 @@ en:
     companies: For Companies
     contact: Contact
     imprint: Imprint
+    data_privacy: Data Privacy
     press_kit: Press Kit
     media_coverage: Media Coverage
     freelancer_login: Freelancer Login
@@ -30,6 +31,7 @@ en:
     freelancers: Spend your time coding, not looking for work.
     companies: Find the perfect freelance developer faster
     imprint: Imprint
+    data_privacy: Data Privacy Statement
     contact: Get in touch!
     media_coverage: Media Coverage
     press_kit: Press Kit
@@ -39,6 +41,7 @@ en:
     freelancers: Uplink helps you find challenging projects from local and remote companies.
     companies: We help companies find a great developer in days (sometimes hours) instead of weeks.
     imprint: The fine print
+    data_privacy: Our data privacy statement
     contact: We'd love to hear from you!
     media_coverage: Uplink in the media
     press_kit: Photos and texts for easy reporting about Uplink
@@ -340,4 +343,5 @@ en:
     kontakt: contact
     freelancer: freelancers
     impressum: imprint
+    datenschutz: data-privacy
     medien: media-coverage
