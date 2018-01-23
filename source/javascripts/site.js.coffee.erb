@@ -1,3 +1,4 @@
+#= require turbolinks
 #= require jquery.lazyload
 #= require jquery-smooth-scroll/jquery.smooth-scroll
 #= require js-cookie
@@ -16,13 +17,39 @@ $(document).on 'shown.bs.modal', '#freelancer-request-modal', ->
     firstScript = document.getElementsByTagName('script')[0]
     firstScript.parentNode.insertBefore(js, firstScript)
 
-$ ->
+$(document).on 'submit', 'form', (e) ->
+  e.preventDefault()
+
+  $submit = $(@).find(':submit')
+  $submit.data('original-text', $submit.text())
+  $submit.text($submit.data('loading'))
+  $submit.addClass('disabled')
+
+  $.ajax @action,
+    type:     'POST'
+    data:     $(@).serialize()
+    dataType: 'json'
+  .always =>
+    $submit.removeClass('disabled')
+    $submit.text($submit.data('original-text'))
+  .done =>
+    $(@)
+      .slideUp()
+      .siblings('.note.note-confirm')
+      .slideDown()
+  .fail (xhr, status) =>
+    if Rollbar?
+      Rollbar.error 'Error submitting form.', xhr: xhr, status: status
+    $(@)
+      .siblings('.note.note-error')
+      .slideDown()
+
+$(document).on 'turbolinks:load', ->
   $('a[href^="#"]').smoothScroll()
   $('img.lazy').show().lazyload(effect: 'fadeIn')
   $('[data-toggle="tooltip"]').tooltip()
   autosize(document.querySelectorAll('.autosize'))
   showCookieBar()
-  submitFormsViaAjax()
 
   if $('body#companies').length
     if window.location.hash == '#freelancer-request'
@@ -40,31 +67,3 @@ showCookieBar = ->
           expires: 365
           path:    '/'
         cookieBar.slideUp()
-
-submitFormsViaAjax = ->
-  $('form').submit (e) ->
-    e.preventDefault()
-
-    $submit = $(@).find(':submit')
-    $submit.data('original-text', $submit.text())
-    $submit.text($submit.data('loading'))
-    $submit.addClass('disabled')
-
-    $.ajax @action,
-      type:     'POST'
-      data:     $(@).serialize()
-      dataType: 'json'
-    .always =>
-      $submit.removeClass('disabled')
-      $submit.text($submit.data('original-text'))
-    .done =>
-      $(@)
-        .slideUp()
-        .siblings('.note.note-confirm')
-        .slideDown()
-    .fail (xhr, status) =>
-      if Rollbar?
-        Rollbar.error 'Error submitting form.', xhr: xhr, status: status
-      $(@)
-        .siblings('.note.note-error')
-        .slideDown()

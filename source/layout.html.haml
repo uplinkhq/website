@@ -41,6 +41,9 @@
 
     = stylesheet_link_tag :site
 
+    = javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'
+    = javascript_include_tag :site, defer: true
+
     = partial 'partials/scripts'
 
   %body{ id: current_page.data.id, data: { locale: locale } }
@@ -50,5 +53,3 @@
       = yield
     = partial 'partials/footer'
     = partial 'partials/cookie-bar'
-    = javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'
-    = javascript_include_tag :site
