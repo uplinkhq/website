@@ -55,7 +55,7 @@ body#freelancers {
           margin: 0 auto 40px;
           max-width: 300px;
 
-          .number {
+          .value {
             line-height: 1;
           }
 
@@ -63,8 +63,8 @@ body#freelancers {
             color: $dusty-orange;
             padding: 15px 5px 10px;
 
-            .number {
-              font-size: 90px;
+            .value {
+              font-size: 80px;
             }
           }
 
@@ -73,8 +73,8 @@ body#freelancers {
             background-color: $dusty-orange;
             padding: 10px 5px 15px;
 
-            .number {
-              font-size: 70px;
+            .value {
+              font-size: 55px;
               margin: 2px 0;
             }
           }

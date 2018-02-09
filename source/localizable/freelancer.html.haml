@@ -119,14 +119,13 @@ id: freelancers
       = t :text_1, scope: %i(pages freelancers pricing)
     #pricing-badge
       .percentage
-        .number
+        .value
           10%
         = t :monthly, scope: %i(pages freelancers pricing)
       .max
         max.
-        .number
-          = t :max_amount, scope: %i(pages freelancers pricing)
-        = t :total_per_client, scope: %i(pages freelancers pricing)
+        .value
+          = t :max_period, scope: %i(pages freelancers pricing)
     %p
       = markdown t(:text_2, scope: %i(pages freelancers pricing))
 

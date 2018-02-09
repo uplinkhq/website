@@ -193,12 +193,9 @@ en:
         headline: Pricing
         text_1: Our aim is to charge a fair and transparent success fee when our members find a new client through Uplink.
         text_2: |
-          We ask the freelancer to pay a fee of 10% of their monthly earnings, for max. 12 months, **capped at 1,500€ per client in total (not monthly)**. This means that if a freelancer finds a new client and works with them for a long time and over many projects, he will not have to pay any more fees once the cap is reached.
-
-          Most of our members simply add the fee to their hourly rate, so in the end they don't even notice it.
+          We ask the freelancer to pay a fee of 10% of their monthly earnings, for a maximum of six months. This means that if a freelancer finds a new client and works with them for a long time and over many projects, he will not have to pay any more fees after the first six months and can keep 100% of his earnings.
         monthly: monthly
-        max_amount: 1,500€
-        total_per_client: per client in total
+        max_period: 6 months
 
       apply:
         headline: Apply to join Uplink
