@@ -8,10 +8,6 @@ body {
   flex-direction: column;
 }
 
-main {
-  flex: 1;
-}
-
 img {
   @include img-responsive;
 }
@@ -121,11 +117,14 @@ b, strong {
 
 main {
   text-align: center;
+  flex: 1;
 
   h2,
   h3,
   h4,
-  p {
+  p,
+  table,
+  table.table {
     margin-left: auto;
     margin-right: auto;
     max-width: 650px;

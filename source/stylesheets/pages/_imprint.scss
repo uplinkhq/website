@@ -1,3 +1,7 @@
 body#imprint {
   @include header_bg_image("imprint.jpg", $vertical_position: 30%);
+
+  main {
+    text-align: left;
+  }
 }
