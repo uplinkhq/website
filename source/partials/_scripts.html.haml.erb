@@ -20,18 +20,6 @@
     });
   }();
   drift.SNIPPET_VERSION = '0.3.1';
-
-  <% # Display the welcome message only once per week with a delay of 15 seconds. %>
-  drift.on('ready', function(api) {
-    var cookieName = 'dift-welcome-message-displayed';
-    setTimeout(function() {
-      if (typeof Cookies.get(cookieName) === 'undefined') {
-        api.showWelcomeOrAwayMessage();
-        Cookies.set(cookieName, '', { expires: 7 });
-      }
-    }, 15000);
-  });
-
   drift.config({
     locale: '<%= locale == :en ? 'en-GB' : 'de-DE' %>',
     messages: {
@@ -41,7 +29,6 @@
       thankYouMessage:     "<%= t :thank_you_message,     scope: :drift %>"
     }
   });
-
   drift.load('2rf6z47k6nxt');
 
 - if build?
