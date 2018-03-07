@@ -22,12 +22,13 @@ GIT
 
 GIT
   remote: https://github.com/krautcomputing/middleman-imageoptim.git
-  revision: 85cd383499fa6e33444474fdea8ff6656e084cad
+  revision: 086633ca1bb303976be33ed3be2e08766a8f3bc2
   branch: improvements
   specs:
     middleman-imageoptim (0.2.1)
       image_optim (~> 0.26)
       image_optim_pack (~> 0.5)
+      middleman-cli
       middleman-core (>= 3.1)
 
 GEM
@@ -48,7 +49,7 @@ GEM
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
     ansi (1.5.0)
-    autoprefixer-rails (8.0.0)
+    autoprefixer-rails (8.1.0)
       execjs
     backports (3.11.1)
     bootstrap-navbar (2.5.0)
@@ -89,7 +90,7 @@ GEM
       redis (>= 3.2, < 5)
       rest-client (~> 2.0)
       tries (~> 0.3)
-    ffi (1.9.22)
+    ffi (1.9.23)
     fog-aws (1.4.1)
       fog-core (~> 1.38)
       fog-json (~> 1.0)
@@ -249,7 +250,7 @@ GEM
       rails-deprecated_sanitizer (>= 1.0.1)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
-    rb-fsevent (0.10.2)
+    rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     redcarpet (3.4.0)
