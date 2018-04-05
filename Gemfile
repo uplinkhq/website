@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.4.2'
+ruby '2.4.4'
 
 # Return early if this file is parsed by the Bundler plugin DSL.
 # This won't let us access dependencies in common-gems.
@@ -15,7 +15,7 @@ gem 'font-awesome-sass', '~> 4.5'
 gem 'kramdown',          '~> 1.13'
 gem 'actionview',        '~> 4.2', require: false
 gem 'fetchy',            '~> 0.3', require: false
-gem 'fakeredis',         git: 'https://github.com/guilleiguaran/fakeredis.git', require: false
+gem 'fakeredis',         '~> 0.7'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-jquery.lazyload',      '~> 1.9'
