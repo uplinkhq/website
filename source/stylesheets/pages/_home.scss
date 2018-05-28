@@ -164,7 +164,7 @@ body#home {
 
           img {
             margin-bottom: 10px;
-            max-width: 230px;
+            max-width: 300px;
 
             @media (max-width: $screen-xs-max) {
               display: inline-block;
@@ -177,16 +177,32 @@ body#home {
             margin-bottom: 15px;
           }
 
+          p {
+            max-width: none;
+          }
+
+          #christa_weidner {
+
+            img {
+              border-radius: 5px;
+            }
+          }
+
+          #debitoor {
+
+            img {
+
+              @media (min-width: $screen-sm-min) {
+                margin: 47px 0 48px;
+              }
+            }
+          }
 
           #kontist {
 
             img {
 
               @media (min-width: $screen-sm-min) {
-                margin: 27px 0;
-              }
-
-              @media (min-width: $screen-md-min) {
                 margin: 35px 0;
               }
             }

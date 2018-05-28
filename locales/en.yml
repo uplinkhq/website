@@ -114,8 +114,11 @@ en:
         headline: As featured on
 
       partners:
-        headline: Partners
-        text:  We regularly start new partnerships with services that offer exclusive benefits to our members!
+        headline: Partners & Cooperations
+        text:  We are always on the lookout for people and companies who share our vision and/or want to offer our members exclusive benefits!
+
+        christa_weidner:
+          text: Christa Weidner is freelance IT consultant, a big critic of recruiting agencies and expert for the topic Scheinselbständigkeit. Since May 2018 Christa is our cooperation partner and offers our members moral and practical support.
 
         debitoor:
           text: Debitoor is an online invoicing and accounting service that offers many features which similar providers don't have! Uplink members receive a 25% discount on any yearly subscription!
