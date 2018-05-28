@@ -114,6 +114,11 @@ set :media_coverage, [
     link:   'https://www.startupvalley.news/de/uplink-netzwerk-freelancer-it-recruitern/',
     text:   'Macht eine Liste eurer Mitbewerber und schreibt sie alle nacheinander an!',
     date:   Date.new(2017, 9, 29)
+  }, {
+    outlet: :t3n,
+    link:   'https://t3n.de/news/freelancer-jobs-610810/',
+    text:   'Uplink versteht sich als "Netzwerk für professionelle Freelance-Entwicklung".',
+    date:   Date.new(2018, 5, 15)
   }
 ]
 
