@@ -1,0 +1,21 @@
+---
+id: jobs
+---
+
+- content_for :header do
+  %h1
+    = page_title
+  %p
+    = page_intro
+
+%section
+  .container
+    %h2
+      = t :headline, scope: %i(pages jobs)
+    %p
+      = t :text_1, scope: %i(pages jobs)
+    %ul
+      %li
+        = link_to t(:title, scope: %i(pages jobs job_1)), t(:slug, scope: %i(pages jobs job_1))
+    %p
+      = t :text_2, scope: %i(pages jobs), email_link: mail_to('hello@uplink.tech', t(:email_link_text, scope: %i(pages jobs)))

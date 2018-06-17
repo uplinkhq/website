@@ -26,6 +26,7 @@ de:
     media_coverage: Medien
     freelancer_login: Freelancer-Login
     change_language: English
+    jobs: Jobs
 
   page_titles:
     home: Das Netzwerk für professionelle Freelance-Entwickler
@@ -38,6 +39,8 @@ de:
     media_coverage: Medien
     press_kit: Press Kit
     error_404: Error 404
+    jobs: Jobs bei Uplink
+    job_junior_account_manager: Junior Account Manager
 
   page_descriptions:
     home: Uplink ist eine simple, faire und transparente Alternative zu klassischen IT-Recruitern. Wir verknüpfen erfahrene Freelance-Entwickler mit den Firmen, die sie suchen!
@@ -49,6 +52,8 @@ de:
     contact: Wir würden uns freuen, von Ihnen zu hören!
     media_coverage: Berichterstattung über Uplink
     press_kit: Fotos und Texte zur einfachen Berichterstattung über Uplink
+    jobs: Wir sind immer auf der Suche nach neuen Talenten für unser Team!
+    job_junior_account_manager: Werde Teil unseres Teams als Junior Account Manager!
     error_404: Page not found
 
   page_intros:
@@ -57,6 +62,8 @@ de:
     companies: Wir helfen Firmen, den richtigen Freelance-Entwickler in Tagen (manchmal Stunden) anstatt Wochen zu finden. Sagen Sie uns einfach, wen Sie suchen, und wir verknüpfen Sie mit einem passenden Experten aus unserem Pool.
     contact: Egal ob Sie Fragen oder Kommentare haben, einen Freelance-Entwickler suchen oder selbst einer sind, wir würden uns freuen, von Ihnen zu hören!
     press_kit: Sollten Sie weitere Informationen oder Medien benötigen, um über Uplink zu berichten, kontaktieren Sie uns!
+    jobs: Wir sind immer auf der Suche nach neuen Talenten für unser Team!
+    job_junior_account_manager: Hast du Lust, mit Firmen ihre Anforderungen für IT-Freelancer zu besprechen und dann die besten Kandidaten für diese Firmen in unserer Community zu finden und sie ihnen vorzustellen? Dann wollen wir dich kennenlernen!
 
   pages:
 
@@ -312,6 +319,15 @@ de:
 
     press_kit:
       open_google_drive_folder: Google Drive Ordner öffnen
+
+    jobs:
+      headline: Offene Stellen
+      text_1: "Für die folgenden Stellen suchen wir derzeit Kandidaten:"
+      text_2: Falls keine dieser Stellen exakt zu dem passen, was du suchst, freuen wir uns auch über deine %{email_link}.
+      email_link_text: Initiativbewerbung per Email
+      job_1:
+        title: Junior Account Manager
+        slug: junior-account-manager
 
   sections:
 

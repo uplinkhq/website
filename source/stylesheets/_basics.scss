@@ -123,6 +123,7 @@ main {
   h3,
   h4,
   p,
+  ul,
   table,
   table.table {
     margin-left: auto;
@@ -153,6 +154,14 @@ main {
 
     + h3 {
       margin-top: 60px;
+    }
+  }
+
+  ul {
+    padding-left: 20px;
+
+    li {
+      margin-bottom: 10px;
     }
   }
 

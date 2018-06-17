@@ -1,0 +1,11 @@
+body#job-junior-account-manager {
+  @include header_bg_image("jobs.jpg", $vertical_position: 30%);
+
+  main {
+    text-align: left;
+
+    .apply {
+      margin: 40px 0 20px;
+    }
+  }
+}

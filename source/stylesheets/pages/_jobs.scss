@@ -1,0 +1,16 @@
+body#jobs {
+  @include header_bg_image("jobs.jpg", $vertical_position: 30%);
+
+  main {
+
+    ul {
+      padding: 0;
+      margin: 40px auto;
+
+      li {
+        list-style-type: none;
+        font-size: 22px;
+      }
+    }
+  }
+}

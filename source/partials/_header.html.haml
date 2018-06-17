@@ -9,8 +9,8 @@
         = navbar_item t(:contact, scope: :menu),     localized_path('kontakt')
       = navbar_group align: 'right', class: 'super' do
         -# TODO: There must be an easier way to get the template name.
-        - template_name = current_resource.source_file.split('/').last.split('.').first
-        = navbar_item localized_path(template_name == 'index' ? '' : template_name, locale: other_locale) do
+        - template_name = current_resource.source_file[%r(localizable/(.+)\.html\.haml\z), 1]
+        = navbar_item localized_path([nil, 'index'].include?(template_name) ? '' : template_name, locale: other_locale) do
           %span.flag-icon{ class: "flag-icon-#{other_locale == :en ? :gb : other_locale}" }
           = t :change_language, scope: :menu
         = navbar_item t(:freelancer_login, scope: :menu), 'https://my.uplink.tech/login', {}, target: '_blank'

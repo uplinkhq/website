@@ -1,0 +1,64 @@
+---
+id: job-junior-account-manager
+---
+
+- content_for :header do
+  %h1
+    = page_title
+  %p
+    = page_intro
+
+%section
+  .container
+    %p
+      = link_to '&laquo; zurück zur Job-Übersicht', localized_path('jobs')
+    %h2
+      Wer sind wir?
+    %p
+      Uplink ist ein Netzwerk für IT-Freelancer in Deutschland. Unsere Community besteht aus über 400 Freelancern (Stand Juni 2018), die sich online auf unserer Plattform und im realen Leben bei regelmäßigen Treffen austauschen. Neben Hilfe bei Themen wie Existenz- und Firmengründung, Steuern, Versicherung, uvm. bieten wir unseren Mitgliedern eine simple, faire und transparente Projektvermittlung.
+    %p
+      Gestartet wurde Uplink im September 2015 von mir,
+      = succeed '.' do
+        = link_to 'Manuel Meurer', 'https://www.xing.com/profile/Manuel_Meurer'
+      Seit Oktober 2017 ist
+      = link_to 'Timo Klinz', 'https://www.xing.com/profile/Timo_Klinz'
+      mit an Bord und jetzt sind wir auf der Suche nach weiterer Unterstützung! Unser Büro befindet sich in Berlin-Friedrichshain in der Warschauer Str.
+    %h2
+      Deine Aufgaben
+    %ul
+      %li
+        Du bist verantwortlich für die Kommunikation mit unseren bestehenden und neuen Kunden, wenn diese einen Freelancer für ein Projekt benötigen. Du besprichst mit ihnen die technischen Anforderungen an die Kandidaten und die Rahmenbedingungen der Zusammenarbeit.
+      %li
+        Du identifizierst passende Kandidaten aus unserer Community mit Hilfe unseres internen IT-Systems und kontaktierst diese über unser Kommunikationstool Slack, per Email oder per Telefon, um die Projektanfragen zu besprechen. Interessierte Kandidaten stellst du beim Kunden vor und begleitest den Hiring-Prozess zwischen Kunde und Freelancer.
+      %li
+        Du recherchierst potentielle Neukunden und kontaktierst diese.
+      %li
+        Du erstellst und pflegst die Freelancerprofile in unserer Datenbank.
+    %h2
+      Dein Profil
+    %p
+      %ul
+        %li
+          Du hast ein Studium oder eine Berufsausbildung im Bereich Informatik, Digitales, Kommunikation oder Personal erfolgreich abgeschlossen.
+        %li
+          Du hast Lust, beim Aufbau eines jungen und innovativen Unternehmens mitzuarbeiten. Du arbeitest eigenverantwortlich, selbständig und strukturiert, übernimmst gern Verantwortung und bist offen und kommunikativ.
+        %li
+          Du hast Grundkenntnisse im IT-Bereich (Programmiersprachen, Frameworks, Technologien) oder großes Interesse, dir dieses anzueignen. Selbst programmieren zu können ist nicht nötig, aber einen Überblick über die aktuelle IT-Landschaft und Kenntnisse darüber, welche Technologien es gibt und wie sie zusammenhängen, werden dir helfen, dich mit den Firmen und Freelancern auf Augenhöhe unterhalten zu können.
+        %li
+          Du sprichst exzellentes Deutsch und gutes Englisch.
+    %h2
+      Was wir dir bieten
+    %ul
+      %li
+        Viele Gestaltungsmöglichkeiten und Entscheidungsspielraum. Du kannst unsere Prozesse maßgeblich mitgestalten und deine Vorschläge werden prompt umgesetzt.
+      %li
+        Du bekommst einen hervorragenden Überblick über die aktuellen Trends der IT-Branche, kommst mit hunderten von intereressanten Firmen und Freelancern in Kontakt und lernst eine Menge neue Technologien kennen!
+      %li
+        Ein nettes kleines, zentral gelegenes (und frisch bezogenes) Büro in Friedrichshain.
+      %li
+        Die Möglichkeit, nach einer Einarbeitungsphase regelmäßig aus dem Homeoffice zu arbeiten.
+
+    %p
+      = mail_to 'hello@uplink.tech', 'Jetzt per Email bewerben', class: 'btn btn-primary apply'
+    %p
+      Bitte schreib uns, was dich an diesem Job reizen würde und warum du eine gute Kandidatin bzw. ein guter Kandidat wärst! Vergiss in deiner Email auch nicht Links zu deinen Profilen auf XING, LinkedIn, GitHub, etc.

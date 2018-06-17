@@ -26,6 +26,7 @@ en:
     media_coverage: Media Coverage
     freelancer_login: Freelancer Login
     change_language: Deutsch
+    jobs: Jobs
 
   page_titles:
     home: The Network for Professional Freelance Developers
@@ -37,6 +38,8 @@ en:
     contact: Get in touch!
     media_coverage: Media Coverage
     press_kit: Press Kit
+    jobs: Jobs at Uplink
+    job_junior_account_manager: Junior Account Manager
 
   page_descriptions:
     home: Uplink connects experienced freelance developers with the companies that need them.
@@ -48,6 +51,8 @@ en:
     contact: We'd love to hear from you!
     media_coverage: Uplink in the media
     press_kit: Photos and texts for easy reporting about Uplink
+    jobs: We are always looking for great people to join our team!
+    job_junior_account_manager: Junior Account Manager
 
   page_intros:
     home: Uplink connects experienced freelance developers with the companies that need them. We simplify the freelancer search by making personal introductions between people we know and trust.
@@ -55,6 +60,7 @@ en:
     companies: We help companies find a great developer in days (sometimes hours) instead of weeks. Simply tell us what you’re looking for and we will match you up with an expert with the right skills and availability.
     contact: Whether you have questions or comments, are looking for a freelance developer or are one yourself, we'd love to hear from you!
     press_kit: If you'd like to have more information or media resources than those currently included in the press kit, please contact us!
+    jobs: We are always looking for great people to join our team!
 
   pages:
 
@@ -310,6 +316,15 @@ en:
 
     press_kit:
       open_google_drive_folder: Open Google Drive folder
+
+    jobs:
+      headline: Open positions
+      text_1: "We are currently looking for candidates for the following positions:"
+      text_2: Even if none of these positions match exactly what you're looking for, please do %{email_link} and tell us what you'd like to do!
+      email_link_text: get in touch
+      job_1:
+        title: Junior Account Manager
+        slug: junior-account-manager
 
   sections:
 
