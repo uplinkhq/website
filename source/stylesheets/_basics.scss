@@ -139,6 +139,15 @@ main {
       font-size: 28px;
       margin-bottom: 15px;
     }
+
+    + * {
+      margin-top: 60px;
+    }
+
+    + p {
+      margin-top: 0;
+      margin-bottom: 60px;
+    }
   }
 
   h3 {
@@ -262,7 +271,6 @@ main {
 
   .columns {
     text-align: left;
-    margin-top: 60px;
 
     @media (max-width: $screen-xs-max) {
       text-align: center;
