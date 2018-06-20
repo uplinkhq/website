@@ -137,20 +137,26 @@ id: freelancers
       = t :headline, scope: %i(pages freelancers apply)
     %p
       = t :text, scope: %i(pages freelancers apply)
-    = form_tag config[:form_url] do
-      = hidden_field_tag '_subject', value: 'Freelancer application'
+    = form_tag 'https://api.uplink.tech/freelancer_requests' do
+      = hidden_field_tag 'locale', value: locale
       .row
-        .col-sm-5.col-md-4.col-md-offset-1
-          .form-group
-            = text_field_tag 'name', class: 'form-control', required: true, placeholder: t(:name, scope: %i(pages freelancers apply form_placeholders))
-          .form-group
-            = email_field_tag 'email', class: 'form-control', required: true, placeholder: t(:email, scope: %i(pages freelancers apply form_placeholders))
-          .form-group
-            = text_field_tag 'location', class: 'form-control', required: true, placeholder: t(:location, scope: %i(pages freelancers apply form_placeholders))
-        .col-sm-7.col-md-6
-          .form-group
-            %textarea#message.form-control.white-large{ name: 'message', required: true, placeholder: t(:message, scope: %i(pages freelancers apply form_placeholders)) }
-          = submit_tag t(:submit), class: 'btn btn-primary', data: { loading: t(:please_wait) }
+        .col-sm-10.col-sm-offset-1
+          .row
+            - %i(name email location).each do |field|
+              .col-sm-4
+                .form-group
+                  = text_field_tag field, class: 'form-control', required: true, placeholder: t(field, scope: %i(pages freelancers apply form_placeholders))
+          - %i(profiles motivation).each do |field|
+            .form-group
+              %textarea.form-control{ id: field, name: field, required: true, placeholder: t(field, scope: %i(pages freelancers apply form_placeholders)) }
+          .row
+            .col-sm-9
+              .checkbox
+                %label
+                  = check_box_tag 'terms', required: true
+                  = t :form_confirmation, scope: %i(pages freelancers apply), form_confirmation_terms_link: link_to(t(:form_confirmation_terms, scope: %i(pages freelancers apply)), localized_path('agb'), target: '_blank'), form_confirmation_privacy_link: link_to(t(:form_confirmation_privacy, scope: %i(pages freelancers apply)), localized_path('datenschutz'), target: '_blank')
+            .col-sm-3
+              = submit_tag t(:submit), class: 'btn btn-primary', data: { loading: t(:please_wait) }
     = partial 'partials/form-messages'
 
 -#%section#faq

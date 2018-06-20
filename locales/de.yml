@@ -214,13 +214,17 @@ de:
 
       apply:
         headline: Bei Uplink bewerben
-        text: Wenn du ein Senior-Entwickler mit mindestens zwei Jahren Erfahrung als Freelancer bist, bewirb dich jetzt!
+        text: Bewirb dich jetzt, um Teil unserer Community zu werden!
+        form_confirmation: Ich akzeptiere die %{form_confirmation_terms_link} und %{form_confirmation_privacy_link}.
+        form_confirmation_terms: AGB
+        form_confirmation_privacy: Datenschutzerklärung
 
         form_placeholders:
           name: Dein Name
           email: Deine Email-Adresse
           location: Dein Wohnort
-          message: Erzähl uns ein wenig über dich! Bist du ein Frontend-, Backend-, Fullstack- oder Mobile-Entwickler? Welche Programmiersprachen und Frameworks benutzt du gerne? Arbeitest du gerne für Startups, Agenturen oder größere Firmen? Remote oder vor Ort? Bitte vergiss auch nicht Links zu deinen Online-Profilen bei XING, LinkedIn und GitHub, und zu anderen relevanten Webseiten von dir.
+          profiles: Deine Profile (XING, LinkedIn, GitHub, eigene Webseite, etc.)
+          motivation: Erzähl uns ein wenig über dich! Siehst du dich als Frontend-, Backend-, Fullstack- oder Mobile-Entwickler? Welche Programmiersprachen und Frameworks benutzt du gerne? Arbeitest du lieber für Startups, Agenturen oder größere Firmen? Remote oder vor Ort?
 
     companies:
       cta: Freelancer finden

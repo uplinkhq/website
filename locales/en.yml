@@ -211,13 +211,17 @@ en:
 
       apply:
         headline: Apply to join Uplink
-        text: If you are a senior developer with at least a couple of years experience in freelancing, please apply below!
+        text: Apply now to become part of our community!
+        form_confirmation: I accept the %{form_confirmation_terms_link} and %{form_confirmation_privacy_link}.
+        form_confirmation_terms: Terms & Conditions
+        form_confirmation_privacy: Data Privacy Statement
 
         form_placeholders:
           name: Your name
           email: Your email
           location: Your location
-          message: Tell us a bit about yourself! Are you a frontend, backend, fullstack or mobile developer? What programming languages and frameworks do you like to work with? Do you enjoy working for startups, agencies, or big companies? Remote or on-site? Please include links to your profiles on XING, LinkedIn, GitHub, and any other service you deem relevant!
+          profiles: Your profiles (XING, LinkedIn, GitHub, own website, etc.)
+          motivation: Tell us a bit about yourself! Do you see yourself as a frontend, backend, fullstack or mobile developer? Which programming languages and frameworks do you like to work with? Do you enjoy working for startups, agencies, or corporates? Remote or onsite?
 
     companies:
       cta: Find a Freelancer
@@ -361,5 +365,6 @@ en:
     kontakt: contact
     freelancer: freelancers
     impressum: imprint
+    agb: terms
     datenschutz: data-privacy
     medien: media-coverage

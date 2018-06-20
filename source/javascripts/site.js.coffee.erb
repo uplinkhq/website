@@ -32,6 +32,9 @@ $(document).on 'submit', 'form', (e) ->
   .always =>
     $submit.removeClass('disabled')
     $submit.text($submit.data('original-text'))
+    $(@)
+      .siblings('.note')
+      .slideUp()
   .done =>
     $(@)
       .slideUp()

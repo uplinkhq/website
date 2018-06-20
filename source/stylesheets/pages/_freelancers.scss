@@ -83,6 +83,21 @@ body#freelancers {
 
       &#apply {
         @include white_bg_textarea;
+
+        textarea {
+
+          &#profiles {
+            height: 100px;
+          }
+
+          &#motivation {
+            height: 250px;
+          }
+        }
+
+        input[type="submit"] {
+          float: right;
+        }
       }
     }
   }
