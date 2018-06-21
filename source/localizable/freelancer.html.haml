@@ -145,7 +145,8 @@ id: freelancers
             - %i(name email location).each do |field|
               .col-sm-4
                 .form-group
-                  = text_field_tag field, class: 'form-control', required: true, placeholder: t(field, scope: %i(pages freelancers apply form_placeholders))
+                  - field_tag = field == :email ? :email_field_tag : :text_field_tag
+                  = public_send field_tag, field, class: 'form-control', required: true, placeholder: t(field, scope: %i(pages freelancers apply form_placeholders))
           - %i(profiles motivation).each do |field|
             .form-group
               %textarea.form-control{ id: field, name: field, required: true, placeholder: t(field, scope: %i(pages freelancers apply form_placeholders)) }
