@@ -77,6 +77,13 @@ body#companies {
 
       &#contact {
         @include white_bg_textarea;
+
+        textarea {
+
+          &#message {
+            height: 250px;
+          }
+        }
       }
     }
   }

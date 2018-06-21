@@ -8,17 +8,19 @@ id: contact
   %p
     = page_intro
 
-%section
+%section.gray-bg
   .container
     = form_tag config[:form_url] do
-      = hidden_field_tag '_subject', value: 'Contact'
+      = hidden_field_tag '_subject', value: 'Company contact'
       .row
-        .col-lg-6.col-lg-offset-3
+        .col-sm-10.col-sm-offset-1
+          .row
+            - %i(name email).each do |field|
+              .col-sm-6
+                .form-group
+                  - field_tag = field == :email ? :email_field_tag : :text_field_tag
+                  = public_send field_tag, field, class: 'form-control', required: true, placeholder: t(field, scope: %i(pages contact form_placeholders))
           .form-group
-            = text_field_tag 'name', class: 'form-control', required: true, placeholder: t(:name, scope: %i(pages contact form_placeholders))
-          .form-group
-            = email_field_tag 'email', class: 'form-control', required: true, placeholder: t(:email, scope: %i(pages contact form_placeholders))
-          .form-group
-            %textarea#message.form-control.autosize{ name: 'message', rows: 1, required: true, placeholder: t(:message, scope: %i(pages contact form_placeholders)) }
+            %textarea#message.form-control.white-large{ name: 'message', required: true, placeholder: t(:message, scope: %i(pages contact form_placeholders)) }
           = submit_tag t(:submit), class: 'btn btn-primary', data: { loading: t(:please_wait) }
     = partial 'partials/form-messages'

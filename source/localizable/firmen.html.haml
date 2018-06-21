@@ -1,5 +1,7 @@
 ---
 id: companies
+classes:
+  - summary-page
 ---
 
 - content_for :header do
@@ -157,14 +159,13 @@ id: companies
     = form_tag config[:form_url] do
       = hidden_field_tag '_subject', value: 'Company contact'
       .row
-        .col-sm-6
-          .form-group
-            = text_field_tag 'name', class: 'form-control', required: true, placeholder: t(:name, scope: %i(pages companies contact form_placeholders))
-          .form-group
-            = email_field_tag 'email', class: 'form-control', required: true, placeholder: t(:email, scope: %i(pages companies contact form_placeholders))
-          .form-group
-            = text_field_tag 'company', class: 'form-control', placeholder: t(:company, scope: %i(pages companies contact form_placeholders))
-        .col-sm-6
+        .col-sm-10.col-sm-offset-1
+          .row
+            - %i(name email company).each do |field|
+              .col-sm-4
+                .form-group
+                  - field_tag = field == :email ? :email_field_tag : :text_field_tag
+                  = public_send field_tag, field, class: 'form-control', required: true, placeholder: t(field, scope: %i(pages companies contact form_placeholders))
           .form-group
             %textarea#message.form-control.white-large{ name: 'message', required: true, placeholder: t(:message, scope: %i(pages companies contact form_placeholders)) }
           = submit_tag t(:submit), class: 'btn btn-info', data: { loading: t(:please_wait) }

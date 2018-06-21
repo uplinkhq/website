@@ -46,7 +46,7 @@
 
     = partial 'partials/scripts'
 
-  %body{ id: current_page.data.id, data: { locale: locale } }
+  %body{ id: current_page.data.id, class: current_page.data.classes.try(:join, ' '), data: { locale: locale } }
     = partial 'partials/header'
     = yield_content :before_content
     %main

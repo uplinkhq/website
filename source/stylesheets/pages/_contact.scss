@@ -23,12 +23,8 @@ body#contact {
 
   main {
 
-    form {
-      text-align: center;
-
-      input[type="submit"] {
-        margin-top: 20px;
-      }
+    textarea {
+      height: 250px;
     }
   }
 }
