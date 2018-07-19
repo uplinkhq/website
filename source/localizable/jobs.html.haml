@@ -16,7 +16,10 @@ id: jobs
       = t :text_1, scope: %i(pages jobs)
     %ul
       %li
-        = link_to t(:title, scope: %i(pages jobs job_1)), t(:slug, scope: %i(pages jobs job_1))
+        = link_to t(:title, scope: %i(pages jobs job_1)), "/jobs/#{t(:slug, scope: %i(pages jobs job_1))}"
+        %br
+        %em
+          Location: Berlin
         %br
         (Vollzeit bevorzugt, Teilzeit möglich)
     %p
