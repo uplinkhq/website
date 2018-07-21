@@ -165,7 +165,7 @@ classes:
               .col-sm-4
                 .form-group
                   - field_tag = field == :email ? :email_field_tag : :text_field_tag
-                  = public_send field_tag, field, class: 'form-control', required: true, placeholder: t(field, scope: %i(pages companies contact form_placeholders))
+                  = public_send field_tag, field, class: 'form-control', required: field != :company, placeholder: t(field, scope: %i(pages companies contact form_placeholders))
           .form-group
             %textarea#message.form-control.white-large{ name: 'message', required: true, placeholder: t(:message, scope: %i(pages companies contact form_placeholders)) }
           = submit_tag t(:submit), class: 'btn btn-info', data: { loading: t(:please_wait) }
