@@ -47,17 +47,6 @@ $(document).on 'submit', 'form', (e) ->
       .siblings('.note.note-error')
       .slideDown()
 
-$(document).on 'turbolinks:load', ->
-  $('a[href^="#"]').smoothScroll()
-  $('img.lazy').show().lazyload(effect: 'fadeIn')
-  $('[data-toggle="tooltip"]').tooltip()
-  autosize(document.querySelectorAll('.autosize'))
-  showCookieBar()
-
-  if $('body#companies').length
-    if window.location.hash == '#freelancer-request'
-      $('#freelancer-request-modal').modal('show')
-
 showCookieBar = ->
   unless Cookies.get('cookie-consent')?
     cookieBar = $('#cookie-bar')
@@ -70,3 +59,23 @@ showCookieBar = ->
           expires: 365
           path:    '/'
         cookieBar.slideUp()
+
+# Hack to get the "position: fixed" element
+# with the bg image to have the same height as the header.
+showHeaderBg = ->
+  $headerBg = $('header .bg')
+  if $headerBg.css('background-image') != 'none'
+    $headerBg.css('height', "#{$headerBg.parent().height()}px")
+             .show()
+
+$(document).on 'turbolinks:load', ->
+  showHeaderBg()
+  $('a[href^="#"]').smoothScroll()
+  $('img.lazy').show().lazyload(effect: 'fadeIn')
+  $('[data-toggle="tooltip"]').tooltip()
+  autosize(document.querySelectorAll('.autosize'))
+  showCookieBar()
+
+  if $('body#companies').length
+    if window.location.hash == '#freelancer-request'
+      $('#freelancer-request-modal').modal('show')

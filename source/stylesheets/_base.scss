@@ -6,10 +6,13 @@ $charcoal-gray:  #37333a;
 @mixin header_bg_image($img, $opacity: 0.6, $horizontal_position: center, $vertical_position: center) {
 
   header {
-    background:
-      linear-gradient(rgba(0, 0, 0, $opacity), rgba(0, 0, 0, $opacity)),
-      image-url("bg/#{$img}") $horizontal_position $vertical_position;
-    background-size: cover;
+
+    .bg {
+      background:
+        linear-gradient(rgba(0, 0, 0, $opacity), rgba(0, 0, 0, $opacity)),
+        image-url("bg/#{$img}") $horizontal_position $vertical_position;
+      background-size: cover;
+    }
   }
 }
 
