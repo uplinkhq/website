@@ -118,6 +118,7 @@ b, strong {
 main {
   text-align: center;
   flex: 1;
+  background-color: white;
 
   h2,
   h3,
@@ -196,7 +197,6 @@ main {
   section {
     padding: 100px 0;
     border-bottom: 1px solid $gray-lighter;
-    background-color: white;
 
     @media (max-width: $screen-xs-max) {
       padding-top: 50px;

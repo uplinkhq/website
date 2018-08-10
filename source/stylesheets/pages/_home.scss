@@ -21,9 +21,7 @@ body#home {
     section {
 
       &#freelancer-benefits {
-        background-image: image-url("dotted-lines.png");
-        background-repeat: no-repeat;
-        background-position: top center;
+        background: image-url("dotted-lines.png") no-repeat top center;
 
         h3 {
           color: $dusty-orange;
