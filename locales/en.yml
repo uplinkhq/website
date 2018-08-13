@@ -332,10 +332,6 @@ en:
 
   sections:
 
-    cities:
-      headline: "We are active in:"
-      coming_soon: Coming soon
-
     about:
       headline_1: Who is behind this?
       headline_2: Hi, I’m Manuel, the founder of Uplink.
@@ -347,12 +343,6 @@ en:
         **This was my inspiration for Uplink - a simpler and more personal way for freelance developers to connect with the companies that need them.**
 
         Get in touch if you have any questions or feedback!
-
-  cities:
-    berlin: Berlin
-    hamburg: Hamburg
-    munich: Munich
-    frankfurt: Frankfurt
 
   drift:
     welcome_message: Hi there, I'm Manuel, the founder of Uplink! Ask me anything! :)

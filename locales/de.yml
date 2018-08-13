@@ -335,10 +335,6 @@ de:
 
   sections:
 
-    cities:
-      headline: "Wir sind aktiv in:"
-      coming_soon: Bald
-
     about:
       headline_1: Wer steckt dahinter?
       headline_2: Hi, ich bin Manuel, der Gründer von Uplink.
@@ -350,12 +346,6 @@ de:
         **Genau das war meine Inspiration für Uplink - Freelance-Entwicklern eine einfachere und persönlichere Möglichkeit zu bieten, mit den Firmen in Kontakt zu kommen, die sie suchen.**
 
         Kontaktiere mich gern mit Fragen oder Feedback!
-
-  cities:
-    berlin: Berlin
-    hamburg: Hamburg
-    munich: München
-    frankfurt: Frankfurt
 
   drift:
     welcome_message: Hi, Manuel hier, der Gründer von Uplink! Schreib mir, wenn du eine Frage hast! :)
