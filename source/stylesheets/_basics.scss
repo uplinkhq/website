@@ -270,40 +270,6 @@ main {
       max-width: 420px;
     }
 
-    h3 {
-
-      > i.fa {
-        font-size: 1.5em;
-        margin-bottom: 20px;
-      }
-
-      &[class^="fa-"],
-      &[class*=" fa-"] {
-
-        &:before {
-          @extend .fa;
-
-          font-size: 1.4em;
-
-          @media (max-width: $screen-xs-max) {
-            margin-right: 5px;
-          }
-        }
-
-        @media (min-width: $screen-sm-min) {
-          position: relative;
-          padding-left: 40px;
-
-          &:before {
-            position: absolute;
-            left: 0;
-            width: 28px;
-            text-align: center;
-          }
-        }
-      }
-    }
-
     p {
       margin-bottom: 0;
       text-align: justify;

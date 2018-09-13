@@ -76,6 +76,7 @@ $(document).on 'turbolinks:load', ->
   $('[data-toggle="tooltip"]').tooltip()
   autosize(document.querySelectorAll('.autosize'))
   showCookieBar()
+  FontAwesome.dom.i2svg()
 
   if $('body#companies').length
     if window.location.hash == '#freelancer-request'

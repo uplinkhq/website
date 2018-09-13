@@ -8,8 +8,12 @@
         %h3
           = t :headline_2, scope: %i(sections about)
         = markdown t(:text, scope: %i(sections about))
-        = mail_to 'manuel@uplink.tech', icon('envelope')
-        = link_to icon('github-alt'),   'https://github.com/manuelmeurer',            target: '_blank'
-        = link_to icon('twitter'),      'https://twitter.com/manume',                 target: '_blank'
-        = link_to icon('linkedin'),     'https://www.linkedin.com/in/manuelmeurer',   target: '_blank'
-        = link_to icon('xing'),         'https://www.xing.com/profile/Manuel_Meurer', target: '_blank'
+        = mail_to 'manuel@uplink.tech', content_tag(:i, nil, class: 'far fa-envelope')
+        = link_to 'https://github.com/manuelmeurer', target: '_blank' do
+          %i.fab.fa-github-alt
+        = link_to 'https://twitter.com/manume', target: '_blank' do
+          %i.fab.fa-twitter
+        = link_to 'https://www.linkedin.com/in/manuelmeurer', target: '_blank' do
+          %i.fab.fa-linkedin
+        = link_to 'https://www.xing.com/profile/Manuel_Meurer', target: '_blank' do
+          %i.fab.fa-xing
