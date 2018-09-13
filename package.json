@@ -1,0 +1,15 @@
+{
+  "name": "uplink-web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@bitbucket.org:krautcomputing/uplink-web.git",
+  "author": "Manuel Meurer <manuel@uplink.tech>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-pro": "^5.3.1"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}
