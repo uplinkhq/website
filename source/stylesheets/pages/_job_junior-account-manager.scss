@@ -4,6 +4,17 @@ body#job-junior-account-manager {
   main {
     text-align: left;
 
+    .meta {
+
+      .svg-inline--fa {
+        margin-left: 20px;
+
+        &:first-of-type {
+          margin-left: 0;
+        }
+      }
+    }
+
     .apply {
       margin: 40px 0 20px;
     }
