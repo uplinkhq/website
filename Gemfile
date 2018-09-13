@@ -11,11 +11,10 @@ gem 'middleman', '~> 4.2'
 # Load common gems
 eval_gemfile 'common-gems/middleman/Gemfile'
 
-gem 'font-awesome-sass', '~> 4.5'
-gem 'kramdown',          '~> 1.13'
-gem 'actionview',        '~> 4.2', require: false
-gem 'fetchy',            '~> 0.3', require: false
-gem 'fakeredis',         '~> 0.7'
+gem 'kramdown',   '~> 1.13'
+gem 'actionview', '~> 4.2', require: false
+gem 'fetchy',     '~> 0.3', require: false
+gem 'fakeredis',  '~> 0.7'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-jquery.lazyload',      '~> 1.9'

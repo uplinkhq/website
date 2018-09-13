@@ -1,12 +1,10 @@
-require 'font_awesome/sass/rails/helpers'
-
-helpers FontAwesome::Sass::Rails::ViewHelpers
-
 activate :directory_indexes
 activate :autoprefixer
 activate :i18n, mount_at_root: :de
 activate :bootstrap_navbar
 activate :sprockets
+
+sprockets.append_path File.join(root, 'node_modules')
 
 ::BootstrapNavbar.configure do |config|
   config.root_paths = %w(/ /en)
