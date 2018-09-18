@@ -51,6 +51,8 @@ I18n.exception_handler = ->(exception, locale, key, options) {
 
 page '/sitemap.xml', layout: false
 
+redirect 'jobs/junior-account-manager/index.html', to: '/jobs/account-manager/'
+
 set :css_dir,                          'stylesheets'
 set :js_dir,                           'javascripts'
 set :images_dir,                       'images'

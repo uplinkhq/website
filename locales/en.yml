@@ -39,7 +39,7 @@ en:
     media_coverage: Media Coverage
     press_kit: Press Kit
     jobs: Jobs at Uplink
-    job_junior_account_manager: Junior Account Manager
+    job_account_manager: Account Manager
 
   page_descriptions:
     home: Uplink connects experienced freelance developers with the companies that need them.
@@ -52,7 +52,7 @@ en:
     media_coverage: Uplink in the media
     press_kit: Photos and texts for easy reporting about Uplink
     jobs: We are always looking for great people to join our team!
-    job_junior_account_manager: Junior Account Manager
+    job_account_manager: Account Manager
 
   page_intros:
     home: Uplink connects experienced freelance developers with the companies that need them. We simplify the freelancer search by making personal introductions between people we know and trust.
@@ -327,8 +327,8 @@ en:
       text_2: Even if none of these positions match exactly what you're looking for, please do %{email_link} and tell us what you'd like to do!
       email_link_text: get in touch
       job_1:
-        title: Junior Account Manager
-        slug: junior-account-manager
+        title: Account Manager
+        slug: account-manager
 
   sections:
 
