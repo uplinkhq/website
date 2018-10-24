@@ -10,50 +10,27 @@ id: imprint
   .container
     %p
       Uplink is a service by:
-    %table.table.table-striped
-      %tr
-        %th
-          Company
-        %td
-          kraut computing UG (haftungsbeschränkt)
-          %br
-          Warschauer Str. 59a
-          %br
-          10243 Berlin
-      %tr
-        %th
-          Email
-        %td
-          info@krautcomputing.com
-      %tr
-        %th
-          Phone
-        %td
-          +49 (0)30 57708249
-      %tr
-        %th
-          Managing director
-        %td
-          Manuel Meurer
-      %tr
-        %th
-          Court of Registration
-        %td
-          Amtsgericht Berlin Charlottenburg
-      %tr
-        %th
-          Register number
-        %td
-          HRB 126596 B
-      %tr
-        %th
-          VAT ID
-        %td
-          DE271325493
     %p
-      Responsible for the content in accordance with § 55 Abs. 2 RStV:
+      kraut computing UG (haftungsbeschränkt)
       %br
-      Manuel Meurer, address see above
+      Warschauer Str. 59a
+      %br
+      10243 Berlin
+    %p
+      Contact us at
+      == #{mail_to 'hello@uplink.tech', nil}.
+    %p
+      Phone: +49 (0)30 57708249
+      %br
+      Managing director: Manuel Meurer
+      %br
+      Court of Registration: Amtsgericht Berlin Charlottenburg
+      %br
+      Register number: HRB 126596 B
+      %br
+      VAT ID: DE271325493
+      %br
+      Responsible for the content in accordance with § 55 Abs. 2 RStV: Manuel Meurer, address see above
 
 %section.gray-bg
   .container

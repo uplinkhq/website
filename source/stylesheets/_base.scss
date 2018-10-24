@@ -26,13 +26,3 @@ $charcoal-gray:  #37333a;
     }
   }
 }
-
-@mixin white_bg_textarea {
-
-  textarea {
-    background-color: white;
-    padding: 10px 15px;
-    border-radius: 3px;
-    border-bottom-width: 0;
-  }
-}

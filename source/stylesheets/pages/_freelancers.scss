@@ -82,7 +82,6 @@ body#freelancers {
       }
 
       &#apply {
-        @include white_bg_textarea;
 
         textarea {
 
@@ -91,7 +90,7 @@ body#freelancers {
           }
 
           &#motivation {
-            height: 250px;
+            height: 200px;
           }
         }
 

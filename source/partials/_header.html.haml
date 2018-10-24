@@ -7,7 +7,6 @@
         = navbar_item t(:home, scope: :menu),        localized_path('')
         = navbar_item t(:freelancers, scope: :menu), localized_path('freelancer')
         = navbar_item t(:companies, scope: :menu),   localized_path('firmen')
-        = navbar_item t(:contact, scope: :menu),     localized_path('kontakt')
       = navbar_group align: 'right', class: 'super' do
         -# TODO: There must be an easier way to get the template name.
         - template_name = current_resource.source_file[%r(localizable/(.+)\.html\.haml\z), 1]

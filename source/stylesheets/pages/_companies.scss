@@ -29,13 +29,6 @@ body#companies {
     }
   }
 
-  #freelancer-request-modal {
-
-    iframe {
-      height: 600px;
-    }
-  }
-
   main {
 
     h3 {
@@ -43,6 +36,13 @@ body#companies {
     }
 
     section {
+
+      &#freelancer-request {
+
+        textarea {
+          height: 200px;
+        }
+      }
 
       &#techs {
 
@@ -73,17 +73,6 @@ body#companies {
 
       &#testimonial {
         @include link_color_with_dark_hover($turquoise-blue);
-      }
-
-      &#contact {
-        @include white_bg_textarea;
-
-        textarea {
-
-          &#message {
-            height: 250px;
-          }
-        }
       }
     }
   }

@@ -10,23 +10,9 @@ classes:
   %p
     = page_intro
   .vertical-button-group
-    = link_to '#', class: 'btn btn-info', data: { toggle: 'modal', target: '#freelancer-request-modal' } do
+    = link_to '#freelancer-request', class: 'btn btn-info' do
       %i.far.fa-search
       = t :cta, scope: %i(pages companies)
-    = link_to t(:contact_us, scope: %i(pages companies)), '#contact', class: 'btn btn-link'
-
-- content_for :before_content do
-  #freelancer-request-modal.modal.fade
-    .modal-dialog.modal-lg
-      .modal-content
-        .modal-header
-          = link_to '#', class: 'close', data: { dismiss: 'modal' } do
-            %span
-              &times;
-          %h4.modal-title
-            = t :text, scope: :freelancer_request_form
-        .modal-body
-          .typeform-widget{ data: { url: t(:url, scope: :freelancer_request_form), text: t(:text, scope: :freelancer_request_form) } }
 
 %section#how-it-works
   .container
@@ -38,7 +24,7 @@ classes:
           1.
           = t :headline, scope: %i(pages companies how_it_works step_1)
         %p
-          = t :text, scope: %i(pages companies how_it_works step_1), freelancer_request_form_link: link_to(t(:freelancer_request_form_link_text, scope: %i(pages companies how_it_works step_1)), '#', data: { toggle: 'modal', target: '#freelancer-request-modal' }), contact_form_link: link_to(t(:contact_form_link_text, scope: %i(pages companies how_it_works step_1)), '#contact'), email_link: mail_to('hello@uplink.tech', t(:email_link_text, scope: %i(pages companies how_it_works step_1)))
+          = t :text, scope: %i(pages companies how_it_works step_1), freelancer_request_form_link: link_to(t(:freelancer_request_form_link_text, scope: %i(pages companies how_it_works step_1)), '#freelancer-request'), email_link: mail_to('hello@uplink.tech', t(:email_link_text, scope: %i(pages companies how_it_works step_1)))
       .col-sm-4
         %h3
           2.
@@ -52,7 +38,34 @@ classes:
         %p
           = t :text, scope: %i(pages companies how_it_works step_3)
 
-%section#techs.gray-bg
+%section#freelancer-request.gray-bg
+  .container
+    %h2
+      = t :headline, scope: %i(pages companies freelancer_request)
+    %p
+      = t :text, scope: %i(pages companies freelancer_request)
+    = form_tag 'https://api.uplink.dev/job_requests' do
+      = hidden_field_tag 'locale', value: locale
+      .row
+        .col-sm-10.col-sm-offset-1
+          - [%i(name email), %i(company phone)].each do |row|
+            .row
+              - row.each do |field|
+                .col-sm-6
+                  .form-group
+                    - field_tag = field == :email ? :email_field_tag : :text_field_tag
+                    = public_send field_tag, field, class: 'form-control', required: %i(name email).include?(field), placeholder: t(field, scope: %i(pages companies freelancer_request form_placeholders))
+          .form-group
+            %textarea#details.form-control{ name: :details, required: true, placeholder: t(:details, scope: %i(pages companies freelancer_request form_placeholders)) }
+          = submit_tag t(:submit), class: 'btn btn-info', data: { loading: t(:please_wait) }
+    .note.note-confirm
+      %i.far.fa-thumbs-up
+      = t :confirm, scope: %i(pages companies freelancer_request form_messages)
+    .note.note-error
+      %i.far.fa-exclamation-triangle
+      = t :error, scope: %i(pages companies freelancer_request form_messages)
+
+%section#techs
   .container
     %h2
       = t :headline, scope: %i(pages companies techs)
@@ -132,56 +145,3 @@ classes:
       = markdown t(:text, scope: %i(pages companies pricing))
 
 = partial 'partials/section-about'
-
-%section#contact.gray-bg
-  .container
-    %h2
-      = t :headline, scope: %i(pages companies contact)
-    %p
-      = t :text, scope: %i(pages companies contact), freelancer_request_form_link: link_to(t(:freelancer_request_form_link_text, scope: %i(pages companies contact)), '#', data: { toggle: 'modal', target: '#freelancer-request-modal' }), email_link: mail_to('hello@uplink.tech', t(:email_link_text, scope: %i(pages companies contact)))
-    = form_tag config[:form_url] do
-      = hidden_field_tag '_subject', value: 'Company contact'
-      .row
-        .col-sm-10.col-sm-offset-1
-          .row
-            - %i(name email company).each do |field|
-              .col-sm-4
-                .form-group
-                  - field_tag = field == :email ? :email_field_tag : :text_field_tag
-                  = public_send field_tag, field, class: 'form-control', required: field != :company, placeholder: t(field, scope: %i(pages companies contact form_placeholders))
-          .form-group
-            %textarea#message.form-control.white-large{ name: 'message', required: true, placeholder: t(:message, scope: %i(pages companies contact form_placeholders)) }
-          = submit_tag t(:submit), class: 'btn btn-info', data: { loading: t(:please_wait) }
-    = partial 'partials/form-messages'
-
-/ %section#faq
-/   .container
-/     %h2
-/       FAQ
-/     .row.columns
-/       .col-sm-6
-/         %h3
-/           Yadda yadda yadda?
-/         %p
-/           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-/           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-/           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-/         %h3
-/           Yadda yadda yadda?
-/         %p
-/           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-/           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-/           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-/       .col-sm-6
-/         %h3
-/           Yadda yadda yadda?
-/         %p
-/           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-/           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-/           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-/         %h3
-/           Yadda yadda yadda?
-/         %p
-/           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-/           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-/           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.

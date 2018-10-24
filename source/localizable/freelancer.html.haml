@@ -11,7 +11,7 @@ classes:
     = page_intro
   .vertical-button-group
     = link_to '#apply', class: 'btn btn-primary' do
-      %i.far.fa-user-circle
+      %i.fas.fa-bolt
       = t :cta, scope: %i(pages freelancers)
 
 %section#how-it-works
@@ -143,36 +143,10 @@ classes:
                   = t :form_confirmation, scope: %i(pages freelancers apply), form_confirmation_terms_link: link_to(t(:form_confirmation_terms, scope: %i(pages freelancers apply)), localized_path('agb'), target: '_blank'), form_confirmation_privacy_link: link_to(t(:form_confirmation_privacy, scope: %i(pages freelancers apply)), localized_path('datenschutz'), target: '_blank')
             .col-sm-3
               = submit_tag t(:submit), class: 'btn btn-primary', data: { loading: t(:please_wait) }
-    = partial 'partials/form-messages'
+    .note.note-confirm
+      %i.far.fa-thumbs-up
+      = t :confirm, scope: %i(pages freelancers apply form_messages)
+    .note.note-error
+      %i.far.fa-exclamation-triangle
+      = t :error, scope: %i(pages freelancers apply form_messages)
 
--#%section#faq
--#  .container
--#    %h2
--#      FAQ
--#    .row.columns
--#      .col-sm-6
--#        %h3
--#          Yadda yadda yadda?
--#        %p
--#          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
--#          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
--#          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
--#        %h3
--#          Yadda yadda yadda?
--#        %p
--#          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
--#          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
--#          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
--#      .col-sm-6
--#        %h3
--#          Yadda yadda yadda?
--#        %p
--#          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
--#          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
--#          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
--#        %h3
--#          Yadda yadda yadda?
--#        %p
--#          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
--#          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
--#          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.

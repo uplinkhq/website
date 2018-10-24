@@ -2,14 +2,6 @@ de:
   submit: Absenden
   please_wait: Bitte warten...
 
-  form_messages:
-    confirm: Vielen Dank! Wir melden uns so bald wie möglich bei dir!
-    error: Oh oh! Da ist was schiefgelaufen... bitte versuch es nochmal!
-
-  freelancer_request_form:
-    url: https://uplinkhq.typeform.com/to/nIX7An
-    text: Freelancer-Anfrage
-
   cookies:
     text: We use cookies to ensure you get the best possible experience on our website.
     confirm: Got it.
@@ -18,7 +10,6 @@ de:
     home: Start
     freelancers: Für Freelancer
     companies: Für Firmen
-    contact: Kontakt
     imprint: Impressum
     terms: AGB
     data_privacy: Datenschutz
@@ -31,11 +22,10 @@ de:
   page_titles:
     home: Das Netzwerk für IT-Freelancer
     freelancers: Verbring deine Zeit mit Coden statt mit Akquise.
-    companies: Finden Sie schneller den passenden Freelance-Entwickler.
+    companies: Finden Sie schneller den passenden Freelancer.
     imprint: Impressum
     terms: Allgemeine Geschäftsbedingungen
     data_privacy: Datenschutzerklärung
-    contact: Kontaktieren Sie uns!
     media_coverage: Medien
     press_kit: Press Kit
     error_404: Error 404
@@ -49,7 +39,6 @@ de:
     imprint: Das Kleingedruckte
     terms: Unsere Allgemeinen Geschäftsbedingungen
     data_privacy: Unsere Datenschutzerklärung
-    contact: Wir würden uns freuen, von Ihnen zu hören!
     media_coverage: Berichterstattung über Uplink
     press_kit: Fotos und Texte zur einfachen Berichterstattung über Uplink
     jobs: Wir sind immer auf der Suche nach neuen Talenten für unser Team!
@@ -60,7 +49,6 @@ de:
     home: Uplink verknüpft erfahrene Freelance-Entwickler mit den Firmen, die sie suchen. Wir vereinfachen die Freelancer-Suche durch persönliche Empfehlungen von Entwicklern, die wir kennen und denen wir vertrauen.
     freelancers: Uplink liefert dir spannende Projekte von Firmen aus deiner Stadt und deutschlandweit! Tu das, was du am besten kannst - großartigen Code schreiben - und überlass die Projektsuche uns.
     companies: Wir helfen Firmen, den richtigen Freelance-Entwickler in Tagen (manchmal Stunden) anstatt Wochen zu finden. Sagen Sie uns einfach, wen Sie suchen, und wir verknüpfen Sie mit einem passenden Experten aus unserem Pool.
-    contact: Egal ob Sie Fragen oder Kommentare haben, einen Freelance-Entwickler suchen oder selbst einer sind, wir würden uns freuen, von Ihnen zu hören!
     press_kit: Sollten Sie weitere Informationen oder Medien benötigen, um über Uplink zu berichten, kontaktieren Sie uns!
     jobs: Wir sind immer auf der Suche nach neuen Talenten für unser Team!
     job_account_manager: Hast du Lust, als Account Manager beim Aufbau eines jungen Tech-Startups in Berlin mitzuarbeiten? Dann wollen wir dich kennenlernen!
@@ -226,27 +214,44 @@ de:
           profiles: Deine Profile (XING, LinkedIn, GitHub, eigene Webseite, etc.)
           motivation: Erzähl uns ein wenig über dich! Siehst du dich als Frontend-, Backend-, Fullstack- oder Mobile-Entwickler? Welche Programmiersprachen und Frameworks benutzt du gerne? Arbeitest du lieber für Startups, Agenturen oder größere Firmen? Remote oder vor Ort?
 
+        form_messages:
+          confirm: Vielen Dank! Wir melden uns so bald wie möglich bei dir!
+          error: Oh oh! Da ist etwas schiefgelaufen... bitte versuche es nochmal!
+
     companies:
       cta: Freelancer finden
-      contact_us: Kontaktier uns
 
       how_it_works:
         headline: Wie funktionierts?
 
         step_1:
-          headline: Kontaktier uns
-          text: "%{freelancer_request_form_link} oder schreib uns %{contact_form_link} oder %{email_link}, wenn du noch Fragen hast. Wir melden uns innerhalb von 24 Stunden!"
-          freelancer_request_form_link_text: Starte eine Freelancer-Anfrage
-          contact_form_link_text: über das Kontakt- formular
+          headline: Kontaktieren Sie uns
+          text: "%{freelancer_request_form_link} oder kontaktieren Sie uns %{email_link}. Wir melden uns innerhalb weniger Stunden zurück!"
+          freelancer_request_form_link_text: Stellen Sie kostenlos eine Anfrage
           email_link_text: per Email
 
         step_2:
-          headline: Warte auf Kandidaten
-          text: Sobald wir wissen, wen du suchst, kontaktieren wir passende Kandidaten aus unserem Pool. Wenn einer von ihnen interessiert ist, stellen wir ihn dir vor.
+          headline: Warten Sie auf Kandidaten
+          text: Sobald wir wissen, wen Sie suchen, kontaktieren wir passende Kandidaten aus unserem Pool. Wenn einer von ihnen interessiert ist, stellen wir den Kontakt zu Ihnen her.
 
         step_3:
           headline: Los gehts!
-          text: Alles weitere läuft direkt zwischen dir und dem Kandidaten, da mischen wir uns nicht mehr ein! Auch die Rechnungen kommen direkt vom Freelancer.
+          text: Alles weitere läuft direkt zwischen Ihnen und dem Kandidaten. Einen Vertrag können Sie direkt mit dem Freelancer machen und auch die Rechnungen kommen direkt vom Freelancer.
+
+      freelancer_request:
+        headline: Freelancer finden
+        text: Stellen Sie kostenlos eine Anfrage und wir werden uns innerhalb weniger Stunden bei Ihnen melden.
+
+        form_placeholders:
+          name: Ihr Name
+          email: Ihre Email-Adresse
+          company: Ihre Firma (optional)
+          phone: Ihre Telefonnummer (optional)
+          details: Was für einen Freelancer suchen Sie? Welche Kenntnisse (Programmiersprachen, Frameworks, etc.) sollte der Freelancer haben? Was werden die Aufgaben des Freelancers sein?
+
+        form_messages:
+          confirm: Vielen Dank! Wir melden uns so bald wie möglich bei Ihnen!
+          error: Oh oh! Da ist etwas schiefgelaufen... bitte versuchen Sie es nochmal!
 
       techs:
         headline: Finde einen Experten für jede Technologie
@@ -301,25 +306,6 @@ de:
           **Unser Service ist für Firmen kostenlos.** Wir möchten es dir so einfach wie möglich machen, über Uplink einen Freelance-Entwickler zu finden. Daher verzichten wir auf eine Vermittlungsgebühr von den Firmen.
 
           Für Freelancer fällt eine geringe Gebühr an, wenn sie über Uplink einen neuen Kunden finden. Diese rechnen wir aber separat mit den Freelancern ab, so dass sich die Firmen dabei um nichts kümmern müssen.
-
-      contact:
-        headline: Kontaktier uns
-        text: Wenn du aktuell auf der Suche nach einem Freelancer bist, %{freelancer_request_form_link}! Wenn du Fragen hast oder vorher mit uns sprechen möchtest, benutz einfach dieses Formular oder %{email_link}.
-        freelancer_request_form_link_text: starte eine Freelancer-Anfrage
-        email_link_text: schick uns eine Email
-
-        form_placeholders:
-          name: Dein Name
-          email: Deine Email-Adresse
-          company: Deine Firma (optional)
-          message: Womit können wir helfen?
-
-    contact:
-
-      form_placeholders:
-        name: Dein Name
-        email: Deine Email-Adresse
-        message: Womit können wir helfen?
 
     press_kit:
       open_google_drive_folder: Google Drive Ordner öffnen
