@@ -13,7 +13,7 @@
         = link_to t(:media_coverage, scope: :menu), localized_path('medien')
         = link_to t(:jobs, scope: :menu),           localized_path('jobs')
       .col-sm-6.social
-        - %w(linkedin.svg xing.svg twitter.svg facebook.svg angellist.png github.png).each do |service|
-          = link_to image_tag("social/#{service}", lazy: true), config[:profiles].fetch(service.split('.').first.underscore.to_sym), target: '_blank'
+        - %w(linkedin.svg xing.svg twitter.svg facebook.svg instagram.png angellist.png github.png).each do |service|
+          = link_to image_tag("social/#{service}", lazy: true), config[:profiles].fetch(service.split('.').first.underscore.to_sym), target: '_blank', rel: 'nofollow'
       .col-sm-3.made-in-berlin
         = image_tag 'made-in-berlin.png', lazy: true, alt: 'Made in Berlin'
