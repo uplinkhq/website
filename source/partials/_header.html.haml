@@ -14,5 +14,6 @@
           %span.flag-icon{ class: "flag-icon-#{other_locale == :en ? :gb : other_locale}" }
           = t :change_language, scope: :menu
         = navbar_item t(:freelancer_login, scope: :menu), 'https://my.uplink.tech/login', {}, target: '_blank'
+        = navbar_item t(:client_login, scope: :menu), 'https://clients.uplink.tech/login', {}, target: '_blank'
   .container
     = yield_content :header
