@@ -62,7 +62,7 @@ set :profiles, {
   twitter:     'https://twitter.com/UplinkHQ',
   facebook:    'https://www.facebook.com/UplinkHQ',
   xing:        'https://www.xing.com/companies/uplinkfreelancedevelopernetwork',
-  linkedin:    'https://www.linkedin.com/company/uplink-freelance-developer-network',
+  linkedin:    'https://www.linkedin.com/company/uplink-it-freelancer-network',
   instagram:   'https://www.instagram.com/uplinkhq',
   angellist:   'https://angel.co/uplinkhq',
   github:      'https://github.com/uplinkhq'
