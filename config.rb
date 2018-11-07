@@ -142,10 +142,7 @@ helpers do
 
   def image_tag(path, params = {})
     if params.delete(:lazy)
-      super('blank.gif', params.reverse_merge(class: 'lazy', data: { original: image_path(path) })) <<
-      content_tag(:noscript) do
-        super path, params
-      end
+      super 'blank.gif', params.reverse_merge(class: 'lazy', data: { original: image_path(path) })
     else
       super
     end

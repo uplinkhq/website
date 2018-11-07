@@ -48,7 +48,7 @@ footer {
     }
   }
 
-  .made-in-berlin {
+  .badges {
 
     @media (min-width: $screen-sm-min) {
       text-align: right;
@@ -56,6 +56,10 @@ footer {
 
     img {
       display: inline-block;
+
+      + img {
+        margin-top: 40px;
+      }
     }
   }
 }
