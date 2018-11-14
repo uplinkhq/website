@@ -240,8 +240,11 @@ de:
           text: Alles weitere läuft direkt zwischen Ihnen und dem Kandidaten. Einen Vertrag können Sie direkt mit dem Freelancer machen und auch die Rechnungen kommen direkt vom Freelancer.
 
       freelancer_request:
-        headline: Freelancer finden
-        text: Stellen Sie kostenlos eine Anfrage und wir werden uns innerhalb weniger Stunden bei Ihnen melden.
+        headline: Freelancer-Anfrage stellen
+        text: |
+          Stellen Sie kostenlos eine Anfrage und wir werden uns während unserer Geschäftszeiten innerhalb weniger Stunden bei Ihnen melden.
+          Alternativ können Sie auch direkt %{call_link}
+        call_link_text: einen Termin für ein Telefonat vereinbaren!
 
         form_placeholders:
           name: Ihr Name

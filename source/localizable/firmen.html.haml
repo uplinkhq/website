@@ -42,8 +42,7 @@ classes:
   .container
     %h2
       = t :headline, scope: %i(pages companies freelancer_request)
-    %p
-      = t :text, scope: %i(pages companies freelancer_request)
+    = simple_format t(:text, scope: %i(pages companies freelancer_request), call_link: link_to(t(:call_link_text, scope: %i(pages companies freelancer_request)), 'https://calendly.com/uplink/call', target: '_blank')).html_safe
     = form_tag 'https://api.uplink.tech/job_requests' do
       = hidden_field_tag 'locale', value: locale
       .row

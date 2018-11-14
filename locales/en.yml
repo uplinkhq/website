@@ -241,15 +241,18 @@ en:
           text: Everything else happens directly between you and the candidate, we don't interfere. The invoices are issued by the freelancer as well.
 
       freelancer_request:
-        headline: Foo
-        text: Foo bar
+        headline: Submit a freelancer request
+        text: |
+          Submit your request for free and we will get back to you within a few hours within our business hours.
+          Alternatively you can directly %{call_link}
+        call_link_text: book a time slot for a call!
 
         form_placeholders:
-          name: Ihr Name
-          email: Ihre Email-Adresse
-          company: Ihre Firma (optional)
-          phone: Ihre Telefonnummer (optional)
-          details: Was für einen Freelancer suchen Sie? Welche Kenntnisse (Programmiersprachen, Frameworks, etc.) sollte der Freelancer haben? Was werden die Aufgaben des Freelancers sein?
+          name: Your Name
+          email: Your Email Address
+          company: Your Company (optional)
+          phone: Your Phone Number (optional)
+          details: What kind of freelancer are you looking for? Which skills (programming languages, frameworks, etc.) should the freelancer have? What are the tasks that the freelancer will work on?
 
         form_messages:
           confirm: Thanks! We'll be in touch with you shortly!
