@@ -39,8 +39,70 @@ body#companies {
 
       &#freelancer-request {
 
+        .options {
+          text-align: left;
+
+          // Equal height
+          display: flex;
+          flex-wrap: wrap;
+
+          .option {
+            padding: 0 30px 15px;
+            border-width: 1px;
+            border-style: solid;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+
+            h3 {
+              margin: 20px 0 10px;
+            }
+
+            &.active {
+              background-color: $grayish;
+              border-color: $grayish-dark;
+              border-bottom-color: $grayish;
+            }
+
+            &:not(.active) {
+              border-color: white;
+              border-bottom-color: $grayish-dark;
+
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+
+        .form-wrapper {
+          background-color: $grayish;
+          border: 1px solid $grayish-dark;
+          border-top-width: 0;
+          padding: 40px 0;
+        }
+
         textarea {
-          height: 200px;
+          height: 160px;
+        }
+
+        input[type="submit"] {
+          float: right;
+        }
+
+        .option-confirmation {
+          display: none;
+
+          &.active {
+            display: inline;
+          }
+        }
+
+        .option-fields {
+          display: none;
+
+          &.active {
+            display: block;
+          }
         }
       }
 

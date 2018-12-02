@@ -8,35 +8,48 @@
 #= require bootstrap/dropdown
 #= require @fortawesome/fontawesome-pro/js/all
 
-$(document).on 'submit', 'form', (e) ->
-  e.preventDefault()
+$(document)
 
-  $submit = $(@).find(':submit')
-  $submit.data('original-text', $submit.text())
-  $submit.text($submit.data('loading'))
-  $submit.addClass('disabled')
+  .on 'submit', 'form', (e) ->
+    e.preventDefault()
 
-  $.ajax @action,
-    type:     'POST'
-    data:     $(@).serialize()
-    dataType: 'json'
-  .always =>
-    $submit.removeClass('disabled')
-    $submit.text($submit.data('original-text'))
-    $(@)
-      .siblings('.note')
-      .slideUp()
-  .done =>
-    $(@)
-      .slideUp()
-      .siblings('.note.note-confirm')
-      .slideDown()
-  .fail (xhr, status) =>
-    if Rollbar?
-      Rollbar.error 'Error submitting form.', xhr: xhr, status: status
-    $(@)
-      .siblings('.note.note-error')
-      .slideDown()
+    $submit = $(@).find(':submit')
+    $submit.data('original-text', $submit.text())
+    $submit.text($submit.data('loading'))
+    $submit.prop('disabled', true)
+
+    $.ajax @action,
+      type:     'POST'
+      data:     $(@).serialize()
+      dataType: 'json'
+    .always =>
+      $submit.prop('disabled', false)
+      $submit.text($submit.data('original-text'))
+      $(@)
+        .siblings('.note')
+        .slideUp()
+    .done =>
+      $(@)
+        .slideUp()
+        .siblings('.note.note-confirm')
+        .slideDown()
+    .fail (xhr, status) =>
+      if Rollbar?
+        Rollbar.error 'Error submitting form.', xhr: xhr, status: status
+      $(@)
+        .siblings('.note.note-error')
+        .slideDown()
+
+  .on 'click', '#companies #freelancer-request .option', ->
+    $container = $(@).parents('.container')
+
+    toggleables = ['.option', '.option-fields']
+    # If one of the confirmations is already visible, don't toggle it anymore.
+    unless $container.find('.note-confirm').is(':visible')
+      toggleables.push '.option-confirmation'
+    $container.find(toggleables.join(', ')).toggleClass('active')
+
+    $container.find('.option-fields :input').prop('disabled', (_, val) -> !val)
 
 showCookieBar = ->
   unless Cookies.get('cookie-consent')?

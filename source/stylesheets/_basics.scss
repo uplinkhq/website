@@ -175,11 +175,11 @@ main {
 
       input[type="text"],
       input[type="email"],
-      textarea {
+      textarea,
+      select {
         box-shadow: none;
         height: $input-height-base * 1.2;
         line-height: $line-height-base * 1.2;
-        border-width: 0;
 
         &:focus {
           box-shadow: none;

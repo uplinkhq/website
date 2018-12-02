@@ -240,22 +240,58 @@ de:
           text: Alles weitere läuft direkt zwischen Ihnen und dem Kandidaten. Einen Vertrag können Sie direkt mit dem Freelancer machen und auch die Rechnungen kommen direkt vom Freelancer.
 
       freelancer_request:
-        headline: Freelancer-Anfrage stellen
-        text: |
-          Stellen Sie kostenlos eine Anfrage und wir werden uns während unserer Geschäftszeiten innerhalb weniger Stunden bei Ihnen melden.
-          Alternativ können Sie auch direkt %{call_link}
-        call_link_text: einen Termin für ein Telefonat vereinbaren!
+        headline: Freelancer finden
+        text: "Um einen passenden Freelancer aus unserer Community zu finden, haben Sie zwei Möglichkeiten:"
 
-        form_placeholders:
+        options:
+          one:
+            headline: Rückruf anfordern
+            text: Wir melden uns innerhalb weniger Stunden telefonisch bei Ihnen, um alles Weitere zu besprechen.
+          two:
+            headline: Job direkt posten
+            text: Wir posten Ihr Gesuch nach einer Prüfung sofort in unserer Community und kontakieren passende Kandidaten direkt.
+
+        form:
           name: Ihr Name
           email: Ihre Email-Adresse
           company: Ihre Firma (optional)
-          phone: Ihre Telefonnummer (optional)
-          details: Was für einen Freelancer suchen Sie? Welche Kenntnisse (Programmiersprachen, Frameworks, etc.) sollte der Freelancer haben? Was werden die Aufgaben des Freelancers sein?
-
-        form_messages:
-          confirm: Vielen Dank! Wir melden uns so bald wie möglich bei Ihnen!
-          error: Oh oh! Da ist etwas schiefgelaufen... bitte versuchen Sie es nochmal!
+          phone: Ihre Telefonnummer
+          details_short: Was für einen Freelancer suchen Sie?
+          details_long: Was für einen Freelancer suchen Sie? Welche Kenntnisse (Programmiersprachen, Frameworks, etc.) sollte er/sie haben? Was werden seine/ihre Aufgaben im Projekt sein?
+          budget:
+            text: Welches Budget haben Sie für den Freelancer verfügbar?
+            options:
+              below_1k: < 1.000€
+              between_1k_and_5k: 1.000€ - 5.000€
+              between_5k_and_25k: 5.000€ - 25.000€
+              over_25k: "> 25.000€"
+          reachability: Wann können wir Sie am besten erreichen?
+          schedule: Wann könnte der Freelancer starten und für wie lange brauchen Sie ihn/sie voraussichtlich?
+          engagement:
+            text: Sollte der Freelancer in Vollzeit oder Teilzeit verfügbar sein?
+            options:
+              fulltime: Vollzeit (4-5 Tage die Woche)
+              parttime: Teilzeit (1-3 Tage die Woche)
+              fulltime_preferred: Vollzeit bevorzugt, Teilzeit ok
+              unclear: Noch unklar
+          remote:
+            text: Sollte der Freelancer bei Ihnen vor Ort oder Remote arbeiten?
+            options:
+              onsite: Nur vor Ort, Remote ist nicht möglich.
+              mix: Remote ist teilweise möglich, z.B. ein paar Tage die Woche oder komplett nach einer Einarbeitungszeit vor Ort.
+              remote: Der Freelancer sollte/kann komplett Remote arbeiten, nur evtl. für Meetings vor Ort verfügbar sein.
+              unclear: Noch unklar
+          german_level:
+            text: Sollte der Freelancer Deutsch sprechen können?
+            options:
+              none: Nein, Englisch reicht aus.
+              basic: Grundkenntnisse in Deutsch sollten vorhanden sein.
+              fluent: Ja, er/sie sollte fließend Deutsch sprechen können.
+              unclear: Noch unklar
+          confirmation:
+            callback: Vielen Dank, wir werden uns so bald wie möglich - entsprechend Ihrer angegebenen Erreichbarkeit - bei Ihnen melden!
+            job_post: Vielen Dank, wir werden Ihr Gesuch so bald wie möglich prüfen und dann in unserer Community posten. Sollten wir Nachfragen haben, melden wir uns telefonisch oder per Email bei Ihnen.
+          error: Oh oh! Da ist etwas schiefgelaufen und wir wurden über den Fehler informiert. Bitte versuchen Sie es noch einmal!
 
       techs:
         headline: Finde einen Experten für jede Technologie

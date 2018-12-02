@@ -1,6 +1,7 @@
 $dusty-orange:   #e9664c;
 $turquoise-blue: #00b6dd;
 $grayish:        #f4f4f4;
+$grayish-dark:   darken($grayish, 10%);
 $charcoal-gray:  #37333a;
 
 @mixin header_bg_image($img, $opacity: 0.6, $horizontal_position: center, $vertical_position: center) {

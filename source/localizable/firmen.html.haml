@@ -14,7 +14,7 @@ classes:
       %i.far.fa-search
       = t :cta, scope: %i(pages companies)
 
-%section#how-it-works
+%section#how-it-works.gray-bg
   .container
     %h2
       = t :headline, scope: %i(pages companies how_it_works)
@@ -38,33 +38,66 @@ classes:
         %p
           = t :text, scope: %i(pages companies how_it_works step_3)
 
-%section#freelancer-request.gray-bg
+%section#freelancer-request
   .container
     %h2
       = t :headline, scope: %i(pages companies freelancer_request)
-    = simple_format t(:text, scope: %i(pages companies freelancer_request), call_link: link_to(t(:call_link_text, scope: %i(pages companies freelancer_request)), 'https://calendly.com/uplink/call', target: '_blank')).html_safe
-    = form_tag 'https://api.uplink.tech/job_requests' do
-      = hidden_field_tag 'locale', value: locale
-      .row
+    = t :text, scope: %i(pages companies freelancer_request)
+
+    .options.row
+      .option.active.col-sm-6
+        %h3
+          = t :headline, scope: %i(pages companies freelancer_request options one)
+        %p
+          = t :text, scope: %i(pages companies freelancer_request options one)
+      .option.col-sm-6
+        %h3
+          = t :headline, scope: %i(pages companies freelancer_request options two)
+        %p
+          = t :text, scope: %i(pages companies freelancer_request options two)
+
+    .row.form-wrapper
+      - freelancer_request_form_scope = %i(pages companies freelancer_request form)
+      = form_tag 'https://api.uplink.dev/job_requests' do
+        = hidden_field_tag 'locale', value: locale
         .col-sm-10.col-sm-offset-1
-          - [%i(name email), %i(company phone)].each do |row|
+          - [%i(name email), %i(phone company)].each do |row|
             .row
               - row.each do |field|
                 .col-sm-6
                   .form-group
                     - field_tag = field == :email ? :email_field_tag : :text_field_tag
-                    = public_send field_tag, field, class: 'form-control', required: %i(name email).include?(field), placeholder: t(field, scope: %i(pages companies freelancer_request form_placeholders))
+                    = public_send field_tag, field, class: 'form-control', required: %i(name email phone).include?(field), placeholder: t(field, scope: freelancer_request_form_scope)
+          .option-fields.active
+            .form-group
+              = text_field_tag :details, placeholder: t(:details_short, scope: freelancer_request_form_scope), class: 'form-control', required: true
+            .form-group
+              = text_field_tag :reachability, placeholder: t(:reachability, scope: freelancer_request_form_scope), class: 'form-control', required: true
+          .option-fields
+            .form-group
+              = text_area_tag :details, placeholder: t(:details_long, scope: freelancer_request_form_scope), class: 'form-control', required: true, disabled: true
+            .form-group
+              = text_field_tag :schedule, placeholder: t(:schedule, scope: freelancer_request_form_scope), class: 'form-control', required: true, disabled: true
+            .form-group
+              = select_tag :engagement, options: t(:options, scope: freelancer_request_form_scope + %i(engagement)).invert, include_blank: t(:text, scope: freelancer_request_form_scope + %i(engagement)), class: 'form-control', required: true, disabled: true
+            .form-group
+              = select_tag :remote, options: t(:options, scope: freelancer_request_form_scope + %i(remote)).invert, include_blank: t(:text, scope: freelancer_request_form_scope + %i(remote)), class: 'form-control', required: true, disabled: true
+            .form-group
+              = select_tag :german_level, options: t(:options, scope: freelancer_request_form_scope + %i(german_level)).invert, include_blank: t(:text, scope: freelancer_request_form_scope + %i(german_level)), class: 'form-control', required: true, disabled: true
           .form-group
-            %textarea#details.form-control{ name: :details, required: true, placeholder: t(:details, scope: %i(pages companies freelancer_request form_placeholders)) }
+            = select_tag :budget, options: t(:options, scope: freelancer_request_form_scope + %i(budget)).invert, include_blank: t(:text, scope: freelancer_request_form_scope + %i(budget)), class: 'form-control', required: true
           = submit_tag t(:submit), class: 'btn btn-info', data: { loading: t(:please_wait) }
-    .note.note-confirm
-      %i.far.fa-thumbs-up
-      = t :confirm, scope: %i(pages companies freelancer_request form_messages)
-    .note.note-error
-      %i.far.fa-exclamation-triangle
-      = t :error, scope: %i(pages companies freelancer_request form_messages)
+      .note.note-confirm.col-sm-10.col-sm-offset-1
+        %i.far.fa-thumbs-up
+        .option-confirmation.active
+          = t :callback, scope: %i(pages companies freelancer_request form confirmation)
+        .option-confirmation
+          = t :job_post, scope: %i(pages companies freelancer_request form confirmation)
+      .note.note-error.col-sm-10.col-sm-offset-1
+        %i.far.fa-exclamation-triangle
+        = t :error, scope: %i(pages companies freelancer_request form)
 
-%section#techs
+%section#techs.gray-bg
   .container
     %h2
       = t :headline, scope: %i(pages companies techs)
