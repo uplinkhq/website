@@ -58,7 +58,7 @@ classes:
 
     .row.form-wrapper
       - freelancer_request_form_scope = %i(pages companies freelancer_request form)
-      = form_tag 'https://api.uplink.dev/job_requests' do
+      = form_tag 'https://api.uplink.tech/job_requests' do
         = hidden_field_tag 'locale', value: locale
         .col-sm-10.col-sm-offset-1
           - [%i(name email), %i(phone company)].each do |row|
