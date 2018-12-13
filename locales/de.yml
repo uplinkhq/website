@@ -246,10 +246,10 @@ de:
         options:
           one:
             headline: Rückruf anfordern
-            text: Wir melden uns innerhalb weniger Stunden telefonisch bei Ihnen, um alles Weitere zu besprechen.
+            text: Wir melden uns innerhalb weniger Stunden telefonisch bei Ihnen, um alle weiteren Details zu besprechen.
           two:
             headline: Job direkt posten
-            text: Wir posten Ihr Gesuch nach einer Prüfung sofort in unserer Community und kontakieren passende Kandidaten direkt.
+            text: Wir veröffentlichen Ihr Gesuch nach einer Prüfung sofort in unserem Netzwerk und verknüpfen Sie direkt mit passenden und verfügbaren Kandidaten.
 
         form:
           name: Ihr Name
