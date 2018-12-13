@@ -4,6 +4,11 @@ classes:
   - summary-page
 ---
 
+- content_for :scripts do
+  = javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/12.1.0/nouislider.min.js'
+
+= stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/12.1.0/nouislider.min.css'
+
 - content_for :header do
   %h1
     = page_title
@@ -73,6 +78,8 @@ classes:
               = text_field_tag :details, placeholder: t(:details_short, scope: freelancer_request_form_scope), class: 'form-control', required: true
             .form-group
               = text_field_tag :reachability, placeholder: t(:reachability, scope: freelancer_request_form_scope), class: 'form-control', required: true
+            .form-group
+              = select_tag :budget, options: t(:options, scope: freelancer_request_form_scope + %i(budget)).invert, include_blank: t(:text, scope: freelancer_request_form_scope + %i(budget)), class: 'form-control', required: true
           .option-fields
             .form-group
               = text_area_tag :details, placeholder: t(:details_long, scope: freelancer_request_form_scope), class: 'form-control', required: true, disabled: true
@@ -84,8 +91,10 @@ classes:
               = select_tag :remote, options: t(:options, scope: freelancer_request_form_scope + %i(remote)).invert, include_blank: t(:text, scope: freelancer_request_form_scope + %i(remote)), class: 'form-control', required: true, disabled: true
             .form-group
               = select_tag :german_level, options: t(:options, scope: freelancer_request_form_scope + %i(german_level)).invert, include_blank: t(:text, scope: freelancer_request_form_scope + %i(german_level)), class: 'form-control', required: true, disabled: true
-          .form-group
-            = select_tag :budget, options: t(:options, scope: freelancer_request_form_scope + %i(budget)).invert, include_blank: t(:text, scope: freelancer_request_form_scope + %i(budget)), class: 'form-control', required: true
+            .form-group
+              = label_tag :rate, caption: t(:rate, scope: freelancer_request_form_scope)
+              = hidden_field_tag :rate, disabled: true
+              #rate-slider
           = submit_tag t(:submit), class: 'btn btn-info', data: { loading: t(:please_wait) }
       .note.note-confirm.col-sm-10.col-sm-offset-1
         %i.far.fa-thumbs-up

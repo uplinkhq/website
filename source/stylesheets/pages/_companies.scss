@@ -89,6 +89,15 @@ body#companies {
           float: right;
         }
 
+        #rate-slider {
+          margin: 5px 20px 60px;
+
+          .noUi-tooltip {
+            bottom: unset;
+            top: 120%;
+          }
+        }
+
         .option-confirmation {
           display: none;
 

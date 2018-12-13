@@ -43,6 +43,7 @@
     = javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'
     = javascript_include_tag :site, defer: true
 
+    = yield_content :scripts
     = partial 'partials/scripts'
 
   %body{ id: current_page.data.id, class: current_page.data.classes.try(:join, ' '), data: { locale: locale } }

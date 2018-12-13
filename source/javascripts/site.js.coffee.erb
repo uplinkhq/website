@@ -8,6 +8,8 @@
 #= require bootstrap/dropdown
 #= require @fortawesome/fontawesome-pro/js/all
 
+#= require_tree ./pages
+
 $(document)
 
   .on 'submit', 'form', (e) ->
@@ -39,17 +41,6 @@ $(document)
       $(@)
         .siblings('.note.note-error')
         .slideDown()
-
-  .on 'click', '#companies #freelancer-request .option', ->
-    $container = $(@).parents('.container')
-
-    toggleables = ['.option', '.option-fields']
-    # If one of the confirmations is already visible, don't toggle it anymore.
-    unless $container.find('.note-confirm').is(':visible')
-      toggleables.push '.option-confirmation'
-    $container.find(toggleables.join(', ')).toggleClass('active')
-
-    $container.find('.option-fields :input').prop('disabled', (_, val) -> !val)
 
 showCookieBar = ->
   unless Cookies.get('cookie-consent')?
