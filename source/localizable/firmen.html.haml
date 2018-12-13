@@ -4,11 +4,6 @@ classes:
   - summary-page
 ---
 
-- content_for :scripts do
-  = javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/12.1.0/nouislider.min.js'
-
-= stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/12.1.0/nouislider.min.css'
-
 - content_for :header do
   %h1
     = page_title
