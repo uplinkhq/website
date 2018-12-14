@@ -5,7 +5,7 @@ require 'fakeredis'
 require 'fetchy'
 
 task :update_blog_posts do
-  xml         = Fetchy.new('https://blog.uplink.tech/feed').fetch
+  xml         = Fetchy.new('https://uplink.tech/blog/rss/').fetch
   feed        = RSS::Parser.parse(xml)
   pathname    = 'data/blog_posts.yml'
   items       = YAML.load_file(pathname)
