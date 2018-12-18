@@ -10,7 +10,7 @@ classes:
   %p
     = page_intro
   .vertical-button-group
-    = link_to '#freelancer-request', class: 'btn btn-info' do
+    = link_to "##{t :url_fragment, scope: %i(pages companies freelancer_request options callback)}", class: 'btn btn-info' do
       %i.far.fa-search
       = t :cta, scope: %i(pages companies)
 
@@ -44,17 +44,19 @@ classes:
       = t :headline, scope: %i(pages companies freelancer_request)
     = t :text, scope: %i(pages companies freelancer_request)
 
+    - url_fragments = %i(callback post_job).each_with_object({}) { |option, hash| hash[option] = locales.sort_by { |l| l == locale ? -1 : 1 }.map { |locale| t :url_fragment, scope: %I(pages companies freelancer_request options #{option}), locale: locale }.join(' ') }
+
     .options.row
-      .option.active.col-sm-6
+      .option.active.col-sm-6{ data: { 'url-fragments': url_fragments[:callback] } }
         %h3
-          = t :headline, scope: %i(pages companies freelancer_request options one)
+          = t :headline, scope: %i(pages companies freelancer_request options callback)
         %p
-          = t :text, scope: %i(pages companies freelancer_request options one)
-      .option.col-sm-6
+          = t :text, scope: %i(pages companies freelancer_request options callback)
+      .option.col-sm-6{ data: { 'url-fragments': url_fragments[:post_job] } }
         %h3
-          = t :headline, scope: %i(pages companies freelancer_request options two)
+          = t :headline, scope: %i(pages companies freelancer_request options post_job)
         %p
-          = t :text, scope: %i(pages companies freelancer_request options two)
+          = t :text, scope: %i(pages companies freelancer_request options post_job)
 
     .row.form-wrapper
       - freelancer_request_form_scope = %i(pages companies freelancer_request form)

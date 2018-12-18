@@ -244,10 +244,12 @@ de:
         text: "Um einen passenden Freelancer aus unserer Community zu finden, haben Sie zwei Möglichkeiten:"
 
         options:
-          one:
+          callback:
+            url_fragment: rueckruf-anfordern
             headline: Rückruf anfordern
             text: Wir melden uns innerhalb weniger Stunden telefonisch bei Ihnen, um alle weiteren Details zu besprechen.
-          two:
+          post_job:
+            url_fragment: job-posten
             headline: Job direkt posten
             text: Wir veröffentlichen Ihr Gesuch nach einer Prüfung sofort in unserem Netzwerk und verknüpfen Sie direkt mit passenden und verfügbaren Kandidaten.
 

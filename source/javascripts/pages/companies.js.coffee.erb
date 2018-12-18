@@ -1,15 +1,35 @@
-$(document).on 'click', 'body#companies #freelancer-request .option:not(.active)', ->
-  $container = $(@).parents('.container')
+bodySelector = 'body#companies'
 
-  toggleables = ['.option', '.option-fields']
-  # If one of the confirmations is already visible, don't toggle it anymore.
-  unless $container.find('.note-confirm').is(':visible')
-    toggleables.push '.option-confirmation'
-  $container.find(toggleables.join(', ')).toggleClass('active')
+$(document)
 
-  $container.find('.option-fields :input').prop('disabled', (_, val) -> !val)
+  .on 'click', "#{bodySelector} #freelancer-request .option:not(.active)", ->
+    window.location.hash = $(@).data('url-fragments').split(' ')[0]
 
-  initRateSlider()
+    $container = $(@).parents('.container')
+
+    toggleables = ['.option', '.option-fields']
+    # If one of the confirmations is already visible, don't toggle it anymore.
+    unless $container.find('.note-confirm').is(':visible')
+      toggleables.push '.option-confirmation'
+    $container.find(toggleables.join(', ')).toggleClass('active')
+
+    $container.find('.option-fields :input').prop('disabled', (_, val) -> !val)
+
+    initRateSlider()
+
+  .on 'click', "#{bodySelector} a[href^='#']", (e) ->
+    e.preventDefault()
+    enableOption $(@).attr('href').replace(/^#/, '')
+
+  .on 'turbolinks:load', ->
+    if $(bodySelector).length && window.location.hash.length
+      enableOption window.location.hash.replace(/^#/, '')
+
+enableOption = (option) ->
+  $el = $(".option[data-url-fragments~='#{option}']")
+  if $el.length
+    $.smoothScroll scrollTarget: '#freelancer-request'
+    $el.click()
 
 initRateSlider = ->
   if sliderEl = $('#rate-slider:visible:empty').get(0)
