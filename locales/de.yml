@@ -256,8 +256,8 @@ de:
           email: Ihre Email-Adresse
           company: Ihre Firma (optional)
           phone: Ihre Telefonnummer
-          details_short: Was für einen Freelancer suchen Sie?
-          details_long: Was für einen Freelancer suchen Sie? Welche Kenntnisse (Programmiersprachen, Frameworks, etc.) sollte er/sie haben? Was werden seine/ihre Aufgaben im Projekt sein?
+          details_short: Was für eine Art von Freelancer suchen Sie? Web-Entwickler, DevOps-Experte,...
+          details_long: Was für eine Art von Freelancer suchen Sie? Welche Kenntnisse (Programmiersprachen, Frameworks, etc.) sollte er/sie haben? Was werden seine/ihre Aufgaben im Projekt sein?
           budget:
             text: Welches Budget haben Sie für den Freelancer verfügbar?
             options:

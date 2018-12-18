@@ -257,7 +257,7 @@ en:
           email: Your Email Address
           company: Your Company (optional)
           phone: Your Phone Number
-          details_short: What kind of freelancer are you looking for?
+          details_short: What kind of freelancer are you looking for? Web developer, DevOps expert,...
           details_long: What kind of freelancer are you looking for? Which skills (programming languages, frameworks, etc.) should the freelancer have? What tasks will the freelancer work on?
           budget:
             text: What is the budget you have allocated for the freelancer?
