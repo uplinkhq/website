@@ -2,20 +2,21 @@ bodySelector = 'body#companies'
 
 $(document)
 
-  .on 'click', "#{bodySelector} #freelancer-request .option:not(.active)", ->
+  .on 'click', "#{bodySelector} #freelancer-request .option", ->
     window.location.hash = $(@).data('url-fragments').split(' ')[0]
 
-    $container = $(@).parents('.container')
+    unless $(@).hasClass('active')
+      $container = $(@).parents('.container')
 
-    toggleables = ['.option', '.option-fields']
-    # If one of the confirmations is already visible, don't toggle it anymore.
-    unless $container.find('.note-confirm').is(':visible')
-      toggleables.push '.option-confirmation'
-    $container.find(toggleables.join(', ')).toggleClass('active')
+      toggleables = ['.option', '.option-fields']
+      # If one of the confirmations is already visible, don't toggle it anymore.
+      unless $container.find('.note-confirm').is(':visible')
+        toggleables.push '.option-confirmation'
+      $container.find(toggleables.join(', ')).toggleClass('active')
 
-    $container.find('.option-fields :input').prop('disabled', (_, val) -> !val)
+      $container.find('.option-fields :input').prop('disabled', (_, val) -> !val)
 
-    initRateSlider()
+      initRateSlider()
 
   .on 'click', "#{bodySelector} a[href^='#']", (e) ->
     e.preventDefault()
