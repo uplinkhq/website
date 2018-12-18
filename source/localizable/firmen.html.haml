@@ -72,9 +72,9 @@ classes:
                     = public_send field_tag, field, class: 'form-control', required: %i(name email phone).include?(field), placeholder: t(field, scope: freelancer_request_form_scope)
           .option-fields.active
             .form-group
-              = text_field_tag :details, placeholder: t(:details_short, scope: freelancer_request_form_scope), class: 'form-control', required: true
-            .form-group
               = text_field_tag :reachability, placeholder: t(:reachability, scope: freelancer_request_form_scope), class: 'form-control', required: true
+            .form-group
+              = text_field_tag :details, placeholder: t(:details_short, scope: freelancer_request_form_scope), class: 'form-control', required: true
             .form-group
               = select_tag :budget, options: t(:options, scope: freelancer_request_form_scope + %i(budget)).invert, include_blank: t(:text, scope: freelancer_request_form_scope + %i(budget)), class: 'form-control', required: true
           .option-fields
