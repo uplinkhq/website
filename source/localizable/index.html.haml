@@ -17,7 +17,7 @@ priority: 1.0
       = t :apply_as_freelancer, scope: %i(pages home)
     = link_to "#{t :more_info_for_freelancers, scope: %i(pages home)} &raquo;", localized_path('freelancer'), class: 'btn btn-link'
   .vertical-button-group
-    = link_to localized_path('firmen', fragment: 'freelancer-request'), class: 'btn btn-info' do
+    = link_to localized_path('firmen', fragment: t(:url_fragment, scope: %i(pages companies freelancer_request options callback))), class: 'btn btn-info' do
       %i.far.fa-search
       = t :find_a_freelancer, scope: %i(pages home)
     = link_to "#{t :more_info_for_companies, scope: %i(pages home)} &raquo;", localized_path('firmen'), class: 'btn btn-link'
@@ -100,7 +100,7 @@ priority: 1.0
         %p
           = t :text, scope: %i(pages home company_benefits section_4)
     .vertical-button-group
-      = link_to localized_path('firmen', fragment: 'freelancer-request'), class: 'btn btn-info' do
+      = link_to localized_path('firmen', fragment: t(:url_fragment, scope: %i(pages companies freelancer_request options callback))), class: 'btn btn-info' do
         %i.far.fa-search
         = t :find_a_freelancer, scope: %i(pages home)
       = link_to "#{t :more_info_for_companies, scope: %i(pages home)} &raquo;", localized_path('firmen'), class: 'btn btn-link'
