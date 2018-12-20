@@ -241,7 +241,7 @@ en:
           text: Everything else happens directly between you and the candidate, we don't interfere. The invoices are issued by the freelancer as well.
 
       freelancer_request:
-        headline: Find a freelancer
+        headline: Find an IT freelancer now
         text: "To find a matching freelancer from our community you have two options:"
 
         options:
@@ -252,7 +252,7 @@ en:
           post_job:
             url_fragment: post-job
             headline: Post job directly
-            text: After reviewing your job posting, we will post it in our community and contact matching candidates.
+            text: After reviewing your job description, we will post it in our community and contact you with matching candidates.
 
         form:
           name: Your Name
@@ -268,8 +268,8 @@ en:
               between_1k_and_5k: 1,000€ - 5,000€
               between_5k_and_25k: 5,000€ - 25,000€
               over_25k: "> 25,000€"
-          reachability: When can we best reach you?
-          schedule: When can the freelancer start and for how long do you expect to need him/her?
+          reachability: When would you be available for a call?
+          schedule: When can the freelancer start and for how long do you expect him/her to work on this project?
           engagement:
             text: Are you looking for a freelancer to work full-time or part-time?
             options:
@@ -284,6 +284,7 @@ en:
               mix: Remote is partly possible, e.g. a few days per week or completly after an initial onsite period.
               remote: The freelancer should/can work completely remotely, but possibly be available for onsite meetings.
               unclear: Not clear yet
+          zip: What is your zip code? (only if onsite work/meetings are desired)
           german_level:
             text: Does the freelancer need to be able to speak German?
             options:

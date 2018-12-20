@@ -240,8 +240,8 @@ de:
           text: Alles weitere läuft direkt zwischen Ihnen und dem Kandidaten. Einen Vertrag können Sie direkt mit dem Freelancer machen und auch die Rechnungen kommen direkt vom Freelancer.
 
       freelancer_request:
-        headline: Freelancer finden
-        text: "Um einen passenden Freelancer aus unserer Community zu finden, haben Sie zwei Möglichkeiten:"
+        headline: Jetzt einen IT-Freelancer finden
+        text: "Um einen passenden Freelancer aus unserer Community für Ihr Anliegen zu finden, haben Sie zwei Möglichkeiten:"
 
         options:
           callback:
@@ -283,6 +283,7 @@ de:
               mix: Remote ist teilweise möglich, z.B. ein paar Tage die Woche oder komplett nach einer Einarbeitungszeit vor Ort.
               remote: Der Freelancer sollte/kann komplett Remote arbeiten, nur evtl. für Meetings vor Ort verfügbar sein.
               unclear: Noch unklar
+          zip: Wie lautet Ihre PLZ? (nur falls Arbeit/Meetings vor Ort gewünscht sind)
           german_level:
             text: Sollte der Freelancer Deutsch sprechen können?
             options:

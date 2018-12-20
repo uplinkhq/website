@@ -62,7 +62,7 @@ classes:
       - freelancer_request_form_scope = %i(pages companies freelancer_request form)
       = form_tag 'https://api.uplink.tech/job_requests' do
         = hidden_field_tag 'locale', value: locale
-        .col-sm-10.col-sm-offset-1
+        .col-sm-12.fields-wrapper
           - [%i(name email), %i(phone company)].each do |row|
             .row
               - row.each do |field|
@@ -86,6 +86,8 @@ classes:
               = select_tag :engagement, options: t(:options, scope: freelancer_request_form_scope + %i(engagement)).invert, include_blank: t(:text, scope: freelancer_request_form_scope + %i(engagement)), class: 'form-control', required: true, disabled: true
             .form-group
               = select_tag :remote, options: t(:options, scope: freelancer_request_form_scope + %i(remote)).invert, include_blank: t(:text, scope: freelancer_request_form_scope + %i(remote)), class: 'form-control', required: true, disabled: true
+            .form-group
+              = text_field_tag :zip, placeholder: t(:zip, scope: freelancer_request_form_scope), class: 'form-control', disabled: true
             .form-group
               = select_tag :german_level, options: t(:options, scope: freelancer_request_form_scope + %i(german_level)).invert, include_blank: t(:text, scope: freelancer_request_form_scope + %i(german_level)), class: 'form-control', required: true, disabled: true
             .form-group
