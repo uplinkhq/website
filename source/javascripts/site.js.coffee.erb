@@ -32,6 +32,7 @@ $(document)
         .slideUp()
     .done =>
       $(@)
+        .trigger('submit-success')
         .slideUp()
         .siblings('.note.note-confirm')
         .slideDown()
@@ -39,6 +40,7 @@ $(document)
       if Rollbar?
         Rollbar.error 'Error submitting form.', xhr: xhr, status: status
       $(@)
+        .trigger('submit-error')
         .siblings('.note.note-error')
         .slideDown()
 
