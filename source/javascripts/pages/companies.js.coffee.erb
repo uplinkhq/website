@@ -27,7 +27,8 @@ $(document)
       enableOption window.location.hash.replace(/^#/, '')
 
   .on 'submit-success', "#{bodySelector} #freelancer-request form", ->
-    ga 'send', 'event', 'JobRequest', 'created', $('body').data('locale')
+    if ga?
+      ga 'send', 'event', 'JobRequest', 'created', $('body').data('locale')
 
 enableOption = (option) ->
   $el = $(".option[data-url-fragments~='#{option}']")
