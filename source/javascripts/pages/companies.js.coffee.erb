@@ -57,7 +57,7 @@ initRateSlider = ->
         tooltips: true
         connect:  [false, true, false]
         format:
-          to:   (value) -> value + ' €'
+          to:   (value) -> Math.round(value) + ' €' # Need to use `Math.round` here since otherwise 125 is displayed as 124.9999...
           from: (value) -> value.replace(' €', '')
         range:
           min: min
