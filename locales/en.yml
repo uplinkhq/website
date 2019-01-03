@@ -284,7 +284,7 @@ en:
               mix: Remote is partly possible, e.g. a few days per week or completly after an initial onsite period.
               remote: The freelancer should/can work completely remotely, but possibly be available for onsite meetings.
               unclear: Not clear yet
-          zip: What is your zip code? (only if onsite work/meetings are desired)
+          zip: What is your German zip code? (only if onsite work/meetings are desired)
           german_level:
             text: Does the freelancer need to be able to speak German?
             options:
