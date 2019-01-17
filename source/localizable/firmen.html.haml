@@ -47,12 +47,12 @@ classes:
     - url_fragments = %i(callback post_job).each_with_object({}) { |option, hash| hash[option] = locales.sort_by { |l| l == locale ? -1 : 1 }.map { |locale| t :url_fragment, scope: %I(pages companies freelancer_request options #{option}), locale: locale }.join(' ') }
 
     .options.row
-      .option.active.col-sm-6{ data: { 'url-fragments': url_fragments[:callback] } }
+      .option.active.col-xs-6{ data: { 'url-fragments': url_fragments[:callback] } }
         %h3
           = t :headline, scope: %i(pages companies freelancer_request options callback)
         %p
           = t :text, scope: %i(pages companies freelancer_request options callback)
-      .option.col-sm-6{ data: { 'url-fragments': url_fragments[:post_job] } }
+      .option.col-xs-6{ data: { 'url-fragments': url_fragments[:post_job] } }
         %h3
           = t :headline, scope: %i(pages companies freelancer_request options post_job)
         %p
