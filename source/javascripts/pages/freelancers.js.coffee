@@ -1,3 +1,3 @@
 $(document).on 'submit-success', 'body#freelancers #apply form', ->
-  if ga?
-    ga 'send', 'event', 'FreelancerRequest', 'created', $('body').data('locale')
+  if gtag?
+    gtag 'event', 'sign_up', 'method': $('body').data('locale')
