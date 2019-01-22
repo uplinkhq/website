@@ -28,7 +28,7 @@ $(document)
 
   .on 'submit-success', "#{bodySelector} #freelancer-request form", ->
     if gtag?
-      gtag 'event', 'generate_lead', 'event_label': $('body').data('locale')
+      gtag 'event', 'generate_lead', event_label: $('body').data('locale')
 
 enableOption = (option) ->
   $el = $(".option[data-url-fragments~='#{option}']")
