@@ -14,6 +14,7 @@
       .col-sm-6.social
         - %w(linkedin.svg xing.svg twitter.svg facebook.svg instagram.png angellist.png github.png).each do |service|
           = link_to image_tag("social/#{service}", lazy: true), config[:profiles].fetch(service.split('.').first.underscore.to_sym), target: '_blank', rel: 'nofollow'
+        #wpac-google-review
       .col-sm-3.badges
         = image_tag 'made-in-berlin.png', lazy: true, alt: 'Made in Berlin'
         = image_tag 'vgsd.png', lazy: true, alt: 'VGSD - Verein der Gründer und Selbstständigen Deutschland e.V.'
