@@ -261,7 +261,7 @@ de:
           details_short: Was für eine Art von Freelancer suchen Sie? Web-Entwickler, DevOps-Experte,...
           details_long: Was für eine Art von Freelancer suchen Sie? Welche Kenntnisse (Programmiersprachen, Frameworks, etc.) sollte er/sie haben? Was werden seine/ihre Aufgaben im Projekt sein?
           budget:
-            text: Welches Budget haben Sie für den Freelancer verfügbar?
+            text: Welches Budget haben Sie für den/die Freelancer verfügbar?
             options:
               below_1k: < 1.000€
               between_1k_and_5k: 1.000€ - 5.000€
@@ -291,7 +291,7 @@ de:
               basic: Grundkenntnisse in Deutsch sollten vorhanden sein.
               fluent: Ja, er/sie sollte fließend Deutsch sprechen.
               unclear: Noch unklar
-          rate: Welchen Stundensatz haben Sie für den Freelancer verfügbar?
+          rate: Welchen Stundensatz haben Sie für den/die Freelancer verfügbar?
           confirmation:
             callback: Vielen Dank, wir werden uns so bald wie möglich - entsprechend Ihrer angegebenen Erreichbarkeit - bei Ihnen melden!
             job_post: Vielen Dank, wir werden Ihr Gesuch so bald wie möglich prüfen und dann in unserer Community posten. Sollten wir Nachfragen haben, melden wir uns telefonisch oder per Email bei Ihnen.

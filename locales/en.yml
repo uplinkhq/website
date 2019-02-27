@@ -262,7 +262,7 @@ en:
           details_short: What kind of freelancer are you looking for? Web developer, DevOps expert,...
           details_long: What kind of freelancer are you looking for? Which skills (programming languages, frameworks, etc.) should the freelancer have? What tasks will the freelancer work on?
           budget:
-            text: What is the budget you have allocated for the freelancer?
+            text: What is the budget you have allocated for the freelancer(s)?
             options:
               below_1k: < 1,000€
               between_1k_and_5k: 1,000€ - 5,000€
@@ -292,7 +292,7 @@ en:
               basic: He/she should have basic German knowledge.
               fluent: Yes, he/she should be fluent in German.
               unclear: Not clear yet
-          rate: What is the hourly rate you have allocated for the freelancer?
+          rate: What is the hourly rate you have allocated for the freelancer(s)?
           confirmation:
             callback: Thank you, we will be in touch as soon as possible, taking into account your stated reachability!
             job_post: Thank you, we will review your posting as soon as possible and then post it in our community! If we have follow-up questions, we will contact you via phone or email.
