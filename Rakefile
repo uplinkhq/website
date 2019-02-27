@@ -2,10 +2,10 @@ require 'action_view'
 require 'rss'
 require 'yaml'
 require 'fakeredis'
-require 'fetchy'
+require 'http'
 
 task :update_blog_posts do
-  xml         = Fetchy.new('https://uplink.tech/blog/rss/').fetch
+  xml         = HTTP.get('https://uplink.tech/blog/rss/').to_s
   feed        = RSS::Parser.parse(xml)
   pathname    = 'data/blog_posts.yml'
   items       = YAML.load_file(pathname)
