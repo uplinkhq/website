@@ -203,7 +203,10 @@ de:
 
       apply:
         headline: Bei Uplink bewerben
-        text: Bewirb dich jetzt, um Teil unserer Community zu werden!
+        text: |
+          Bewirb dich jetzt, um Mitglied unserer Freelancer-Community zu werden!
+
+          Bitte beachte, dass du in Deutschland wohnen und bereits selbstständig sein solltest, oder diesen Schritt defintiv für die nächsten Monate planst.
         form_confirmation: Ich akzeptiere die %{form_confirmation_terms_link} und %{form_confirmation_privacy_link}.
         form_confirmation_terms: AGB
         form_confirmation_privacy: Datenschutzerklärung

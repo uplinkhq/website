@@ -204,7 +204,10 @@ en:
 
       apply:
         headline: Apply to join Uplink
-        text: Apply now to become part of our community!
+        text: |
+          Apply now to become a member of our freelancer community!
+
+          Please note that you should live in Germany and already be self-employed, or planning to become self-employed within the next months.
         form_confirmation: I accept the %{form_confirmation_terms_link} and %{form_confirmation_privacy_link}.
         form_confirmation_terms: Terms & Conditions
         form_confirmation_privacy: Data Privacy Statement

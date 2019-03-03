@@ -121,7 +121,7 @@ classes:
     %h2
       = t :headline, scope: %i(pages freelancers apply)
     %p
-      = t :text, scope: %i(pages freelancers apply)
+      = markdown t(:text, scope: %i(pages freelancers apply))
     = form_tag 'https://api.uplink.tech/freelancer_requests' do
       = hidden_field_tag 'locale', value: locale
       .row
