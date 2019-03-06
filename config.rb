@@ -120,6 +120,11 @@ set :media_coverage, [
     link:   'https://t3n.de/news/freelancer-jobs-610810/',
     text:   'Uplink versteht sich als "Netzwerk für professionelle Freelance-Entwicklung".',
     date:   Date.new(2018, 5, 15)
+  }, {
+    outlet: :it_freelancer_magazin,
+    link:   'https://www.it-freelancer-magazin.de/index.php/2019/02/28/gruender-von-uplink-it-freelancer-netzwerk-im-dialog/',
+    text:   'Gründer von Uplink (IT-Freelancer-Netzwerk) im Dialog',
+    date:   Date.new(2019, 2, 28)
   }
 ]
 

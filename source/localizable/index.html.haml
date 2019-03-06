@@ -124,7 +124,7 @@ priority: 1.0
       = t :headline, scope: %i(pages home featured_on)
     .logos
       - outlets = config[:media_coverage].map { |media_coverage| media_coverage.fetch(:outlet) }.uniq
-      - [outlets[0..1], outlets[2..-1]].each do |outlet_group|
+      - [outlets[0..2], outlets[3..-1]].each do |outlet_group|
         .row
           - outlet_group.each do |outlet|
             - link = config[:media_coverage].select { |media_coverage| media_coverage[:outlet] == outlet }.last.fetch(:link)
