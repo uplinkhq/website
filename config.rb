@@ -56,7 +56,7 @@ redirect 'jobs/junior-account-manager/index.html', to: '/jobs/account-manager/'
 set :css_dir,                          'stylesheets'
 set :js_dir,                           'javascripts'
 set :images_dir,                       'images'
-set :press_kit_google_drive_folder_id, '0B4gIb1U545pcYUZ4NUd6TGpfd0U'
+set :press_kit_google_drive_folder_id, '1_EuL5dbi42444QkCnx8O_l_xl5n_sIjG'
 set :form_url,                         '//formspree.io/hello@uplink.tech'
 set :google_analytics_id,              'UA-67230464-1'
 set :profiles, {
@@ -92,7 +92,7 @@ set :tech_images, {
 set :media_coverage, [
   {
     outlet: :berlin_valley,
-    link:   'https://drive.google.com/file/d/0B4gIb1U545pcZzRwT3FqemhRYVU/view',
+    link:   'https://drive.google.com/file/d/1xGNpZBnuK5Hp-cye8egxqGN_PtwZxoTa/view',
     text:   'Uplink ist ein Netzwerk für professionelle Freelance-Entwickler und hilft Berliner Unternehmen, die besten Entwickler der Stadt zu finden.',
     date:   Date.new(2016, 10, 11)
   }, {
