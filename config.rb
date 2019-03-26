@@ -60,9 +60,9 @@ set :press_kit_google_drive_folder_id, '1_EuL5dbi42444QkCnx8O_l_xl5n_sIjG'
 set :form_url,                         '//formspree.io/hello@uplink.tech'
 set :google_analytics_id,              'UA-67230464-1'
 set :profiles, {
-  twitter:     'https://twitter.com/UplinkHQ',
+  twitter:     'https://twitter.com/uplink',
   facebook:    'https://www.facebook.com/UplinkHQ',
-  xing:        'https://www.xing.com/companies/uplinkfreelancedevelopernetwork',
+  xing:        'https://www.xing.com/companies/uplink',
   linkedin:    'https://www.linkedin.com/company/uplink-it-freelancer-network',
   instagram:   'https://www.instagram.com/uplinkhq',
   angellist:   'https://angel.co/uplinkhq',
