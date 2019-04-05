@@ -181,6 +181,7 @@ body#home {
             max-width: none;
           }
 
+          #fuehrer_orgel,
           #christa_weidner {
 
             img {
@@ -193,7 +194,7 @@ body#home {
             img {
 
               @media (min-width: $screen-sm-min) {
-                margin: 47px 0 48px;
+                margin-bottom: 20px;
               }
             }
           }
@@ -203,7 +204,7 @@ body#home {
             img {
 
               @media (min-width: $screen-sm-min) {
-                margin: 35px 0;
+                margin: 36px 0 20px;
               }
             }
           }

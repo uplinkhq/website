@@ -137,22 +137,28 @@ priority: 1.0
     %p
       = t :text, scope: %i(pages home partners)
     .row.columns.list
+      #fuehrer_orgel.col-sm-6
+        = image_tag 'partners/fuehrer_orgel.png'
+        = link_to 'fo-steuerberater.de', 'http://fo-steuerberater.de/', rel: 'nofollow', target: '_blank', class: 'small'
+        %p
+          = t :text, scope: %i(pages home partners fuehrer_orgel)
       #christa_weidner.col-sm-6
         = image_tag 'partners/christa_weidner.jpg'
         = link_to 'freelance-it.services', 'https://www.freelance-it.services/', rel: 'nofollow', target: '_blank', class: 'small'
         %p
           = t :text, scope: %i(pages home partners christa_weidner)
+    .row.columns.list
       #debitoor.col-sm-6
         = image_tag 'partners/debitoor.svg'
         = link_to 'debitoor.de', 'https://debitoor.de/', rel: 'nofollow', target: '_blank', class: 'small'
         %p
           = t :text, scope: %i(pages home partners debitoor)
-    .row.columns.list
       #kontist.col-sm-6
         = image_tag 'partners/kontist.png'
         = link_to 'kontist.com', 'https://kontist.com/', rel: 'nofollow', target: '_blank', class: 'small'
         %p
           = t :text, scope: %i(pages home partners kontist)
+    .row.columns.list
       #exali.col-sm-6
         = image_tag 'partners/exali.png'
         = link_to 'exali.de', 'https://www.exali.de/', rel: 'nofollow', target: '_blank', class: 'small'
