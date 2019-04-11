@@ -27,6 +27,12 @@ $(document)
       enableOption window.location.hash.replace(/^#/, '')
 
   .on 'submit-success', "#{bodySelector} #freelancer-request form", ->
+    # Track via LinkedIn
+    image = document.createElement('img')
+    img.src = 'https://dc.ads.linkedin.com/collect/?pid=1099289&conversionId=939857&fmt=gif'
+    document.body.appendChild(image)
+
+    # Track via Google Analytics
     if gtag?
       gtag 'event', 'generate_lead', event_label: $('body').data('locale')
 
