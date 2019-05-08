@@ -3,3 +3,14 @@ backend:
   repo: krautcomputing/uplink-web
 media_folder: 'source/images/uploads'
 public_folder: '/images/uploads'
+collections:
+  - label: Pages
+    name: pages
+    files:
+      - label: Home
+        name: home
+        file: source/localizable/index.haml.haml
+        fields:
+          - name: title
+            label: Title
+            widget: string
