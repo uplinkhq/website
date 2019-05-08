@@ -16,30 +16,6 @@ if defined?(RailsAssets)
   end
 end
 
-activate :s3_sync do |config|
-  config.aws_access_key_id     = ENV.fetch('AWS_ACCESS_KEY_ID')
-  config.aws_secret_access_key = ENV.fetch('AWS_SECRET_ACCESS_KEY')
-  config.bucket                = 'uplink.tech'
-  config.region                = 'eu-central-1'
-end
-
-activate :cdn do |cdn|
-  cdn.filter      = /\.(html|txt|xml)\z/i
-  cdn.cloudflare  = {
-    client_api_key: ENV.fetch('CLOUDFLARE_API_KEY'),
-    email:          'manuel@krautcomputing.com',
-    zone:           'uplink.tech',
-    base_urls: [
-      'https://uplink.tech'
-    ]
-  }
-  cdn.cloudfront = {
-    access_key_id:     ENV.fetch('CLOUDFRONT_ACCESS_KEY_ID'),
-    secret_access_key: ENV.fetch('CLOUDFRONT_SECRET_ACCESS_KEY'),
-    distribution_id:   ENV.fetch('CLOUDFRONT_DISTRIBUTION_ID')
-  }
-end
-
 activate :sitemap_ping do |config|
   config.host        = 'https://uplink.tech'
   config.after_build = false
