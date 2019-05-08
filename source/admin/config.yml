@@ -1,0 +1,5 @@
+backend:
+  name: bitbucket
+  repo: krautcomputing/uplink-web
+media_folder: 'source/images/uploads'
+public_folder: '/images/uploads'
