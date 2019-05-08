@@ -257,8 +257,8 @@ en:
             text: We will call you back within a few hours to talk about the remaining details.
           post_job:
             url_fragment: post-job
-            headline: Post job directly
-            text: After reviewing your job description, we will post it in our community and contact you with matching candidates.
+            headline: Post job
+            text: After reviewing the job details, we will post it in our community and contact you with matching candidates.
 
         form:
           name: Your Name
@@ -268,7 +268,7 @@ en:
           details_short: What kind of freelancer are you looking for? Web developer, DevOps expert,...
           details_long: What kind of freelancer are you looking for? Which skills (programming languages, frameworks, etc.) should the freelancer have? What tasks will the freelancer work on?
           budget:
-            text: What is the budget you have allocated for the freelancer(s)?
+            text: What is the approximate budget you have allocated for the freelancer(s)?
             options:
               below_1k: < 1,000€
               between_1k_and_5k: 1,000€ - 5,000€

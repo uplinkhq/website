@@ -256,8 +256,8 @@ de:
             text: Wir melden uns innerhalb weniger Stunden telefonisch bei Ihnen, um alle weiteren Details zu besprechen.
           post_job:
             url_fragment: job-posten
-            headline: Job direkt posten
-            text: Wir veröffentlichen Ihr Gesuch nach einer Prüfung sofort in unserem Netzwerk und verknüpfen Sie direkt mit passenden und verfügbaren Kandidaten.
+            headline: Job posten
+            text: Wir veröffentlichen Ihr Gesuch nach einer Prüfung in unserem Netzwerk und verknüpfen Sie direkt mit passenden und verfügbaren Kandidaten.
 
         form:
           name: Ihr Name
@@ -267,7 +267,7 @@ de:
           details_short: Was für eine Art von Freelancer suchen Sie? Web-Entwickler, DevOps-Experte,...
           details_long: Was für eine Art von Freelancer suchen Sie? Welche Kenntnisse (Programmiersprachen, Frameworks, etc.) sollte er/sie haben? Was werden seine/ihre Aufgaben im Projekt sein?
           budget:
-            text: Welches Budget haben Sie für den/die Freelancer verfügbar?
+            text: Welches Budget haben Sie ungefähr für den/die Freelancer verfügbar?
             options:
               below_1k: < 1.000€
               between_1k_and_5k: 1.000€ - 5.000€
