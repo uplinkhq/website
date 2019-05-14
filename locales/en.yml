@@ -221,6 +221,7 @@ en:
           location: Your location
           profiles: Your profiles (XING, LinkedIn, GitHub, own website, etc.)
           motivation: Tell us a bit about yourself! Do you see yourself as a frontend, backend, fullstack or mobile developer? Which programming languages and frameworks do you like to work with? Do you enjoy working for startups, agencies, or corporates? Remote or onsite?
+          referral: How did you hear about Uplink?
 
         form_messages:
           confirm: Thanks! We'll be in touch with you shortly!

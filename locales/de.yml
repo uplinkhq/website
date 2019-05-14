@@ -220,6 +220,7 @@ de:
           location: Dein Wohnort
           profiles: Deine Profile (XING, LinkedIn, GitHub, eigene Webseite, etc.)
           motivation: Erzähl uns ein wenig über dich! Siehst du dich als Frontend-, Backend-, Fullstack- oder Mobile-Entwickler? Welche Programmiersprachen und Frameworks benutzt du gerne? Arbeitest du lieber für Startups, Agenturen oder größere Firmen? Remote oder vor Ort?
+          referral: Wie hast du von Uplink erfahren?
 
         form_messages:
           confirm: Vielen Dank! Wir melden uns so bald wie möglich bei dir!
