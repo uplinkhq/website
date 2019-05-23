@@ -27,7 +27,9 @@ I18n.exception_handler = ->(exception, locale, key, options) {
 
 page '/sitemap.xml', layout: false
 
-redirect 'jobs/junior-account-manager/index.html', to: '/jobs/account-manager/'
+ready do
+  proxy "_redirects", "netlify-redirects", ignore: true
+end
 
 set :css_dir,                          'stylesheets'
 set :js_dir,                           'javascripts'
