@@ -1,0 +1,3 @@
+http://uplink.netlify.com/*         https://uplink.tech/:splat        301!
+https://uplink.netlify.com/*        https://uplink.tech/:splat        301!
+/jobs/junior-account-manager        /jobs/account-manager/

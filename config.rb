@@ -28,7 +28,7 @@ I18n.exception_handler = ->(exception, locale, key, options) {
 page '/sitemap.xml', layout: false
 
 ready do
-  proxy "_redirects", "netlify-redirects", ignore: true
+  proxy '_redirects', 'netlify-redirects', ignore: true
 end
 
 set :css_dir,                          'stylesheets'
