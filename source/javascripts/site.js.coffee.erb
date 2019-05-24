@@ -10,6 +10,9 @@
 
 #= require_tree ./pages
 
+# https://fontawesome.com/how-to-use/on-the-web/using-with/turbolinks
+FontAwesome.config.mutateApproach = 'sync'
+
 $(document)
 
   .on 'submit', 'form', (e) ->
