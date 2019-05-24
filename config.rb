@@ -25,7 +25,11 @@ I18n.exception_handler = ->(exception, locale, key, options) {
   raise "Missing translation key: #{key}, locale: #{locale}, options: #{options}"
 }
 
-page '/sitemap.xml', layout: false
+page 'sitemap.xml', layout: false
+
+# Ignore directory_index for 404.html.haml, so that 404.html
+# is created which is then used as a custom 404 page by Netlify.
+page '404.html', directory_index: false
 
 ready do
   proxy '_redirects', 'netlify-redirects', ignore: true
