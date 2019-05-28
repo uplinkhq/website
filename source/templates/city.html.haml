@@ -1,5 +1,5 @@
----
-layout: false
----
+- city_page = data.city_pages[city][locale]
 
-= data.city_pages[city].tagline
+- @title, @description = city_page.fetch_values('title', 'description')
+
+= city_page.tagline

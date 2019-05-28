@@ -37,8 +37,9 @@ end
 
 ignore 'templates/*.html'
 
-data.city_pages.each do |city, data|
-  proxy "#{city}/index.html", 'templates/city.html', locals: { city: city }
+data.city_pages.keys.each do |city|
+  proxy "#{city}/index.html",    'templates/city.html', locals: { city: city, locale: 'de' }
+  proxy "en/#{city}/index.html", 'templates/city.html', locals: { city: city, locale: 'en' }
 end
 
 set :css_dir,                          'stylesheets'

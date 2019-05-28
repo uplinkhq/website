@@ -1,1 +1,9 @@
-tagline: Freelancer in Hamburg
+de:
+  title: Freelancer in Hamburg (DE)
+  description: Deutsche Description
+  tagline: Freelancer in Hamburg (DE)
+
+en:
+  title: Freelancers in Hamburg (EN)
+  description: English Description
+  tagline: Freelancers in Hamburg (EN)
