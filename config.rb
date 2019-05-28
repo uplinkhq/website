@@ -35,6 +35,12 @@ ready do
   proxy '_redirects', 'netlify-redirects', ignore: true
 end
 
+ignore 'templates/*.html'
+
+data.city_pages.each do |city, data|
+  proxy "#{city}/index.html", 'templates/city.html', locals: { city: city }
+end
+
 set :css_dir,                          'stylesheets'
 set :js_dir,                           'javascripts'
 set :images_dir,                       'images'
