@@ -1,0 +1,12 @@
+$cities: berlin;
+
+@each $city in $cities {
+
+  body##{$city} {
+    @include header_bg_image("cities/#{$city}.jpg");
+  }
+}
+
+.navbar-nav {
+  display: none;
+}

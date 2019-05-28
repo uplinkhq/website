@@ -37,7 +37,7 @@ end
 
 ignore 'templates/*.html'
 
-data.city_pages.keys.each do |city|
+%w(berlin).each do |city|
   proxy "#{city}/index.html",    'templates/city.html', locals: { city: city, locale: 'de' }
   proxy "en/#{city}/index.html", 'templates/city.html', locals: { city: city, locale: 'en' }
 end
@@ -147,15 +147,15 @@ helpers do
   end
 
   def page_title
-    t current_page.data.id.gsub('-', '_'), scope: :page_titles
+    t @id.gsub('-', '_'), scope: :page_titles
   end
 
   def page_description
-    t current_page.data.id.gsub('-', '_'), scope: :page_descriptions
+    t @id.gsub('-', '_'), scope: :page_descriptions
   end
 
   def page_intro
-    t current_page.data.id.gsub('-', '_'), scope: :page_intros
+    t @id.gsub('-', '_'), scope: :page_intros
   end
 
   def markdown(text)

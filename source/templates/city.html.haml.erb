@@ -1,0 +1,12 @@
+- @id = city
+
+- content_for :header do
+  %h1
+    = page_title
+  %p
+    = page_intro
+  = link_to '#contact', class: 'btn btn-primary' do
+    = t :cta, scope: %i(pages city)
+
+%p
+  = t :secondary_intro, scope: %i(pages city)
