@@ -237,7 +237,6 @@ GEM
     rails-assets-jquery-smooth-scroll (1.7.2)
       rails-assets-jquery (>= 1.4.2)
     rails-assets-jquery.lazyload (1.9.7)
-    rails-assets-js-cookie (2.2.0)
     rails-deprecated_sanitizer (1.0.3)
       activesupport (>= 4.2.0.alpha)
     rails-dom-testing (1.0.9)
@@ -314,7 +313,6 @@ DEPENDENCIES
   rails-assets-autosize (~> 3.0)!
   rails-assets-jquery-smooth-scroll (~> 1.6)!
   rails-assets-jquery.lazyload (~> 1.9)!
-  rails-assets-js-cookie (~> 2.0)!
   redcarpet (~> 3.3)
   sass
   sass-globbing (~> 1.1)

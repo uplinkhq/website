@@ -1,7 +1,6 @@
 #= require turbolinks
 #= require jquery.lazyload
 #= require jquery-smooth-scroll/jquery.smooth-scroll
-#= require js-cookie
 #= require autosize
 #= require bootstrap/collapse
 #= require bootstrap/tooltip
@@ -53,19 +52,6 @@ $(document)
         .siblings('.note.note-error')
         .slideDown()
 
-showCookieBar = ->
-  unless Cookies.get('cookie-consent')?
-    cookieBar = $('#cookie-bar')
-    cookieBar
-      .slideDown()
-      .find('a')
-      .click (e) ->
-        e.preventDefault()
-        Cookies.set 'cookie-consent', 'true',
-          expires: 365
-          path:    '/'
-        cookieBar.slideUp()
-
 # Hack to get the "position: fixed" element
 # with the bg image to have the same height as the header.
 showHeaderBg = ->
@@ -80,5 +66,4 @@ $(document).on 'turbolinks:load', ->
   $('img.lazy').show().lazyload(effect: 'fadeIn')
   $('[data-toggle="tooltip"]').tooltip()
   autosize(document.querySelectorAll('.autosize'))
-  showCookieBar()
   FontAwesome.dom.i2svg()

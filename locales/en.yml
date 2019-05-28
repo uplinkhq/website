@@ -6,10 +6,6 @@ en:
     url: https://uplinkhq.typeform.com/to/usav18
     text: Freelancer Request
 
-  cookies:
-    text: We use cookies to ensure you get the best possible experience on our website.
-    confirm: Got it.
-
   menu:
     home: Home
     freelancers: For Freelancers
