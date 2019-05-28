@@ -1,6 +1,5 @@
 backend:
-  name: bitbucket
-  repo: krautcomputing/uplink-web
+  name: git-gateway
 media_folder: 'source/images/uploads'
 public_folder: '/images/uploads'
 collections:
