@@ -46,7 +46,6 @@ set :css_dir,                          'stylesheets'
 set :js_dir,                           'javascripts'
 set :images_dir,                       'images'
 set :press_kit_google_drive_folder_id, '1_EuL5dbi42444QkCnx8O_l_xl5n_sIjG'
-set :form_url,                         '//formspree.io/hello@uplink.tech'
 set :google_analytics_id,              'UA-67230464-1'
 set :profiles, {
   twitter:     'https://twitter.com/uplink',
