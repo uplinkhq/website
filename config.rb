@@ -159,7 +159,7 @@ helpers do
   end
 
   def markdown(text)
-    Kramdown::Document.new(text).to_html
+    Kramdown::Document.new(text, input: 'GFM').to_html.chomp
   end
 
   def in_groups_of(data, number, fill_with = nil)
