@@ -5,6 +5,8 @@ public_folder: '/images/uploads'
 collections:
   - label: City Pages
     name: city_pages
+    identifier_field: de.title
+    extension: yml
     folder: data/city_pages/
     create: true
     fields:
