@@ -1,0 +1,16 @@
+backend:
+  name: git-gateway
+media_folder: 'source/images/uploads'
+public_folder: '/images/uploads'
+collections:
+  - label: City Pages
+    name: city_pages
+    folder: data/city_pages/
+    create: true
+    fields:
+      - { label: Title (DE), name: de.title, widget: string, required: true }
+      - { label: Title (EN), name: en.title, widget: string, required: true }
+      - { label: Description (DE), name: de.description, widget: string, required: true }
+      - { label: Description (EN), name: en.description, widget: string, required: true }
+      - { label: Tagline (DE), name: de.tagline, widget: string, required: true }
+      - { label: Tagline (EN), name: en.tagline, widget: string, required: true }

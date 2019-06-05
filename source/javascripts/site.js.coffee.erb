@@ -12,6 +12,12 @@
 # https://fontawesome.com/how-to-use/on-the-web/using-with/turbolinks
 FontAwesome.config.mutateApproach = 'sync'
 
+if window.netlifyIdentity
+  window.netlifyIdentity.on 'init', (user) ->
+    unless user
+      window.netlifyIdentity.on 'login', ->
+        document.location.href = '/admin/'
+
 $(document)
 
   .on 'submit', 'form', (e) ->
