@@ -56,7 +56,7 @@ initRateSlider = ->
 
     scriptUrl = "https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/#{noUiSliderVersion}/nouislider.min.js"
     $.ajax url: scriptUrl, dataType: 'script', cache: true, success: ->
-      [min, max] = [60, 150]
+      [min, max] = [70, 150]
       noUiSlider.create sliderEl,
         start:    [min, max]
         step:     5
