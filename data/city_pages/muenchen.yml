@@ -1,9 +1,7 @@
-de:
-  title: München Title in German
-  description: München Description in German
-  tagline: München Tagline in German
+de.title: München
+de.description: München Description in German
+de.tagline: München Tagline in German
 
-en:
-  title: München Title in English
-  description: München Description in English
-  tagline: München Tagline in English
+en.title: München Title in English
+en.description: München Description in English
+en.tagline: München Tagline in English

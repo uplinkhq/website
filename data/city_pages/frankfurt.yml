@@ -1,9 +1,7 @@
-de:
-  title: Frankfurt Title in German
-  description: Frankfurt Description in German
-  tagline: Frankfurt Tagline in German
+de.title: Frankfurt
+de.description: Frankfurt Description in German
+de.tagline: Frankfurt Tagline in German
 
-en:
-  title: Frankfurt Title in English
-  description: Frankfurt Description in English
-  tagline: Frankfurt Tagline in English
+en.title: Frankfurt Title in English
+en.description: Frankfurt Description in English
+en.tagline: Frankfurt Tagline in English

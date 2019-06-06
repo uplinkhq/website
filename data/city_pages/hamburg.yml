@@ -1,9 +1,7 @@
-de:
-  title: Hamburg Title in German
-  description: Hamburg Description in German
-  tagline: Hamburg Tagline in German
+de.title: Hamburg
+de.description: Hamburg Description in German
+de.tagline: Hamburg Tagline in German
 
-en:
-  title: Hamburg Title in English
-  description: Hamburg Description in English
-  tagline: Hamburg Tagline in English
+en.title: Hamburg Title in English
+en.description: Hamburg Description in English
+en.tagline: Hamburg Tagline in English

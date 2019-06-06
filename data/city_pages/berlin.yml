@@ -1,9 +1,7 @@
-de:
-  title: Berlin Title in German
-  description: Berlin Description in German
-  tagline: Berlin Tagline in German
+de.title: Berlin
+de.description: Berlin Description in German
+de.tagline: Berlin Tagline in German
 
-en:
-  title: Berlin Title in English
-  description: Berlin Description in English
-  tagline: Berlin Tagline in English
+en.title: Berlin Title in English
+en.description: Berlin Description in English
+en.tagline: Berlin Tagline in English
