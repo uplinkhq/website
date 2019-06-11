@@ -8,6 +8,8 @@
         = navbar_item t(:freelancers, scope: :menu), localized_path('freelancer')
         = navbar_item t(:companies, scope: :menu),   localized_path('firmen')
       = navbar_group align: 'right', class: 'super' do
+        = navbar_item 'hello@uplink.tech', 'mailto:hello@uplink.tech'
+        = navbar_item '+49 (0)30 62939791', 'tel:+493062939791'
         -# TODO: There must be an easier way to get the template name.
         - template_name = current_resource.source_file[%r(localizable/(.+)\.html\.haml\z), 1]
         = navbar_item localized_path([nil, 'index'].include?(template_name) ? '' : template_name, locale: other_locale) do
