@@ -14,19 +14,29 @@ id: job-account-manager
       %i.far.fa-map-marker
       Berlin-Friedrichshain
       %i.far.fa-clock
-      30-40 Stunden pro Woche
+      25-40 Stunden pro Woche
+
     %h2
       Wer sind wir?
+
     %p
-      Uplink ist ein kleines und junges Unternehmen mit Sitz in Berlin. Wir betreiben ein Netzwerk für IT-Freelancer mit mittlerweile über 500 Mitgliedern, die sich online auf unserer Plattform und im realen Leben bei regelmäßigen Treffen austauschen. Wir bieten wir unseren Mitgliedern eine simple, faire und transparente Projektvermittlung und darüber hinaus helfen wir bei Themen wie Existenz- und Firmengründung, Steuern, Versicherung, uvm.
-    %p
-      Uplink gibt es seit 2016. Wir sind noch ein Zweier-Team
-      == (#{link_to 'Manuel', 'https://www.xing.com/profile/Manuel_Meurer'}
-      und
-      == #{link_to 'Henrik', 'https://www.xing.com/profile/Henrik_Hesslau'})
-      und suchen jetzt nach weiterer Unterstützung!
+      Uplink ist ein kleines und junges (gegründet 2016) Unternehmen mit Sitz in Berlin. Wir betreiben ein Netzwerk für IT-Freelancer mit
+      %span.freelancer-count
+        %span.loading{ title: 'Diese Zahl wird gerade live von unserem Server geladen.', data: { toggle: 'tooltip' } }
+          %i.far.fa-spinner.fa-spin
+          Lade Anzahl...
+        %span.done.hidden{ title: 'Diese Zahl ist live und wurde gerade eben von unserem Server geladen.', data: { toggle: 'tooltip' } }
+          %i.far.fa-satellite-dish
+          %span.data
+        %span.fail.hidden{ title: 'Sorry, beim Laden dieser Zahl von unserem Server ist leider ein Fehler aufgetreten. Versuch es doch einfach nochmal, indem du diese Seite neu lädst.', data: { toggle: 'tooltip' } }
+          %i.far.fa-exclamation
+          Ups...
+
+      Mitgliedern, die sich online auf unserer Plattform und im realen Leben bei regelmäßigen Treffen austauschen. Wir bieten wir unseren Mitgliedern eine simple, faire und transparente Projektvermittlung und darüber hinaus helfen wir bei Themen wie Existenz- und Firmengründung, Steuern, Versicherung, uvm.
+
     %h2
       Deine Aufgaben
+
     %ul
       %li
         Du bist verantwortlich für die Kommunikation mit unseren bestehenden und neuen Kunden. Du besprichst mit ihnen bei Projektanfragen die technischen Anforderungen an die Kandidaten und die Rahmenbedingungen der Zusammenarbeit.
@@ -38,8 +48,10 @@ id: job-account-manager
         Du erstellst und pflegst die Freelancerprofile in unserer Datenbank.
       %li
         Klassische Vertriebstätigkeiten (z.B. Kaltakquise) gehören NICHT zu deinen Aufgaben.
+
     %h2
       Dein Profil
+
     %p
       %ul
         %li
@@ -56,8 +68,10 @@ id: job-account-manager
           Du arbeitest sehr strukturiert und prozessorientiert, und versuchst, wiederkehrende Aufgaben zu automatisieren.
         %li
           Du sprichst exzellentes Deutsch und gutes Englisch.
+
     %h2
       Was wir dir bieten
+
     %ul
       %li
         Viele Gestaltungsmöglichkeiten und Entscheidungsspielraum. Du kannst deine Arbeit selbst strukturieren, unsere Prozesse maßgeblich mitgestalten und deine eigenen Ideen mit einbringen.
