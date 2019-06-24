@@ -1,94 +1,38 @@
 ---
 id: job-account-manager
+layout: jobs
+classes:
+  - job
 ---
 
-- content_for :header do
-  %h1
-    = page_title
-  %p
-    = page_intro
+%h2
+  Deine Aufgaben
 
-%section.gray-bg
-  .container
-    %p.meta
-      %i.far.fa-map-marker
-      Berlin-Friedrichshain
-      %i.far.fa-clock
-      25-40 Stunden pro Woche
+%ul
+  %li
+    Du bist verantwortlich für die Kommunikation mit unseren bestehenden und neuen Kunden. Du besprichst mit ihnen bei Projektanfragen die technischen Anforderungen an die Kandidaten und die Rahmenbedingungen der Zusammenarbeit.
+  %li
+    Du veröffentlichst neue Jobs in unserer Community mit Hilfe von Slack und unserer eigens entwickelten Software und beantwortest Nachfragen von interessierten Kandidaten.
+  %li
+    Wenn du passende Kandidaten für einen Job identifiziert hast, stellst du sie beim Kunden vor und begleitest den folgenden Hiring-Prozess.
+  %li
+    Du erstellst und pflegst die Freelancerprofile in unserer Datenbank.
+  %li
+    Klassische Vertriebstätigkeiten (z.B. Kaltakquise) gehören NICHT zu deinen Aufgaben.
 
-    %h2
-      Wer sind wir?
+%h2
+  Dein Profil
 
-    %p
-      Uplink ist ein kleines und junges (gegründet 2016) Unternehmen mit Sitz in Berlin. Wir betreiben ein Netzwerk für IT-Freelancer mit
-      %span.freelancer-count
-        %span.loading{ title: 'Diese Zahl wird gerade live von unserem Server geladen.', data: { toggle: 'tooltip' } }
-          %i.far.fa-spinner.fa-spin
-          Lade Anzahl...
-        %span.done.hidden{ title: 'Diese Zahl ist live und wurde gerade eben von unserem Server geladen.', data: { toggle: 'tooltip' } }
-          %i.far.fa-satellite-dish
-          %span.data
-        %span.fail.hidden{ title: 'Sorry, beim Laden dieser Zahl von unserem Server ist leider ein Fehler aufgetreten. Versuch es doch einfach nochmal, indem du diese Seite neu lädst.', data: { toggle: 'tooltip' } }
-          %i.far.fa-exclamation
-          Ups...
-
-      Mitgliedern, die sich online auf unserer Plattform und im realen Leben bei regelmäßigen Treffen austauschen. Wir bieten wir unseren Mitgliedern eine simple, faire und transparente Projektvermittlung und darüber hinaus helfen wir bei Themen wie Existenz- und Firmengründung, Steuern, Versicherung, uvm.
-
-    %h2
-      Deine Aufgaben
-
-    %ul
-      %li
-        Du bist verantwortlich für die Kommunikation mit unseren bestehenden und neuen Kunden. Du besprichst mit ihnen bei Projektanfragen die technischen Anforderungen an die Kandidaten und die Rahmenbedingungen der Zusammenarbeit.
-      %li
-        Du veröffentlichst neue Jobs in unserer Community mit Hilfe von Slack und unserer eigens entwickelten Software und beantwortest Nachfragen von interessierten Kandidaten.
-      %li
-        Wenn du passende Kandidaten für einen Job identifiziert hast, stellst du sie beim Kunden vor und begleitest den folgenden Hiring-Prozess.
-      %li
-        Du erstellst und pflegst die Freelancerprofile in unserer Datenbank.
-      %li
-        Klassische Vertriebstätigkeiten (z.B. Kaltakquise) gehören NICHT zu deinen Aufgaben.
-
-    %h2
-      Dein Profil
-
-    %p
-      %ul
-        %li
-          Du hast ein Studium oder eine Berufsausbildung im Bereich Informatik, Digitales, Kommunikation oder Personal erfolgreich abgeschlossen.
-        %li
-          Du hast Grundkenntnisse im IT-Bereich (Programmiersprachen, Frameworks, Technologien) oder großes Interesse, dir diese anzueignen. Selbst programmieren zu können ist nicht nötig, aber ein Überblick über die aktuelle IT-Landschaft und Kenntnisse darüber, welche Technologien es gibt und wie sie zusammenhängen, werden dir helfen, dich mit den Firmen und Freelancern auf Augenhöhe zu unterhalten.
-        %li
-          Du hast optimalerweise bereits Erfahrung im Bereich Account-Management, Projektmanagement, Kommunikation oder als Assistenz der Geschäftsführung sammeln können.
-        %li
-          Du hast Lust, beim Aufbau eines jungen und innovativen Unternehmens mitzuarbeiten. Du arbeitest eigenverantwortlich, selbstständig und strukturiert, übernimmst gern Verantwortung und bist offen und kommunikativ.
-        %li
-          Du hast ein "Growth Mindset" und weisst, dass du dir viele neue Kenntnisse und Fähigkeiten durch eine clevere Herangehensweise und Beharrlichkeit aneignen kannst.
-        %li
-          Du arbeitest sehr strukturiert und prozessorientiert, und versuchst, wiederkehrende Aufgaben zu automatisieren.
-        %li
-          Du sprichst exzellentes Deutsch und gutes Englisch.
-
-    %h2
-      Was wir dir bieten
-
-    %ul
-      %li
-        Viele Gestaltungsmöglichkeiten und Entscheidungsspielraum. Du kannst deine Arbeit selbst strukturieren, unsere Prozesse maßgeblich mitgestalten und deine eigenen Ideen mit einbringen.
-      %li
-        Die Möglichkeit, in der Zukunft ein eigenes Team aufzubauen und zu führen.
-      %li
-        Einen hervorragenden Überblick über die aktuellen Trends der IT-Branche. Du kommst mit Hunderten von interessanter Firmen und Freelancern in Kontakt und lernst eine Menge neue Technologien kennen!
-      %li
-        Ein nettes kleines, zentral gelegenes bezogenes Büro in Berlin-Friedrichshain (Warschauer Str., im Mai 2018 bezogen) und eine ruhige und störungsfreie Arbeitsatmosphäre.
-      %li
-        Die Möglichkeit, nach einer Einarbeitungsphase regelmäßig aus dem Homeoffice zu arbeiten.
-      %li
-        Flexible und familienfreundliche Arbeitszeiten für die richtige Work-Life-Balance.
-
-    %p
-      = mail_to 'hello@uplink.tech', 'Jetzt per Email bewerben', class: 'btn btn-primary apply'
-    %p
-      Bitte schreib uns, was dich an diesem Job reizen würde und warum du eine gute Kandidatin bzw. ein guter Kandidat wärst! Vergiss in deiner Email auch nicht deinen CV/Lebenslauf und Links zu deinen Profilen auf XING und/oder LinkedIn.
-    %p
-      = link_to '&laquo; zurück zur Job-Übersicht', localized_path('jobs')
+%ul
+  %li
+    Du hast ein Studium oder eine Berufsausbildung im Bereich Informatik, Digitales, Kommunikation oder Personal erfolgreich abgeschlossen.
+  %li
+    Du hast Grundkenntnisse im IT-Bereich (Programmiersprachen, Frameworks, Technologien) oder großes Interesse, dir diese anzueignen. Selbst programmieren zu können ist nicht nötig, aber ein Überblick über die aktuelle IT-Landschaft und Kenntnisse darüber, welche Technologien es gibt und wie sie zusammenhängen, werden dir helfen, dich mit den Firmen und Freelancern auf Augenhöhe zu unterhalten.
+  %li
+    Du hast optimalerweise bereits Erfahrung im Bereich Account-Management, Projektmanagement, Kommunikation oder als Assistenz der Geschäftsführung sammeln können.
+  %li
+    Du hast Lust, beim Aufbau eines jungen und innovativen Unternehmens mitzuarbeiten.
+  %li
+    Du arbeitest eigenverantwortlich, selbstständig und strukturiert.
+  %li
+    Du sprichst exzellentes Deutsch und gutes Englisch.

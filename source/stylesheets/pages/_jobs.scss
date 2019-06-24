@@ -13,6 +13,10 @@ body#jobs {
         a {
           font-size: 22px;
         }
+
+        + li {
+          margin-top: 40px;
+        }
       }
     }
   }

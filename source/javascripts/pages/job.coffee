@@ -1,5 +1,5 @@
 $(document).on 'turbolinks:load', ->
-  if $('#job-account-manager').length && $freelancerCount.length
+  if $('body.job').length && $freelancerCount.length
     cookieName = 'freelancer_count'
     if freelancerCount = Cookies.get(cookieName)
       setFreelancerCount freelancerCount

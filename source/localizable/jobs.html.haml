@@ -15,13 +15,9 @@ id: jobs
     %p
       = t :text_1, scope: %i(pages jobs)
     %ul
-      %li
-        = link_to t(:title, scope: %i(pages jobs job_1)), "/jobs/#{t(:slug, scope: %i(pages jobs job_1))}"
-        %br
-        %i.far.fa-map-marker
-        Berlin-Friedrichshain
-        %br
-        %i.far.fa-clock
-        30-40 Stunden pro Woche
+      - t(:list, scope: %i(pages jobs)).each do |job_title|
+        %li
+          = link_to job_title, "/jobs/#{job_title.downcase.gsub(/\s+/, '-')}"
+          = partial 'partials/job_meta', locals: { line_break: true }
     %p
       = t :text_2, scope: %i(pages jobs), email_link: mail_to('hello@uplink.tech', t(:email_link_text, scope: %i(pages jobs)))

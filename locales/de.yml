@@ -28,6 +28,7 @@ de:
     error_404: Error 404
     jobs: Jobs bei Uplink
     job_account_manager: Account Manager
+    job_sales_manager: Sales Manager
     berlin: Berlin Title
 
   page_descriptions:
@@ -41,6 +42,7 @@ de:
     press_kit: Fotos und Texte zur einfachen Berichterstattung über Uplink
     jobs: Wir sind immer auf der Suche nach neuen Talenten für unser Team!
     job_account_manager: Werde Teil unseres Teams als Account Manager!
+    job_sales_manager: Werde Teil unseres Teams als Sales Manager!
     berlin: Berlin Description
     error_404: Page not found
 
@@ -51,6 +53,7 @@ de:
     press_kit: Sollten Sie weitere Informationen oder Medien benötigen, um über Uplink zu berichten, kontaktieren Sie uns!
     jobs: Wir sind immer auf der Suche nach neuen Talenten für unser Team!
     job_account_manager: Hast du Lust, als Account Manager beim Aufbau eines jungen Tech-Startups in Berlin mitzuarbeiten? Dann wollen wir dich kennenlernen!
+    job_sales_manager: Hast du Lust, als Sales Manager beim Aufbau eines jungen Tech-Startups in Berlin mitzuarbeiten? Dann wollen wir dich kennenlernen!
     berlin: Berlin Intro
 
   pages:
@@ -365,9 +368,10 @@ de:
       text_1: "Für die folgenden Stellen suchen wir derzeit Kandidaten:"
       text_2: Falls keine dieser Stellen exakt zu dem passen, was du suchst, freuen wir uns auch über deine %{email_link}.
       email_link_text: Initiativbewerbung per Email
-      job_1:
-        title: Account Manager
-        slug: account-manager
+
+      list:
+        - Account Manager
+        - Sales Manager
 
     city:
       cta: Anfrage stellen

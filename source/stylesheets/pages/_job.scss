@@ -1,10 +1,10 @@
-body#job-account-manager {
-  @include header_bg_image("job-account-manager.jpg", $vertical_position: 30%);
+body.job {
+  @include header_bg_image("job.jpg", $vertical_position: 30%);
 
   main {
     text-align: left;
 
-    .meta {
+    .job-meta {
 
       .svg-inline--fa {
         margin-left: 20px;
