@@ -46,6 +46,23 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
   })();
 
+%script{ type: 'application/ld+json' }
+  :plain
+    {
+      "@context": "http://schema.org",
+      "@type":    "Organization",
+      "name":     "Uplink",
+      "url":      "<%= config[:host] %>",
+      "logo":     "<%= config[:host] + image_path('logo.png') %>",
+      "sameAs": [
+        "https://www.facebook.com/UplinkHQ/",
+        "https://twitter.com/uplink",
+        "https://www.instagram.com/uplinkhq/",
+        "https://www.linkedin.com/company/uplink-it-freelancer-network",
+        "https://www.xing.com/companies/uplink"
+      ]
+    }
+
 - if build?
 
   :javascript
