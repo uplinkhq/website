@@ -27,8 +27,6 @@ de:
     press_kit: Press Kit
     error_404: Error 404
     jobs: Jobs bei Uplink
-    job_account_manager: Account Manager
-    job_sales_manager: Sales Manager
     berlin: Berlin Title
 
   page_descriptions:
@@ -41,8 +39,7 @@ de:
     media_coverage: Berichterstattung über Uplink
     press_kit: Fotos und Texte zur einfachen Berichterstattung über Uplink
     jobs: Wir sind immer auf der Suche nach neuen Talenten für unser Team!
-    job_account_manager: Werde Teil unseres Teams als Account Manager!
-    job_sales_manager: Werde Teil unseres Teams als Sales Manager!
+    job: Werde Teil unseres Teams als %{job}!
     berlin: Berlin Description
     error_404: Page not found
 
@@ -52,8 +49,7 @@ de:
     companies: Wir helfen Firmen, den richtigen Freelance-Entwickler in Tagen (manchmal Stunden) anstatt Wochen zu finden. Sagen Sie uns einfach, wen Sie suchen, und wir verknüpfen Sie mit einem passenden Experten aus unserem Pool.
     press_kit: Sollten Sie weitere Informationen oder Medien benötigen, um über Uplink zu berichten, kontaktieren Sie uns!
     jobs: Wir sind immer auf der Suche nach neuen Talenten für unser Team!
-    job_account_manager: Hast du Lust, als Account Manager beim Aufbau eines jungen Tech-Startups in Berlin mitzuarbeiten? Dann wollen wir dich kennenlernen!
-    job_sales_manager: Hast du Lust, als Sales Manager beim Aufbau eines jungen Tech-Startups in Berlin mitzuarbeiten? Dann wollen wir dich kennenlernen!
+    job: Hast du Lust, als %{job} beim Aufbau eines jungen Tech-Startups in Berlin mitzuarbeiten? Dann wollen wir dich kennenlernen!
     berlin: Berlin Intro
 
   pages:

@@ -1,0 +1,92 @@
+---
+classes:
+  - job
+---
+
+- @id               = job_id
+- @page_title       = title
+- @page_description = t(:job, scope: :page_descriptions, job: title)
+- @page_intro       = t(:job, scope: :page_intros,       job: title)
+
+- content_for :header do
+  %h1
+    = page_title
+  %p
+    = page_intro
+
+%script{ type: 'application/ld+json' }
+  :plain
+    {
+      "@context":       "http://schema.org",
+      "@type":          "JobPosting",
+      "title":          "<%= title %>",
+      "description":    "<%= description.gsub(/\n+/, ' ') %>",
+      "datePosted":     "<%= date %>",
+      "employmentType": ["FULL_TIME", "PART_TIME"],
+      "hiringOrganization": {
+        "@type":  "Organization",
+        "name":   "Uplink",
+        "sameAs": "https://uplink.tech/",
+        "logo":   "https://uplink.tech/images/logo.png"
+      },
+      "jobLocation": {
+        "@type": "Place",
+        "address": {
+          "@type":           "PostalAddress",
+          "streetAddress":   "Warschauer Str. 59a",
+          "addressLocality": "Berlin",
+          "addressRegion":   "Berlin",
+          "postalCode":      "10243",
+          "addressCountry":  "DE"
+        }
+      }
+    }
+
+%section.gray-bg
+
+  .container
+    = partial 'partials/job_meta'
+
+    %h2
+      Wer sind wir?
+
+    %p
+      Uplink ist ein kleines und junges Unternehmen mit Sitz in Berlin. Wir betreiben ein Netzwerk für IT-Freelancer mit
+      %span.freelancer-count
+        %span.loading{ title: 'Diese Zahl wird gerade live von unserem Server geladen.', data: { toggle: 'tooltip' } }
+          %i.far.fa-spinner.fa-spin
+          Lade Anzahl...
+        %span.done.hidden{ title: 'Diese Zahl ist live und wurde gerade eben von unserem Server geladen.', data: { toggle: 'tooltip' } }
+          %i.far.fa-satellite-dish
+          %span.data
+        %span.fail.hidden{ title: 'Sorry, beim Laden dieser Zahl von unserem Server ist leider ein Fehler aufgetreten. Versuch es doch einfach nochmal, indem du diese Seite neu lädst.', data: { toggle: 'tooltip' } }
+          %i.far.fa-exclamation
+          Ups...
+
+      Mitgliedern, die sich online auf unserer Plattform und im realen Leben bei regelmäßigen Treffen austauschen. Wir bieten wir unseren Mitgliedern eine simple, faire und transparente Projektvermittlung und darüber hinaus helfen wir bei Themen wie Existenz- und Firmengründung, Steuern, Versicherung, uvm.
+
+    = description
+
+    %h2
+      Was wir dir bieten
+
+    %ul
+      %li
+        Viele Gestaltungsmöglichkeiten und Entscheidungsspielraum. Du kannst deine Arbeit selbst strukturieren, unsere Prozesse maßgeblich mitgestalten und deine eigenen Ideen mit einbringen.
+      %li
+        Die Möglichkeit, in der Zukunft ein eigenes Team aufzubauen und zu führen.
+      %li
+        Einen hervorragenden Überblick über die aktuellen Trends der IT-Branche. Du kommst mit Hunderten von interessanter Firmen und Freelancern in Kontakt und lernst eine Menge neue Technologien kennen!
+      %li
+        Ein nettes kleines, zentral gelegenes bezogenes Büro in Berlin-Friedrichshain (Warschauer Str.) mit einer ruhige und störungsfreien Arbeitsatmosphäre.
+      %li
+        Die Möglichkeit, nach einer Einarbeitungsphase regelmäßig oder komplett im Homeoffice zu arbeiten.
+      %li
+        Flexible und familienfreundliche Arbeitszeiten für die richtige Work-Life-Balance.
+
+    %p
+      = mail_to 'hello@uplink.tech?subject=Bewerbung', 'Jetzt per Email bewerben', class: 'btn btn-primary apply'
+    %p
+      Bitte schreib uns, was dich an diesem Job reizen würde und warum du eine gute Kandidatin bzw. ein guter Kandidat wärst! Vergiss in deiner Email auch nicht deinen CV/Lebenslauf und Links zu deinen Profilen auf XING und/oder LinkedIn.
+    %p
+      = link_to '&laquo; zurück zur Job-Übersicht', localized_path('jobs')

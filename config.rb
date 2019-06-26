@@ -42,6 +42,10 @@ ignore 'templates/*.html'
   proxy "en/#{city}/index.html", 'templates/city.html', locals: { city: city, locale: 'en' }
 end
 
+data.jobs.each do |id, data|
+  proxy "/jobs/#{id.gsub(/_/, '-')}/index.html", 'templates/job.html', locals: data.merge(job_id: id)
+end
+
 set :css_dir,                          'stylesheets'
 set :js_dir,                           'javascripts'
 set :images_dir,                       'images'
@@ -147,15 +151,15 @@ helpers do
   end
 
   def page_title
-    t @id.gsub('-', '_'), scope: :page_titles
+    @page_title || t(@id.gsub('-', '_'), scope: :page_titles)
   end
 
   def page_description
-    t @id.gsub('-', '_'), scope: :page_descriptions
+    @page_description || t(@id.gsub('-', '_'), scope: :page_descriptions)
   end
 
   def page_intro
-    t @id.gsub('-', '_'), scope: :page_intros
+    @page_intro || t(@id.gsub('-', '_'), scope: :page_intros)
   end
 
   def markdown(text)
