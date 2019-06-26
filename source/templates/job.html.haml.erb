@@ -53,13 +53,13 @@ classes:
     %p
       Uplink ist ein kleines und junges Unternehmen mit Sitz in Berlin. Wir betreiben ein Netzwerk für IT-Freelancer mit
       %span.freelancer-count
-        %span.loading{ title: 'Diese Zahl wird gerade live von unserem Server geladen.', job_data: { toggle: 'tooltip' } }
+        %span.loading{ title: 'Diese Zahl wird gerade live von unserem Server geladen.', data: { toggle: 'tooltip' } }
           %i.far.fa-spinner.fa-spin
           Lade Anzahl...
-        %span.done.hidden{ title: 'Diese Zahl ist live und wurde gerade eben von unserem Server geladen.', job_data: { toggle: 'tooltip' } }
+        %span.done.hidden{ title: 'Diese Zahl ist live und wurde gerade eben von unserem Server geladen.', data: { toggle: 'tooltip' } }
           %i.far.fa-satellite-dish
-          %span.job_data
-        %span.fail.hidden{ title: 'Sorry, beim Laden dieser Zahl von unserem Server ist leider ein Fehler aufgetreten. Versuch es doch einfach nochmal, indem du diese Seite neu lädst.', job_data: { toggle: 'tooltip' } }
+          %span.data
+        %span.fail.hidden{ title: 'Sorry, beim Laden dieser Zahl von unserem Server ist leider ein Fehler aufgetreten. Versuch es doch einfach nochmal, indem du diese Seite neu lädst.', data: { toggle: 'tooltip' } }
           %i.far.fa-exclamation
           Ups...
 
