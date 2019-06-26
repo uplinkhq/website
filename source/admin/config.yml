@@ -18,3 +18,14 @@ collections:
       - { label: Description (EN), name: en.description, widget: text, required: true }
       - { label: Tagline (DE), name: de.tagline, widget: string, required: true }
       - { label: Tagline (EN), name: en.tagline, widget: string, required: true }
+  - name: jobs
+    label: Jobs
+    label_singular: Job
+    folder: data/jobs/
+    extension: yml
+    create: true
+    preview_path: "jobs/{{slug}}"
+    fields:
+      - { label: Title,       name: title,       widget: string, required: true }
+      - { label: Date,        name: date,        widget: date,   required: true, format: 'YYYY-MM-DD' }
+      - { label: Description, name: description, widget: text,   required: true }
