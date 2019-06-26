@@ -26,8 +26,8 @@ classes:
       "hiringOrganization": {
         "@type":  "Organization",
         "name":   "Uplink",
-        "sameAs": "https://uplink.tech/",
-        "logo":   "https://uplink.tech/images/logo.png"
+        "sameAs": "<%= config[:host] %>",
+        "logo":   "<%= config[:host] + image_path('logo.png') %>"
       },
       "jobLocation": {
         "@type": "Place",
