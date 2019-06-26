@@ -4,9 +4,9 @@ classes:
 ---
 
 - @id               = job_id
-- @page_title       = title
-- @page_description = t(:job, scope: :page_descriptions, job: title)
-- @page_intro       = t(:job, scope: :page_intros,       job: title)
+- @page_title       = data.fetch(:title)
+- @page_description = t(:job, scope: :page_descriptions, job: data.fetch(:title))
+- @page_intro       = t(:job, scope: :page_intros,       job: data.fetch(:title))
 
 - content_for :header do
   %h1
@@ -19,9 +19,9 @@ classes:
     {
       "@context":       "http://schema.org",
       "@type":          "JobPosting",
-      "title":          "<%= title %>",
-      "description":    "<%= description.gsub(/\n+/, ' ') %>",
-      "datePosted":     "<%= date %>",
+      "title":          "<%= data.fetch(:title) %>",
+      "description":    "<%= data.fetch(:description).gsub(/\n+/, ' ') %>",
+      "datePosted":     "<%= data.fetch(:date) %>",
       "employmentType": ["FULL_TIME", "PART_TIME"],
       "hiringOrganization": {
         "@type":  "Organization",
@@ -65,7 +65,7 @@ classes:
 
       Mitgliedern, die sich online auf unserer Plattform und im realen Leben bei regelmäßigen Treffen austauschen. Wir bieten wir unseren Mitgliedern eine simple, faire und transparente Projektvermittlung und darüber hinaus helfen wir bei Themen wie Existenz- und Firmengründung, Steuern, Versicherung, uvm.
 
-    = description
+    = data.fetch(:description)
 
     %h2
       Was wir dir bieten

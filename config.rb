@@ -37,13 +37,14 @@ end
 
 ignore 'templates/*.html'
 
-%w(berlin).each do |city|
-  proxy "#{city}/index.html",    'templates/city.html', locals: { city: city, locale: 'de' }
-  proxy "en/#{city}/index.html", 'templates/city.html', locals: { city: city, locale: 'en' }
+data.city_pages.each do |id, data|
+  { de: 'stadt/', en: 'en/city/' }.each do |locale, prefix|
+    proxy "#{prefix}#{id}/index.html", 'templates/city.html', locals: { city_id: id, data: data, locale: locale }
+  end
 end
 
 data.jobs.each do |id, data|
-  proxy "/jobs/#{id.gsub(/_/, '-')}/index.html", 'templates/job.html', locals: data.merge(job_id: id)
+  proxy "/jobs/#{id.gsub(/_/, '-')}/index.html", 'templates/job.html', locals: { job_id: id, data: data }
 end
 
 set :css_dir,                          'stylesheets'

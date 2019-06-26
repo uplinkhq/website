@@ -3,7 +3,11 @@ classes:
   - city
 ---
 
-- @id = city
+- @id               = city_id
+- @page_title       = data.fetch(:"#{locale}.title")
+- @page_description = data.fetch(:"#{locale}.description")
+- @page_intro       = 'Intro'
+
 
 - content_for :header do
   %h1

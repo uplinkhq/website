@@ -3,6 +3,7 @@ backend:
 media_folder: 'source/images/uploads'
 public_folder: '/images/uploads'
 collections:
+
   - name: city_pages
     label: City Pages
     label_singular: City Page
@@ -10,7 +11,7 @@ collections:
     folder: data/city_pages/
     extension: yml
     create: true
-    preview_path: "{{slug}}"
+    preview_path: "stadt/{{slug}}"
     fields:
       - { label: Title (DE),       name: de.title,       widget: string, required: true }
       - { label: Title (EN),       name: en.title,       widget: string, required: true }
@@ -18,6 +19,7 @@ collections:
       - { label: Description (EN), name: en.description, widget: text,   required: true }
       - { label: Tagline (DE),     name: de.tagline,     widget: string, required: true }
       - { label: Tagline (EN),     name: en.tagline,     widget: string, required: true }
+
   - name: jobs
     label: Jobs
     label_singular: Job
