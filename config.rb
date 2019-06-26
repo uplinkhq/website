@@ -39,12 +39,12 @@ ignore 'templates/*.html'
 
 data.city_pages.each do |id, data|
   { de: 'stadt/', en: 'en/city/' }.each do |locale, prefix|
-    proxy "#{prefix}#{id}/index.html", 'templates/city.html', locals: { city_id: id, data: data, locale: locale }
+    proxy "#{prefix}#{id}/index.html", 'templates/city.html', locals: { city_id: id, city_data: data, locale: locale }
   end
 end
 
 data.jobs.each do |id, data|
-  proxy "/jobs/#{id.gsub(/_/, '-')}/index.html", 'templates/job.html', locals: { job_id: id, data: data }
+  proxy "/jobs/#{id.gsub(/_/, '-')}/index.html", 'templates/job.html', locals: { job_id: id, job_data: data }
 end
 
 set :css_dir,                          'stylesheets'

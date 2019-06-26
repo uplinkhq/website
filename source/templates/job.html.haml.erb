@@ -4,9 +4,9 @@ classes:
 ---
 
 - @id               = job_id
-- @page_title       = data.fetch(:title)
-- @page_description = t(:job, scope: :page_descriptions, job: data.fetch(:title))
-- @page_intro       = t(:job, scope: :page_intros,       job: data.fetch(:title))
+- @page_title       = job_data.fetch(:title)
+- @page_description = t(:job, scope: :page_descriptions, job: job_data.fetch(:title))
+- @page_intro       = t(:job, scope: :page_intros,       job: job_data.fetch(:title))
 
 - content_for :header do
   %h1
@@ -19,9 +19,9 @@ classes:
     {
       "@context":       "http://schema.org",
       "@type":          "JobPosting",
-      "title":          "<%= data.fetch(:title) %>",
-      "description":    "<%= data.fetch(:description).gsub(/\n+/, ' ') %>",
-      "datePosted":     "<%= data.fetch(:date) %>",
+      "title":          "<%= job_data.fetch(:title) %>",
+      "description":    "<%= job_data.fetch(:description).gsub(/\n+/, ' ') %>",
+      "datePosted":     "<%= job_data.fetch(:date) %>",
       "employmentType": ["FULL_TIME", "PART_TIME"],
       "hiringOrganization": {
         "@type":  "Organization",
@@ -53,19 +53,19 @@ classes:
     %p
       Uplink ist ein kleines und junges Unternehmen mit Sitz in Berlin. Wir betreiben ein Netzwerk für IT-Freelancer mit
       %span.freelancer-count
-        %span.loading{ title: 'Diese Zahl wird gerade live von unserem Server geladen.', data: { toggle: 'tooltip' } }
+        %span.loading{ title: 'Diese Zahl wird gerade live von unserem Server geladen.', job_data: { toggle: 'tooltip' } }
           %i.far.fa-spinner.fa-spin
           Lade Anzahl...
-        %span.done.hidden{ title: 'Diese Zahl ist live und wurde gerade eben von unserem Server geladen.', data: { toggle: 'tooltip' } }
+        %span.done.hidden{ title: 'Diese Zahl ist live und wurde gerade eben von unserem Server geladen.', job_data: { toggle: 'tooltip' } }
           %i.far.fa-satellite-dish
-          %span.data
-        %span.fail.hidden{ title: 'Sorry, beim Laden dieser Zahl von unserem Server ist leider ein Fehler aufgetreten. Versuch es doch einfach nochmal, indem du diese Seite neu lädst.', data: { toggle: 'tooltip' } }
+          %span.job_data
+        %span.fail.hidden{ title: 'Sorry, beim Laden dieser Zahl von unserem Server ist leider ein Fehler aufgetreten. Versuch es doch einfach nochmal, indem du diese Seite neu lädst.', job_data: { toggle: 'tooltip' } }
           %i.far.fa-exclamation
           Ups...
 
       Mitgliedern, die sich online auf unserer Plattform und im realen Leben bei regelmäßigen Treffen austauschen. Wir bieten wir unseren Mitgliedern eine simple, faire und transparente Projektvermittlung und darüber hinaus helfen wir bei Themen wie Existenz- und Firmengründung, Steuern, Versicherung, uvm.
 
-    = data.fetch(:description)
+    = job_data.fetch(:description)
 
     %h2
       Was wir dir bieten
