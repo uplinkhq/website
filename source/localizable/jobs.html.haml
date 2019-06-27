@@ -18,6 +18,6 @@ id: jobs
       - t(:list, scope: %i(pages jobs)).each do |job_title|
         %li
           = link_to job_title, "/jobs/#{job_title.downcase.gsub(/\s+/, '-')}"
-          = partial 'partials/job_meta', locals: { line_break: true }
+          = partial 'partials/jobs/meta', locals: { line_break: true }
     %p
       = t :text_2, scope: %i(pages jobs), email_link: mail_to('hello@uplink.tech', t(:email_link_text, scope: %i(pages jobs)))
