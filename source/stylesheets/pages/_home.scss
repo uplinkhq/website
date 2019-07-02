@@ -1,14 +1,6 @@
 body#home {
   @include header_bg_image("home.jpg");
 
-  @media (max-width: $screen-xs-max) {
-    @include header_bg_image("home.jpg", $horizontal_position: 100%);
-  }
-
-  @media (max-width: 350px) {
-    @include header_bg_image("home.jpg", $horizontal_position: 90%);
-  }
-
   header {
 
     h1, p {
