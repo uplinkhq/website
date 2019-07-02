@@ -1,5 +1,5 @@
 body#home {
-  @include header_bg_image("home.jpg");
+  @include header_bg_image("home.jpg", $opacity: 0.5);
 
   header {
 
