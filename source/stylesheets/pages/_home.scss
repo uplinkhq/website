@@ -156,11 +156,14 @@ body#home {
 
           img {
             margin-bottom: 10px;
-            max-width: 300px;
 
-            @media (max-width: $screen-xs-max) {
+            @media (min-width: 400px + $grid-gutter-width) and (max-width: $screen-xs-max) {
               display: inline-block;
               max-width: 400px;
+            }
+
+            @media (min-width: $screen-sm-min) {
+              max-width: 300px;
             }
           }
 

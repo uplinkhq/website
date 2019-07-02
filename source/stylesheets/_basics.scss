@@ -23,6 +23,7 @@ b, strong {
   border-radius: ($padding-base-vertical * 4 + $font-size-base) / 2;
   padding: $padding-base-vertical * 2 $padding-base-horizontal * 2;
   line-height: 1;
+  white-space: normal;
 
   &:active,
   &:active:hover,
@@ -94,7 +95,10 @@ b, strong {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 270px;
+
+    @media (min-width: 270px + $grid-gutter-width) {
+      width: 270px;
+    }
 
     + a {
       margin-top: 10px;
