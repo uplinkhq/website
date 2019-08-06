@@ -203,6 +203,16 @@ body#home {
               }
             }
           }
+
+          #lexoffice {
+
+            img {
+
+              @media (min-width: $screen-sm-min) {
+                margin: 44px 0 34px
+              }
+            }
+          }
         }
       }
 
