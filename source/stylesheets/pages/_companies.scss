@@ -1,5 +1,5 @@
 body#companies {
-  @include header_bg_image("companies.jpg");
+  @include header_bg_image("companies.jpg", $opacity: 0.5);
 
   &[data-locale="de"] {
 
