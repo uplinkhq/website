@@ -11,7 +11,7 @@ classes:
     = page_intro
   .vertical-button-group
     = link_to '#apply', class: 'btn btn-primary' do
-      %i.fas.fa-bolt
+      %i.icon.fas.fa-bolt
       = t :cta, scope: %i(pages freelancers)
 
 %section#how-it-works
@@ -21,19 +21,19 @@ classes:
     .row.columns
       .col-sm-4
         %h3
-          1.
+          = partial 'partials/circle-icon', locals: { text: 1 }
           = t :headline, scope: %i(pages freelancers how_it_works step_1)
         %p
           = t :text, scope: %i(pages freelancers how_it_works step_1), link: link_to(t(:link_text, scope: %i(pages freelancers how_it_works step_1)), '#apply')
       .col-sm-4
         %h3
-          2.
+          = partial 'partials/circle-icon', locals: { text: 2 }
           = t :headline, scope: %i(pages freelancers how_it_works step_2)
         %p
           = t :text, scope: %i(pages freelancers how_it_works step_2)
       .col-sm-4
         %h3
-          3.
+          = partial 'partials/circle-icon', locals: { text: 3 }
           = t :headline, scope: %i(pages freelancers how_it_works step_3)
         %p
           = t :text, scope: %i(pages freelancers how_it_works step_3)
@@ -45,39 +45,39 @@ classes:
     .row.columns
       .col-sm-6
         %h3
-          %i.far.fa-users
+          %i.icon.far.fa-users
           = t :headline, scope: %i(pages freelancers benefits section_1)
         %p
           = t :text, scope: %i(pages freelancers benefits section_1)
       .col-sm-6
         %h3
-          %i.far.fa-repeat
+          %i.icon.far.fa-repeat
           = t :headline, scope: %i(pages freelancers benefits section_2)
         %p
           = t :text, scope: %i(pages freelancers benefits section_2)
     .row.columns
       .col-sm-6
         %h3
-          %i.far.fa-envelope
+          %i.icon.far.fa-envelope
           = t :headline, scope: %i(pages freelancers benefits section_3)
         %p
           = t :text, scope: %i(pages freelancers benefits section_3)
       .col-sm-6
         %h3
-          %i.far.fa-map-marker
+          %i.icon.far.fa-map-marker
           = t :headline, scope: %i(pages freelancers benefits section_4)
         %p
           = t :text, scope: %i(pages freelancers benefits section_4)
     .row.columns
       .col-sm-6
         %h3
-          %i.far.fa-clock
+          %i.icon.far.fa-clock
           = t :headline, scope: %i(pages freelancers benefits section_5)
         %p
           = t :text, scope: %i(pages freelancers benefits section_5)
       .col-sm-6
         %h3
-          %i.far.fa-euro-sign
+          %i.icon.far.fa-euro-sign
           = t :headline, scope: %i(pages freelancers benefits section_6)
         %p
           = t :text, scope: %i(pages freelancers benefits section_6)

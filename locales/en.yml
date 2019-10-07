@@ -140,7 +140,7 @@ en:
       cta: Apply now
 
       how_it_works:
-        headline: How does it work?
+        headline: How it works
 
         step_1:
           headline: Apply to join
@@ -228,21 +228,23 @@ en:
       cta: Find a Freelancer
 
       how_it_works:
-        headline: How does it work?
+        headline: How it works
 
         step_1:
-          headline: Contact us
-          text: "%{freelancer_request_form_link} or get in touch %{email_link}. We will get back to you within a few hours!"
-          freelancer_request_form_link_text: Submit a free request
-          email_link_text: via email
+          headline: Tell us who you're looking for
+          text: Which skills should your perfect candidate have? Do you need him for two days or six months? Part- or full-time, onsite or remote?
 
         step_2:
-          headline: Review our candidates
-          text: Once we know who you are looking for, we contact matching experts from our pool. If they are interested, we introduce them to you.
+          headline: We'll find them for you
+          text: We'll identify the best matching candidates from our community and introduce them to you.
 
         step_3:
-          headline: Let's go!
-          text: Everything else happens directly between you and the candidate, we don't interfere. The invoices are issued by the freelancer as well.
+          headline: You'll talk to them
+          text: Schedule interviews with the candidates you like most, and talk to them on the phone or meet them in person.
+
+        step_4:
+          headline: And you're good to go!
+          text: Once you agreed on the terms, start working together! We'll help if you need us, or stay out of the way if not.
 
       freelancer_request:
         headline: Find an IT freelancer now

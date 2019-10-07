@@ -234,18 +234,20 @@ de:
         headline: Wie funktionierts?
 
         step_1:
-          headline: Kontaktieren Sie uns
-          text: "%{freelancer_request_form_link} oder kontaktieren Sie uns %{email_link}. Wir melden uns innerhalb weniger Stunden zurück!"
-          freelancer_request_form_link_text: Stellen Sie kostenlos eine Anfrage
-          email_link_text: per Email
+          headline: Sagen Sie uns, wen Sie suchen
+          text: Welche Skills soll Ihr Traumkandidat haben? Brauchen Sie ihn für zwei Tage oder sechs Monate? Voll- oder Teilzeit, vor Ort oder Remote?
 
         step_2:
-          headline: Warten Sie auf Kandidaten
-          text: Sobald wir wissen, wen Sie suchen, kontaktieren wir passende Kandidaten aus unserem Pool. Wenn einer von ihnen interessiert ist, stellen wir den Kontakt zu Ihnen her.
+          headline: Wir finden sie für Sie
+          text: Wir identifizieren die am besten passendsten Kandidaten aus unserer Commmunity und stellen sie Ihnen vor.
 
         step_3:
-          headline: Los gehts!
-          text: Alles weitere läuft direkt zwischen Ihnen und dem Kandidaten. Einen Vertrag können Sie direkt mit dem Freelancer machen und auch die Rechnungen kommen direkt vom Freelancer.
+          headline: Sie sprechen mit ihnen
+          text: Vereinbaren Sie Interviews mit den Kandidaten, die Sie am meisten mögen, und sprechen Sie mit ihnen am Telefon oder persönlich.
+
+        step_4:
+          headline: Und los gehts!
+          text: Sobald Sie sich auf eine Zusammenarbeit geeinigt haben, geht es los! Wir helfen, wenn Sie uns brauchen, oder halten uns zurück, wenn nicht.
 
       freelancer_request:
         headline: Jetzt einen IT-Freelancer finden

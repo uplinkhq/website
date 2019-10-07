@@ -11,7 +11,7 @@ classes:
     = page_intro
   .vertical-button-group
     = link_to "##{t :url_fragment, scope: %i(pages companies freelancer_request options callback)}", class: 'btn btn-info' do
-      %i.far.fa-search
+      %i.icon.far.fa-search
       = t :cta, scope: %i(pages companies)
 
 %section#how-it-works.gray-bg
@@ -19,24 +19,31 @@ classes:
     %h2
       = t :headline, scope: %i(pages companies how_it_works)
     .row.columns
-      .col-sm-4
+      .col-sm-5.col-sm-offset-1
         %h3
-          1.
+          = partial 'partials/circle-icon', locals: { text: 1 }
           = t :headline, scope: %i(pages companies how_it_works step_1)
         %p
-          = t :text, scope: %i(pages companies how_it_works step_1), freelancer_request_form_link: link_to(t(:freelancer_request_form_link_text, scope: %i(pages companies how_it_works step_1)), '#freelancer-request'), email_link: mail_to('hello@uplink.tech', t(:email_link_text, scope: %i(pages companies how_it_works step_1)))
-      .col-sm-4
+          = t :text, scope: %i(pages companies how_it_works step_1)
+      .col-sm-5
         %h3
-          2.
+          = partial 'partials/circle-icon', locals: { text: 2 }
           = t :headline, scope: %i(pages companies how_it_works step_2)
         %p
           = t :text, scope: %i(pages companies how_it_works step_2)
-      .col-sm-4
+    .row.columns
+      .col-sm-5.col-sm-offset-1
         %h3
-          3.
+          = partial 'partials/circle-icon', locals: { text: 3 }
           = t :headline, scope: %i(pages companies how_it_works step_3)
         %p
           = t :text, scope: %i(pages companies how_it_works step_3)
+      .col-sm-5
+        %h3
+          = partial 'partials/circle-icon', locals: { text: 4 }
+          = t :headline, scope: %i(pages companies how_it_works step_4)
+        %p
+          = t :text, scope: %i(pages companies how_it_works step_4)
 
 %section#freelancer-request
   .container
@@ -126,39 +133,39 @@ classes:
     .row.columns
       .col-sm-6
         %h3
-          %i.far.fa-link
+          %i.icon.far.fa-link
           = t :headline, scope: %i(pages companies benefits section_1)
         %p
           = t :text, scope: %i(pages companies benefits section_1)
       .col-sm-6
         %h3
-          %i.far.fa-comments
+          %i.icon.far.fa-comments
           = t :headline, scope: %i(pages companies benefits section_2)
         %p
           = t :text, scope: %i(pages companies benefits section_2)
     .row.columns
       .col-sm-6
         %h3
-          %i.far.fa-briefcase
+          %i.icon.far.fa-briefcase
           = t :headline, scope: %i(pages companies benefits section_3)
         %p
           = t :text, scope: %i(pages companies benefits section_3)
       .col-sm-6
         %h3
-          %i.far.fa-code
+          %i.icon.far.fa-code
           = t :headline, scope: %i(pages companies benefits section_4)
         %p
           = t :text, scope: %i(pages companies benefits section_4)
     .row.columns
       .col-sm-6
         %h3
-          %i.far.fa-building
+          %i.icon.far.fa-building
           = t :headline, scope: %i(pages companies benefits section_5)
         %p
           = t :text, scope: %i(pages companies benefits section_5)
       .col-sm-6
         %h3
-          %i.far.fa-smile
+          %i.icon.far.fa-smile
           = t :headline, scope: %i(pages companies benefits section_6)
         %p
           = t :text, scope: %i(pages companies benefits section_6)

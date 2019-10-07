@@ -13,12 +13,12 @@ priority: 1.0
     = page_intro
   .vertical-button-group
     = link_to localized_path('freelancer', fragment: 'apply'), class: 'btn btn-primary' do
-      %i.fas.fa-user-circle
+      %i.icon.fas.fa-user-circle
       = t :apply_as_freelancer, scope: %i(pages home)
     = link_to "#{t :more_info_for_freelancers, scope: %i(pages home)} &raquo;", localized_path('freelancer'), class: 'btn btn-link'
   .vertical-button-group
     = link_to localized_path('firmen', fragment: t(:url_fragment, scope: %i(pages companies freelancer_request options callback))), class: 'btn btn-info' do
-      %i.far.fa-search
+      %i.icon.far.fa-search
       = t :find_a_freelancer, scope: %i(pages home)
     = link_to "#{t :more_info_for_companies, scope: %i(pages home)} &raquo;", localized_path('firmen'), class: 'btn btn-link'
 
@@ -29,32 +29,32 @@ priority: 1.0
     .row.columns
       .col-sm-6
         %h3
-          %i.far.fa-users
+          %i.icon.far.fa-users
           = t :headline, scope: %i(pages home freelancer_benefits section_1)
         %p
           = t :text, scope: %i(pages home freelancer_benefits section_1)
       .col-sm-6
         %h3
-          %i.far.fa-repeat
+          %i.icon.far.fa-repeat
           = t :headline, scope: %i(pages home freelancer_benefits section_2)
         %p
           = t :text, scope: %i(pages home freelancer_benefits section_2)
     .row.columns
       .col-sm-6
         %h3
-          %i.far.fa-envelope
+          %i.icon.far.fa-envelope
           = t :headline, scope: %i(pages home freelancer_benefits section_3)
         %p
           = t :text, scope: %i(pages home freelancer_benefits section_3)
       .col-sm-6
         %h3
-          %i.far.fa-link
+          %i.icon.far.fa-link
           = t :headline, scope: %i(pages home freelancer_benefits section_4)
         %p
           = t :text, scope: %i(pages home freelancer_benefits section_4)
     .vertical-button-group
       = link_to localized_path('freelancer', fragment: 'apply'), class: 'btn btn-primary' do
-        %i.far.fa-user-circle
+        %i.icon.far.fa-user-circle
         = t :apply_as_freelancer, scope: %i(pages home)
       = link_to "#{t :more_info_for_freelancers, scope: %i(pages home)} &raquo;", localized_path('freelancer'), class: 'btn btn-link'
 
@@ -76,32 +76,32 @@ priority: 1.0
     .row.columns
       .col-sm-6
         %h3
-          %i.far.fa-link
+          %i.icon.far.fa-link
           = t :headline, scope: %i(pages home company_benefits section_1)
         %p
           = t :text, scope: %i(pages home company_benefits section_1)
       .col-sm-6
         %h3
-          %i.far.fa-comments
+          %i.icon.far.fa-comments
           = t :headline, scope: %i(pages home company_benefits section_2)
         %p
           = t :text, scope: %i(pages home company_benefits section_2)
     .row.columns
       .col-sm-6
         %h3
-          %i.far.fa-briefcase
+          %i.icon.far.fa-briefcase
           = t :headline, scope: %i(pages home company_benefits section_3)
         %p
           = t :text, scope: %i(pages home company_benefits section_3)
       .col-sm-6
         %h3
-          %i.far.fa-code
+          %i.icon.far.fa-code
           = t :headline, scope: %i(pages home company_benefits section_4)
         %p
           = t :text, scope: %i(pages home company_benefits section_4)
     .vertical-button-group
       = link_to localized_path('firmen', fragment: t(:url_fragment, scope: %i(pages companies freelancer_request options callback))), class: 'btn btn-info' do
-        %i.far.fa-search
+        %i.icon.far.fa-search
         = t :find_a_freelancer, scope: %i(pages home)
       = link_to "#{t :more_info_for_companies, scope: %i(pages home)} &raquo;", localized_path('firmen'), class: 'btn btn-link'
 
