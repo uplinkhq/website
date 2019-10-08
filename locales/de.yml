@@ -80,7 +80,7 @@ de:
           text: Zur Zeit steht die Projektvermittlung noch im Vordergrund, aber weitere Services für Freelancer sind schon in der Mache - wie z.B. ein super-simpler Steuerservice, Kooperationen mit Coworking-Spaces, und vieles mehr!
 
       freelancer_testimonial:
-        text: Weniger als eine Woche, nachdem ich mich bei Uplink angemeldet habe, hatte ich mein erstes Projekt! Der ganze Ablauf war einfach und stressfrei - ein paar Emails, ein Telefonat, und das wars!
+        text: Weniger als eine Woche, nachdem ich mich bei Uplink angemeldet habe, hatte ich mein erstes Projekt! Der ganze Ablauf war einfach und stressfrei - ein paar E-Mails, ein Telefonat, und das wars!
         subtitle: Fullstack-Entwickler
 
       company_benefits:
@@ -217,7 +217,7 @@ de:
 
         form_placeholders:
           name: Dein Name
-          email: Deine Email-Adresse
+          email: Deine E-Mail-Adresse
           location: Dein Wohnort
           profiles: Deine Profile (XING, LinkedIn, GitHub, eigene Webseite, etc.)
           motivation: Erzähl uns ein wenig über dich! Siehst du dich als Frontend-, Backend-, Fullstack- oder Mobile-Entwickler? Welche Programmiersprachen und Frameworks benutzt du gerne? Arbeitest du lieber für Startups, Agenturen oder größere Firmen? Remote oder vor Ort?
@@ -265,7 +265,7 @@ de:
 
         form:
           name: Ihr Name
-          email: Ihre Email-Adresse
+          email: Ihre E-Mail-Adresse
           company: Ihre Firma (optional)
           phone: Ihre Telefonnummer
           details_short: Was für eine Art von Freelancer suchen Sie? Web-Entwickler, DevOps-Experte,...
@@ -304,7 +304,7 @@ de:
           rate: Welchen Stundensatz haben Sie für den/die Freelancer verfügbar?
           confirmation:
             callback: Vielen Dank, wir werden uns so bald wie möglich bei Ihnen melden!
-            job_post: Vielen Dank, wir werden Ihr Gesuch so bald wie möglich prüfen und dann in unserer Community posten. Sollten wir Nachfragen haben, melden wir uns telefonisch oder per Email bei Ihnen.
+            job_post: Vielen Dank, wir werden Ihr Gesuch so bald wie möglich prüfen und dann in unserer Community posten. Sollten wir Nachfragen haben, melden wir uns telefonisch oder per E-Mail bei Ihnen.
           error: Oh oh! Da ist etwas schiefgelaufen und wir wurden über den Fehler informiert. Bitte versuchen Sie es noch einmal!
 
       techs:
@@ -368,7 +368,7 @@ de:
       headline: Offene Stellen
       text_1: "Für die folgenden Stellen suchen wir derzeit Kandidaten:"
       text_2: Falls keine dieser Stellen exakt zu dem passen, was du suchst, freuen wir uns auch über deine %{email_link}.
-      email_link_text: Initiativbewerbung per Email
+      email_link_text: Initiativbewerbung per E-Mail
 
       list:
         - Account Manager
@@ -395,5 +395,5 @@ de:
   drift:
     welcome_message: Hi, Manuel hier, der Gründer von Uplink! Schreib mir, wenn du eine Frage hast! :)
     away_message: Hi, Manuel hier, der Gründer von Uplink! Leider bin ich zur Zeit nicht online, aber wenn du mir eine Nachricht hinterlässt, melde ich mich so bald wie möglich!
-    email_capture_message: Hi, ich habe deine Nachricht erhalten! Wenn du mir deine Email-Adresse nennst, kann ich mich bei dir melden, auch falls die Verbindung abbrechen sollte.
+    email_capture_message: Hi, ich habe deine Nachricht erhalten! Wenn du mir deine E-Mail-Adresse nennst, kann ich mich bei dir melden, auch falls die Verbindung abbrechen sollte.
     thank_you_message: Danke für deine Nachricht! Ich melde mich so bald wie möglich bei dir!
