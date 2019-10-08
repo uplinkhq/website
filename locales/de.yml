@@ -148,15 +148,15 @@ de:
         step_1:
           headline: Bewirb dich
           text: "%{link} und erzähl uns ein wenig über dich, deine Erfahrung als Entwickler und deine Motivation."
-          link_text: Kontaktier uns über dieses Formular
+          link_text: Kontaktier uns
 
         step_2:
-          headline: Füll dein Profil aus
-          text: Sobald du aufgenommen bist, sag uns, mit welchen Technologien du arbeitest, was für Projekte du suchst, und wann du verfügbar bist.
+          headline: Finde Projekte
+          text: Verfolge die Projekt-Postings per E-Mail oder Slack und bewirb dich für einen Job direkt in Slack.
 
         step_3:
-          headline: Warte auf Anfragen
-          text: Wenn wir von einem Projekt hören, dass dir gefallen könnte, melden wir uns via Email bei dir. So einfach ist das!
+          headline: Finde neue Kunden
+          text: Wir stellen dich beim Kunden vor, dann übernimmst du - Interview, Vertrag, los gehts!
 
       benefits:
         headline: Was bringts dir?

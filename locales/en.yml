@@ -144,16 +144,16 @@ en:
 
         step_1:
           headline: Apply to join
-          text: Simply %{link} and tell us a bit about yourself, your experience as a developer and your motivations.
-          link_text: contact us via the form below
+          text: "%{link} and tell us a bit about yourself, your experience as a developer and your motivations."
+          link_text: Contact us
 
         step_2:
-          headline: Get set up
-          text: Once you’re in, tell us about the tech stack and the kind of projects you’d like to work with and set your current and future availability.
+          headline: Find projects
+          text: Follow the project postings via email or Slack and apply for a job directly in Slack.
 
         step_3:
-          headline: Get hired
-          text: When we know you’re available, we will contact you via email when a new project comes in that we think you’ll love. Simple as that!
+          headline: Find new clients
+          text: We'll introduce you to the client, then it's your turn - interview, contract, let's go!
 
       benefits:
         headline: What makes us great?
