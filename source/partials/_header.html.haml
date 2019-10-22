@@ -4,12 +4,10 @@
     = navbar_header brand: 'Uplink', brand_link: localized_path('')
     = navbar_collapse do
       = navbar_group align: 'right' do
-        = navbar_item t(:home, scope: :menu),        localized_path('')
-        = navbar_item t(:freelancers, scope: :menu), localized_path('freelancer')
-        = navbar_item t(:companies, scope: :menu),   localized_path('firmen')
-        = navbar_item 'https://kb.uplink.tech/', {}, target: '_blank' do
-          Knowledge Base
-          %i.far.fa-external-link
+        = navbar_item t(:home, scope: :menu),           localized_path('')
+        = navbar_item t(:freelancers, scope: :menu),    localized_path('freelancer')
+        = navbar_item t(:companies, scope: :menu),      localized_path('firmen')
+        = navbar_item t(:knowledge_base, scope: :menu), 'https://kb.uplink.tech/', {}, target: '_blank'
       = navbar_group align: 'right', class: 'super' do
         = navbar_item 'hello@uplink.tech', 'mailto:hello@uplink.tech'
         = navbar_item '+49 (0)30 62939791', 'tel:+493062939791'
