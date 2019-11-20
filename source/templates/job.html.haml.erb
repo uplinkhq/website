@@ -4,13 +4,14 @@ classes:
 ---
 
 - @id               = job_id
-- @page_title       = job_data.fetch(:title)
+- @page_title       = t("job_#{job_id}", scope: :page_titles)
 - @page_description = t("job_#{job_id}", scope: :page_descriptions)
 - @page_intro       = t("job_#{job_id}", scope: :page_intros)
 
 - content_for :header do
   %h1
-    = page_title
+    = job_data.fetch(:title)
+    (m/w/d)
   %p
     = page_intro
 
