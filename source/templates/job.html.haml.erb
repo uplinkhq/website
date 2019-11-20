@@ -5,8 +5,8 @@ classes:
 
 - @id               = job_id
 - @page_title       = job_data.fetch(:title)
-- @page_description = t(:job, scope: :page_descriptions, job: job_data.fetch(:title))
-- @page_intro       = t(:job, scope: :page_intros,       job: job_data.fetch(:title))
+- @page_description = t("job_#{job_id}", scope: :page_descriptions)
+- @page_intro       = t("job_#{job_id}", scope: :page_intros)
 
 - content_for :header do
   %h1
@@ -20,11 +20,7 @@ classes:
       "@context":       "http://schema.org",
       "@type":          "JobPosting",
       "title":          "<%= job_data.fetch(:title) %>",
-      "description":    "<%= [
-                               partial('partials/jobs/prefix'),
-                               job_data.fetch(:description),
-                               partial('partials/jobs/suffix')
-                             ].join(' ').gsub(/\n+/, ' ') %>",
+      "description":    "<%= markdown(job_data.fetch(:description)).gsub(/(\r?\n)+/, ' ') %>",
       "datePosted":     "<%= job_data.fetch(:date) %>",
       "employmentType": ["FULL_TIME", "PART_TIME"],
       "hiringOrganization": {
@@ -50,13 +46,12 @@ classes:
 
   .container
     = partial 'partials/jobs/meta'
-    = partial 'partials/jobs/prefix'
-    = job_data.fetch(:description)
-    = partial 'partials/jobs/suffix'
+
+    = markdown(job_data.fetch(:description))
 
     %p
       = mail_to 'hello@uplink.tech?subject=Bewerbung', 'Jetzt per E-Mail bewerben', class: 'btn btn-primary apply'
     %p
-      Bitte schreib uns, was dich an diesem Job reizen würde und warum du eine gute Kandidatin bzw. ein guter Kandidat wärst! Vergiss in deiner E-Mail auch nicht deinen CV/Lebenslauf und Links zu deinen Profilen auf XING und/oder LinkedIn.
+      Schreib uns, was dich an diesem Job reizt und warum du ein/e gute/r Kandidat/in bist! Vergiss in deiner E-Mail auch nicht deinen CV/Lebenslauf und Links zu deinen Profilen auf XING und/oder LinkedIn.
     %p
       = link_to '&laquo; zurück zur Job-Übersicht', localized_path('jobs')

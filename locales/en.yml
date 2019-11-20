@@ -365,10 +365,6 @@ en:
       text_2: Even if none of these positions match exactly what you're looking for, please do %{email_link} and tell us what you'd like to do!
       email_link_text: get in touch
 
-      list:
-        - Account Manager
-        - Sales Manager
-
   sections:
 
     about:

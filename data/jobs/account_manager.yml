@@ -1,46 +1,51 @@
 title: Account Manager
 date: 2018-06-17
 description: |
-  <h2>
-    Deine Aufgaben
-  </h2>
+  Uplink ist ein erfolgreiches und engagiertes Startup im HR-Bereich. Durch unsere Community mit <span class="freelancer-count">
+    <span class="loading" title="Diese Zahl wird gerade live von unserem Server geladen." data-toggle="tooltip">
+      <i class="far fa-spinner fa-spin"></i>
+      Lade Anzahl...
+    </span>
+    <span class="done hidden" title="Diese Zahl ist live und wurde gerade eben von unserem Server geladen." data-toggle="tooltip">
+      <i class="far fa-satellite-dish"></i>
+      <span class="data"></span>
+    </span>
+    <span class="fail hidden" title="Sorry, beim Laden dieser Zahl von unserem Server ist leider ein Fehler aufgetreten. Versuch es doch einfach nochmal, indem du diese Seite neu lädst." data-toggle="tooltip">
+      <i class="far fa-exclamation"></i>
+      Ups...
+    </span>
+  </span> Mitgliedern bringen wir die besten IT-Freelancer Deutschlands mit innovativen und anspruchsvollen Unternehmen zusammen. Unsere Kunden schätzen unsere effektiven Prozesse, unser Know-How und insbesondere die Fairness und Transparenz, mit der wir arbeiten.
 
-  <ul>
-    <li>
-      Du bist verantwortlich für die Kommunikation mit unseren bestehenden und neuen Kunden. Du besprichst mit ihnen bei Projektanfragen die technischen Anforderungen an die Kandidaten und die Rahmenbedingungen der Zusammenarbeit.
-    </li>
-    <li>
-      Du veröffentlichst neue Jobs in unserer Community mit Hilfe von Slack und unserer eigens entwickelten Software und beantwortest Nachfragen von interessierten Kandidaten.
-    </li>
-    <li>
-      Du erstellst und pflegst die Freelancerprofile in unserer Datenbank.
-    </li>
-    <li>
-      Klassische Vertriebstätigkeiten (z.B. Kaltakquise) gehören NICHT zu deinen Aufgaben.
-    </li>
-  </ul>
+  „It’s all about people“ – insbesondere im Vertrieb. Deshalb brauchen wir Dich!
 
-  <h2>
-    Dein Profil
-  </h2>
+  ## Deine Aufgaben
 
-  <ul>
-    <li>
-      Du hast ein Studium oder eine Berufsausbildung im Bereich Informatik, Digitales, Kommunikation oder Personal erfolgreich abgeschlossen.
-    </li>
-    <li>
-      Du hast Grundkenntnisse im IT-Bereich (Programmiersprachen, Frameworks, Technologien) oder großes Interesse, dir diese anzueignen. Selbst programmieren zu können ist nicht nötig, aber ein Überblick über die aktuelle IT-Landschaft und Kenntnisse darüber, welche Technologien es gibt und wie sie zusammenhängen, werden dir helfen, dich mit den Firmen und Freelancern auf Augenhöhe zu unterhalten.
-    </li>
-    <li>
-      Du hast optimalerweise bereits Erfahrung im Bereich Account-Management, Projektmanagement, Kommunikation oder als Assistenz der Geschäftsführung sammeln können.
-    </li>
-    <li>
-      Du hast Lust, beim Aufbau eines jungen und innovativen Unternehmens mitzuarbeiten.
-    </li>
-    <li>
-      Du arbeitest eigenverantwortlich, selbstständig und strukturiert.
-    </li>
-    <li>
-      Du sprichst exzellentes Deutsch und gutes Englisch.
-    </li>
-  </ul>
+  * Du generierst und qualifizierst neue Leads aus unterschiedlichen Quellen.
+  * Du bist verantwortlich für die Akquise offener Tech-Positionen bei Neu- und Bestandskunden.
+  * Du identifizierst die Entscheider und nimmst telefonisch Bedarfsanalysen vor.
+  * Du begleitest unsere Kunden und Ansprechpartner pro-aktiv telefonisch und persönlich vor Ort und baust so eine langfristige Kundenbeziehung auf.
+  * Du trägst die Umsatzverantwortung für Deine Accounts und sicherst diese durch einen vertrieblich bewerteten Forecast ab.
+  * Du bringst Deine Ideen ein und bist direkt an dessen Umsetzung beteiligt.
+  * Du präsentierst Uplink auf Fachveranstaltungen, Kongressen und Messen.
+
+  ## Deine Skills
+
+  * Du verfügst über ein erfolgreich abgeschlossenes Studium oder eine vergleichbare Ausbildung.
+  * Du bringst Erfahrung aus der Arbeit als Account Manager im B2B-Vertrieb mit.
+  * Dein vertrieblicher Ansatz ist ausgesprochen kunden- und nutzenorientiert.
+  * Du arbeitest eigenverantwortlich und strukturiert, und schaffst es dadurch, Deine Ziele zu erreichen.
+  * Du weißt, worauf es im Kundenkontakt über das Telefon ankommt.
+  * Du bist es gewohnt, datenbankgestützt zu arbeiten.
+  * Du bist Teamplayer und schätzt eine positive Arbeitsatmosphäre mit offener Kommunikation.
+  * Du verfügst über sehr gute Deutschkenntnisse in Wort und Schrift und gute Englischkenntnisse.
+
+  ## Deine Benefits bei Uplink
+
+  * Intensive und individuelle Einarbeitung
+  * Spannende Aufgaben in einem langfristig stark wachsenden Markt
+  * Realistische Aufstiegschancen
+  * Flexible Arbeitszeiten, ein unbefristetes Arbeitsverhältnis, ein modernes Arbeitsumfeld sowie ein attraktives Vergütungsmodell
+  * Die Möglichkeit, auch regelmäßig aus dem Home Office zu arbeiten
+  * Eine offene Unternehmenskultur, flachen Hierarchien und kreativen Freiraum in einem super Team
+  * Wenig Reisetätigkeit
+  * Wir geben auch vertriebserfahrenen Berufs-Wiedereinsteigern eine Chance!
