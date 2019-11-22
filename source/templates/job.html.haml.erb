@@ -21,7 +21,7 @@ classes:
       "@context":       "http://schema.org",
       "@type":          "JobPosting",
       "title":          "<%= job_data.fetch(:title) %>",
-      "description":    "<%= markdown(job_data.fetch(:description)).gsub(/(\r?\n)+/, ' ') %>",
+      "description":    "<%= markdown(job_data.fetch(:description)).gsub(/(\r?\n)+/, ' ').gsub('"', '\"') %>",
       "datePosted":     "<%= job_data.fetch(:date) %>",
       "employmentType": ["FULL_TIME", "PART_TIME"],
       "hiringOrganization": {

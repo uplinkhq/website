@@ -1,20 +1,7 @@
 title: Account Manager
 date: 2019-11-22
 description: |
-  Uplink ist ein erfolgreiches und engagiertes Startup im HR-Bereich. Durch unsere Community mit <span class="freelancer-count">
-    <span class="loading" title="Diese Zahl wird gerade live von unserem Server geladen." data-toggle="tooltip">
-      <i class="far fa-spinner fa-spin"></i>
-      Lade Anzahl...
-    </span>
-    <span class="done hidden" title="Diese Zahl ist live und wurde gerade eben von unserem Server geladen." data-toggle="tooltip">
-      <i class="far fa-satellite-dish"></i>
-      <span class="data"></span>
-    </span>
-    <span class="fail hidden" title="Sorry, beim Laden dieser Zahl von unserem Server ist leider ein Fehler aufgetreten. Versuch es doch einfach nochmal, indem du diese Seite neu lädst." data-toggle="tooltip">
-      <i class="far fa-exclamation"></i>
-      Ups...
-    </span>
-  </span> Mitgliedern bringen wir die besten IT-Freelancer Deutschlands mit innovativen und anspruchsvollen Unternehmen zusammen. Unsere Kunden schätzen unsere effektiven Prozesse, unser Know-How und insbesondere die Fairness und Transparenz, mit der wir arbeiten.
+  Uplink ist ein erfolgreiches und engagiertes Startup im HR-Bereich. Durch unsere Community mit <span id="freelancer-count" data-turbolinks-permanent>über 1.000</span> Mitgliedern bringen wir die besten IT-Freelancer Deutschlands mit innovativen und anspruchsvollen Unternehmen zusammen. Unsere Kunden schätzen unsere effektiven Prozesse, unser Know-How und insbesondere die Fairness und Transparenz, mit der wir arbeiten.
 
   „It’s all about people“ – insbesondere im Vertrieb. Deshalb brauchen wir Dich!
 

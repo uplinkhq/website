@@ -2,27 +2,22 @@ $(document).on 'turbolinks:load', ->
   if $('body.job').length && $freelancerCount.length
     cookieName = 'freelancer_count'
     if freelancerCount = Cookies.get(cookieName)
-      setFreelancerCount freelancerCount
+      displayFreelancerCount freelancerCount
     else
-      $.getJSON('https://api.uplink.tech/data/freelancer_count')
+      $.getJSON('https://api.uplink.test/data/freelancer_count')
         .done (data) ->
           freelancerCount = data.results
-          setFreelancerCount freelancerCount
+          displayFreelancerCount freelancerCount
           Cookies.set cookieName, freelancerCount, expires: 1
-        .fail ->
-          setFreelancerCount()
 
-$freelancerCount = $('.freelancer-count')
+$freelancerCount = $('#freelancer-count')
 
-setFreelancerCount = (count) ->
-  if count?
-    $freelancerCount.find('.loading, .fail').addClass('hidden')
-    $freelancerCount.find('.done')
-                    .removeClass('hidden')
-                    .find('.data')
-                    .text(count)
-  else
-    $freelancerCount.find('.fail')
-                    .removeClass('hidden')
-    $freelancerCount.find('.loading, .done')
-                    .addClass('hidden')
+displayFreelancerCount = (count) ->
+  if count? && parseInt(count) > 1000
+    html = "<span title='Diese Zahl ist live und wurde gerade eben von unserem Server geladen.' data-toggle='tooltip'>
+      <i class='far fa-satellite-dish'></i>
+      #{count}
+    </span>"
+    $freelancerCount.addClass('active')
+                    .html(html)
+    $('[data-toggle="tooltip"]').tooltip()
