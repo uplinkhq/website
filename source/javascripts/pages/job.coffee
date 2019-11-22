@@ -4,7 +4,7 @@ $(document).on 'turbolinks:load', ->
     if freelancerCount = Cookies.get(cookieName)
       displayFreelancerCount freelancerCount
     else
-      $.getJSON('https://api.uplink.test/data/freelancer_count')
+      $.getJSON('https://api.uplink.tech/data/freelancer_count')
         .done (data) ->
           freelancerCount = data.results
           displayFreelancerCount freelancerCount
