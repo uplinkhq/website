@@ -30,6 +30,7 @@ de:
     error_404: Error 404
     jobs: Jobs bei Uplink
     job_account_manager: Werde Teil unseres Teams als Account Manager!
+    job_junior_account_manager: Werde Teil unseres Teams als Junior Account Manager!
     berlin: Berlin Title
 
   page_descriptions:
@@ -43,6 +44,7 @@ de:
     press_kit: Fotos und Texte zur einfachen Berichterstattung über Uplink
     jobs: Wir sind immer auf der Suche nach neuen Talenten für unser Team!
     job_account_manager: Werde Teil unseres Teams als Account Manager!
+    job_junior_account_manager: Werde Teil unseres Teams als Junior Account Manager!
     berlin: Berlin Description
     error_404: Page not found
 
@@ -52,7 +54,6 @@ de:
     companies: Wir helfen Firmen, den richtigen Freelance-Entwickler in Tagen (manchmal Stunden) anstatt Wochen zu finden. Sagen Sie uns einfach, wen Sie suchen, und wir verknüpfen Sie mit einem passenden Experten aus unserem Pool.
     press_kit: Sollten Sie weitere Informationen oder Medien benötigen, um über Uplink zu berichten, kontaktieren Sie uns!
     jobs: Wir sind immer auf der Suche nach neuen Talenten für unser Team!
-    job_account_manager: Du bist Account Manager mit Berufserfahrung und hast Lust, etwas zu bewegen?
     berlin: Berlin Intro
 
   pages:
